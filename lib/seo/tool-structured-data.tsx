@@ -58,6 +58,16 @@ export async function generateToolStructuredData({
 
   const primaryCondition = MEDICAL_ENTITIES[primaryConditionKey];
 
+  // 使用默认值防止 undefined 错误
+  const defaultCondition = {
+    name: "Dysmenorrhea",
+    icd10: "N94.6",
+    snomed: "266599006",
+    alternateName: ["Period Pain", "Menstrual Cramps", "痛经", "月经痛"],
+  };
+
+  const safePrimaryCondition = primaryCondition || defaultCondition;
+
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -118,20 +128,20 @@ export async function generateToolStructuredData({
         },
         about: {
           "@type": "MedicalCondition",
-          name: primaryCondition.name,
+          name: safePrimaryCondition.name,
           alternateName:
             validLocale === "zh"
               ? ["月经疼痛", "经期疼痛", "Dysmenorrhea"]
               : ["Menstrual Pain", "Period Pain", "痛经"],
-          ...(primaryCondition.icd10 && {
+          ...(safePrimaryCondition.icd10 && {
             code: {
               "@type": "MedicalCode",
-              code: primaryCondition.icd10,
+              code: safePrimaryCondition.icd10,
               codingSystem: "ICD-10",
             },
           }),
-          ...(primaryCondition.snomed && {
-            sameAs: `http://snomed.info/id/${primaryCondition.snomed}`,
+          ...(safePrimaryCondition.snomed && {
+            sameAs: `http://snomed.info/id/${safePrimaryCondition.snomed}`,
           }),
         },
         ...(inputs.length > 0 && { input: inputs }),
