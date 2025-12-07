@@ -1,0 +1,76 @@
+name: Verify SEO Configuration
+
+on:
+  push:
+    branches:
+      - main
+      - feat/seo-multilingual-fix
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  verify-seo:
+    name: Verify Multilingual SEO
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Make script executable
+        run: chmod +x scripts/verify-seo-fix.sh
+
+      - name: Run SEO verification
+        run: CI=true npm run verify:seo:production
+        continue-on-error: true
+        env:
+          CI: true
+
+      - name: Upload verification results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: seo-verification-results
+          path: |
+            *.log
+            reports/
+          retention-days: 30
+
+      - name: Comment PR with results
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const logPath = 'seo-verification.log';
+            let output = 'SEO verification completed.';
+
+            try {
+              if (fs.existsSync(logPath)) {
+                output = fs.readFileSync(logPath, 'utf8');
+              } else {
+                output = 'Log file not found. Verification may have completed without creating a log.';
+              }
+            } catch (error) {
+              output = `Error reading log file: ${error.message}`;
+            }
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## SEO Verification Results\n\n\`\`\`\n${output}\n\`\`\``
+            });

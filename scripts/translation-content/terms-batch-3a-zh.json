@@ -1,0 +1,24 @@
+{
+  "termsOfService": {
+    "sections": {
+      "serviceDescription": {
+        "title": "1. 服务描述与用户资格",
+        "description": "periodhub.health是一个健康教育平台，提供经期健康信息、教育资源和互动工具。我们的服务旨在帮助用户更好地了解和管理经期健康。",
+        "serviceScope": "我们的服务包括但不限于：",
+        "serviceList": [
+          "经期健康教育文章和指南",
+          "互动健康评估工具",
+          "个性化健康建议",
+          "教育资源和可下载材料",
+          "社区支持和信息分享"
+        ],
+        "userEligibility": {
+          "title": "用户资格",
+          "ageRequirement": "您必须年满13岁才能使用我们的服务。18岁以下用户应在家长指导下使用我们的服务。",
+          "capacity": "您必须具有签订具有约束力协议的法律行为能力。",
+          "accuracy": "您同意在使用我们的服务时提供准确和完整的信息。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeriodHub - 直接支付测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9fafb;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px;
+            background: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .button:hover {
+            background: #6d28d9;
+        }
+        .button.secondary {
+            background: #6b7280;
+        }
+        .button.secondary:hover {
+            background: #4b5563;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .success {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            color: #166534;
+        }
+        .error {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #dc2626;
+        }
+        .warning {
+            background: #fffbeb;
+            border: 1px solid #fde047;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PeriodHub - 直接支付测试</h1>
+        <p>这个页面直接测试 Lemon Squeezy 支付 API，确保没有其他东西干扰实际支付流程。</p>
+
+        <h2>选择支付计划</h2>
+        <button class="button" onclick="testPayment('monthly')">月度订阅 - $4.99</button>
+        <button class="button secondary" onclick="testPayment('yearly')">年度订阅 - $47.88</button>
+        <button class="button secondary" onclick="testPayment('oneTime')">一次性购买 - $4.99</button>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="container warning">
+        <h2>重要说明</h2>
+        <ul>
+            <li>这些是真实的支付按钮，会创建实际的 Lemon Squeezy 结账会话</li>
+            <li>点击后将跳转到安全的 Lemon Squeezy 支付页面</li>
+            <li>您可以使用测试信用卡信息完成测试支付</li>
+            <li>测试卡号: 4242 4242 4242 4242</li>
+            <li>任何过期日期和 CVC 代码都可用于测试</li>
+        </ul>
+    </div>
+
+    <script>
+        async function testPayment(plan) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.className = 'result';
+            resultDiv.textContent = '正在创建支付会话...';
+
+            try {
+                console.log('🧪 开始测试直接支付 API，计划:', plan);
+
+                const response = await fetch('/api/lemonsqueezy/create-checkout', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        plan,
+                        painPoint: 'direct_html_test',
+                        assessmentScore: 0,
+                        source: 'direct_html_test_page'
+                    }),
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.url) {
+                    console.log('✅ 支付 API 成功响应:', data);
+                    resultDiv.className = 'result success';
+                    resultDiv.textContent = `✅ 成功创建结账会话！\n\n结账 URL: ${data.url}\n\n正在跳转到支付页面...`;
+
+                    // 3秒后重定向到支付页面
+                    setTimeout(() => {
+                        window.location.href = data.url;
+                    }, 3000);
+                } else {
+                    console.error('❌ 支付 API 错误:', data);
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = `❌ 支付失败：${data.error || '未知错误'}\n\n状态码: ${response.status}`;
+                }
+            } catch (error) {
+                console.error('❌ 请求失败:', error);
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `❌ 请求失败: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>

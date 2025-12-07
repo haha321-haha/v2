@@ -1,0 +1,126 @@
+{
+  "constitutionTest": {
+    "title": "整体健康体质测试",
+    "subtitle": "科学评估您的体质类型，获得个性化健康建议",
+    "features": {
+      "quick": {
+        "title": "快速测试",
+        "description": "5-10分钟完成专业体质评估"
+      },
+      "professional": {
+        "title": "专业权威",
+        "description": "基于整体健康理论的科学评估体系"
+      },
+      "personalized": {
+        "title": "个性化建议",
+        "description": "针对性的健康调理方案"
+      },
+      "practical": {
+        "title": "实用指导",
+        "description": "穴位按摩、饮食调理、生活方式建议"
+      }
+    },
+    "instructions": {
+      "title": "测试说明",
+      "item1": "请根据您的真实感受选择最符合的答案",
+      "item2": "每个问题只能选择一个答案",
+      "item3": "测试大约需要5-10分钟完成",
+      "item4": "结果仅供参考，不替代专业医疗建议"
+    },
+    "navigation": {
+      "startTest": "开始测试",
+      "previous": "上一题",
+      "next": "下一题",
+      "completeTest": "完成测试",
+      "retakeTest": "重新测试"
+    },
+    "painScale": {
+      "title": "疼痛程度",
+      "reference": "疼痛程度参考",
+      "levels": {
+        "none": "无痛",
+        "mild": "轻微",
+        "moderate": "中等",
+        "severe": "严重",
+        "extreme": "剧烈"
+      },
+      "descriptions": {
+        "0-2": "轻微不适，不影响日常生活",
+        "3-4": "轻度疼痛，可以忍受",
+        "5-7": "中度疼痛，影响工作学习",
+        "8-10": "重度疼痛，需要休息或药物缓解"
+      }
+    },
+    "result": {
+      "title": "测试完成",
+      "subtitle": "您的体质类型分析结果",
+      "match": "匹配度",
+      "constitutionFeatures": "体质特征",
+      "commonSymptoms": "常见症状",
+      "menstrualFeatures": "经期特点"
+    },
+    "recommendations": {
+      "acupoints": {
+        "title": "穴位按摩建议",
+        "primaryAcupoints": "主要穴位",
+        "location": "位置：",
+        "function": "功效：",
+        "method": "方法：",
+        "guidelines": "按摩指导",
+        "technique": "手法：",
+        "frequency": "频率：",
+        "duration": "时长："
+      },
+      "dietary": {
+        "title": "饮食调理建议",
+        "beneficialFoods": "推荐食物",
+        "foodsToAvoid": "避免食物",
+        "dietaryPrinciples": "饮食原则"
+      },
+      "lifestyle": {
+        "title": "生活方式建议",
+        "description": "基于您的体质类型，以下生活方式调整有助于改善健康状况",
+        "reminder": "温馨提示：",
+        "reminderText": "以上建议仅供参考，如有严重症状请及时就医"
+      },
+      "menstrualPain": {
+        "title": "痛经调理建议",
+        "acupointTherapy": "穴位疗法",
+        "lifestyleAdjustments": "生活方式调整"
+      }
+    },
+    "emergencyKit": {
+      "title": "个性化应急包推荐",
+      "description": "基于您的体质和痛经情况，推荐以下应急用品",
+      "priority": {
+        "high": "高优先级",
+        "medium": "中优先级",
+        "low": "低优先级"
+      },
+      "packingTips": "打包建议：",
+      "packingAdvice": "建议选择便携式包装，便于随身携带"
+    },
+    "articles": {
+      "title": "相关文章推荐",
+      "readMore": "阅读更多"
+    },
+    "communication": {
+      "title": "沟通表达模板",
+      "description": "帮助您更好地与家人、朋友或同事沟通经期不适情况",
+      "styles": {
+        "intimate": "亲密关系",
+        "casual": "普通朋友",
+        "formal": "职场同事"
+      },
+      "copyText": "复制文本",
+      "usageTips": "使用提示：",
+      "usageAdvice": "根据实际情况调整内容，选择合适的语气和表达方式"
+    },
+    "messages": {
+      "testComplete": "测试完成",
+      "testCompleteDesc": "您的体质分析已完成",
+      "testFailed": "测试失败",
+      "testFailedDesc": "请检查网络连接后重试"
+    }
+  }
+}

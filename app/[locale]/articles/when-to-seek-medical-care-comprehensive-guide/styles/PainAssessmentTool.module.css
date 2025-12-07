@@ -1,0 +1,475 @@
+/* 疼痛评估工具样式 - 清理版本，统一使用原生CSS */
+
+.container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 80rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  animation: slideUp 0.6s ease-out;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+.container:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #3b82f6;
+  width: 1rem;
+  height: 1rem;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* 滑块容器 */
+.sliderContainer {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sliderLabelMin {
+  font-weight: 500;
+  color: #059669;
+}
+
+.sliderLabelMax {
+  font-weight: 500;
+  color: #dc2626;
+}
+
+/* 滑块样式 */
+.slider {
+  width: 50%;
+  height: 0.5rem;
+  background-color: #e5e7eb;
+  border-radius: 0.5rem;
+  appearance: none;
+  cursor: pointer;
+  margin: 0 auto 0.75rem auto;
+  background: linear-gradient(to right,
+    #10B981 0%,
+    #34D399 20%,
+    #FCD34D 40%,
+    #F59E0B 60%,
+    #EF4444 80%,
+    #DC2626 100%
+  );
+  /* 移动端触摸优化 */
+  min-height: 44px;
+  padding: 20px 0;
+}
+
+/* 移动端滑块高度调整 */
+@media (max-width: 768px) {
+  .slider {
+    height: 0.75rem;
+    min-height: 48px;
+    padding: 24px 0;
+    width: 60%;
+  }
+
+  .sliderLabels {
+    width: 60%;
+  }
+
+  .sliderTicks {
+    width: 60%;
+  }
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  /* 移动端触摸优化 */
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* 移动端滑块手柄优化 */
+@media (max-width: 768px) {
+  .slider::-webkit-slider-thumb {
+    width: 2rem;
+    height: 2rem;
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+.slider::-webkit-slider-thumb:hover {
+  border-color: #2563eb;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  /* 移动端触摸优化 */
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* 移动端Firefox滑块手柄优化 */
+@media (max-width: 768px) {
+  .slider::-moz-range-thumb {
+    width: 2rem;
+    height: 2rem;
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+.slider::-moz-range-thumb:hover {
+  border-color: #2563eb;
+  transform: scale(1.1);
+}
+
+/* 滑块刻度 */
+.sliderTicks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.25rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tickLabel {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+/* 当前疼痛等级显示 */
+.currentLevel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.levelNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.levelText {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* 建议容器 */
+.adviceContainer {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.adviceHeader {
+  margin-bottom: 0.5rem;
+}
+
+.adviceTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.adviceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.adviceText {
+  color: #374151;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+/* 推荐建议 */
+.recommendations {
+  margin-top: 1rem;
+}
+
+.recommendationsTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.recommendationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recommendationItem {
+  display: flex;
+  align-items: flex-start;
+  color: #374151;
+}
+
+.recommendationIcon {
+  color: #3b82f6;
+  font-weight: 700;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.recommendationText {
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+/* 紧急警告 */
+.emergencyWarning {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.emergencyIcon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.emergencyText {
+  flex: 1;
+}
+
+.emergencyTitle {
+  color: #991b1b;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.emergencyDescription {
+  color: #b91c1c;
+  font-size: 0.875rem;
+}
+
+/* 历史记录提示 */
+.historyHint {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.5rem;
+}
+
+.historyText {
+  color: #1e40af;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* 按钮 */
+.button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* 移动端触摸优化 */
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+/* 动画效果 */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 禁用状态 */
+.container.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.slider:disabled {
+  cursor: not-allowed;
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+  .container {
+    border: 2px solid #1f2937;
+  }
+
+  .slider {
+    border: 1px solid #1f2937;
+  }
+
+  .slider::-webkit-slider-thumb,
+  .slider::-moz-range-thumb {
+    border: 2px solid #1f2937;
+  }
+}
+
+/* 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+  .container,
+  .adviceContainer,
+  .slider::-webkit-slider-thumb,
+  .slider::-moz-range-thumb {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  .title {
+    font-size: 1.125rem;
+  }
+
+  .levelNumber {
+    font-size: 2.5rem;
+  }
+
+  .adviceContainer {
+    padding: 1rem;
+  }
+
+  .slider {
+    height: 0.75rem;
+  }
+
+  .slider::-webkit-slider-thumb,
+  .slider::-moz-range-thumb {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+}

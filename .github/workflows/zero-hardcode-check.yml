@@ -1,0 +1,140 @@
+# Zero Hardcode CI/CD Pipeline
+# 基于Pain Pattern和压力管理项目的成功经验
+
+name: Zero Hardcode Quality Check
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  hardcode-detection:
+    name: 🔍 Hardcode Detection
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run hardcode detection
+      run: npm run detect-hardcode
+
+    - name: Run stress management hardcode detection
+      run: npm run detect-stress-hardcode
+
+    - name: Run ESLint
+      run: npm run lint:full
+
+    - name: Check TypeScript types
+      run: npx tsc --noEmit
+
+    - name: Log schema validation for MedicalWebPage
+      run: |
+        npm run validate:schema -- \
+          --page "/zh/articles/comprehensive-medical-guide-to-dysmenorrhea" \
+          --schema "MedicalWebPage" \
+          --tool "Google Rich Results Test" \
+          --result "Triggered" \
+          --notes "CI triggered placeholder result"
+
+    - name: Log schema validation for SoftwareApplication
+      run: |
+        npm run validate:schema -- \
+          --page "/zh/interactive-tools/symptom-assessment" \
+          --schema "SoftwareApplication" \
+          --tool "Rich Results Test" \
+          --result "Triggered" \
+          --notes "CI triggered placeholder result"
+
+  translation-validation:
+    name: 🌐 Translation Validation
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Validate JSON syntax
+      run: |
+        echo "Validating translation files..."
+        node -e "JSON.parse(require('fs').readFileSync('messages/zh.json', 'utf8'))" && echo "✅ zh.json is valid"
+        node -e "JSON.parse(require('fs').readFileSync('messages/en.json', 'utf8'))" && echo "✅ en.json is valid"
+
+    - name: Check for duplicate keys
+      run: |
+        echo "Checking for duplicate keys..."
+        npm run lint:full 2>&1 | grep -i "duplicate" && exit 1 || echo "✅ No duplicate keys found"
+
+  build-test:
+    name: 🏗️ Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build application
+      run: npm run build
+
+    - name: Test build output
+      run: |
+        echo "Testing build output..."
+        if [ -d ".next" ]; then
+          echo "✅ Build successful"
+        else
+          echo "❌ Build failed"
+          exit 1
+        fi
+
+  quality-report:
+    name: 📊 Quality Report
+    runs-on: ubuntu-latest
+    needs: [hardcode-detection, translation-validation, build-test]
+    if: always()
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Generate quality report
+      run: |
+        echo "# 🎯 Zero Hardcode Quality Report" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## ✅ Quality Checks" >> $GITHUB_STEP_SUMMARY
+        echo "- Hardcode Detection: ${{ needs.hardcode-detection.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "- Translation Validation: ${{ needs.translation-validation.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "- Build Test: ${{ needs.build-test.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## 📚 Resources" >> $GITHUB_STEP_SUMMARY
+        echo "- [Zero Hardcode Guide](docs/ZERO-HARDCODE-DEVELOPMENT-GUIDE.md)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Quick Reference](docs/I18N-QUICK-REFERENCE.md)" >> $GITHUB_STEP_SUMMARY
+        echo "- [Development Checklist](docs/DEVELOPMENT-CHECKLIST.md)" >> $GITHUB_STEP_SUMMARY

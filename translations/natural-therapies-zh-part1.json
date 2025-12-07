@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "自然疗法缓解痛经 - 热敷、草药、饮食调理完整指南 | PeriodHub",
+    "description": "科学的自然疗法帮助缓解痛经：热敷疗法、中草药调理、饮食营养、瑜伽运动、芳香疗法、针灸按摩等。循证医学支持，安全有效无副作用。",
+    "keywords": "自然疗法,痛经缓解,热敷疗法,中草药,饮食调理,瑜伽,芳香疗法,针灸,经期保健,无副作用"
+  },
+  "hero": {
+    "title": "🌿 自然疗法缓解痛经",
+    "subtitle": "科学验证的自然方法，温和有效，无副作用"
+  },
+  "scientificFoundation": {
+    "title": "🔬 科学基础",
+    "description": "自然疗法结合现代医学研究与传统智慧，为痛经管理提供安全有效的选择。多项临床研究证实其疗效。",
+    "benefits": {
+      "noSideEffects": {
+        "title": "无副作用",
+        "description": "温和自然，不会产生药物依赖或不良反应"
+      },
+      "holisticApproach": {
+        "title": "整体调理",
+        "description": "从根本改善体质，提升整体健康水平"
+      },
+      "costEffective": {
+        "title": "经济实惠",
+        "description": "大多数方法成本低廉，可长期坚持"
+      }
+    }
+  },
+  "therapies": {
+    "title": "🌟 自然疗法方案",
+    "heatTherapy": {
+      "title": "热敷疗法",
+      "subtitle": "最简单有效的物理疗法",
+      "description": "热敷通过温热效应促进血液循环，放松子宫平滑肌，是缓解痛经最直接有效的方法之一。",
+      "parameters": {
+        "title": "科学参数",
+        "temperature": "温度：",
+        "temperatureValue": "40-45°C（温热但不烫手）",
+        "duration": "时长：",
+        "durationValue": "每次15-20分钟",
+        "frequency": "频率：",
+        "frequencyValue": "每天2-3次，疼痛时可增加",
+        "timing": "时机：",
+        "timingValue": "月经前1-2天开始预防性使用",
+        "mechanism": "作用机制：",
+        "mechanismValue": "热量刺激皮肤温度感受器，通过\"闸门控制理论\"阻断疼痛信号传递"
+      },
+      "mechanism": {
+        "title": "科学机制",
+        "gateControl": {
+          "title": "闸门控制理论",
+          "description": "温热刺激激活粗纤维神经，抑制细纤维传递的疼痛信号"
+        },
+        "vasodilation": {
+          "title": "血管扩张效应",
+          "description": "热量促进局部血管扩张，改善子宫供血，缓解缺血性疼痛"
+        }
+      },
+      "safety": {
+        "title": "⚠️ 安全提示",
+        "guidelines": [
+          "避免直接接触皮肤，使用毛巾隔离",
+          "不要在睡眠时使用，防止低温烫伤",
+          "如有皮肤破损或感染，暂停使用"
+        ]
+      }
+    },
+    "herbalTherapy": {
+      "title": "草药疗法",
+      "subtitle": "传统智慧的现代验证",
+      "description": "中草药在痛经治疗中有悠久历史，现代研究证实其活性成分具有抗炎、镇痛、调节激素等多重作用。",
+      "herbs": {
+        "ginger": {
+          "title": "生姜（Zingiber officinale）",
+          "activeCompounds": "活性成分：",
+          "activeCompoundsValue": "姜辣素、姜烯酚",
+          "mechanism": "作用机制：",
+          "mechanismValue": "抑制前列腺素合成，减少子宫收缩",
+          "clinicalEvidence": "临床证据：",
+          "clinicalEvidenceValue": "研究显示与布洛芬疗效相当（Ozgoli et al., 2009）"
+        },
+        "angelica": {
+          "title": "当归（Angelica sinensis）",
+          "activeCompounds": "活性成分：",
+          "activeCompoundsValue": "阿魏酸、藁本内酯",
+          "mechanism": "作用机制：",
+          "mechanismValue": "调节雌激素水平，改善子宫血液循环",
+          "classicFormula": "经典配方：",
+          "classicFormulaValue": "四物汤、当归芍药散"
+        }
+      },
+      "usage": {
+        "title": "使用方法",
+        "gingerTea": {
+          "title": "生姜茶",
+          "description": "新鲜生姜10g切片，沸水冲泡10分钟，月经前3天开始，每日2-3次"
+        },
+        "angelicaDecoction": {
+          "title": "当归煎剂",
+          "description": "当归10g，加水300ml，文火煎煮20分钟，月经期服用"
+        }
+      },
+      "safety": {
+        "title": "⚠️ 重要提示",
+        "guidelines": [
+          "孕妇禁用当归",
+          "服用抗凝药物者慎用生姜",
+          "首次使用建议咨询专业医师"
+        ]
+      }
+    },
+    "dietaryAdjustment": {
+      "title": "饮食调理",
+      "subtitle": "营养支持，从内而外",
+      "description": "合理的饮食结构可以调节激素水平，减少炎症反应，为身体提供充足的营养支持。",
+      "nutrients": {
+        "omega3": {
+          "title": "Omega-3脂肪酸",
+          "sourcesValue": "深海鱼、亚麻籽、核桃",
+          "mechanismValue": "抗炎作用，减少前列腺素产生"
+        },
+        "magnesium": {
+          "title": "镁元素",
+          "sourcesValue": "深绿色蔬菜、坚果、全谷物",
+          "mechanismValue": "放松肌肉，缓解痉挛"
+        },
+        "vitaminB6": {
+          "title": "维生素B6",
+          "sourcesValue": "香蕉、鸡肉、土豆",
+          "mechanismValue": "调节神经递质，改善情绪"
+        }
+      },
+      "foods": {
+        "title": "抗炎食物",
+        "recommended": {
+          "title": "推荐食物"
+        },
+        "avoid": {
+          "title": "避免食物"
+        }
+      }
+    }
+  }
+}

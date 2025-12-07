@@ -1,0 +1,314 @@
+{
+  "duplicates": [],
+  "missingPairs": [
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools",
+      "en": "https:/www.periodhub.health/en/interactive-tools"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/immediate-relief",
+      "en": "https:/www.periodhub.health/en/immediate-relief"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/natural-therapies",
+      "en": "https:/www.periodhub.health/en/natural-therapies"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/downloads",
+      "en": "https:/www.periodhub.health/en/downloads"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/health-guide",
+      "en": "https:/www.periodhub.health/en/health-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/teen-health",
+      "en": "https:/www.periodhub.health/en/teen-health"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions",
+      "en": "https:/www.periodhub.health/en/scenario-solutions"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/cultural-charms",
+      "en": "https:/www.periodhub.health/en/cultural-charms"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/privacy-policy",
+      "en": "https:/www.periodhub.health/en/privacy-policy"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/terms-of-service",
+      "en": "https:/www.periodhub.health/en/terms-of-service"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/medical-disclaimer",
+      "en": "https:/www.periodhub.health/en/medical-disclaimer"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/downloads/medication-guide",
+      "en": "https:/www.periodhub.health/en/downloads/medication-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/symptom-assessment",
+      "en": "https:/www.periodhub.health/en/interactive-tools/symptom-assessment"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/pain-tracker",
+      "en": "https:/www.periodhub.health/en/interactive-tools/pain-tracker"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/constitution-test",
+      "en": "https:/www.periodhub.health/en/interactive-tools/constitution-test"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/cycle-tracker",
+      "en": "https:/www.periodhub.health/en/interactive-tools/cycle-tracker"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/symptom-tracker",
+      "en": "https:/www.periodhub.health/en/interactive-tools/symptom-tracker"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/period-pain-assessment",
+      "en": "https:/www.periodhub.health/en/interactive-tools/period-pain-assessment"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/period-pain-impact-calculator",
+      "en": "https:/www.periodhub.health/en/interactive-tools/period-pain-impact-calculator"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/nutrition-recommendation-generator",
+      "en": "https:/www.periodhub.health/en/interactive-tools/nutrition-recommendation-generator"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/interactive-tools/workplace-wellness",
+      "en": "https:/www.periodhub.health/en/interactive-tools/workplace-wellness"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/health-guide/global-perspectives",
+      "en": "https:/www.periodhub.health/en/health-guide/global-perspectives"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/health-guide/lifestyle",
+      "en": "https:/www.periodhub.health/en/health-guide/lifestyle"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/health-guide/medical-care",
+      "en": "https:/www.periodhub.health/en/health-guide/medical-care"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/health-guide/myths-facts",
+      "en": "https:/www.periodhub.health/en/health-guide/myths-facts"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/health-guide/relief-methods",
+      "en": "https:/www.periodhub.health/en/health-guide/relief-methods"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/health-guide/understanding-pain",
+      "en": "https:/www.periodhub.health/en/health-guide/understanding-pain"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/teen-health/campus-guide",
+      "en": "https:/www.periodhub.health/en/teen-health/campus-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/teen-health/communication-guide",
+      "en": "https:/www.periodhub.health/en/teen-health/communication-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/teen-health/development-pain",
+      "en": "https:/www.periodhub.health/en/teen-health/development-pain"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/teen-health/emotional-support",
+      "en": "https:/www.periodhub.health/en/teen-health/emotional-support"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/office",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/office"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/commute",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/commute"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/exercise",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/exercise"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/sleep",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/sleep"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/social",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/social"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/lifestages",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/lifestages"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/partnercommunication",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/partnercommunication"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/scenario-solutions/emergency-kit",
+      "en": "https:/www.periodhub.health/en/scenario-solutions/emergency-kit"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/5-minute-period-pain-relief",
+      "en": "https:/www.periodhub.health/en/articles/5-minute-period-pain-relief"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/anti-inflammatory-diet-period-pain",
+      "en": "https:/www.periodhub.health/en/articles/anti-inflammatory-diet-period-pain"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/comprehensive-iud-guide",
+      "en": "https:/www.periodhub.health/en/articles/comprehensive-iud-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/comprehensive-medical-guide-to-dysmenorrhea",
+      "en": "https:/www.periodhub.health/en/articles/comprehensive-medical-guide-to-dysmenorrhea"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/essential-oils-aromatherapy-menstrual-pain-guide",
+      "en": "https:/www.periodhub.health/en/articles/essential-oils-aromatherapy-menstrual-pain-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/global-traditional-menstrual-pain-relief",
+      "en": "https:/www.periodhub.health/en/articles/global-traditional-menstrual-pain-relief"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/heat-therapy-complete-guide",
+      "en": "https:/www.periodhub.health/en/articles/heat-therapy-complete-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/herbal-tea-menstrual-pain-relief",
+      "en": "https:/www.periodhub.health/en/articles/herbal-tea-menstrual-pain-relief"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/effective-herbal-tea-menstrual-pain",
+      "en": "https:/www.periodhub.health/en/articles/effective-herbal-tea-menstrual-pain"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/long-term-healthy-lifestyle-guide",
+      "en": "https:/www.periodhub.health/en/articles/long-term-healthy-lifestyle-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/hidden-culprits-of-menstrual-pain",
+      "en": "https:/www.periodhub.health/en/articles/hidden-culprits-of-menstrual-pain"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/home-natural-menstrual-pain-relief",
+      "en": "https:/www.periodhub.health/en/articles/home-natural-menstrual-pain-relief"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/magnesium-gut-health-comprehensive-guide",
+      "en": "https:/www.periodhub.health/en/articles/magnesium-gut-health-comprehensive-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-nausea-relief-guide",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-nausea-relief-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-pain-accompanying-symptoms-guide",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-pain-accompanying-symptoms-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-pain-complications-management",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-pain-complications-management"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-pain-faq-expert-answers",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-pain-faq-expert-answers"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-pain-medical-guide",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-pain-medical-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-pain-vs-other-abdominal-pain-guide",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-pain-vs-other-abdominal-pain-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/natural-physical-therapy-comprehensive-guide",
+      "en": "https:/www.periodhub.health/en/articles/natural-physical-therapy-comprehensive-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/nsaid-menstrual-pain-professional-guide",
+      "en": "https:/www.periodhub.health/en/articles/nsaid-menstrual-pain-professional-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/period-friendly-recipes",
+      "en": "https:/www.periodhub.health/en/articles/period-friendly-recipes"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/personal-menstrual-health-profile",
+      "en": "https:/www.periodhub.health/en/articles/personal-menstrual-health-profile"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/recommended-reading-list",
+      "en": "https:/www.periodhub.health/en/articles/recommended-reading-list"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/specific-menstrual-pain-management-guide",
+      "en": "https:/www.periodhub.health/en/articles/specific-menstrual-pain-management-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/comprehensive-menstrual-sleep-quality-guide",
+      "en": "https:/www.periodhub.health/en/articles/comprehensive-menstrual-sleep-quality-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-pain-research-progress-2024",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-pain-research-progress-2024"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-preventive-care-complete-plan",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-preventive-care-complete-plan"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/menstrual-stress-management-complete-guide",
+      "en": "https:/www.periodhub.health/en/articles/menstrual-stress-management-complete-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/us-menstrual-pain-insurance-coverage-guide",
+      "en": "https:/www.periodhub.health/en/articles/us-menstrual-pain-insurance-coverage-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/when-to-see-doctor-period-pain",
+      "en": "https:/www.periodhub.health/en/articles/when-to-see-doctor-period-pain"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/when-to-seek-medical-care-comprehensive-guide",
+      "en": "https:/www.periodhub.health/en/articles/when-to-seek-medical-care-comprehensive-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/womens-lifecycle-menstrual-pain-analysis",
+      "en": "https:/www.periodhub.health/en/articles/womens-lifecycle-menstrual-pain-analysis"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/zhan-zhuang-baduanjin-for-menstrual-pain-relief",
+      "en": "https:/www.periodhub.health/en/articles/zhan-zhuang-baduanjin-for-menstrual-pain-relief"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/ginger-menstrual-pain-relief-guide",
+      "en": "https:/www.periodhub.health/en/articles/ginger-menstrual-pain-relief-guide"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/comprehensive-report-non-medical-factors-menstrual-pain",
+      "en": "https:/www.periodhub.health/en/articles/comprehensive-report-non-medical-factors-menstrual-pain"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/period-pain-simulator-accuracy-analysis",
+      "en": "https:/www.periodhub.health/en/articles/period-pain-simulator-accuracy-analysis"
+    },
+    {
+      "zh": "https:/www.periodhub.health/zh/articles/medication-vs-natural-remedies-menstrual-pain",
+      "en": "https:/www.periodhub.health/en/articles/medication-vs-natural-remedies-menstrual-pain"
+    }
+  ],
+  "canonicalHints": []
+}

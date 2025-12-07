@@ -1,0 +1,28 @@
+{
+  "termsOfService": {
+    "sections": {
+      "liabilityLimitation": {
+        "title": "6. 责任限制与免责声明",
+        "medicalDisclaimer": {
+          "title": "医疗免责声明",
+          "content": "本网站提供的信息仅用于教育和信息目的，不应被视为医疗建议、诊断或治疗。我们不是医疗保健专业人员，内容不应替代与合格医疗保健提供者的咨询。",
+          "emergencyWarning": "在医疗紧急情况下，请立即寻求专业医疗救助。不要依赖网站信息做出紧急医疗决定。",
+          "individualVariation": "健康信息和建议可能不适合每个人。个人对治疗和干预的反应可能存在显著差异。",
+          "professionalConsultation": "在做出任何医疗决定、开始新治疗或改变现有医疗方案之前，请务必咨询医疗保健专业人员。"
+        },
+        "serviceLimitations": {
+          "title": "服务限制",
+          "availabilityDisclaimer": "我们在\"按现状\"和\"按可用性\"的基础上提供服务。我们不保证我们的服务将不间断、无错误或完全安全。",
+          "accuracyDisclaimer": "虽然我们努力提供准确和最新的信息，但我们不能保证网站上所有内容的完整性、准确性或可靠性。",
+          "thirdPartyContent": "我们的网站可能包含第三方网站或内容的链接。我们不对外部网站的准确性、合法性或内容负责。"
+        },
+        "liabilityLimits": {
+          "title": "责任限制",
+          "generalLimitation": "在法律允许的最大范围内，periodhub.health及其关联公司、董事、员工和代理人不对因您使用我们服务而产生的任何间接、偶然、特殊、后果性或惩罚性损害承担责任。",
+          "maxLiability": "对于因您使用我们服务而产生的任何索赔，我们对您的总责任不应超过您在索赔前12个月内为访问我们服务而支付给我们的金额（如有）。",
+          "exclusions": "某些司法管辖区不允许排除或限制某些损害，因此上述某些限制可能不适用于您。"
+        }
+      }
+    }
+  }
+}

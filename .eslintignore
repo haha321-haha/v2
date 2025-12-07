@@ -1,0 +1,25 @@
+# 构建输出
+.next/
+out/
+build/
+dist/
+
+# 依赖
+node_modules/
+
+# 恢复目录
+hub-latest-main*/
+recovered/
+
+# 日志文件
+*.log
+logs/
+
+# 测试覆盖率
+coverage/
+
+# 其他
+.cache/
+.turbo/
+.DS_Store
+app/\[locale\]/interactive-tools/components/ConstitutionTestTool.backup*.tsx

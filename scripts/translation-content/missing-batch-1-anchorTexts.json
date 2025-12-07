@@ -1,0 +1,13 @@
+{
+  "anchorTexts": {
+    "articles": {
+      "more": "[需要翻译: anchorTexts.articles.more]",
+      "stress_management": "[需要翻译: anchorTexts.articles.stress_management]",
+      "sleep_quality": "[需要翻译: anchorTexts.articles.sleep_quality]"
+    },
+    "solutions": {
+      "workplace": "[需要翻译: anchorTexts.solutions.workplace]",
+      "student": "[需要翻译: anchorTexts.solutions.student]"
+    }
+  }
+}

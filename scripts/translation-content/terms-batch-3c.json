@@ -1,0 +1,38 @@
+{
+  "termsOfService": {
+    "sections": {
+      "privacyProtection": {
+        "title": "3. Data Usage and Privacy Protection",
+        "privacyPolicyRef": "Your privacy is very important to us. The way we collect, use, store and protect your personal information is detailed in our Privacy Policy. The Privacy Policy is an important part of these terms of service and has the same legal effect as these terms.",
+        "dataCollection": "Types of information we may collect include but are not limited to:",
+        "dataTypes": {
+          "personalInfo": "Personal identification information (such as name, email address)",
+          "healthData": "Health-related information you voluntarily provide",
+          "usageData": "Website usage data and interaction patterns",
+          "technicalData": "Technical information such as IP address, browser type, device information"
+        },
+        "dataUse": {
+          "title": "Data Use",
+          "purposes": "We use your information for the following purposes:",
+          "purposeList": [
+            "Provide and improve our services",
+            "Personalize your user experience",
+            "Communicate with you about our services",
+            "Ensure website security and prevent fraud",
+            "Comply with legal obligations"
+          ]
+        },
+        "dataSecurity": {
+          "title": "Data Security",
+          "measures": "We implement appropriate technical and organizational measures to protect your personal information, including:",
+          "securityList": [
+            "Data encryption during transmission and storage",
+            "Access controls and authentication systems",
+            "Regular security audits and updates",
+            "Employee training on data protection"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+echo "🛡️  运行 pre-commit 检查..."
+echo ""
+
+# 1. 运行 pre-commit hooks（如果已安装）
+if command -v pre-commit > /dev/null 2>&1; then
+  echo "📋 运行 pre-commit hooks..."
+  pre-commit run --hook-stage pre-commit || {
+    echo ""
+    echo "❌ pre-commit 检查失败！请修复问题后再提交。"
+    echo "💡 提示：可以使用 'git commit --no-verify' 跳过检查（不推荐）"
+    exit 1
+  }
+  echo ""
+fi
+
+# 2. 硬编码检测（暂时禁用，因为脚本不存在）
+echo "🔍 跳过硬编码检测（脚本不存在）..."
+# if ! npm run detect-hardcode; then
+#   echo ""
+#   echo "❌ 硬编码检测失败！发现硬编码字符串，请修复后再提交。"
+#   echo "💡 修复方法："
+#   echo "   - 运行: npm run detect-hardcode 查看详情"
+#   echo "   - 将硬编码字符串替换为翻译键"
+#   echo "   - 使用 t() 函数进行国际化"
+#   exit 1
+# fi
+echo ""
+
+# 3. 压力管理项目硬编码检测（暂时禁用）
+echo "🔍 跳过压力管理项目硬编码检测（脚本不存在）..."
+# if ! npm run detect-stress-hardcode; then
+#   echo ""
+#   echo "❌ 压力管理项目硬编码检测失败！请修复后再提交。"
+#   exit 1
+# fi
+echo ""
+
+# 4. ESLint 检查
+echo "🔍 运行 ESLint 检查..."
+if ! npm run lint; then
+  echo ""
+  echo "❌ ESLint 检查失败！请修复代码风格问题后再提交。"
+  echo "💡 修复方法：运行 'npm run lint:fix' 自动修复部分问题"
+  exit 1
+fi
+echo ""
+
+# 5. TypeScript 类型检查
+echo "🔍 运行 TypeScript 类型检查..."
+if ! npm run type-check; then
+  echo ""
+  echo "❌ TypeScript 类型检查失败！请修复类型错误后再提交。"
+  echo "💡 修复方法：查看类型错误并相应修复代码"
+  exit 1
+fi
+echo ""
+
+echo "✅ 所有 pre-commit 检查通过！可以安全提交。"
+exit 0

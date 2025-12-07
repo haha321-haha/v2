@@ -1,0 +1,410 @@
+{
+  "enPlaceholders": 998,
+  "zhEnglish": 455,
+  "missingInEn": 93,
+  "missingInZh": 83,
+  "enPlaceholderSamples": [
+    {
+      "key": "header.menu",
+      "value": "[TRANSLATE: Menu]"
+    },
+    {
+      "key": "header.close",
+      "value": "[TRANSLATE: Close]"
+    },
+    {
+      "key": "footer.quickLinks",
+      "value": "[TRANSLATE: Quick Links]"
+    },
+    {
+      "key": "footer.support",
+      "value": "[TRANSLATE: Support]"
+    },
+    {
+      "key": "footer.contactUs",
+      "value": "[TRANSLATE: Contact Us]"
+    },
+    {
+      "key": "footer.helpCenter",
+      "value": "[TRANSLATE: Help Center]"
+    },
+    {
+      "key": "footer.email",
+      "value": "[TRANSLATE: Email]"
+    },
+    {
+      "key": "footer.support24",
+      "value": "[TRANSLATE: Providing professional health guidance for you]"
+    },
+    {
+      "key": "footer.allRights",
+      "value": "[TRANSLATE: All rights reserved.]"
+    },
+    {
+      "key": "footer.disclaimer",
+      "value": "[TRANSLATE: This content is for reference only and cannot replace professional medical advice.]"
+    },
+    {
+      "key": "hero.features.articles",
+      "value": "[TRANSLATE: 22 Professional Articles]"
+    },
+    {
+      "key": "hero.features.tools",
+      "value": "[TRANSLATE: 4 Interactive Tools]"
+    },
+    {
+      "key": "hero.features.support",
+      "value": "[TRANSLATE: 24/7 Online Support]"
+    },
+    {
+      "key": "hero.description",
+      "value": "[TRANSLATE: 专业的经期健康管理平台，循证指导与隐私保护，陪伴每位女性科学管理生理期]"
+    },
+    {
+      "key": "hero.learnMore",
+      "value": "[TRANSLATE: Browse Articles]"
+    },
+    {
+      "key": "contact.faq.title",
+      "value": "[TRANSLATE: FAQ]"
+    },
+    {
+      "key": "contact.faq.description",
+      "value": "[TRANSLATE: Quickly find answers to common questions]"
+    },
+    {
+      "key": "contact.faq.button",
+      "value": "[TRANSLATE: View FAQ]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.comprehensiveMedicalGuide.title",
+      "value": "[TRANSLATE: 痛经综合医疗指南]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.comprehensiveMedicalGuide.description",
+      "value": "[TRANSLATE: 专业医疗视角解析痛经，包含症状诊断和治疗方案]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.comprehensiveMedicalGuide.category",
+      "value": "[TRANSLATE: 医疗指南]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.comprehensiveMedicalGuide.readTime",
+      "value": "[TRANSLATE: 15分钟阅读]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.naturalReliefMethods.title",
+      "value": "[TRANSLATE: 家庭自然疼痛缓解方法]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.naturalReliefMethods.description",
+      "value": "[TRANSLATE: 自然、安全的居家疼痛缓解方法，无药物副作用]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.naturalReliefMethods.category",
+      "value": "[TRANSLATE: 自然疗法]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.naturalReliefMethods.readTime",
+      "value": "[TRANSLATE: 10分钟阅读]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.menstrualPainFAQ.title",
+      "value": "[TRANSLATE: 痛经常见问题专家解答]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.menstrualPainFAQ.description",
+      "value": "[TRANSLATE: 医学专家解答关于痛经的常见问题和疑虑]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.menstrualPainFAQ.category",
+      "value": "[TRANSLATE: 常见问题]"
+    },
+    {
+      "key": "interactiveTools.symptomAssessment.relatedArticles.menstrualPainFAQ.readTime",
+      "value": "[TRANSLATE: 8分钟阅读]"
+    },
+    {
+      "key": "healthStatistics.chartTitle",
+      "value": "[TRANSLATE: 月经健康统计数据]"
+    },
+    {
+      "key": "healthStatistics.chartSubtitle",
+      "value": "[TRANSLATE: Period Health Statistics]"
+    },
+    {
+      "key": "healthStatistics.stats.experiencePain.label",
+      "value": "[TRANSLATE: 女性经历痛经]"
+    },
+    {
+      "key": "healthStatistics.stats.experiencePain.sublabel",
+      "value": "[TRANSLATE: Experience Period Pain]"
+    },
+    {
+      "key": "healthStatistics.stats.experiencePain.source",
+      "value": "[TRANSLATE: 全球统计数据]"
+    },
+    {
+      "key": "healthStatistics.stats.affectsWork.label",
+      "value": "[TRANSLATE: 影响工作学习]"
+    },
+    {
+      "key": "healthStatistics.stats.affectsWork.sublabel",
+      "value": "[TRANSLATE: Affects Work/Study]"
+    },
+    {
+      "key": "healthStatistics.stats.affectsWork.source",
+      "value": "[TRANSLATE: 生产力影响]"
+    },
+    {
+      "key": "healthStatistics.stats.seekHelp.label",
+      "value": "[TRANSLATE: 寻求医疗帮助]"
+    },
+    {
+      "key": "healthStatistics.stats.seekHelp.sublabel",
+      "value": "[TRANSLATE: Seek Medical Help]"
+    },
+    {
+      "key": "healthStatistics.stats.seekHelp.source",
+      "value": "[TRANSLATE: 就医统计]"
+    },
+    {
+      "key": "healthStatistics.stats.usePainkillers.label",
+      "value": "[TRANSLATE: 使用止痛药]"
+    },
+    {
+      "key": "healthStatistics.stats.usePainkillers.sublabel",
+      "value": "[TRANSLATE: Use Painkillers]"
+    },
+    {
+      "key": "healthStatistics.stats.usePainkillers.source",
+      "value": "[TRANSLATE: 缓解方式]"
+    },
+    {
+      "key": "healthStatistics.stats.avgDuration.label",
+      "value": "[TRANSLATE: 平均疼痛持续时间]"
+    },
+    {
+      "key": "healthStatistics.stats.avgDuration.sublabel",
+      "value": "[TRANSLATE: Average Pain Duration]"
+    },
+    {
+      "key": "healthStatistics.stats.avgDuration.unit",
+      "value": "[TRANSLATE: 天 Days]"
+    },
+    {
+      "key": "healthStatistics.stats.avgDuration.source",
+      "value": "[TRANSLATE: 全球统计数据]"
+    },
+    {
+      "key": "healthStatistics.stats.avgPainLevel.label",
+      "value": "[TRANSLATE: 平均疼痛程度]"
+    },
+    {
+      "key": "healthStatistics.stats.avgPainLevel.sublabel",
+      "value": "[TRANSLATE: Average Pain Level]"
+    }
+  ],
+  "zhEnglishSamples": [
+    {
+      "key": "0",
+      "value": "Benefits"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.title",
+      "value": "Assessment Complete"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.subtitle",
+      "value": "Complete Stress Assessment Report"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.scoreLabel",
+      "value": "Stress Score"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.stressSourcesDescription",
+      "value": "Mainly from work pressure and sleep quality issues"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.improvementFocusDescription",
+      "value": "Recommend prioritizing sleep quality and emotional management"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.stressLevels.low",
+      "value": "Low"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.stressLevels.moderate",
+      "value": "Moderate"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.stressLevels.high",
+      "value": "High"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.results.stressLevels.severe",
+      "value": "Severe"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.phq9.assessmentPrompt.title",
+      "value": "For Deeper Mental Health Assessment"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.phq9.assessmentPrompt.button",
+      "value": "Start PHQ-9 Assessment"
+    },
+    {
+      "key": "privacyPolicy.sections.contactUs.buttons.comingSoon",
+      "value": "Coming Soon, Stay Tuned"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.title",
+      "value": "Assessment Complete"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.subtitle",
+      "value": "Complete Stress Assessment Report"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.scoreLabel",
+      "value": "Stress Score"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.stressSourcesDescription",
+      "value": "Mainly from work pressure and sleep quality issues"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.improvementFocusDescription",
+      "value": "Recommend prioritizing sleep quality and emotional management"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.stressLevels.low",
+      "value": "Low"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.stressLevels.moderate",
+      "value": "Moderate"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.stressLevels.high",
+      "value": "High"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.results.stressLevels.severe",
+      "value": "Severe"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.phq9.assessmentPrompt.title",
+      "value": "For Deeper Mental Health Assessment"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.phq9.assessmentPrompt.button",
+      "value": "Start PHQ-9 Assessment"
+    },
+    {
+      "key": "medicalCareGuide.article.section5.buttons.comingSoon",
+      "value": "Coming Soon, Stay Tuned"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.title",
+      "value": "Assessment Complete"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.subtitle",
+      "value": "Complete Stress Assessment Report"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.scoreLabel",
+      "value": "Stress Score"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.stressSourcesDescription",
+      "value": "Mainly from work pressure and sleep quality issues"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.improvementFocusDescription",
+      "value": "Recommend prioritizing sleep quality and emotional management"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.stressLevels.low",
+      "value": "Low"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.stressLevels.moderate",
+      "value": "Moderate"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.stressLevels.high",
+      "value": "High"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.results.stressLevels.severe",
+      "value": "Severe"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.phq9.assessmentPrompt.title",
+      "value": "For Deeper Mental Health Assessment"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.phq9.assessmentPrompt.button",
+      "value": "Start PHQ-9 Assessment"
+    },
+    {
+      "key": "medicalCareGuide.painTool.levels.buttons.comingSoon",
+      "value": "Coming Soon, Stay Tuned"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.title",
+      "value": "Assessment Complete"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.subtitle",
+      "value": "Complete Stress Assessment Report"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.scoreLabel",
+      "value": "Stress Score"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.stressSourcesDescription",
+      "value": "Mainly from work pressure and sleep quality issues"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.improvementFocusDescription",
+      "value": "Recommend prioritizing sleep quality and emotional management"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.stressLevels.low",
+      "value": "Low"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.stressLevels.moderate",
+      "value": "Moderate"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.stressLevels.high",
+      "value": "High"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.results.stressLevels.severe",
+      "value": "Severe"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.phq9.assessmentPrompt.title",
+      "value": "For Deeper Mental Health Assessment"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.phq9.assessmentPrompt.button",
+      "value": "Start PHQ-9 Assessment"
+    },
+    {
+      "key": "medicalCareGuide.decisionTree.symptoms.buttons.comingSoon",
+      "value": "Coming Soon, Stay Tuned"
+    },
+    {
+      "key": "hero.learnMore",
+      "value": "Browse Articles"
+    }
+  ]
+}

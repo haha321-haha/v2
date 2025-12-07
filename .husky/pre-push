@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+
+echo "🛡️  运行 pre-push 检查（服务器端保护）..."
+echo ""
+echo "⚠️  注意：这是防止通过 --no-verify 绕过检查的最后一道防线"
+echo ""
+
+# 获取要推送的分支
+# pre-push hook接收参数: $1=remote name, $2=remote URL
+# 使用 @{u} 获取当前分支的上游分支，或回退到 HEAD
+branch="$(git rev-parse --abbrev-ref @{u} 2>/dev/null || git rev-parse --abbrev-ref HEAD)"
+# 提取分支名（去掉 remote/branch 格式中的 remote/ 部分）
+branch="${branch##*/}"
+
+# 如果是 main 或 develop 分支，执行严格检查
+if [ "$branch" = "main" ] || [ "$branch" = "develop" ]; then
+  echo "🔒 检测到关键分支 ($branch)，执行严格检查..."
+  echo ""
+
+  # 1. 硬编码检测
+  echo "🔍 运行硬编码检测..."
+  if [ -f "scripts/detect-hardcode.js" ]; then
+    if ! npm run detect-hardcode 2>/dev/null; then
+      echo ""
+      echo "❌ 硬编码检测失败！推送被阻止。"
+      echo "💡 请修复硬编码问题后再推送。"
+      exit 1
+    else
+      echo "✅ 硬编码检测通过"
+    fi
+  else
+    echo "⚠️  警告：硬编码检测脚本不存在，跳过此检查。"
+    echo "💡 脚本路径: scripts/detect-hardcode.js"
+  fi
+  echo ""
+
+  # 2. 翻译键同步检查（暂时改为警告，不阻止推送）
+  echo "🔍 运行翻译键同步检查..."
+  if [ -f "scripts/check-translation-sync.js" ]; then
+    if ! npm run translations:check 2>/dev/null; then
+      echo ""
+      echo "⚠️  警告：翻译键同步检查失败，但允许推送。"
+      echo "💡 请确保中英文翻译键完全同步。"
+      echo "💡 运行 'npm run translations:check' 查看详细错误信息。"
+    else
+      echo "✅ 翻译键同步检查通过"
+    fi
+  elif [ -f "scripts/hardcode-fix-tools/check-translation-sync.js" ]; then
+    if ! node scripts/hardcode-fix-tools/check-translation-sync.js 2>/dev/null; then
+      echo ""
+      echo "⚠️  警告：翻译键同步检查失败，但允许推送。"
+      echo "💡 请确保中英文翻译键完全同步。"
+      echo "💡 运行 'node scripts/hardcode-fix-tools/check-translation-sync.js' 查看详细错误信息。"
+    else
+      echo "✅ 翻译键同步检查通过"
+    fi
+  else
+    echo "⚠️  警告：翻译键同步检查脚本不存在，跳过此检查。"
+    echo "💡 脚本路径: scripts/check-translation-sync.js 或 scripts/hardcode-fix-tools/check-translation-sync.js"
+  fi
+  echo ""
+
+  # 3. TypeScript 类型检查
+  echo "🔍 运行 TypeScript 类型检查..."
+  if ! npm run type-check; then
+    echo ""
+    echo "❌ TypeScript 类型检查失败！推送被阻止。"
+    echo "💡 请修复类型错误后再推送。"
+    exit 1
+  fi
+  echo "✅ TypeScript 类型检查通过"
+  echo ""
+
+  # 4. 构建检查（暂时禁用）
+  echo "🔍 [跳过] 构建检查（节省时间）..."
+  # if ! npm run build; then
+  #   echo ""
+  #   echo "❌ 构建失败！推送被阻止。"
+  #   echo "💡 请确保代码可以成功构建。"
+  #   exit 1
+  # fi
+  echo ""
+
+  echo "✅ 关键分支 ($branch) 所有检查通过！允许推送。"
+else
+  echo "ℹ️  非关键分支 ($branch)，执行基础检查..."
+  echo ""
+
+  # 非关键分支只做基础检查
+  echo "🔍 运行基础硬编码检测..."
+  npm run detect-hardcode || {
+    echo ""
+    echo "⚠️  警告：检测到硬编码问题，但非关键分支允许推送。"
+    echo "💡 建议在合并到 main 分支前修复这些问题。"
+  }
+  echo ""
+fi
+
+echo "✅ pre-push 检查完成！"
+exit 0

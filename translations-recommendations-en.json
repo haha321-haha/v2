@@ -1,0 +1,324 @@
+{
+  "recommendations": {
+    "title": "Personalized Recommendations",
+    "subtitle": "Based on your data",
+    "sectionTitle": "Recommended for You",
+    "loading": "Generating recommendations...",
+    "error": "Recommendation system temporarily unavailable, please try again later",
+
+    "insights": {
+      "title": "Data Insights",
+      "subtitle": "Analysis based on your data",
+      "painPattern": {
+        "title": "Pain Pattern",
+        "increasing": "Detected increasing pain trend",
+        "decreasing": "Pain is improving",
+        "stable": "Pain remains stable",
+        "irregular": "Pain pattern is irregular"
+      },
+      "efficiencyPattern": {
+        "title": "Work Efficiency",
+        "improving": "Work efficiency is improving",
+        "declining": "Work efficiency has declined",
+        "stable": "Work efficiency remains stable"
+      },
+      "cycleHealth": {
+        "title": "Cycle Health",
+        "healthy": "Healthy cycle",
+        "irregular": "Irregular cycle",
+        "needs_attention": "Medical consultation recommended"
+      }
+    },
+
+    "categories": {
+      "all": "All",
+      "pain-relief": "Pain Relief",
+      "tracking": "Data Tracking",
+      "medical": "Medical Advice",
+      "work-adjustment": "Work Adjustment",
+      "nutrition": "Nutrition",
+      "natural-therapy": "Natural Therapy",
+      "assessment": "Assessment Tools",
+      "scenario": "Scenario Solutions",
+      "mental-health": "Mental Health",
+      "emergency": "Emergency"
+    },
+
+    "types": {
+      "article": "Article",
+      "tool": "Tool",
+      "scenario": "Scenario Solution",
+      "tip": "Practical Tip",
+      "action": "Action Item"
+    },
+
+    "priority": {
+      "high": "Important",
+      "medium": "Recommended",
+      "low": "Optional",
+      "urgent": "Urgent"
+    },
+
+    "actions": {
+      "dismiss": "Dismiss",
+      "save": "Save",
+      "rate": "Rate",
+      "click": "View Details",
+      "loadMore": "Load More Recommendations",
+      "refresh": "Refresh Recommendations",
+      "viewAll": "View All",
+      "undoDismiss": "Undo Dismiss"
+    },
+
+    "reasons": {
+      "prefix": "Reason:",
+      "highPainLevel": "Your current pain level is high ({level}/10)",
+      "moderatePainLevel": "Your current pain level is moderate ({level}/10)",
+      "lowPainLevel": "Your pain level is low ({level}/10)",
+      "painTrendIncreasing": "Detected increasing pain trend",
+      "painTrendDecreasing": "Pain is improving",
+      "inMenstrualPhase": "You are currently in menstrual phase",
+      "inFollicularPhase": "You are currently in follicular phase",
+      "inOvulatoryPhase": "You are currently in ovulatory phase",
+      "inLutealPhase": "You are currently in luteal phase",
+      "lowEfficiency": "Your work efficiency is low ({efficiency}%)",
+      "moderateEfficiency": "Your work efficiency is moderate ({efficiency}%)",
+      "irregularCycle": "Detected irregular cycle",
+      "regularCycle": "Your cycle is regular",
+      "multipleReasons": ", ",
+      "suffix": ", therefore this content is recommended.",
+      "default": "Recommended based on your data patterns."
+    },
+
+    "empty": {
+      "title": "No Recommendations Yet",
+      "description": "Complete more data tracking to receive personalized recommendations",
+      "action": "Record Data",
+      "noData": "Insufficient data to generate recommendations",
+      "insufficientData": "Please record at least 3 cycles of data for more accurate recommendations"
+    },
+
+    "dataQuality": {
+      "title": "Data Quality Notice",
+      "low": "Insufficient data, recommendations may not be accurate. Please record at least 3 cycles.",
+      "medium": "Good data quality. Continue recording for more accurate recommendations.",
+      "high": "Excellent data quality. Recommendations are highly personalized.",
+      "excellent": "Outstanding data quality. Recommendations are very precise!",
+      "completeness": "Data Completeness: {percentage}%",
+      "recordCount": "Recorded {count} cycles",
+      "suggestion": "Continue recording data to improve recommendation accuracy"
+    },
+
+    "feedback": {
+      "title": "Was this recommendation helpful?",
+      "helpful": "Helpful",
+      "notHelpful": "Not Helpful",
+      "thankYou": "Thank you for your feedback!",
+      "ratePrompt": "Please rate this recommendation",
+      "submitRating": "Submit Rating",
+      "dismissReason": "Why dismiss this recommendation?",
+      "dismissReasons": {
+        "notRelevant": "Not Relevant",
+        "alreadyKnow": "Already Know",
+        "notInterested": "Not Interested",
+        "other": "Other Reason"
+      }
+    },
+
+    "filters": {
+      "title": "Filter Recommendations",
+      "showAll": "Show All",
+      "byCategory": "By Category",
+      "byPriority": "By Priority",
+      "byType": "By Type",
+      "sortBy": "Sort By",
+      "sortByRelevance": "By Relevance",
+      "sortByPriority": "By Priority",
+      "sortByTime": "By Time"
+    },
+
+    "summary": {
+      "totalRecommendations": "{count} Recommendations",
+      "highPriorityCount": "{count} High Priority Recommendations",
+      "categoriesCount": "{count} Categories",
+      "newRecommendations": "{count} New Recommendations"
+    },
+
+    "content": {
+      "articles": {
+        "dysmenorrheaGuide": {
+          "title": "Comprehensive Medical Guide to Dysmenorrhea",
+          "description": "Complete medical knowledge and management strategies",
+          "reason": "Learn about medical causes and systematic management"
+        },
+        "naturalTherapies": {
+          "title": "Natural Therapies Guide",
+          "description": "Holistic Health and natural relief methods",
+          "reason": "Explore natural, non-pharmaceutical relief options"
+        },
+        "medicalCareGuide": {
+          "title": "Medical Care Guide",
+          "description": "When to seek medical care and how to prepare",
+          "reason": "For severe or worsening pain"
+        },
+        "immediateRelief": {
+          "title": "Immediate Relief Methods",
+          "description": "Quick and practical pain relief techniques",
+          "reason": "For immediate pain relief"
+        },
+        "medicationGuide": {
+          "title": "Medication Guide",
+          "description": "Safe and effective pain medication knowledge",
+          "reason": "Learn proper medication usage"
+        },
+        "teenHealth": {
+          "title": "Teen Health Guide",
+          "description": "Period health knowledge for teenagers",
+          "reason": "For teens learning period management"
+        },
+        "understandingPain": {
+          "title": "Understanding Period Pain",
+          "description": "Causes and types of dysmenorrhea",
+          "reason": "Deep dive into pain mechanisms"
+        }
+      },
+
+      "tools": {
+        "painTracker": {
+          "title": "Pain Tracker",
+          "description": "Record and analyze pain patterns",
+          "reason": "Systematically track pain changes"
+        },
+        "symptomAssessment": {
+          "title": "Symptom Assessment Tool",
+          "description": "Comprehensive symptom assessment and health advice",
+          "reason": "Get complete health evaluation"
+        },
+        "cycleTracker": {
+          "title": "Cycle Tracker",
+          "description": "Smart period tracking and prediction",
+          "reason": "Predict cycles and manage planning"
+        },
+        "constitutionTest": {
+          "title": "Holistic Body Pattern Quiz",
+          "description": "Holistic Health body pattern assessment",
+          "reason": "Explore Holistic Health-based therapies"
+        },
+        "nutritionGenerator": {
+          "title": "Nutrition Recommendation Generator",
+          "description": "Personalized nutrition plan recommendations",
+          "reason": "Get dietary adjustment advice"
+        },
+        "impactCalculator": {
+          "title": "Period Pain Impact Calculator",
+          "description": "Assess impact on work and life",
+          "reason": "Quantify period pain impact"
+        },
+        "stressManagement": {
+          "title": "Stress Management Tool",
+          "description": "Stress assessment and relief strategies",
+          "reason": "Manage stress or mood swings"
+        },
+        "workplaceWellness": {
+          "title": "Workplace Wellness",
+          "description": "Period health management at work",
+          "reason": "Manage period health in workplace"
+        }
+      },
+
+      "scenarios": {
+        "office": {
+          "title": "Office Scenario Solution",
+          "description": "Period management strategies for office environment",
+          "reason": "For office workers"
+        },
+        "commute": {
+          "title": "Commute Scenario Solution",
+          "description": "Period management during commute",
+          "reason": "For long commuters"
+        },
+        "exercise": {
+          "title": "Exercise Scenario Solution",
+          "description": "Period management during exercise",
+          "reason": "For those exercising during period"
+        },
+        "social": {
+          "title": "Social Scenario Solution",
+          "description": "Period management in social situations",
+          "reason": "For scheduled social activities"
+        },
+        "sleep": {
+          "title": "Sleep Scenario Solution",
+          "description": "Improve sleep quality during period",
+          "reason": "For poor sleep quality during period"
+        },
+        "emergencyKit": {
+          "title": "Emergency Kit Guide",
+          "description": "Prepare period emergency supplies",
+          "reason": "For outings or travel"
+        },
+        "partnerCommunication": {
+          "title": "Partner Communication Guide",
+          "description": "How to communicate period needs with partner",
+          "reason": "For partner understanding and support"
+        },
+        "lifeStages": {
+          "title": "Life Stages Guide",
+          "description": "Period management across life stages",
+          "reason": "Understand period changes at different stages"
+        }
+      },
+
+      "tips": {
+        "heatTherapy": {
+          "title": "Heat Therapy",
+          "description": "Use heat to relieve period pain",
+          "reason": "For quick pain relief"
+        },
+        "breathing": {
+          "title": "Breathing Relaxation",
+          "description": "Relieve pain and stress through breathing",
+          "reason": "For relaxation and tension relief"
+        },
+        "posture": {
+          "title": "Pain-Relieving Postures",
+          "description": "Body postures that help relieve period pain",
+          "reason": "For immediate discomfort relief"
+        },
+        "hydration": {
+          "title": "Proper Hydration",
+          "description": "Importance and methods of period hydration",
+          "reason": "For overall condition improvement"
+        },
+        "dietTips": {
+          "title": "Diet Tips",
+          "description": "Dietary adjustments for period pain relief",
+          "reason": "Improve symptoms through diet"
+        }
+      },
+
+      "actions": {
+        "medicalConsultation": {
+          "title": "Medical Consultation Recommended",
+          "description": "Your symptoms may need professional medical evaluation",
+          "reason": "Abnormal data or severe symptoms detected"
+        },
+        "recordData": {
+          "title": "Record Today's Data",
+          "description": "Continue recording for more accurate recommendations",
+          "reason": "Data recording helps trend analysis"
+        },
+        "updatePreferences": {
+          "title": "Update Health Preferences",
+          "description": "Complete your health preference settings",
+          "reason": "Better preferences improve recommendation quality"
+        },
+        "exportData": {
+          "title": "Export Health Data",
+          "description": "Backup or share your health data",
+          "reason": "Regular data backup recommended"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "privacyPolicy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2024年4月1日",
+    "intro": "periodhub.health（以下简称\"我们\"）深知个人信息保护的重要性，特别是女性健康隐私数据的敏感性。本隐私政策详细说明了我们如何收集、使用、存储和保护您的个人信息，以及您对数据处理的权利。我们严格遵守《通用数据保护条例》(GDPR)和《中华人民共和国个人信息保护法》等相关法律法规。",
+    "importantNotice": "重要提示",
+    "importantNoticeText": "在使用periodhub.health网站服务前，请仔细阅读并充分理解本隐私政策的全部内容。一旦您使用本网站的任何服务，即表示您已阅读、理解并同意接受本政策的全部约束。如果您不同意本政策的任何内容，请立即停止使用本网站。",
+    "tableOfContents": "目录",
+    "sections": {
+      "informationCollection": {
+        "title": "1. 信息收集",
+        "subtitle": "我们收集的信息类型",
+        "symptomData": {
+          "title": "症状评估数据",
+          "items": [
+            "疼痛强度、特征和持续时间",
+            "月经周期相关信息",
+            "伴随症状描述",
+            "既往治疗经历",
+            "生活影响程度评估"
+          ]
+        },
+        "technicalInfo": {
+          "title": "技术信息",
+          "items": [
+            "IP地址（匿名化处理）",
+            "浏览器类型和版本",
+            "设备信息（操作系统、屏幕分辨率）",
+            "访问时间和页面浏览记录",
+            "来源网站信息"
+          ]
+        },
+        "userProvided": {
+          "title": "用户主动提供的信息",
+          "items": [
+            "电子邮箱地址（用于沟通）",
+            "年龄范围（不收集具体出生日期）",
+            "地理位置信息（仅国家/地区）",
+            "反馈和建议内容"
+          ]
+        },
+        "importantNote": {
+          "title": "重要说明",
+          "text": "我们绝不收集您的真实姓名、身份证号、具体地址、电话号码等直接身份识别信息。所有健康数据均经过匿名化处理，无法追溯到具体个人。"
+        }
+      },
+      "informationUse": {
+        "title": "2. 信息使用",
+        "mainPurposes": {
+          "title": "主要用途",
+          "items": [
+            "提供个性化症状评估和建议",
+            "生成定制化疼痛管理方案",
+            "改善网站功能和用户体验",
+            "统计分析以优化服务质量",
+            "发送您订阅的健康信息"
+          ]
+        },
+        "neverUsedFor": {
+          "title": "绝不用于",
+          "items": [
+            "出售给第三方商业机构",
+            "与健康无关的营销推广",
+            "个人身份识别或追踪",
+            "歧视性分析或评估",
+            "任何形式的数据挖掘"
+          ]
+        }
+      },
+      "informationSharing": {
+        "title": "3. 信息共享",
+        "content": "我们不会向第三方出售、交易或转让您的个人信息，除非：",
+        "exceptions": [
+          "获得您的明确同意",
+          "法律要求或法院命令",
+          "为保护我们的权利、财产或安全",
+          "与受信任的第三方服务提供商合作（他们同意保密）"
+        ]
+      },
+      "dataSecurity": {
+        "title": "4. 数据安全措施",
+        "encryption": {
+          "title": "数据加密",
+          "description": "TLS 1.3加密传输，AES-256数据存储加密"
+        },
+        "accessControl": {
+          "title": "访问控制",
+          "description": "严格权限管理，仅授权人员可访问数据"
+        },
+        "regularAudit": {
+          "title": "定期审计",
+          "description": "季度安全审计，第三方渗透测试"
+        },
+        "disclaimer": "但是，请注意，没有任何通过互联网传输的数据或存储系统能够保证100%安全。"
+      },
+      "cookieUsage": {
+        "title": "5. Cookie和跟踪技术",
+        "cookieTypes": {
+          "title": "我们使用的Cookie类型",
+          "necessary": {
+            "type": "必要Cookie",
+            "purpose": "网站基本功能",
+            "duration": "会话期间",
+            "required": "必需"
+          },
+          "functional": {
+            "type": "功能Cookie",
+            "purpose": "记住用户偏好",
+            "duration": "30天",
+            "required": "可选"
+          },
+          "analytical": {
+            "type": "分析Cookie",
+            "purpose": "网站使用统计",
+            "duration": "2年",
+            "required": "可选"
+          }
+        },
+        "management": {
+          "title": "Cookie管理",
+          "text": "您可以通过浏览器设置控制Cookie的使用。请注意，禁用某些Cookie可能会影响网站功能的正常使用。我们提供Cookie偏好中心，您可以随时调整设置。"
+        }
+      },
+      "userRights": {
+        "title": "6. 您的权利",
+        "subtitle": "根据GDPR，您享有以下权利：",
+        "rights": [
+          {
+            "name": "访问权",
+            "description": "查看我们持有的关于您的个人数据"
+          },
+          {
+            "name": "更正权",
+            "description": "要求更正不准确的个人数据"
+          },
+          {
+            "name": "删除权",
+            "description": "要求删除您的个人数据"
+          },
+          {
+            "name": "限制处理权",
+            "description": "限制数据处理活动"
+          },
+          {
+            "name": "数据可携权",
+            "description": "以结构化格式获取数据"
+          },
+          {
+            "name": "反对权",
+            "description": "反对特定的数据处理"
+          },
+          {
+            "name": "撤回同意权",
+            "description": "随时撤回已给予的同意"
+          },
+          {
+            "name": "投诉权",
+            "description": "向监管机构举报违规行为"
+          }
+        ]
+      },
+      "contactUs": {
+        "title": "7. 联系我们",
+        "description": "如果您对本隐私政策有任何疑问，或需要行使您的数据权利，请通过以下方式联系我们：",
+        "dataProtection": {
+          "title": "数据保护联系方式",
+          "email": "邮箱：tiyibaofu@outlook.com",
+          "subject": "请在邮件主题中注明"数据保护请求"",
+          "responseTime": "响应时间：72小时内确认，30天内完成处理"
+        },
+        "dpo": {
+          "title": "数据保护官(DPO)",
+          "email": "邮箱：tiyibaofu@outlook.com",
+          "responsibility": "职责：监督数据保护合规性",
+          "languages": "联系语言：中文、英文"
+        }
+      }
+    },
+    "policyUpdates": {
+      "title": "政策更新",
+      "content": "我们可能会根据法律要求、业务需要或技术发展更新本隐私政策。任何重大变更将：",
+      "procedures": [
+        "提前30天通过网站公告或邮件通知用户",
+        "在网站首页显著提醒",
+        "对于增加数据收集或使用的变更，重新获得用户同意",
+        "保留政策历史版本供查阅"
+      ],
+      "recommendation": "我们建议您定期查看本政策，以了解最新信息。继续使用我们的服务表示您接受更新后的政策。"
+    },
+    "mvpNotice": {
+      "title": "MVP阶段说明",
+      "text": "请注意，periodhub.health目前处于最小可行产品(MVP)阶段，以有限的资源运营。我们专注于最小化基础设施和成本，致力于近零个人信息收集。"
+    },
+    "questions": "有疑问？",
+    "questionsDescription": "如果您对我们的隐私政策有任何疑问，请随时联系我们。",
+    "contactUs": "联系我们"
+  }
+}

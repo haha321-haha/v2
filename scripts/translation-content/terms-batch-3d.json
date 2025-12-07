@@ -1,0 +1,35 @@
+{
+  "termsOfService": {
+    "sections": {
+      "intellectualProperty": {
+        "title": "4. Intellectual Property Rights",
+        "ownership": {
+          "title": "Content Ownership",
+          "description": "All content on this website, including but not limited to text, images, graphics, logos, videos, audio, software, and design elements, is owned by periodhub.health or our licensors and is protected by copyright, trademark, and other intellectual property laws."
+        },
+        "userRights": {
+          "title": "Your Rights to Use Our Content",
+          "permittedUse": "You may:",
+          "permittedList": [
+            "View and access content for personal, non-commercial use",
+            "Print or download content for personal reference",
+            "Share links to our content on social media",
+            "Quote brief excerpts with proper attribution"
+          ],
+          "restrictions": "You may not:",
+          "restrictionsList": [
+            "Reproduce, distribute, or republish our content without permission",
+            "Use our content for commercial purposes without authorization",
+            "Modify, adapt, or create derivative works from our content",
+            "Remove or alter copyright notices or attributions",
+            "Use our trademarks or logos without permission"
+          ]
+        },
+        "userContent": {
+          "title": "User-Generated Content",
+          "description": "If you submit content to our website (such as comments, feedback, or suggestions), you grant us a non-exclusive, royalty-free, perpetual license to use, modify, and distribute such content for the purpose of operating and improving our services."
+        }
+      }
+    }
+  }
+}

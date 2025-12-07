@@ -1,0 +1,12 @@
+{
+  "periodPainAssessmentPage": {
+    "tool": {
+      "advice": {
+        "severeSymptoms": "您的症状较为严重，建议尽快咨询妇科医生进行详细检查。",
+        "severeIntensity": "严重痛经可能影响生活质量，建议咨询医生了解治疗方案。",
+        "moderateIntensity": "中等程度痛经较为常见，可以尝试热敷、适量运动等缓解方法。如持续困扰建议就医。",
+        "mildIntensity": "您的痛经程度较轻，属于正常范围。保持良好的生活习惯即可。"
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "timestamp": "2025-09-20T13:07:18.084Z",
+  "summary": {
+    "total": "101[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]",
+    "passed": 99,
+    "failed": 2,
+    "warnings": [
+      {
+        "test": "PainAssessmentTool.tsx: 键盘导航",
+        "warning": "建议支持键盘导航"
+      },
+      {
+        "test": "PainAssessmentTool.tsx: 焦点样式",
+        "warning": "建议添加焦点样式"
+      },
+      {
+        "test": "SymptomChecklist.tsx: 标签描述",
+        "warning": "建议添加描述性标签"
+      },
+      {
+        "test": "SymptomChecklist.tsx: 键盘导航",
+        "warning": "建议支持键盘导航"
+      },
+      {
+        "test": "SymptomChecklist.tsx: 焦点样式",
+        "warning": "建议添加焦点样式"
+      },
+      {
+        "test": "DecisionTree.tsx: ARIA属性",
+        "warning": "建议添加ARIA属性"
+      },
+      {
+        "test": "DecisionTree.tsx: 标签描述",
+        "warning": "建议添加描述性标签"
+      },
+      {
+        "test": "DecisionTree.tsx: 键盘导航",
+        "warning": "建议支持键盘导航"
+      },
+      {
+        "test": "DecisionTree.tsx: 焦点样式",
+        "warning": "建议添加焦点样式"
+      },
+      {
+        "test": "ComparisonTable.tsx: 键盘导航",
+        "warning": "建议支持键盘导航"
+      },
+      {
+        "test": "ComparisonTable.tsx: 焦点样式",
+        "warning": "建议添加焦点样式"
+      }
+    ],
+    "successRate": "98.0"
+  },
+  "errors": [
+    {
+      "test": "翻译文件解析失败",
+      "error": "Unexpected non-whitespace character after JSON at position 141115 (line 4594 column 2)"
+    }
+  ],
+  "warnings": [
+    {
+      "test": "PainAssessmentTool.tsx: 键盘导航",
+      "warning": "建议支持键盘导航"
+    },
+    {
+      "test": "PainAssessmentTool.tsx: 焦点样式",
+      "warning": "建议添加焦点样式"
+    },
+    {
+      "test": "SymptomChecklist.tsx: 标签描述",
+      "warning": "建议添加描述性标签"
+    },
+    {
+      "test": "SymptomChecklist.tsx: 键盘导航",
+      "warning": "建议支持键盘导航"
+    },
+    {
+      "test": "SymptomChecklist.tsx: 焦点样式",
+      "warning": "建议添加焦点样式"
+    },
+    {
+      "test": "DecisionTree.tsx: ARIA属性",
+      "warning": "建议添加ARIA属性"
+    },
+    {
+      "test": "DecisionTree.tsx: 标签描述",
+      "warning": "建议添加描述性标签"
+    },
+    {
+      "test": "DecisionTree.tsx: 键盘导航",
+      "warning": "建议支持键盘导航"
+    },
+    {
+      "test": "DecisionTree.tsx: 焦点样式",
+      "warning": "建议添加焦点样式"
+    },
+    {
+      "test": "ComparisonTable.tsx: 键盘导航",
+      "warning": "建议支持键盘导航"
+    },
+    {
+      "test": "ComparisonTable.tsx: 焦点样式",
+      "warning": "建议添加焦点样式"
+    }
+  ],
+  "recommendations": ["修复失败的测试项目以确保功能正常"]
+}

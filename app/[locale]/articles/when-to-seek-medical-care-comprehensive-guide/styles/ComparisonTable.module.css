@@ -1,0 +1,331 @@
+/* 对比表格样式 - 基于souW1e2设计 */
+
+.container {
+  @apply bg-white rounded-2xl shadow-lg p-6 md:p-8 my-10 border border-gray-100;
+  transition: all 0.3s ease;
+}
+
+.header {
+  @apply mb-6;
+}
+
+.title {
+  @apply text-2xl font-bold text-gray-800 mb-4 flex items-center;
+}
+
+.icon {
+  @apply mr-3 text-indigo-500;
+}
+
+.description {
+  @apply text-gray-600 text-base leading-relaxed;
+}
+
+/* 表格容器 */
+.tableContainer {
+  @apply mb-8;
+}
+
+.tableWrapper {
+  @apply overflow-x-auto rounded-xl border border-gray-200;
+}
+
+.table {
+  @apply w-full min-w-full divide-y divide-gray-200;
+}
+
+/* 表头 */
+.tableHead {
+  @apply bg-gray-50;
+}
+
+.tableHeader {
+  @apply px-6 py-4 text-left text-sm font-semibold text-gray-900 uppercase tracking-wider;
+}
+
+/* 表体 */
+.tableBody {
+  @apply bg-white divide-y divide-gray-200;
+}
+
+.tableRow {
+  @apply hover:bg-gray-50 transition-colors duration-200 cursor-pointer;
+}
+
+.tableRow.highlighted {
+  @apply bg-blue-50 border-l-4 border-blue-500;
+}
+
+.tableRow.expanded {
+  @apply bg-blue-50;
+}
+
+.tableCell {
+  @apply px-6 py-4 whitespace-nowrap text-sm;
+}
+
+/* 条件列 */
+.conditionCell {
+  @apply font-medium text-gray-900;
+}
+
+.conditionContent {
+  @apply flex items-center justify-between;
+}
+
+.conditionText {
+  @apply flex-1;
+}
+
+.expandButton {
+  @apply ml-2 p-1 text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded;
+}
+
+.expandIcon {
+  @apply transition-transform duration-200;
+}
+
+.expandIcon.rotated {
+  @apply transform rotate-180;
+}
+
+/* 单元格内容 */
+.cellContent {
+  @apply flex items-start;
+}
+
+.cellIcon {
+  @apply mr-3 mt-1 flex-shrink-0;
+}
+
+.normalIcon {
+  @apply text-green-500;
+}
+
+.concerningIcon {
+  @apply text-red-500;
+}
+
+.cellText {
+  @apply flex-1;
+}
+
+.cellTitle {
+  @apply font-semibold text-gray-800 mb-1;
+}
+
+.cellDescription {
+  @apply text-gray-600 leading-relaxed;
+}
+
+/* 正常疼痛列 */
+.normalCell {
+  @apply text-green-700 bg-green-50;
+}
+
+/* 令人担忧的疼痛列 */
+.concerningCell {
+  @apply text-red-700 bg-red-50;
+}
+
+/* 建议行动列 */
+.actionCell {
+  @apply text-blue-700 bg-blue-50;
+}
+
+.actionContent {
+  @apply space-y-2;
+}
+
+.actionText {
+  @apply font-medium leading-relaxed;
+}
+
+/* 表格说明 */
+.tableNotes {
+  @apply flex flex-wrap gap-6 mb-6 p-4 bg-gray-50 rounded-lg;
+}
+
+.noteItem {
+  @apply flex items-center text-sm text-gray-700;
+}
+
+.noteItem .normalIcon {
+  @apply mr-2;
+}
+
+.noteItem .concerningIcon {
+  @apply mr-2;
+}
+
+/* 移动端提示 */
+.mobileHint {
+  @apply md:hidden mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg;
+}
+
+.mobileHint p {
+  @apply text-blue-700 text-sm;
+}
+
+/* 重要提醒 */
+.importantReminder {
+  @apply bg-yellow-50 border border-yellow-200 rounded-lg p-6 flex items-start;
+}
+
+.reminderIcon {
+  @apply text-2xl mr-4 flex-shrink-0;
+}
+
+.reminderContent {
+  @apply flex-1;
+}
+
+.reminderTitle {
+  @apply text-lg font-semibold text-yellow-800 mb-2;
+}
+
+.reminderText {
+  @apply text-yellow-700 leading-relaxed;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .container {
+    @apply p-4 mx-2;
+  }
+
+  .title {
+    @apply text-xl;
+  }
+
+  .tableWrapper {
+    @apply -mx-4;
+    border-radius: 0;
+  }
+
+  .table {
+    @apply min-w-[600px]; /* 确保表格有最小宽度 */
+  }
+
+  .tableHeader {
+    @apply px-3 py-3 text-xs;
+    min-width: 120px; /* 确保列有最小宽度 */
+  }
+
+  .tableCell {
+    @apply px-3 py-3;
+    min-width: 120px; /* 确保列有最小宽度 */
+  }
+
+  .cellContent {
+    @apply flex-col;
+  }
+
+  .cellIcon {
+    @apply mr-0 mb-2;
+  }
+
+  .tableNotes {
+    @apply flex-col gap-3;
+  }
+
+  .importantReminder {
+    @apply p-4;
+  }
+
+  /* 添加滚动提示 */
+  .tableWrapper::after {
+    content: "← 滑动查看更多 →";
+    @apply block text-center text-xs text-gray-500 py-2 bg-gray-50;
+  }
+}
+
+/* 超小屏幕 - 卡片布局 */
+@media (max-width: 640px) {
+  .tableWrapper {
+    @apply hidden;
+  }
+
+  .cardLayout {
+    @apply block space-y-4;
+  }
+
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg p-4 shadow-sm;
+  }
+
+  .cardHeader {
+    @apply font-semibold text-gray-900 mb-3 pb-3 border-b border-gray-200;
+  }
+
+  .cardContent {
+    @apply space-y-3;
+  }
+
+  .cardRow {
+    @apply flex flex-col;
+  }
+
+  .cardLabel {
+    @apply text-xs font-medium text-gray-500 uppercase tracking-wider mb-1;
+  }
+
+  .cardValue {
+    @apply text-sm text-gray-900;
+  }
+}
+
+/* 可访问性增强 */
+.tableRow:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+.tableRow.focused {
+  @apply ring-2 ring-blue-500 ring-offset-2 bg-blue-50;
+}
+
+.expandButton:focus {
+  @apply ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+  .container {
+    @apply border-2 border-gray-800;
+  }
+
+  .table {
+    @apply border-2 border-gray-800;
+  }
+
+  .tableRow.highlighted {
+    @apply border-l-8;
+  }
+}
+
+/* 减少动画模式 */
+@media (prefers-reduced-motion: reduce) {
+  .tableRow,
+  .expandIcon {
+    transition: none;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .container {
+    @apply shadow-none border border-gray-400;
+  }
+
+  .expandButton {
+    @apply hidden;
+  }
+
+  .tableRow {
+    @apply bg-white;
+  }
+
+  .mobileHint {
+    @apply hidden;
+  }
+}

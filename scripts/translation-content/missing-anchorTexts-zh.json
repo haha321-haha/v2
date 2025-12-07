@@ -1,0 +1,13 @@
+{
+  "anchorTexts": {
+    "articles": {
+      "more": "更多知识",
+      "stress_management": "学习压力管理",
+      "sleep_quality": "改善睡眠质量"
+    },
+    "solutions": {
+      "workplace": "职场管理方案",
+      "student": "学生生活指南"
+    }
+  }
+}

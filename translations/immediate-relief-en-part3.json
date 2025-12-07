@@ -1,0 +1,51 @@
+{
+  "immediateReliefPage": {
+    "acupressure": {
+      "title": "Acupressure",
+      "subtitle": "Traditional pressure point therapy"
+    },
+    "acupressureDescription": "Acupressure uses finger pressure on specific points to relieve pain. It's based on Holistic Health principles and supported by modern research.",
+
+    "acupressureDetails": {
+      "title": "Key Acupressure Points:",
+      "acupoints": [
+        {
+          "name": "Sanyinjiao (SP6)",
+          "location": "3 finger-widths above inner ankle bone",
+          "method": "Press firmly for 1-2 minutes, circular motion",
+          "benefits": "Regulates menstruation, relieves cramps"
+        },
+        {
+          "name": "Hegu (LI4)",
+          "location": "Between thumb and index finger",
+          "method": "Pinch and massage for 1-2 minutes",
+          "benefits": "General pain relief, reduces tension"
+        },
+        {
+          "name": "Taichong (LV3)",
+          "location": "Top of foot, between big toe and second toe",
+          "method": "Press and hold for 30-60 seconds",
+          "benefits": "Relieves stress, regulates liver qi"
+        }
+      ],
+      "technique": {
+        "title": "Massage Technique Guide:",
+        "pressure": "Apply firm but comfortable pressure",
+        "time": "Hold each point for 1-2 minutes",
+        "frequency": "Repeat 2-3 times daily during menstruation",
+        "precautions": "Avoid SP6 during pregnancy. Stop if pain increases."
+      }
+    },
+
+    "otcOptions": {
+      "title": "Over-the-Counter Pain Relief",
+      "subtitle": "When you need medication"
+    },
+    "otcOptionsDescription": "NSAIDs (Non-Steroidal Anti-Inflammatory Drugs) like ibuprofen are highly effective for menstrual pain. They work by blocking prostaglandin production.",
+
+    "combinationTherapy": {
+      "title": "Combination Therapy",
+      "subtitle": "Maximize relief by combining methods"
+    }
+  }
+}

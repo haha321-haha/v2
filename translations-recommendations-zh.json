@@ -1,0 +1,324 @@
+{
+  "recommendations": {
+    "title": "个性化推荐",
+    "subtitle": "基于您的数据为您推荐",
+    "sectionTitle": "为您推荐",
+    "loading": "正在生成推荐...",
+    "error": "推荐系统暂时不可用,请稍后再试",
+
+    "insights": {
+      "title": "数据洞察",
+      "subtitle": "基于您的数据分析",
+      "painPattern": {
+        "title": "疼痛模式",
+        "increasing": "检测到疼痛呈上升趋势",
+        "decreasing": "疼痛正在改善",
+        "stable": "疼痛保持稳定",
+        "irregular": "疼痛模式不规律"
+      },
+      "efficiencyPattern": {
+        "title": "工作效率",
+        "improving": "工作效率正在提升",
+        "declining": "工作效率有所下降",
+        "stable": "工作效率保持稳定"
+      },
+      "cycleHealth": {
+        "title": "周期健康",
+        "healthy": "周期健康",
+        "irregular": "周期不规律",
+        "needs_attention": "建议医疗咨询"
+      }
+    },
+
+    "categories": {
+      "all": "全部",
+      "pain-relief": "疼痛缓解",
+      "tracking": "数据追踪",
+      "medical": "医疗建议",
+      "work-adjustment": "工作调整",
+      "nutrition": "营养建议",
+      "natural-therapy": "自然疗法",
+      "assessment": "评估工具",
+      "scenario": "场景方案",
+      "mental-health": "心理健康",
+      "emergency": "应急处理"
+    },
+
+    "types": {
+      "article": "文章",
+      "tool": "工具",
+      "scenario": "场景方案",
+      "tip": "实用建议",
+      "action": "行动建议"
+    },
+
+    "priority": {
+      "high": "重要",
+      "medium": "建议",
+      "low": "可选",
+      "urgent": "紧急"
+    },
+
+    "actions": {
+      "dismiss": "忽略",
+      "save": "收藏",
+      "rate": "评分",
+      "click": "查看详情",
+      "loadMore": "加载更多推荐",
+      "refresh": "刷新推荐",
+      "viewAll": "查看全部",
+      "undoDismiss": "撤销忽略"
+    },
+
+    "reasons": {
+      "prefix": "推荐理由:",
+      "highPainLevel": "您当前疼痛等级较高({level}/10)",
+      "moderatePainLevel": "您当前疼痛等级为中等({level}/10)",
+      "lowPainLevel": "您的疼痛等级较低({level}/10)",
+      "painTrendIncreasing": "检测到疼痛呈上升趋势",
+      "painTrendDecreasing": "疼痛正在改善",
+      "inMenstrualPhase": "您正处于月经期",
+      "inFollicularPhase": "您正处于卵泡期",
+      "inOvulatoryPhase": "您正处于排卵期",
+      "inLutealPhase": "您正处于黄体期",
+      "lowEfficiency": "您的工作效率较低({efficiency}%)",
+      "moderateEfficiency": "您的工作效率为中等({efficiency}%)",
+      "irregularCycle": "检测到周期不规律",
+      "regularCycle": "您的周期规律",
+      "multipleReasons": "，",
+      "suffix": "，因此推荐此内容。",
+      "default": "基于您的数据模式，推荐此内容。"
+    },
+
+    "empty": {
+      "title": "暂无推荐",
+      "description": "完善更多数据后，我们将为您提供个性化推荐",
+      "action": "去记录数据",
+      "noData": "数据不足，无法生成推荐",
+      "insufficientData": "请至少记录3个周期的数据以获得更精准的推荐"
+    },
+
+    "dataQuality": {
+      "title": "数据质量提示",
+      "low": "数据量不足，推荐可能不够准确。建议记录至少3个周期。",
+      "medium": "数据质量良好，继续记录可获得更精准的推荐。",
+      "high": "数据质量优秀，推荐已高度个性化。",
+      "excellent": "数据质量极佳，推荐非常精准！",
+      "completeness": "数据完整度: {percentage}%",
+      "recordCount": "已记录 {count} 个周期",
+      "suggestion": "建议继续记录数据以提升推荐准确度"
+    },
+
+    "feedback": {
+      "title": "这个推荐有帮助吗？",
+      "helpful": "有帮助",
+      "notHelpful": "没有帮助",
+      "thankYou": "感谢您的反馈！",
+      "ratePrompt": "请为这个推荐评分",
+      "submitRating": "提交评分",
+      "dismissReason": "为什么要忽略这个推荐？",
+      "dismissReasons": {
+        "notRelevant": "不相关",
+        "alreadyKnow": "已经知道了",
+        "notInterested": "不感兴趣",
+        "other": "其他原因"
+      }
+    },
+
+    "filters": {
+      "title": "筛选推荐",
+      "showAll": "显示全部",
+      "byCategory": "按类别",
+      "byPriority": "按优先级",
+      "byType": "按类型",
+      "sortBy": "排序方式",
+      "sortByRelevance": "按相关性",
+      "sortByPriority": "按优先级",
+      "sortByTime": "按时间"
+    },
+
+    "summary": {
+      "totalRecommendations": "共 {count} 个推荐",
+      "highPriorityCount": "{count} 个高优先级推荐",
+      "categoriesCount": "{count} 个类别",
+      "newRecommendations": "{count} 个新推荐"
+    },
+
+    "content": {
+      "articles": {
+        "dysmenorrheaGuide": {
+          "title": "痛经综合医学指南",
+          "description": "全面的痛经医学知识和管理策略",
+          "reason": "适合了解痛经的医学原因和系统管理方法"
+        },
+        "naturalTherapies": {
+          "title": "自然疗法指南",
+          "description": "整体健康和自然缓解方法",
+          "reason": "适合寻求自然、非药物缓解方案"
+        },
+        "medicalCareGuide": {
+          "title": "就医指南",
+          "description": "何时需要就医及如何准备",
+          "reason": "适合疼痛严重或持续恶化时参考"
+        },
+        "immediateRelief": {
+          "title": "即时缓解方法",
+          "description": "快速缓解痛经的实用技巧",
+          "reason": "适合需要立即缓解疼痛时使用"
+        },
+        "medicationGuide": {
+          "title": "用药指南",
+          "description": "安全有效的痛经用药知识",
+          "reason": "适合需要了解正确用药方法"
+        },
+        "teenHealth": {
+          "title": "青少年健康指南",
+          "description": "针对青少年的经期健康知识",
+          "reason": "适合青少年了解经期管理"
+        },
+        "understandingPain": {
+          "title": "理解痛经",
+          "description": "痛经的成因和类型",
+          "reason": "适合想深入了解痛经的原理"
+        }
+      },
+
+      "tools": {
+        "painTracker": {
+          "title": "疼痛追踪工具",
+          "description": "记录和分析疼痛模式",
+          "reason": "适合需要系统追踪疼痛变化"
+        },
+        "symptomAssessment": {
+          "title": "症状评估工具",
+          "description": "综合症状评估和健康建议",
+          "reason": "适合需要全面评估健康状况"
+        },
+        "cycleTracker": {
+          "title": "周期追踪器",
+          "description": "智能月经周期记录和预测",
+          "reason": "适合需要预测周期和管理计划"
+        },
+        "constitutionTest": {
+          "title": "整体健康体质测试",
+          "description": "整体健康体质评估和调理建议",
+          "reason": "适合寻求整体健康调理方案"
+        },
+        "nutritionGenerator": {
+          "title": "营养推荐生成器",
+          "description": "个性化营养方案推荐",
+          "reason": "适合需要饮食调理建议"
+        },
+        "impactCalculator": {
+          "title": "痛经影响计算器",
+          "description": "评估痛经对工作生活的影响",
+          "reason": "适合需要量化评估痛经影响"
+        },
+        "stressManagement": {
+          "title": "压力管理工具",
+          "description": "压力评估和缓解建议",
+          "reason": "适合压力大或情绪波动明显时使用"
+        },
+        "workplaceWellness": {
+          "title": "职场健康管理",
+          "description": "职场环境下的经期健康管理",
+          "reason": "适合需要在工作中管理经期健康"
+        }
+      },
+
+      "scenarios": {
+        "office": {
+          "title": "办公室场景方案",
+          "description": "办公环境下的经期管理策略",
+          "reason": "适合办公室工作者"
+        },
+        "commute": {
+          "title": "通勤场景方案",
+          "description": "通勤时的经期应对方法",
+          "reason": "适合长时间通勤者"
+        },
+        "exercise": {
+          "title": "运动场景方案",
+          "description": "运动时的经期管理",
+          "reason": "适合经期需要运动者"
+        },
+        "social": {
+          "title": "社交场景方案",
+          "description": "社交活动中的经期应对",
+          "reason": "适合有社交活动安排时"
+        },
+        "sleep": {
+          "title": "睡眠场景方案",
+          "description": "改善经期睡眠质量",
+          "reason": "适合经期睡眠质量差时"
+        },
+        "emergencyKit": {
+          "title": "应急包指南",
+          "description": "痛经应急物品准备",
+          "reason": "适合需要外出或旅行时准备"
+        },
+        "partnerCommunication": {
+          "title": "伴侣沟通指南",
+          "description": "如何与伴侣沟通经期需求",
+          "reason": "适合需要伴侣理解和支持时"
+        },
+        "lifeStages": {
+          "title": "人生阶段指南",
+          "description": "不同人生阶段的经期管理",
+          "reason": "适合了解各阶段经期变化"
+        }
+      },
+
+      "tips": {
+        "heatTherapy": {
+          "title": "热敷缓解法",
+          "description": "使用热敷缓解痛经",
+          "reason": "适合需要快速缓解疼痛"
+        },
+        "breathing": {
+          "title": "呼吸放松练习",
+          "description": "通过呼吸缓解疼痛和压力",
+          "reason": "适合需要放松和缓解紧张"
+        },
+        "posture": {
+          "title": "缓解疼痛的姿势",
+          "description": "有助于缓解痛经的身体姿势",
+          "reason": "适合需要立即缓解不适"
+        },
+        "hydration": {
+          "title": "正确补水",
+          "description": "经期补水的重要性和方法",
+          "reason": "适合需要改善整体状态"
+        },
+        "dietTips": {
+          "title": "饮食建议",
+          "description": "有助于缓解痛经的饮食调整",
+          "reason": "适合通过饮食改善症状"
+        }
+      },
+
+      "actions": {
+        "medicalConsultation": {
+          "title": "建议医疗咨询",
+          "description": "您的症状可能需要专业医生评估",
+          "reason": "检测到异常数据或严重症状"
+        },
+        "recordData": {
+          "title": "记录今日数据",
+          "description": "继续记录数据以获得更精准的推荐",
+          "reason": "数据记录有助于趋势分析"
+        },
+        "updatePreferences": {
+          "title": "更新健康偏好",
+          "description": "完善个人健康偏好设置",
+          "reason": "更准确的偏好设置可提升推荐质量"
+        },
+        "exportData": {
+          "title": "导出健康数据",
+          "description": "备份或分享您的健康数据",
+          "reason": "建议定期备份重要数据"
+        }
+      }
+    }
+  }
+}

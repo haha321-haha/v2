@@ -1,0 +1,182 @@
+[
+  {
+    "url": "http://localhost:3001/zh",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh-2025_10_05_14_40_25.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh-2025_10_05_14_40_25.report.json",
+    "summary": {
+      "performance": 0.45,
+      "accessibility": 0.95,
+      "best-practices": 0.96,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh-2025_10_05_14_41_20.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh-2025_10_05_14_41_20.report.json",
+    "summary": {
+      "performance": 0.41,
+      "accessibility": 0.95,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/en",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en-2025_10_05_14_41_36.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en-2025_10_05_14_41_36.report.json",
+    "summary": {
+      "performance": 0.36,
+      "accessibility": 0.95,
+      "best-practices": 0.75,
+      "seo": 0.82
+    }
+  },
+  {
+    "url": "http://localhost:3001/en",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en-2025_10_05_14_41_52.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en-2025_10_05_14_41_52.report.json",
+    "summary": {
+      "performance": 0.36,
+      "accessibility": 0.95,
+      "best-practices": 0.75,
+      "seo": 0.82
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh/interactive-tools/symptom-assessment",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_interactive_tools_symptom_assessment-2025_10_05_14_42_24.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_interactive_tools_symptom_assessment-2025_10_05_14_42_24.report.json",
+    "summary": {
+      "performance": 0.69,
+      "accessibility": 0.96,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh/interactive-tools/symptom-assessment",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_interactive_tools_symptom_assessment-2025_10_05_14_42_42.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_interactive_tools_symptom_assessment-2025_10_05_14_42_42.report.json",
+    "summary": {
+      "performance": 0.4,
+      "accessibility": 0.96,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/en/interactive-tools/symptom-assessment",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en_interactive_tools_symptom_assessment-2025_10_05_14_43_31.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en_interactive_tools_symptom_assessment-2025_10_05_14_43_31.report.json",
+    "summary": {
+      "performance": 0.44,
+      "accessibility": 0.96,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/en/interactive-tools/symptom-assessment",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en_interactive_tools_symptom_assessment-2025_10_05_14_43_47.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en_interactive_tools_symptom_assessment-2025_10_05_14_43_47.report.json",
+    "summary": {
+      "performance": 0.4,
+      "accessibility": 0.96,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh/articles/5-minute-period-pain-relief",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_articles_5_minute_period_pain_relief-2025_10_05_14_44_04.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_articles_5_minute_period_pain_relief-2025_10_05_14_44_04.report.json",
+    "summary": {
+      "performance": 0.69,
+      "accessibility": 0.88,
+      "best-practices": 0.96,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh/articles/5-minute-period-pain-relief",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_articles_5_minute_period_pain_relief-2025_10_05_14_44_27.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_articles_5_minute_period_pain_relief-2025_10_05_14_44_27.report.json",
+    "summary": {
+      "performance": 0.42,
+      "accessibility": 0.88,
+      "best-practices": 0.96,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh-2025_10_05_14_40_53.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh-2025_10_05_14_40_53.report.json",
+    "summary": {
+      "performance": 0.37,
+      "accessibility": 0.95,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/en",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en-2025_10_05_14_42_08.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en-2025_10_05_14_42_08.report.json",
+    "summary": {
+      "performance": 0.36,
+      "accessibility": 0.95,
+      "best-practices": 0.75,
+      "seo": 0.82
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh/interactive-tools/symptom-assessment",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_interactive_tools_symptom_assessment-2025_10_05_14_42_57.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_interactive_tools_symptom_assessment-2025_10_05_14_42_57.report.json",
+    "summary": {
+      "performance": 0.4,
+      "accessibility": 0.96,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/en/interactive-tools/symptom-assessment",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en_interactive_tools_symptom_assessment-2025_10_05_14_43_14.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-en_interactive_tools_symptom_assessment-2025_10_05_14_43_14.report.json",
+    "summary": {
+      "performance": 0.4,
+      "accessibility": 0.96,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh/articles/5-minute-period-pain-relief",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_articles_5_minute_period_pain_relief-2025_10_05_14_44_52.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/mobile/localhost-zh_articles_5_minute_period_pain_relief-2025_10_05_14_44_52.report.json",
+    "summary": {
+      "performance": 0.6,
+      "accessibility": 0.88,
+      "best-practices": 0.75,
+      "seo": 0.91
+    }
+  }
+]

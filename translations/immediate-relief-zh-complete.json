@@ -1,0 +1,69 @@
+{
+  "immediateReliefPage": {
+    "title": "痛经立即缓解指南",
+    "description": "快速有效的痛经缓解方法。基于科学证据的技巧，立即可用。",
+
+    "introTitle": "当你需要立即缓解时",
+    "introText": "痛经可能突然发作且剧烈。无论你在家、工作还是外出，这些基于证据的方法都能提供快速缓解。",
+    "introText2": "以下每种方法都包含科学参数和实用指导，帮助你找到最适合自己身体的方法。",
+
+    "typesTitle": "立即缓解方法",
+
+    "heatTherapy": {
+      "title": "热敷疗法",
+      "subtitle": "快速放松肌肉"
+    },
+    "heatTherapyDescription": "热敷是最有效的立即缓解方法之一。它通过增加血液流动、放松子宫肌肉和阻断疼痛信号来发挥作用。",
+
+    "parameters": {
+      "scientificParameters": "科学参数：",
+      "heatTherapy": {
+        "temperature": "40-45°C",
+        "duration": "每次15-20分钟",
+        "frequency": "根据需要每2-3小时一次",
+        "timing": "疼痛初现时开始",
+        "mechanism": "增加血流量，放松平滑肌，激活热感受器阻断疼痛信号"
+      },
+      "breathing": {
+        "title": "呼吸练习参数：",
+        "technique": "4-7-8呼吸法（吸气4秒，屏息7秒，呼气8秒）",
+        "cycles": "每次5-10个循环",
+        "frequency": "每1-2小时或根据需要",
+        "timing": "任何时候，特别是疼痛加剧时",
+        "mechanism": "激活副交感神经系统，降低压力激素，促进肌肉放松"
+      },
+      "nsaid": {
+        "title": "非甾体抗炎药参数：",
+        "dosage": "遵循包装说明（通常为200-400mg布洛芬）",
+        "timing": "疼痛初现时服用，随餐服用",
+        "mechanism": "阻断前列腺素生成，减少炎症和疼痛",
+        "contraindications": "如有胃溃疡、肾脏问题或对NSAIDs过敏请避免使用"
+      }
+    },
+
+    "labels": {
+      "temperature": "温度：",
+      "duration": "时长：",
+      "frequency": "频率：",
+      "timing": "时机：",
+      "mechanism": "机制：",
+      "technique": "技巧：",
+      "cycles": "循环：",
+      "dosage": "剂量：",
+      "contraindications": "禁忌症：",
+      "location": "位置：",
+      "method": "方法："
+    },
+
+    "actions": {
+      "learnMore": "了解更多 →",
+      "startPractice": "开始练习 →"
+    },
+
+    "gentleMovement": {
+      "title": "轻柔运动与瑜伽",
+      "subtitle": "通过运动自然缓解疼痛"
+    },
+    "gentleMovementDescription": "轻柔的伸展和瑜伽体式可以通过改善循环、释放肌肉紧张和促进放松来缓解痛经。"
+  }
+}

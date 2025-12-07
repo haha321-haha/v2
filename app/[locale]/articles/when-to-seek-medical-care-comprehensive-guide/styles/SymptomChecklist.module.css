@@ -1,0 +1,466 @@
+/* 症状检查清单样式 - 清理版本，统一使用原生CSS */
+
+.container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 80rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+.header {
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #10b981;
+  width: 1rem;
+  height: 1rem;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.instructions {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.instructions p {
+  color: #1e40af;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* 症状分组 */
+.symptomGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.symptomGroup {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.groupIcon {
+  margin-right: 0.5rem;
+}
+
+.groupTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  flex: 1;
+}
+
+.groupBadge {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+/* 症状列表 */
+.symptomList {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #f3f4f6;
+}
+
+.symptomItem {
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  /* 移动端触摸优化 */
+  min-height: 44px;
+}
+
+.symptomItem:hover {
+  background-color: #f9fafb;
+}
+
+.symptomItem.checked {
+  background-color: #eff6ff;
+  border-left: 4px solid #3b82f6;
+}
+
+.symptomLabel {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  width: 100%;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  color: #2563eb;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+  /* 移动端触摸优化 - 适度调整 */
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+}
+
+.checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.symptomContent {
+  flex: 1;
+}
+
+.symptomHeader {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.symptomIcon {
+  font-size: 1.125rem;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.symptomText {
+  color: #1f2937;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.symptomDescription {
+  color: #6b7280;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-left: 1.5rem;
+}
+
+/* 操作按钮 */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .actions {
+    flex-direction: row;
+  }
+}
+
+.analyzeButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 移动端触摸优化 */
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.analyzeButton:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.analyzeButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.resetButton {
+  background-color: #e5e7eb;
+  color: #374151;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* 移动端触摸优化 */
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.resetButton:hover {
+  background-color: #d1d5db;
+}
+
+.resetButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.5);
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  .symptomItem {
+    padding: 0.75rem;
+    min-height: 60px; /* 增加移动端触摸区域 */
+  }
+
+  .symptomLabel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkbox {
+    margin-bottom: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+  }
+
+  .symptomContent {
+    width: 100%;
+  }
+
+  .symptomText {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .symptomDescription {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    margin-left: 0;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .analyzeButton,
+  .resetButton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .results {
+    padding: 0.75rem;
+  }
+
+  .resultCard {
+    padding: 0.75rem;
+  }
+
+  .emergencyAlert {
+    padding: 0.5rem;
+  }
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+  .container {
+    border: 2px solid #1f2937;
+  }
+
+  .checkbox {
+    border: 2px solid #1f2937;
+  }
+
+  .symptomItem.checked {
+    border-left: 4px solid #1f2937;
+  }
+}
+
+/* 症状分析结果样式 */
+.results {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.resultsHeader {
+  margin-bottom: 0.75rem;
+}
+
+.resultsTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.resultCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.06);
+}
+
+.resultHeader {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.resultIcon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.resultInfo {
+  flex: 1;
+}
+
+.resultRiskLevel {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.resultUrgency {
+  font-size: 0.875rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.resultContent {
+  margin-bottom: 0.75rem;
+}
+
+.resultDescription {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #374151;
+  margin: 0 0 0.75rem 0;
+}
+
+.recommendations {
+  margin-top: 0.75rem;
+}
+
+.recommendationsTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+}
+
+.recommendationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.recommendationItem {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.emergencyAlert {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.75rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.emergencyIcon {
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.emergencyContent {
+  flex: 1;
+}
+
+.emergencyContent strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #991b1b;
+  margin-bottom: 0.25rem;
+}
+
+.emergencyContent p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #b91c1c;
+  margin: 0;
+}
+
+/* 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+  .symptomItem,
+  .analyzeButton,
+  .resetButton {
+    transition: none;
+  }
+}

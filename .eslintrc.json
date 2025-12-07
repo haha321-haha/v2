@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "ignorePatterns": [
+    "**/__tests__/**",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/examples/**",
+    "**/*example*.ts",
+    "**/*example*.tsx",
+    "**/components/landing/**",
+    "next-env.d.ts"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "warn"
+  }
+}

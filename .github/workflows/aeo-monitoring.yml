@@ -1,0 +1,180 @@
+name: AEO Monitoring and Validation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'app/**/page.tsx'
+      - 'lib/seo/**'
+      - 'scripts/log-schema-validation.js'
+      - 'scripts/sync-to-aeo-monitoring.js'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'app/**/page.tsx'
+      - 'lib/seo/**'
+      - 'scripts/log-schema-validation.js'
+      - 'scripts/sync-to-aeo-monitoring.js'
+  schedule:
+    # 每天UTC 02:00运行 (北京时间 10:00)
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  validate-schemas:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      checks: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Schema Validation
+        id: validate-schema
+        run: |
+          echo "Running AEO schema validation..."
+
+          # 运行验证脚本
+          npm run aeo:validate
+
+          # 读取趋势数据
+          if [ -f "logs/schema-validation-trend.json" ]; then
+            AVERAGE_SCORE=$(cat logs/schema-validation-trend.json | jq -r '.averageScore')
+            TOTAL_PAGES=$(cat logs/schema-validation-trend.json | jq -r '.totalPages')
+            PASS_RATE=$(echo "scale=1; $(cat logs/schema-validation-trend.json | jq -r '.passedPages') * 100 / $TOTAL_PAGES" | bc)
+
+            echo "average_score=$AVERAGE_SCORE" >> $GITHUB_OUTPUT
+            echo "total_pages=$TOTAL_PAGES" >> $GITHUB_OUTPUT
+            echo "pass_rate=$PASS_RATE" >> $GITHUB_OUTPUT
+
+            echo "## AEO 验证结果" >> $GITHUB_STEP_SUMMARY
+            echo "- 平均分数: $AVERAGE_SCORE" >> $GITHUB_STEP_SUMMARY
+            echo "- 总页面数: $TOTAL_PAGES" >> $GITHUB_STEP_SUMMARY
+            echo "- 通过率: $PASS_RATE%" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "average_score=0" >> $GITHUB_OUTPUT
+            echo "total_pages=0" >> $GITHUB_OUTPUT
+            echo "pass_rate=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate AEO Monitoring Report
+        id: generate-report
+        run: |
+          echo "Generating AEO monitoring report..."
+          npm run aeo:sync
+
+          # 检查报告是否生成
+          if [ -f "reports/AEO-Monitoring-Report.html" ]; then
+            echo "report_path=reports/AEO-Monitoring-Report.html" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload Validation Logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: aeo-validation-logs-${{ github.run_number }}
+          path: |
+            CI_WORKFLOW_VERIFICATION_REPORT.md
+            logs/schema-validation.log
+            logs/schema-validation-trend.json
+          retention-days: 30
+
+      - name: Upload AEO Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: aeo-monitoring-report-${{ github.run_number }}
+          path: reports/AEO-Monitoring-Report.html
+          retention-days: 30
+
+      - name: Comment PR with Results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // 读取趋势数据
+            let trendData = null;
+            if (fs.existsSync('logs/schema-validation-trend.json')) {
+              trendData = JSON.parse(fs.readFileSync('logs/schema-validation-trend.json', 'utf8'));
+            }
+
+            if (trendData) {
+              const { averageScore, totalPages, passedPages, warningPages, failedPages, commonIssues } = trendData;
+              const passRate = totalPages > 0 ? (passedPages / totalPages * 100).toFixed(1) : '0';
+
+              // 构建评论内容
+              let comment = '## 🔍 AEO 验证报告\n\n';
+              comment += `### 📊 整体状态\n`;
+              comment += `- **平均分数**: ${averageScore.toFixed(1)}\n`;
+              comment += `- **总页面数**: ${totalPages}\n`;
+              comment += `- **通过率**: ${passRate}%\n\n`;
+
+              comment += `### 📈 详细统计\n`;
+              comment += `- ✅ **通过**: ${passedPages} 页面\n`;
+              comment += `- ⚠️ **警告**: ${warningPages} 页面\n`;
+              comment += `- ❌ **失败**: ${failedPages} 页面\n\n`;
+
+              if (commonIssues && commonIssues.length > 0) {
+                comment += `### 🔧 常见问题\n`;
+                commonIssues.slice(0, 3).forEach((issue, index) => {
+                  comment += `${index + 1}. **${issue.issue}** (${issue.count}次)\n`;
+                });
+                comment += '\n';
+              }
+
+              // 根据分数添加建议
+              if (averageScore >= 95) {
+                comment += '🎉 **状态**: 优秀！AEO 实施质量很高。\n';
+              } else if (averageScore >= 80) {
+                comment += '⚠️ **状态**: 良好，但有改进空间。建议关注常见问题。\n';
+              } else {
+                comment += '❌ **状态**: 需要改进。请优先修复高频率问题。\n';
+              }
+
+              comment += '\n---\n';
+              comment += '*此评论由 AEO 监控系统自动生成*';
+
+              // 创建或更新评论
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            }
+
+      - name: Set Status Badge
+        run: |
+          # 根据平均分数设置状态
+          AVERAGE_SCORE="${{ steps.validate-schema.outputs.average_score }}"
+          STATUS_COLOR="red"
+          STATUS_TEXT="Failed"
+
+          if (( $(echo "$AVERAGE_SCORE >= 95" | bc -l) )); then
+            STATUS_COLOR="brightgreen"
+            STATUS_TEXT="Excellent"
+          elif (( $(echo "$AVERAGE_SCORE >= 80" | bc -l) )); then
+            STATUS_COLOR="orange"
+            STATUS_TEXT="Good"
+          elif (( $(echo "$AVERAGE_SCORE >= 0" | bc -l) )); then
+            STATUS_COLOR="red"
+            STATUS_TEXT="Needs Work"
+          fi
+
+          # 创建状态徽章
+          echo "AEO validation status: $STATUS_TEXT (${AVERAGE_SCORE} points)"
+          echo "::notice::AEO validation status: $STATUS_TEXT (${AVERAGE_SCORE} points)"

@@ -1,0 +1,320 @@
+# 排除文档和脚本文件
+# 排除所有 .md 文件，但明确包含必需的文件
+*.md
+# 项目必需的核心文件
+!README.md
+# 网站核心内容 - 文章内容（必需）
+!content/articles/**/*.md
+# 重要项目文档（必需）
+!docs/DEPLOYMENT_GUIDE.md
+!docs/DEVELOPMENT_GUIDE.md
+!docs/DATABASE_SETUP_GUIDE.md
+!docs/GEO_AEO_INTEGRATION_GUIDE.md
+!docs/GEO_AEO_API_DOCUMENTATION.md
+*.sh
+*.py
+# 排除测试和研究相关目录
+app/[locale]/email-marketing-test/
+# 排除所有JS文件，但保留必需的配置文件和构建脚本
+*.js
+# 必需配置文件（项目构建和运行必需）
+!next.config.js
+!tailwind.config.js
+!postcss.config.js
+!jest.config.js
+# 构建脚本
+!scripts/build-articles-index.js
+!scripts/build-articles-index-wrapper.js
+!scripts/verify-translation-sync.js
+!scripts/generate-translation-types.js
+!scripts/check-translation-sync.js
+!scripts/generate-validation-report.js
+!scripts/check-client-components.js
+!scripts/detect-hardcode.js
+!scripts/detect-stress-management-hardcode.js
+!scripts/detect-seo-critical-hardcode.js
+!scripts/setup-git-hooks.sh
+!scripts/setup-pre-commit.sh
+*.json.backup.*
+*.backup.*
+*.debug
+*.test.*
+
+# 排除备份目录
+backup/
+hub-latest-main/
+hub-latest-main 2/
+
+# 排除临时文件
+*.tmp
+*.temp
+*.log
+*.cache
+
+# 排除开发工具文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 排除系统文件
+.DS_Store
+Thumbs.db
+
+# 排除Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 排除构建输出
+.next/
+out/
+dist/
+build/
+
+# 排除环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 排除测试覆盖率
+coverage/
+.nyc_output/
+
+# 排除其他不需要的文件
+*.orig
+*.rej
+
+# 排除特定的大型文件
+*.csv
+*.xlsx
+# 排除PDF文件，但保留 public/downloads 目录下的PDF文件
+*.pdf
+!public/downloads/*.pdf
+*.zip
+*.tar.gz
+
+# 排除IDE配置文件
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+
+# 排除操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 排除日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 排除运行时数据
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# 排除覆盖率目录
+lib-cov/
+coverage/
+.nyc_output/
+.coverage/
+
+# 排除依赖目录
+node_modules/
+jspm_packages/
+
+# 排除TypeScript缓存
+*.tsbuildinfo
+
+# 排除可选的npm缓存目录
+.npm
+
+# 排除可选的eslint缓存
+.eslintcache
+
+# 排除Microbundle缓存
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# 排除可选的REPL历史
+.node_repl_history
+
+# 排除输出的npm包
+*.tgz
+
+# 排除Yarn完整性文件
+.yarn-integrity
+
+# 排除dotenv环境变量文件
+.env
+.env.test
+.env.production
+
+# 排除parcel-bundler缓存
+.cache
+.parcel-cache
+
+# 排除Next.js构建输出
+.next/
+
+# 排除Nuxt.js构建/生成输出
+.nuxt
+dist
+
+# 排除Gatsby文件
+.cache/
+
+# 排除Storybook构建输出
+.out
+.storybook-out
+
+# 排除Temporary folders
+tmp/
+temp/
+
+# 排除编辑器目录和文件
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 翻译键修复相关
+reports/
+test-results/
+structure-consistency-report-*.json
+performance-test-report.json
+fix-monitor-*.json
+structure-fix-progress.json
+chain-reaction-monitor.log
+namespace-dependencies.dot
+
+# 备份文件
+*.backup
+messages/*.backup*
+
+# 确保翻译文件不被忽略（这是项目必需的）
+!messages/en.json
+!messages/zh.json
+
+# 临时文件
+*.tmp
+*.temp
+scripts/metadata-fix-commands.json
+# 压力管理相关文件现在需要上传到GitHub（已移除排除规则）
+参考代码/
+女性经期管理营销推广/
+修复建议文档/
+backups/
+seo-validation-report.json
+.vercel
+方案a.html
+方案b.html
+方案b.css
+
+# 排除文档和临时文件
+变现回路设计文件夹文档/
+百度文科数据分析/
+变现回路设计/
+*.ini.txt
+## 🎯 终极解决方案*
+AEO_*.md
+变现回路设计*.md
+
+# ESLint 报告文件
+*-eslint-report.txt
+interactive-tools-*-eslint-report.txt
+
+# robots.txt 相关文件
+robots-*.txt
+robots.txt-update.txt
+
+# 翻译检查报告文件
+translation-check-*.txt
+
+# 其他 ESLint 报告文件
+scenario-solutions-eslint-report.txt
+shared-*-eslint-report.txt
+
+# HTML 方案文件
+方案*.html
+
+# 代码质量报告文件
+code-quality-fix-*.md
+
+# 开发日志文件
+dev-logs*.txt
+
+# HTML 模板文件
+canonical-tags-template.html
+
+# periodhub 重复目录
+periodhub/
+periodhub (1)/
+periodhub (2)/
+
+# 占位符文件
+unfixed-placeholders.txt
+
+# hub-latest-main 重复目录
+# ⚠️ 警告：此规则会匹配所有 hub-latest-main 开头的路径
+# 需要明确排除项目必需的文件
+hub-latest-main*/
+hub-latest-main 2/
+hub-latest-main 3/
+
+# ✅ 明确排除当前项目目录下的翻译文件（项目必需的核心文件）
+# 从 Git 仓库根目录的角度，需要包含完整路径
+!**/hub-latest-main/messages/
+!**/hub-latest-main/messages/*.json
+!messages/en.json
+!messages/zh.json
+
+# recovered 目录
+recovered/
+
+# SEO 文档文件
+Claude code -seo优化.docx
+Period Hub seo专项行动计划.docx
+
+# HTML 方案文件（补充）
+b方案v2.html
+方案bv1.html
+
+# HTML 方案文件（补充 - b00.html）
+b00.html
+
+# 恢复的 JSON 文件
+*.recovered
+*.recovered_v2
+*.smart_recovered
+
+# ZIP 压缩文件
+*.zip
+hub-latest-main.zip
+
+# 大文件（Markdown 文档）
+4cursor_*.md
+cursor_*.md
+eslint-baseline.json
+
+# P2 代码质量执行计划文档
+p2-code-quality-execution-plan.md

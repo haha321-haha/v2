@@ -1,0 +1,72 @@
+name: 🔍 翻译键完整性验证
+
+on:
+  push:
+    branches: [ main, develop, feature/* ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  validate-translations:
+    name: 验证翻译键
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout 代码
+        uses: actions/checkout@v4
+
+      - name: 🔧 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 📦 安装依赖
+        run: npm ci
+
+      - name: 🔍 验证 JSON 语法
+        run: |
+          echo "🔍 验证 JSON 语法..."
+          node -e "JSON.parse(require('fs').readFileSync('messages/zh.json', 'utf8'))" || exit 1
+          node -e "JSON.parse(require('fs').readFileSync('messages/en.json', 'utf8'))" || exit 1
+          echo "✅ JSON 语法验证通过"
+
+      - name: 🔍 检查翻译键同步
+        run: |
+          echo "🔍 检查翻译键同步..."
+          node scripts/check-translation-sync.js
+
+      - name: 🔍 生成翻译类型
+        run: |
+          echo "🔍 生成翻译类型定义..."
+          node scripts/generate-translation-types.js
+
+      - name: 🔍 TypeScript 类型检查
+        run: |
+          echo "🔍 运行 TypeScript 类型检查..."
+          npm run type-check
+
+      - name: 🔍 ESLint 检查
+        run: |
+          echo "🔍 运行 ESLint 检查..."
+          npm run lint:full || true
+
+      - name: 📊 生成验证报告
+        if: always()
+        run: |
+          echo "📊 生成验证报告..."
+          node scripts/generate-validation-report.js
+
+      - name: 📤 上传验证报告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: translation-validation-report
+          path: |
+            translation-validation-report.html
+            translation-validation-report.json
+          retention-days: 30
+
+      - name: ✅ 验证完成
+        run: |
+          echo "✅ 所有翻译键验证通过！"

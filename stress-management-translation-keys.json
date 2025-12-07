@@ -1,0 +1,164 @@
+{
+  "stressManagement": {
+    "title": "压力管理",
+    "description": "科学管理经期压力，提升生活质量",
+    "pageTitle": "压力管理 - PeriodHub",
+    "subtitle": "帮助您有效管理经期相关的压力和焦虑",
+    "startAssessment": "开始评估",
+    "learnMore": "了解更多",
+    "backToTools": "返回工具",
+    "next": "下一步",
+    "previous": "上一步",
+    "complete": "完成",
+    "restart": "重新开始",
+    "save": "保存",
+    "cancel": "取消",
+    "continue": "继续",
+    "skip": "跳过",
+    "stressLevels": {
+      "low": "轻度",
+      "moderate": "中度",
+      "high": "高度",
+      "severe": "严重",
+      "lowDesc": "压力水平较低，保持良好的状态",
+      "moderateDesc": "适度的压力，需要关注和调节",
+      "highDesc": "压力较高，建议采取缓解措施",
+      "severeDesc": "压力严重，需要专业帮助"
+    },
+    "assessment": {
+      "title": "压力评估",
+      "subtitle": "通过科学的评估了解您的压力状况",
+      "instructions": "请根据您的实际情况选择最符合的答案",
+      "questions": {
+        "q1": {
+          "question": "您最近是否经常感到焦虑或紧张？",
+          "options": ["从不", "偶尔", "经常", "总是"]
+        },
+        "q2": {
+          "question": "您的睡眠质量如何？",
+          "options": ["很好", "一般", "较差", "很差"]
+        },
+        "q3": {
+          "question": "您是否经常感到疲劳或精力不足？",
+          "options": ["从不", "偶尔", "经常", "总是"]
+        },
+        "q4": {
+          "question": "您是否容易感到烦躁或易怒？",
+          "options": ["从不", "偶尔", "经常", "总是"]
+        },
+        "q5": {
+          "question": "您是否经常担心经期相关的问题？",
+          "options": ["从不", "偶尔", "经常", "总是"]
+        }
+      },
+      "results": {
+        "title": "评估结果",
+        "yourLevel": "您的压力水平",
+        "recommendations": "个性化建议",
+        "tips": "缓解技巧"
+      }
+    },
+    "techniques": {
+      "title": "放松技巧",
+      "subtitle": "科学的放松方法帮助您缓解压力",
+      "breathing": {
+        "title": "呼吸练习",
+        "description": "通过调节呼吸来放松身心",
+        "start": "开始练习",
+        "instructions": "跟随指导进行深呼吸练习"
+      },
+      "meditation": {
+        "title": "冥想练习",
+        "description": "通过冥想达到内心的平静",
+        "start": "开始冥想",
+        "instructions": "跟随音频指导进行冥想"
+      },
+      "exercise": {
+        "title": "轻度运动",
+        "description": "适合经期的温和运动",
+        "start": "开始运动",
+        "instructions": "跟随视频进行温和的伸展运动"
+      },
+      "music": {
+        "title": "音乐疗法",
+        "description": "通过音乐放松心情",
+        "start": "开始聆听",
+        "instructions": "选择您喜欢的放松音乐"
+      }
+    },
+    "progress": {
+      "title": "进度追踪",
+      "subtitle": "记录您的压力管理进展",
+      "today": "今日",
+      "week": "本周",
+      "month": "本月",
+      "stressLevel": "压力水平",
+      "techniquesUsed": "使用技巧",
+      "moodRating": "心情评分",
+      "notes": "备注",
+      "addEntry": "添加记录",
+      "viewHistory": "查看历史"
+    },
+    "resources": {
+      "title": "资源推荐",
+      "subtitle": "更多帮助您管理压力的资源",
+      "articles": {
+        "title": "相关文章",
+        "stressAndMenstruation": "压力与月经的关系",
+        "relaxationTechniques": "放松技巧详解",
+        "mindfulnessBenefits": "正念练习的好处"
+      },
+      "tools": {
+        "title": "相关工具",
+        "painTracker": "疼痛追踪器",
+        "cycleTracker": "周期追踪器",
+        "breathingExercise": "呼吸练习"
+      },
+      "support": {
+        "title": "支持资源",
+        "community": "社区支持",
+        "professionalHelp": "专业帮助",
+        "emergencyContacts": "紧急联系方式"
+      }
+    },
+    "tips": {
+      "title": "实用建议",
+      "subtitle": "日常生活中的压力管理技巧",
+      "daily": {
+        "title": "日常习惯",
+        "regularSleep": "保持规律作息",
+        "healthyDiet": "均衡饮食",
+        "moderateExercise": "适量运动",
+        "socialConnection": "保持社交联系"
+      },
+      "emergency": {
+        "title": "紧急缓解",
+        "deepBreathing": "深呼吸",
+        "progressiveRelaxation": "渐进式放松",
+        "positiveThinking": "积极思考",
+        "seekHelp": "寻求帮助"
+      },
+      "prevention": {
+        "title": "预防措施",
+        "identifyTriggers": "识别压力源",
+        "timeManagement": "时间管理",
+        "boundarySetting": "设定界限",
+        "selfCare": "自我关爱"
+      }
+    },
+    "common": {
+      "loading": "加载中...",
+      "error": "出现错误",
+      "retry": "重试",
+      "success": "成功",
+      "failed": "失败",
+      "saved": "已保存",
+      "deleted": "已删除",
+      "updated": "已更新",
+      "created": "已创建",
+      "noData": "暂无数据",
+      "tryAgain": "请重试",
+      "contactSupport": "联系支持"
+    }
+  }
+}

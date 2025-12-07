@@ -1,0 +1,186 @@
+
+> periodhub-health@0.1.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/duting/yarn.lock as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles:
+   * /Users/duting/Downloads/money旺财/--main/package-lock.json
+
+   ▲ Next.js 15.5.6
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 55s
+   Linting and checking validity of types ...
+   Collecting page data ...
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/178) ...
+   Generating static pages (44/178)
+   Generating static pages (88/178)
+   Generating static pages (133/178)
+ ✓ Generating static pages (178/178)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                                              Size  First Load JS
+┌ ƒ /                                                                   242 B         104 kB
+├ ƒ /_not-found                                                         242 B         104 kB
+├ ƒ /.well-known/[filename]                                             242 B         104 kB
+├ ƒ /[locale]                                                         12.5 kB         136 kB
+├ ƒ /[locale]/admin/seo-dashboard                                     2.26 kB         107 kB
+├ ƒ /[locale]/admin/seo-dashboard-simplified                          1.38 kB         106 kB
+├ ƒ /[locale]/admin/seo-validation                                      242 B         104 kB
+├ ● /[locale]/articles/[slug]                                          112 kB         220 kB
+├   ├ /en/articles/5-minute-period-pain-relief
+├   ├ /en/articles/anti-inflammatory-diet-period-pain
+├   ├ /en/articles/comprehensive-iud-guide
+├   └ [+97 more paths]
+├ ● /[locale]/articles/comprehensive-medical-guide-to-dysmenorrhea    2.16 kB         144 kB
+├   ├ /en/articles/comprehensive-medical-guide-to-dysmenorrhea
+├   └ /zh/articles/comprehensive-medical-guide-to-dysmenorrhea
+├ ƒ /[locale]/articles/pain-management/understanding-dysmenorrhea       182 B         108 kB
+├ ƒ /[locale]/articles/when-to-seek-medical-care-comprehensive-guide  7.87 kB         132 kB
+├ ƒ /[locale]/cultural-charms                                           182 B         108 kB
+├ ƒ /[locale]/data-dashboard                                          1.09 kB         105 kB
+├ ● /[locale]/downloads                                               17.1 kB         137 kB
+├   ├ /en/downloads
+├   └ /zh/downloads
+├ ƒ /[locale]/downloads/medication-guide                              1.79 kB         126 kB
+├ ƒ /[locale]/framework-demo                                            242 B         104 kB
+├ ● /[locale]/health-guide                                            1.37 kB         134 kB
+├   ├ /en/health-guide
+├   └ /zh/health-guide
+├ ● /[locale]/health-guide/global-perspectives                        1.79 kB         126 kB
+├   ├ /en/health-guide/global-perspectives
+├   └ /zh/health-guide/global-perspectives
+├ ● /[locale]/health-guide/lifestyle                                  1.79 kB         126 kB
+├   ├ /en/health-guide/lifestyle
+├   └ /zh/health-guide/lifestyle
+├ ● /[locale]/health-guide/medical-care                               1.79 kB         126 kB
+├   ├ /en/health-guide/medical-care
+├   └ /zh/health-guide/medical-care
+├ ● /[locale]/health-guide/myths-facts                                1.79 kB         126 kB
+├   ├ /en/health-guide/myths-facts
+├   └ /zh/health-guide/myths-facts
+├ ● /[locale]/health-guide/relief-methods                             1.79 kB         126 kB
+├   ├ /en/health-guide/relief-methods
+├   └ /zh/health-guide/relief-methods
+├ ● /[locale]/health-guide/understanding-pain                         2.84 kB         127 kB
+├   ├ /en/health-guide/understanding-pain
+├   └ /zh/health-guide/understanding-pain
+├ ƒ /[locale]/home-clean                                                182 B         108 kB
+├ ● /[locale]/immediate-relief                                        1.79 kB         126 kB
+├   ├ /en/immediate-relief
+├   └ /zh/immediate-relief
+├ ● /[locale]/interactive-tools                                       1.48 kB         134 kB
+├   ├ /en/interactive-tools
+├   └ /zh/interactive-tools
+├ ● /[locale]/interactive-tools/[tool]                                55.9 kB         210 kB
+├   ├ /en/interactive-tools/symptom-assessment
+├   ├ /en/interactive-tools/pain-tracker
+├   ├ /en/interactive-tools/constitution-test
+├   └ [+9 more paths]
+├ ƒ /[locale]/interactive-tools/nutrition-recommendation-generator    11.4 kB         135 kB
+├ ƒ /[locale]/interactive-tools/p2-advanced-features                  5.03 kB         125 kB
+├ ƒ /[locale]/interactive-tools/p3-system-optimization                3.46 kB         124 kB
+├ ƒ /[locale]/interactive-tools/pain-tracker                          5.07 kB         129 kB
+├ ƒ /[locale]/interactive-tools/period-pain-assessment                1.75 kB         126 kB
+├ ƒ /[locale]/interactive-tools/period-pain-impact-calculator         13.4 kB         137 kB
+├ ● /[locale]/interactive-tools/stress-management                     7.99 kB         135 kB
+├   ├ /en/interactive-tools/stress-management
+├   └ /zh/interactive-tools/stress-management
+├ ● /[locale]/interactive-tools/stress-management/assessment            182 B         108 kB
+├   ├ /en/interactive-tools/stress-management/assessment
+├   └ /zh/interactive-tools/stress-management/assessment
+├ ƒ /[locale]/interactive-tools/stress-management/assessment/start    4.21 kB         131 kB
+├ ● /[locale]/interactive-tools/stress-management/breathing-exercise  1.46 kB         125 kB
+├   ├ /en/interactive-tools/stress-management/breathing-exercise
+├   └ /zh/interactive-tools/stress-management/breathing-exercise
+├ ● /[locale]/interactive-tools/stress-management/progress            5.54 kB         129 kB
+├   ├ /en/interactive-tools/stress-management/progress
+├   └ /zh/interactive-tools/stress-management/progress
+├ ƒ /[locale]/interactive-tools/stress-management/progress/add        7.01 kB         115 kB
+├ ƒ /[locale]/interactive-tools/stress-management/progress/debug      4.14 kB         112 kB
+├ ● /[locale]/interactive-tools/stress-management/techniques            242 B         104 kB
+├   ├ /en/interactive-tools/stress-management/techniques
+├   └ /zh/interactive-tools/stress-management/techniques
+├ ƒ /[locale]/interactive-tools/symptom-assessment                    5.72 kB         129 kB
+├ ƒ /[locale]/interactive-tools/workplace-impact-assessment           3.13 kB         135 kB
+├ ● /[locale]/interactive-tools/workplace-wellness                    1.41 kB         106 kB
+├   ├ /zh/interactive-tools/workplace-wellness
+├   └ /en/interactive-tools/workplace-wellness
+├ ● /[locale]/interactive-tools/workplace-wellness/seo-test             242 B         104 kB
+├   ├ /zh/interactive-tools/workplace-wellness/seo-test
+├   └ /en/interactive-tools/workplace-wellness/seo-test
+├ ƒ /[locale]/medical-disclaimer                                        242 B         104 kB
+├ ƒ /[locale]/natural-therapies                                       1.35 kB         125 kB
+├ ƒ /[locale]/pdf-center-test                                         2.77 kB         123 kB
+├ ƒ /[locale]/privacy-policy                                            242 B         104 kB
+├ ƒ /[locale]/real-data-test                                          4.72 kB         109 kB
+├ ƒ /[locale]/resources                                                 242 B         104 kB
+├ ƒ /[locale]/scenario-solutions                                      1.79 kB         118 kB
+├ ƒ /[locale]/scenario-solutions/commute                                133 B         127 kB
+├ ƒ /[locale]/scenario-solutions/emergency-kit                          133 B         127 kB
+├ ƒ /[locale]/scenario-solutions/exercise                               133 B         127 kB
+├ ƒ /[locale]/scenario-solutions/life_stages                            133 B         127 kB
+├ ƒ /[locale]/scenario-solutions/lifeStages                             133 B         127 kB
+├ ƒ /[locale]/scenario-solutions/office                                 132 B         127 kB
+├ ● /[locale]/scenario-solutions/partnerCommunication                 14.1 kB         138 kB
+├   ├ /zh/scenario-solutions/partnerCommunication
+├   └ /en/scenario-solutions/partnerCommunication
+├ ƒ /[locale]/scenario-solutions/sleep                                1.79 kB         126 kB
+├ ƒ /[locale]/scenario-solutions/social                                 133 B         127 kB
+├ ƒ /[locale]/teen-health                                               132 B         127 kB
+├ ƒ /[locale]/teen-health/campus-guide                                1.79 kB         126 kB
+├ ƒ /[locale]/teen-health/communication-guide                         1.79 kB         126 kB
+├ ƒ /[locale]/teen-health/development-pain                              132 B         127 kB
+├ ƒ /[locale]/teen-health/emotional-support                           1.79 kB         126 kB
+├ ƒ /[locale]/terms-of-service                                          242 B         104 kB
+├ ƒ /[locale]/test-banner                                               242 B         104 kB
+├ ● /[locale]/test-downloads                                            182 B         108 kB
+├   ├ /en/test-downloads
+├   └ /zh/test-downloads
+├ ƒ /[locale]/test-image-quality                                      2.54 kB         112 kB
+├ ƒ /[locale]/test-route                                                242 B         104 kB
+├ ƒ /[locale]/test-simple                                               242 B         104 kB
+├ ƒ /[locale]/test-simple-route                                         242 B         104 kB
+├ ƒ /a3f202e9872f45238294db525b233bf5.txt                               242 B         104 kB
+├ ƒ /admin/performance-dashboard                                      1.78 kB         106 kB
+├ ƒ /api/analytics/feedback                                             242 B         104 kB
+├ ƒ /api/analytics/performance                                          242 B         104 kB
+├ ƒ /api/analytics/session                                              242 B         104 kB
+├ ƒ /api/analytics/web-vitals                                           242 B         104 kB
+├ ƒ /api/articles                                                       242 B         104 kB
+├ ƒ /api/debug                                                          242 B         104 kB
+├ ƒ /api/email-marketing/send-guide                                     242 B         104 kB
+├ ƒ /api/indexnow                                                       242 B         104 kB
+├ ƒ /api/performance                                                    242 B         104 kB
+├ ƒ /api/recommendation-cache                                           242 B         104 kB
+├ ƒ /api/recommendation-click                                           242 B         104 kB
+├ ƒ /api/recommendation-stats                                           242 B         104 kB
+├ ƒ /feed.xml                                                           242 B         104 kB
+├ ƒ /framework-demo                                                   3.71 kB         108 kB
+├ ƒ /icon                                                               242 B         104 kB
+├ ƒ /image-requirements                                               1.06 kB         105 kB
+├ ƒ /preview                                                            242 B         104 kB
+├ ƒ /redirect                                                           242 B         104 kB
+├ ○ /robots.txt                                                         242 B         104 kB
+├ ○ /sitemap.xml                                                        242 B         104 kB
+├ ƒ /teen-health                                                        242 B         104 kB
+├ ƒ /test                                                               242 B         104 kB
+├ ƒ /test-assessment                                                    502 B         111 kB
+└ ƒ /test-symptom-assessment                                           4.3 kB         120 kB
++ First Load JS shared by all                                          104 kB
+  ├ chunks/1255-d98664e5830aa6d8.js                                   45.6 kB
+  ├ chunks/4bd1b696-100b9d70ed4e49c1.js                               54.2 kB
+  └ other shared chunks (total)                                       4.42 kB
+
+
+ƒ Middleware                                                          51.8 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand

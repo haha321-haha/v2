@@ -1,0 +1,17 @@
+{
+  "termsOfService": {
+    "sections": {
+      "serviceDescription": {
+        "content": "periodhub.health是一个提供经期健康信息和教育资源的平台。我们的服务包括：",
+        "items": {
+          "educationalContent": "教育内容：关于经期健康、疼痛管理和女性健康的文章和指南",
+          "interactiveTools": "互动工具：症状评估工具、疼痛追踪器和个性化推荐系统",
+          "resourceLibrary": "资源库：传统疗法、自然缓解方法和生活方式建议",
+          "communitySupport": "社区支持：安全的信息分享和支持环境"
+        },
+        "medicalNotice": "重要医疗声明：我们的服务仅供教育和信息目的，不构成医疗建议、诊断或治疗。我们不是医疗保健专业人员，本网站上的信息不能替代专业医疗建议。使用本网站不建立医患关系。如遇紧急情况，请立即寻求医疗救助。",
+        "mvpNotice": "MVP阶段说明：periodhub.health目前处于最小可行产品(MVP)阶段，以有限的资源运营。内容可能不如大型医疗机构那样全面或频繁更新。"
+      }
+    }
+  }
+}

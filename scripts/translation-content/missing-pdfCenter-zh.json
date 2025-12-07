@@ -1,0 +1,17 @@
+{
+  "pdfCenter": {
+    "breathingExercise": {
+      "phases": {
+        "pause": "暂停"
+      }
+    },
+    "simplePdfCenter": {
+      "consoleMessages": {
+        "autoRedirect": "🎯 自动跳转到分类: {category} - {content}",
+        "fetchingContent": "正在获取PDF内容: {url}",
+        "downloadSuccess": "PDF下载成功: {title}"
+      },
+      "shareText": "来自 Period Hub 的资源：{title}"
+    }
+  }
+}

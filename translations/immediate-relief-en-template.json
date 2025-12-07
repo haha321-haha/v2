@@ -1,0 +1,63 @@
+{
+  "immediateReliefPage": {
+    "title": "Immediate Period Pain Relief",
+    "description": "Quick and effective methods to relieve menstrual pain right now. Science-backed techniques you can use immediately.",
+
+    "introTitle": "When You Need Relief Right Now",
+    "introText": "Menstrual pain can strike suddenly and severely. Whether you're at home, work, or on the go, these evidence-based methods can provide quick relief.",
+    "introText2": "Each method below includes scientific parameters and practical guidance to help you find what works best for your body.",
+
+    "typesTitle": "Immediate Relief Methods",
+
+    "heatTherapy": {
+      "title": "Heat Therapy",
+      "subtitle": "Fast-acting muscle relaxation"
+    },
+    "heatTherapyDescription": "Heat therapy is one of the most effective immediate relief methods. It works by increasing blood flow, relaxing uterine muscles, and blocking pain signals.",
+
+    "parameters": {
+      "scientificParameters": "Scientific Parameters:",
+      "heatTherapy": {
+        "temperature": "40-45°C (104-113°F)",
+        "duration": "15-20 minutes per session",
+        "frequency": "Every 2-3 hours as needed",
+        "timing": "Start at first sign of pain",
+        "mechanism": "Increases blood flow, relaxes smooth muscle, activates heat receptors to block pain signals"
+      },
+      "breathing": {
+        "title": "Breathing Exercise Parameters:",
+        "technique": "4-7-8 breathing (inhale 4s, hold 7s, exhale 8s)",
+        "cycles": "5-10 cycles per session",
+        "frequency": "Every 1-2 hours or as needed",
+        "timing": "Anytime, especially during pain spikes",
+        "mechanism": "Activates parasympathetic nervous system, reduces stress hormones, promotes muscle relaxation"
+      },
+      "nsaid": {
+        "title": "NSAID Parameters:",
+        "dosage": "Follow package instructions (typically 200-400mg ibuprofen)",
+        "timing": "Take at first sign of pain, with food",
+        "mechanism": "Blocks prostaglandin production, reducing inflammation and pain",
+        "contraindications": "Avoid if you have stomach ulcers, kidney issues, or are allergic to NSAIDs"
+      }
+    },
+
+    "labels": {
+      "temperature": "Temperature: ",
+      "duration": "Duration: ",
+      "frequency": "Frequency: ",
+      "timing": "Timing: ",
+      "mechanism": "Mechanism: ",
+      "technique": "Technique: ",
+      "cycles": "Cycles: ",
+      "dosage": "Dosage: ",
+      "contraindications": "Contraindications: ",
+      "location": "Location: ",
+      "method": "Method: "
+    },
+
+    "actions": {
+      "learnMore": "Learn More →",
+      "startPractice": "Start Practice →"
+    }
+  }
+}

@@ -1,0 +1,150 @@
+/**
+ * 营养推荐生成器样式
+ * 完全基于ziV1d3d的style.css
+ */
+
+:root {
+  --primary-500: #9333ea;
+  --primary-600: #7c3aed;
+  --secondary-500: #ec4899;
+  --neutral-50: #f9f7f5;
+  --neutral-100: #f1eeea;
+  --neutral-600: #8c7968;
+  --neutral-800: #625249;
+}
+
+/* 基于ziV1d3d的字体设置 */
+.nutrition-generator {
+  font-family: 'Inter', sans-serif;
+}
+
+/* 基于ziV1d3d的颜色类 */
+.bg-primary-500 { background-color: var(--primary-500); }
+.bg-primary-600 { background-color: var(--primary-600); }
+.text-primary-500 { color: var(--primary-500); }
+.hover\:text-primary-500:hover { color: var(--primary-500); }
+.hover\:bg-primary-600:hover { background-color: var(--primary-600); }
+.focus\:ring-primary-500\/50:focus { --tw-ring-color: rgba(147, 51, 234, 0.5); }
+
+.bg-secondary-500 { background-color: var(--secondary-500); }
+.text-secondary-500 { color: var(--secondary-500); }
+
+.bg-neutral-50 { background-color: var(--neutral-50); }
+.bg-neutral-100 { background-color: var(--neutral-100); }
+.text-neutral-600 { color: var(--neutral-600); }
+.text-neutral-800 { color: var(--neutral-800); }
+.border-neutral-100 { border-color: var(--neutral-100); }
+
+/* 基于ziV1d3d的选择按钮样式 */
+.selection-button {
+  background-color: white;
+  color: var(--neutral-800);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease-in-out;
+}
+
+.selection-button.selected {
+  background-color: var(--primary-500);
+  color: white;
+  border-color: var(--primary-500);
+  box-shadow: 0 4px 6px -1px rgba(147, 51, 234, 0.2), 0 2px 4px -2px rgba(147, 51, 234, 0.1);
+}
+
+.selection-button.selected .lucide {
+  color: white;
+}
+
+.selection-button:not(.selected):hover {
+  border-color: var(--primary-500);
+  color: var(--primary-500);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.selection-button:active {
+  transform: scale(0.98);
+}
+
+.selection-button:not(.selected):active {
+  background-color: var(--neutral-100);
+}
+
+.selection-button.selected:active {
+  background-color: var(--primary-600);
+}
+
+/* 基于ziV1d3d的生成按钮样式 */
+#generate-btn:active {
+  transform: scale(0.98);
+}
+
+/* 基于ziV1d3d的结果卡片样式 */
+.result-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--neutral-100);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* 基于ziV1d3d的淡入动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* NoSelectionState 组件动画 */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* 基于ziV1d3d的响应式设计 */
+@media (max-width: 768px) {
+  .selection-button {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .result-card {
+    padding: 1rem;
+  }
+}
+
+/* 基于ziV1d3d的加载状态 */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.loading .selection-button {
+  opacity: 0.5;
+}
+
+/* 基于ziV1d3d的错误状态 */
+.error {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.error .selection-button {
+  border-color: #ef4444;
+}
+
+/* 基于ziV1d3d的成功状态 */
+.success {
+  border-color: #10b981;
+  background-color: #f0fdf4;
+}
+
+.success .selection-button {
+  border-color: #10b981;
+}

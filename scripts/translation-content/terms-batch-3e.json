@@ -1,0 +1,41 @@
+{
+  "termsOfService": {
+    "sections": {
+      "serviceChanges": {
+        "title": "5. Service Changes and Termination",
+        "serviceModification": {
+          "title": "Service Modifications",
+          "description": "We reserve the right to modify, suspend, or discontinue any part of our services at any time without prior notice. We may also impose limits on certain features or restrict access to parts or all of the services.",
+          "reasons": "Reasons for service changes may include:",
+          "reasonsList": [
+            "Technical improvements and updates",
+            "Legal or regulatory requirements",
+            "Security enhancements",
+            "Business operational needs",
+            "Implementation of new security measures or usage restrictions"
+          ],
+          "termsChanges": "We may update these terms of service from time to time to reflect service changes, legal requirements, or business needs. Significant changes will be communicated to users through website notices or other appropriate means. Continued use of the services indicates your acceptance of the updated terms. We recommend that you regularly review the latest version of the terms of service."
+        },
+        "accountTermination": {
+          "title": "Account Termination",
+          "ourRights": "We reserve the right to suspend or terminate your account under the following circumstances:",
+          "terminationReasons": [
+            "You violate these terms of service or related policies",
+            "Your behavior may harm other users or website security",
+            "Your account has been inactive for an extended period or abandoned",
+            "Legal requirements or court orders",
+            "Other circumstances we deem necessary"
+          ],
+          "userRights": "You may stop using our services at any time. If you have created an account, you may request account deletion by contacting us. After account deletion, your personal information will be handled according to our Privacy Policy.",
+          "consequences": "When your account is terminated or you stop using the services:",
+          "consequencesList": [
+            "Your access to the services will be immediately suspended",
+            "Your account data may be deleted (subject to legal retention requirements)",
+            "You remain responsible for any activities that occurred before termination",
+            "Certain provisions of these terms will survive termination"
+          ]
+        }
+      }
+    }
+  }
+}

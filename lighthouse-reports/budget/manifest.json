@@ -1,0 +1,50 @@
+[
+  {
+    "url": "http://localhost:3001/zh",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-zh-2025_10_05_14_45_37.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-zh-2025_10_05_14_45_37.report.json",
+    "summary": {
+      "performance": 0.86,
+      "accessibility": 0.95,
+      "best-practices": 0.74,
+      "seo": 0.91
+    }
+  },
+  {
+    "url": "http://localhost:3001/en",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-en-2025_10_05_14_45_53.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-en-2025_10_05_14_45_53.report.json",
+    "summary": {
+      "performance": 0.85,
+      "accessibility": 0.91,
+      "best-practices": 0.74,
+      "seo": 0.82
+    }
+  },
+  {
+    "url": "http://localhost:3001/zh/interactive-tools",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-zh_interactive_tools-2025_10_05_14_46_10.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-zh_interactive_tools-2025_10_05_14_46_10.report.json",
+    "summary": {
+      "performance": 0.45,
+      "accessibility": 0.96,
+      "best-practices": 0.74,
+      "seo": 0.92
+    }
+  },
+  {
+    "url": "http://localhost:3001/en/interactive-tools",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-en_interactive_tools-2025_10_05_14_46_26.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/budget/localhost-en_interactive_tools-2025_10_05_14_46_26.report.json",
+    "summary": {
+      "performance": 0.49,
+      "accessibility": 0.96,
+      "best-practices": 0.74,
+      "seo": 0.92
+    }
+  }
+]

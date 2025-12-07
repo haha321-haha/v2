@@ -1,0 +1,9 @@
+# GEO/AEO 监控任务
+# 每天凌晨 2 点运行 Schema 验证
+0 2 * * * cd /Users/duting/Downloads/money旺财/--main/periodhub-v2版本anti集成/hub-latest-main && node scripts/validate-schema.js >> logs/cron/schema-validation.log 2>&1
+
+# 每天凌晨 3 点生成监控报告
+0 3 * * * cd /Users/duting/Downloads/money旺财/--main/periodhub-v2版本anti集成/hub-latest-main && node scripts/generate-monitoring-report.js >> logs/cron/monitoring-report.log 2>&1
+
+# 每周一凌晨 4 点运行完整测试
+0 4 * * 1 cd /Users/duting/Downloads/money旺财/--main/periodhub-v2版本anti集成/hub-latest-main && node scripts/test-geo-aeo.js >> logs/cron/test-geo-aeo.log 2>&1

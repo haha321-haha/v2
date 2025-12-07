@@ -1,0 +1,28 @@
+{
+  "termsOfService": {
+    "sections": {
+      "liabilityLimitation": {
+        "title": "6. Liability Limitation and Disclaimers",
+        "medicalDisclaimer": {
+          "title": "Medical Disclaimer",
+          "content": "The information provided on this website is for educational and informational purposes only and should not be considered as medical advice, diagnosis, or treatment. We are not healthcare professionals, and the content should not replace consultation with qualified healthcare providers.",
+          "emergencyWarning": "In case of medical emergencies, seek immediate professional medical attention. Do not rely on website information for emergency medical decisions.",
+          "individualVariation": "Health information and recommendations may not be suitable for everyone. Individual responses to treatments and interventions may vary significantly.",
+          "professionalConsultation": "Always consult with healthcare professionals before making any medical decisions, starting new treatments, or changing existing medical regimens."
+        },
+        "serviceLimitations": {
+          "title": "Service Limitations",
+          "availabilityDisclaimer": "We provide our services on an 'as is' and 'as available' basis. We do not guarantee that our services will be uninterrupted, error-free, or completely secure.",
+          "accuracyDisclaimer": "While we strive to provide accurate and up-to-date information, we cannot guarantee the completeness, accuracy, or reliability of all content on our website.",
+          "thirdPartyContent": "Our website may contain links to third-party websites or content. We are not responsible for the accuracy, legality, or content of external sites."
+        },
+        "liabilityLimits": {
+          "title": "Limitation of Liability",
+          "generalLimitation": "To the maximum extent permitted by law, periodhub.health and its affiliates, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services.",
+          "maxLiability": "Our total liability to you for any claims arising from your use of our services shall not exceed the amount you paid to us (if any) for accessing our services in the 12 months preceding the claim.",
+          "exclusions": "Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above limitations may not apply to you."
+        }
+      }
+    }
+  }
+}

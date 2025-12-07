@@ -1,0 +1,25 @@
+{
+  "embeddedPainAssessment": {
+    "subtitle": "1分钟了解您的痛经程度，获得初步建议",
+    "question": "您的痛经强度如何？",
+    "selectIntensityFirst": "请先选择痛经强度",
+    "options": {
+      "mild": "轻微（可以忍受，不影响日常活动）",
+      "moderate": "中度（影响部分活动，但能坚持）",
+      "severe": "重度（完全影响日常活动，需要休息）"
+    },
+    "buttons": {
+      "getAdvice": "获取建议",
+      "detailedAssessment": "详细评估",
+      "testAgain": "重新测试",
+      "fullAssessment": "完整评估"
+    },
+    "resultTitle": "评估结果",
+    "results": {
+      "mild": "您的痛经程度较轻，可以尝试热敷、轻度运动等自然缓解方法。",
+      "moderate": "您的痛经程度中等，建议结合多种缓解方法，如有需要可考虑非处方止痛药。",
+      "severe": "您的痛经程度较重，建议咨询医生获得专业评估和治疗建议。"
+    },
+    "disclaimer": "⚠️ 此工具仅供参考，不能替代专业医疗建议"
+  }
+}

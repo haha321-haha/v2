@@ -1,0 +1,38 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 3,
+      "url": [
+        "http://localhost:3001/zh",
+        "http://localhost:3001/en",
+        "http://localhost:3001/zh/interactive-tools",
+        "http://localhost:3001/en/interactive-tools",
+        "http://localhost:3001/zh/health-guide",
+        "http://localhost:3001/en/health-guide",
+        "http://localhost:3001/zh/scenario-solutions",
+        "http://localhost:3001/en/scenario-solutions",
+        "http://localhost:3001/zh/articles/5-minute-period-pain-relief"
+      ],
+      "settings": {
+        "preset": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "cpuSlowdownMultiplier": 1
+        }
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.65 }],
+        "categories:accessibility": ["error", { "minScore": 0.85 }],
+        "categories:best-practices": ["error", { "minScore": 0.8 }],
+        "categories:seo": ["error", { "minScore": 0.85 }]
+      }
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": "./lighthouse-reports/desktop"
+    }
+  }
+}

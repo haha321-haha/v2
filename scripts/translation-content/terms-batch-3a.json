@@ -1,0 +1,24 @@
+{
+  "termsOfService": {
+    "sections": {
+      "serviceDescription": {
+        "title": "1. Service Description and User Eligibility",
+        "description": "periodhub.health is a health education platform that provides menstrual health information, educational resources, and interactive tools. Our services are designed to help users better understand and manage menstrual health.",
+        "serviceScope": "Our services include but are not limited to:",
+        "serviceList": [
+          "Menstrual health education articles and guides",
+          "Interactive health assessment tools",
+          "Personalized health recommendations",
+          "Educational resources and downloadable materials",
+          "Community support and information sharing"
+        ],
+        "userEligibility": {
+          "title": "User Eligibility",
+          "ageRequirement": "You must be at least 13 years old to use our services. Users under 18 should use our services under parental guidance.",
+          "capacity": "You must have the legal capacity to enter into binding agreements.",
+          "accuracy": "You agree to provide accurate and complete information when using our services."
+        }
+      }
+    }
+  }
+}

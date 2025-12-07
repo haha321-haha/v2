@@ -1,0 +1,165 @@
+      "title": "Error Occurred",
+      "description": "Assessment tool is temporarily unavailable, please try again later.",
+      "reload": "Reload"
+    },
+    "partnerHandbook": {
+      "pageTitle": "Partner Communication Handbook",
+      "mainTitle": "Boyfriend doesn't understand period pain? 30-day training camp to turn him into a caring partner.",
+      "intro": "Welcome to this special 'Caring Partner Training Camp' designed just for you. We know that dysmenorrhea is more than just physical pain; when misunderstood, it can become an emotional burden. This camp isn't one-sided 'teaching' but a shared journey to deepen understanding and strengthen your emotional connection.",
+      "introCTA": "First, let's start with a short test to see the current 'Understanding Score'!",
+      "quiz": {
+        "title": "The Partner Understanding Test",
+        "instructions": "For the gentlemen, please complete the following 10 questions independently. Choose the answer you believe is most appropriate.",
+        "nextButton": "Next",
+        "submitButton": "Submit",
+        "progress": "Question {current} of {total}",
+        "questions": [
+          {
+            "id": "q1",
+            "question": "When your girlfriend says 'I have stomach pain', your first reaction is?",
+            "options": [
+              {"id": 1, "text": "Drink more hot water", "score": 1},
+              {"id": 2, "text": "Should we go to the hospital", "score": 2},
+              {"id": 3, "text": "Let me massage your stomach", "score": 3},
+              {"id": 4, "text": "I'm here with you, tell me what you need", "score": 4}
+            ],
+            "correctAnswer": 4,
+            "explanation": "Companionship and proactive care are the most important support methods."
+          },
+          {
+            "id": "q2",
+            "question": "You think period pain is equivalent to?",
+            "options": [
+              {"id": 1, "text": "Mild discomfort", "score": 1},
+              {"id": 2, "text": "Cold headache", "score": 2},
+              {"id": 3, "text": "Toothache", "score": 3},
+              {"id": 4, "text": "Kidney stone pain", "score": 4}
+            ],
+            "correctAnswer": 4,
+            "explanation": "Period pain can reach the level of kidney stone pain."
+          },
+          {
+            "id": "q3",
+            "question": "When your girlfriend has period pain, you think the most effective relief method is?",
+            "options": [
+              {"id": 1, "text": "Let her rest more", "score": 2},
+              {"id": 2, "text": "Buy her painkillers", "score": 3},
+              {"id": 3, "text": "Prepare a hot water bottle", "score": 3},
+              {"id": 4, "text": "Combine all the above methods", "score": 4}
+            ],
+            "correctAnswer": 4,
+            "explanation": "Combining multiple methods is most effective for relieving period pain."
+          },
+          {
+            "id": "q4",
+            "question": "You think period pain affects women in which aspects?",
+            "options": [
+              {"id": 1, "text": "Just physical discomfort", "score": 1},
+              {"id": 2, "text": "Physical and psychological", "score": 3},
+              {"id": 3, "text": "Physical, psychological, work and social", "score": 4},
+              {"id": 4, "text": "Not much impact", "score": 1}
+            ],
+            "correctAnswer": 3,
+            "explanation": "Period pain affects all aspects of women's lives."
+          },
+          {
+            "id": "q5",
+            "question": "When your girlfriend is in a bad mood due to period pain, you will?",
+            "options": [
+              {"id": 1, "text": "Let her calm down by herself", "score": 1},
+              {"id": 2, "text": "Tell her not to lose her temper", "score": 1},
+              {"id": 3, "text": "Understand her emotions", "score": 3},
+              {"id": 4, "text": "Actively comfort and be tolerant", "score": 4}
+            ],
+            "correctAnswer": 4,
+            "explanation": "Understanding and tolerance are key to handling emotional issues."
+          }
+        ],
+        "results": {
+          "beginner": {
+            "title": "Beginner",
+            "description": "You still have a lot of room for improvement in understanding period pain, but that's okay, that's exactly what our training camp is for!",
+            "recommendations": ["Learn basic knowledge about period pain", "Learn basic support methods", "Pay attention to your girlfriend's feelings"]
+          },
+          "intermediate": {
+            "title": "Intermediate",
+            "description": "You already have a good foundation of understanding, and the training camp can help you further improve your support skills.",
+            "recommendations": ["Learn deeper support techniques", "Understand the physiological mechanisms of period pain", "Improve communication skills"]
+          },
+          "advanced": {
+            "title": "Advanced",
+            "description": "Your understanding is already quite good, and the training camp will help you become a truly caring partner.",
+            "recommendations": ["Learn professional support methods", "Improve emotional support skills", "Become your girlfriend's strong support"]
+          },
+          "expert": {
+            "title": "Expert Level",
+            "description": "You are already an expert in understanding period pain! The training camp will help you become the perfect caring partner.",
+            "recommendations": ["Share your experience", "Help other male friends", "Become your girlfriend's perfect supporter"]
+          }
+        }
+      },
+      "trainingCamp": {
+        "title": "The 30-Day Caring Partner Training Camp",
+        "intro": "Just 5 minutes a day. Complete a small task with her and witness the wonderful transformation in your relationship.",
+        "weeks": [
+          {
+            "id": "week1",
+            "week": 1,
+            "title": "Basic Understanding Week",
+            "theme": "Understanding Period Pain",
+            "description": "Learn basic knowledge about period pain and establish correct cognitive foundation.",
+            "days": [
+              {
+                "id": "day1",
+                "day": 1,
+                "title": "Introduction to Period Pain Knowledge",
+                "description": "Understand basic concepts and common symptoms of period pain",
+                "tasks": [
+                  {
+                    "id": "task1",
+                    "title": "Read Basic Knowledge About Period Pain",
+                    "description": "Understand the definition, causes and symptoms of period pain",
+                    "instructions": ["Read relevant materials", "Record key information", "Prepare to share with girlfriend"],
+                    "tips": ["Focus on physiological mechanisms", "Understand the severity of pain", "Prepare question list"],
+                    "expectedOutcome": "Have basic understanding of period pain"
+                  }
+                ],
+                "duration": 5,
+                "difficulty": "easy",
+                "category": "understanding"
+              }
+            ],
+            "weeklyGoal": "Establish correct understanding of period pain"
+          }
+        ]
+      },
+      "viewMoreArticles": {
+        "title": "Back to Scenario Solutions",
+        "description": "Return to scenario solutions overview page",
+        "buttonText": "Back to Scenario Solutions"
+      },
+      "relatedLinks": {
+        "scenarioSolutions": {
+          "title": "Scenario Solutions",
+          "description": "Period pain solutions for work, exercise, social scenarios"
+        },
+        "naturalTherapies": {
+          "title": "Natural Therapies",
+          "description": "Long-term health management and natural therapies"
+        },
+        "interactiveTools": {
+          "title": "Interactive Tools",
+          "description": "Personalized health assessment and tracking tools"
+        },
+        "healthGuide": {
+          "title": "Health Guide",
+          "description": "Scientific principles and medical knowledge"
+        },
+        "downloads": {
+          "title": "PDF Download Center",
+          "description": "56 curated resources, intelligently categorized by urgency"
+        }
+      }
+    }
+  }
+}

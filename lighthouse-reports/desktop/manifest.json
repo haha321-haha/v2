@@ -1,0 +1,14 @@
+[
+  {
+    "url": "http://localhost:3001/zh",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/desktop/localhost-zh-2025_10_05_15_04_59.report.html",
+    "jsonPath": "/Users/duting/Downloads/money💰/--main/lighthouse-reports/desktop/localhost-zh-2025_10_05_15_04_59.report.json",
+    "summary": {
+      "performance": 0.86,
+      "accessibility": 0.95,
+      "best-practices": 0.74,
+      "seo": 0.91
+    }
+  }
+]

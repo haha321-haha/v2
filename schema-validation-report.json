@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-11-28T12:35:01.979Z",
+  "tests": [
+    {
+      "name": "MedicalWebPage Schema",
+      "passed": false
+    },
+    {
+      "name": "术语标准化",
+      "passed": false
+    },
+    {
+      "name": "多语言编码",
+      "passed": false
+    },
+    {
+      "name": "首页 Schema 集成",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "passed": 1,
+    "failed": 3
+  }
+}

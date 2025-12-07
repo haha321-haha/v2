@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "title": "Natural Therapies for Period Pain Relief - Complete Guide | PeriodHub",
+    "description": "Evidence-based natural therapies for menstrual pain: heat therapy, herbal remedies, dietary adjustments, yoga, aromatherapy, acupressure. Safe, effective, and side-effect free.",
+    "keywords": "natural therapies,period pain relief,heat therapy,herbal remedies,dietary adjustments,yoga,aromatherapy,acupressure,menstrual health,side-effect free"
+  },
+  "hero": {
+    "title": "🌿 Natural Therapies for Period Pain",
+    "subtitle": "Science-backed natural methods, gentle and effective, with no side effects"
+  },
+  "scientificFoundation": {
+    "title": "🔬 Scientific Foundation",
+    "description": "Natural therapies combine modern medical research with traditional wisdom, providing safe and effective options for menstrual pain management. Multiple clinical studies confirm their efficacy.",
+    "benefits": {
+      "noSideEffects": {
+        "title": "No Side Effects",
+        "description": "Gentle and natural, without drug dependency or adverse reactions"
+      },
+      "holisticApproach": {
+        "title": "Holistic Approach",
+        "description": "Fundamentally improves constitution and overall health"
+      },
+      "costEffective": {
+        "title": "Cost-Effective",
+        "description": "Most methods are affordable and sustainable long-term"
+      }
+    }
+  },
+  "therapies": {
+    "title": "🌟 Natural Therapy Options",
+    "heatTherapy": {
+      "title": "Heat Therapy",
+      "subtitle": "The simplest and most effective physical therapy",
+      "description": "Heat therapy promotes blood circulation and relaxes uterine smooth muscle through thermal effects, making it one of the most direct and effective methods for relieving menstrual pain.",
+      "parameters": {
+        "title": "Scientific Parameters",
+        "temperature": "Temperature:",
+        "temperatureValue": "40-45°C (warm but not burning)",
+        "duration": "Duration:",
+        "durationValue": "15-20 minutes per session",
+        "frequency": "Frequency:",
+        "frequencyValue": "2-3 times daily, increase during pain",
+        "timing": "Timing:",
+        "timingValue": "Start 1-2 days before period for prevention",
+        "mechanism": "Mechanism:",
+        "mechanismValue": "Heat stimulates skin temperature receptors, blocking pain signals through 'gate control theory'"
+      },
+      "mechanism": {
+        "title": "Scientific Mechanism",
+        "gateControl": {
+          "title": "Gate Control Theory",
+          "description": "Thermal stimulation activates large fiber nerves, inhibiting pain signals from small fibers"
+        },
+        "vasodilation": {
+          "title": "Vasodilation Effect",
+          "description": "Heat promotes local vasodilation, improving uterine blood supply and relieving ischemic pain"
+        }
+      },
+      "safety": {
+        "title": "⚠️ Safety Tips",
+        "guidelines": {
+          "0": "Avoid direct skin contact, use a towel barrier",
+          "1": "Do not use while sleeping to prevent low-temperature burns",
+          "2": "Stop if skin is broken or infected"
+        }
+      }
+    },
+    "herbalTherapy": {
+      "title": "Herbal Therapy",
+      "subtitle": "Traditional wisdom meets modern validation",
+      "description": "Herbal medicine has a long history in treating menstrual pain. Modern research confirms that active compounds have anti-inflammatory, analgesic, and hormone-regulating effects.",
+      "herbs": {
+        "ginger": {
+          "title": "Ginger (Zingiber officinale)",
+          "activeCompounds": "Active Compounds:",
+          "activeCompoundsValue": "Gingerols, shogaols",
+          "mechanism": "Mechanism:",
+          "mechanismValue": "Inhibits prostaglandin synthesis, reduces uterine contractions",
+          "clinicalEvidence": "Clinical Evidence:",
+          "clinicalEvidenceValue": "Studies show efficacy comparable to ibuprofen (Ozgoli et al., 2009)"
+        },
+        "angelica": {
+          "title": "Angelica (Angelica sinensis)",
+          "activeCompounds": "Active Compounds:",
+          "activeCompoundsValue": "Ferulic acid, ligustilide",
+          "mechanism": "Mechanism:",
+          "mechanismValue": "Regulates estrogen levels, improves uterine blood circulation",
+          "classicFormula": "Classic Formula:",
+          "classicFormulaValue": "Si Wu Tang, Dang Gui Shao Yao San"
+        }
+      },
+      "usage": {
+        "title": "Usage Methods",
+        "gingerTea": {
+          "title": "Ginger Tea",
+          "description": "Slice 10g fresh ginger, steep in boiling water for 10 minutes, start 3 days before period, 2-3 times daily"
+        },
+        "angelicaDecoction": {
+          "title": "Angelica Decoction",
+          "description": "10g angelica, add 300ml water, simmer for 20 minutes, take during menstruation"
+        }
+      },
+      "safety": {
+        "title": "⚠️ Important Notes",
+        "guidelines": {
+          "0": "Angelica contraindicated in pregnancy",
+          "1": "Use ginger cautiously with anticoagulants",
+          "2": "Consult Holistic Health practitioner for first use"
+        }
+      }
+    },
+    "dietaryAdjustment": {
+      "title": "Dietary Adjustments",
+      "subtitle": "Nutritional support from within",
+      "description": "A balanced diet can regulate hormone levels, reduce inflammation, and provide adequate nutritional support.",
+      "nutrients": {
+        "omega3": {
+          "title": "Omega-3 Fatty Acids",
+          "sourcesValue": "Deep-sea fish, flaxseeds, walnuts",
+          "mechanismValue": "Anti-inflammatory effects, reduces prostaglandin production"
+        },
+        "magnesium": {
+          "title": "Magnesium",
+          "sourcesValue": "Dark leafy greens, nuts, whole grains",
+          "mechanismValue": "Relaxes muscles, relieves spasms"
+        },
+        "vitaminB6": {
+          "title": "Vitamin B6",
+          "sourcesValue": "Bananas, chicken, potatoes",
+          "mechanismValue": "Regulates neurotransmitters, improves mood"
+        }
+      },
+      "foods": {
+        "title": "Anti-inflammatory Foods",
+        "recommended": {
+          "title": "Recommended Foods"
+        },
+        "avoid": {
+          "title": "Foods to Avoid"
+        }
+      }
+    },
+    "yogaExercise": {
+      "title": "Yoga & Exercise",
+      "subtitle": "Gentle movement, stress release",
+      "description": "Moderate yoga practice can improve blood circulation, relax muscles, and reduce pain.",
+      "poses": {
+        "title": "Recommended Poses",
+        "catCow": {
+          "title": "Cat-Cow Pose",
+          "description": "Gentle spinal movement"
+        }
+      },
+      "science": {
+        "title": "Scientific Basis"
+      },
+      "practice": {
+        "title": "Practice Guidelines",
+        "timing": {
+          "title": "Practice Timing",
+          "1": "Preventive practice before period",
+          "2": "Practice during mild pain",
+          "3": "Avoid during severe pain"
+        }
+      }
+    },
+    "aromatherapy": {
+      "title": "Aromatherapy",
+      "subtitle": "The healing power of essential oils",
+      "description": "Certain essential oils have analgesic, relaxing, and mood-regulating effects, used through massage or diffusion.",
+      "oils": {
+        "lavender": {
+          "title": "Lavender Essential Oil",
+          "effects": "Effects:",
+          "mechanism": "Mechanism:"
+        },
+        "clarySage": {
+          "title": "Clary Sage Essential Oil",
+          "effects": "Effects:",
+          "mechanism": "Mechanism:"
+        }
+      },
+      "usage": {
+        "title": "Usage Methods",
+        "massageOil": {
+          "title": "Massage Oil"
+        },
+        "diffusion": {
+          "title": "Diffusion",
+          "recipe": "Recipe"
+        }
+      },
+      "safety": {
+        "title": "⚠️ Safety Tips",
+        "guidelines": {
+          "0": "Essential oils must be diluted before use, do not apply directly",
+          "1": "Use cautiously during pregnancy",
+          "2": "Perform skin test for allergies"
+        }
+      }
+    },
+    "acupuncture": {
+      "title": "Acupuncture & Massage",
+      "subtitle": "Holistic Health therapy",
+      "description": "Acupuncture relieves pain by stimulating specific points and regulating qi and blood.",
+      "acupoints": {
+        "title": "Key Acupoints"
+      },
+      "mechanisms": {
+        "title": "Mechanisms of Action"
+      },
+      "selfMassage": {
+        "title": "Self-Massage",
+        "note": "Precautions"
+      }
+    },
+    "psychological": {
+      "title": "Psychological Regulation",
+      "subtitle": "Mind-body balance",
+      "description": "Stress and anxiety can worsen pain; psychological regulation techniques can help relieve it.",
+      "breathing": {
+        "title": "Deep Breathing Exercise",
+        "steps": "Steps:",
+        "stepsValue": "Abdominal breathing, 5-10 minutes each time",
+        "frequency": "Frequency:",
+        "effect": "Effect:",
+        "effectValue": "Reduces stress hormones, relaxes muscles"
+      },
+      "mindfulness": {
+        "title": "Mindfulness Meditation",
+        "method": "Method:",
+        "effect": "Effect:"
+      },
+      "muscleRelaxation": {
+        "title": "Progressive Muscle Relaxation",
+        "step1": "Step 1:",
+        "step2": "Step 2:",
+        "step3": "Step 3:"
+      }
+    },
+    "comprehensive": {
+      "title": "Comprehensive Approach",
+      "subtitle": "Combining multiple methods",
+      "description": "Depending on pain severity, combining multiple natural therapies can achieve better results.",
+      "painLevels": {
+        "mild": {
+          "title": "Mild Pain",
+          "plan1": "Heat therapy + Ginger tea",
+          "plan2": "Yoga + Deep breathing",
+          "plan3": "Dietary adjustments"
+        },
+        "severe": {
+          "title": "Severe Pain"
+        }
+      },
+      "synergistic": {
+        "title": "Synergistic Effects"
+      }
+    }
+  },
+  "evidenceBased": {
+    "title": "Evidence-Based Medicine Support",
+    "coreEfficacy": {
+      "heatTherapy": {
+        "title": "Heat Therapy",
+        "source": "Source"
+      },
+      "tens": {
+        "title": "TENS Therapy",
+        "source": "Source"
+      },
+      "acupuncture": {
+        "title": "Acupuncture",
+        "source": "Source"
+      },
+      "aromatherapy": {
+        "title": "Aromatherapy",
+        "source": "Source"
+      }
+    },
+    "highLevelEvidence": {
+      "title": "High-Quality Evidence",
+      "cochrane": "Cochrane Systematic Reviews",
+      "rct": "Randomized Controlled Trials",
+      "who": "WHO Recognized",
+      "nih": "NIH Supported"
+    },
+    "longTermStudies": {
+      "title": "Long-term Studies",
+      "study1": "Study 1",
+      "study2": "Study 2",
+      "study3": "Study 3",
+      "study4": "Study 4"
+    }
+  },
+  "medicalDisclaimer": {
+    "title": "Medical Disclaimer",
+    "content": "The information provided on this page is for educational and reference purposes only and does not constitute medical advice. If you have severe or persistent menstrual pain symptoms, please consult a healthcare professional."
+  },
+  "faq": {
+    "dysmenorrhea": "Dysmenorrhea",
+    "effectiveTherapies": "Which natural therapies are most effective?",
+    "effectiveTherapiesAnswer": "Heat therapy, ginger tea, and moderate exercise are the most scientifically supported natural therapies.",
+    "timeToEffect": "How long does it take for natural therapies to work?",
+    "timeToEffectAnswer": "Heat therapy usually works within 15-20 minutes, while herbal therapies need 2-3 menstrual cycles of consistent use to see significant improvement."
+  },
+  "sections": {
+    "relatedTools": "Related Tools",
+    "relatedArticles": "Related Articles",
+    "scenarioSolutions": "Scenario Solutions"
+  },
+  "recommendations": {
+    "relatedTools": {
+      "nutritionGenerator": {
+        "title": "Nutrition Recommendation Generator",
+        "description": "Get personalized dietary advice"
+      },
+      "constitutionTest": {
+        "title": "Constitution Test",
+        "description": "Understand your Holistic Body Pattern type"
+      },
+      "painTracker": {
+        "title": "Pain Tracker",
+        "description": "Record and analyze your pain patterns"
+      }
+    },
+    "relatedArticles": {
+      "medicalGuide": {
+        "title": "Dysmenorrhea Medical Guide",
+        "description": "Comprehensive medical knowledge",
+        "readTime": "15 min read",
+        "category": "Medical Guide"
+      },
+      "heatTherapy": {
+        "title": "Complete Heat Therapy Guide",
+        "description": "Deep dive into the science of heat therapy",
+        "readTime": "10 min read",
+        "category": "Natural Therapy"
+      },
+      "herbalTea": {
+        "title": "Herbal Tea for Period Pain Relief",
+        "description": "Modern applications of traditional herbs",
+        "readTime": "8 min read",
+        "category": "Herbal Therapy"
+      }
+    },
+    "scenarioSolutions": {
+      "exercise": {
+        "title": "Exercise & Periods",
+        "description": "How to exercise safely during menstruation"
+      },
+      "office": {
+        "title": "Office Relief Solutions",
+        "description": "Managing period pain at work"
+      },
+      "emergencyKit": {
+        "title": "Emergency Kit Preparation",
+        "description": "Portable relief tools"
+      }
+    }
+  }
+}

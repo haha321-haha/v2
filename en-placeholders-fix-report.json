@@ -1,0 +1,1035 @@
+{
+  "count": 100,
+  "details": [
+    {
+      "key": "interactiveToolsPage.workplaceWellness.pdf.tableHeaders.menstrualPhase",
+      "original": "[TRANSLATE: 经期阶段]",
+      "translated": "Menstrual Phase"
+    },
+    {
+      "key": "healthGuidePage.tools.lifestyleGuide.description",
+      "original": "[TRANSLATE: 个性化健康建议]",
+      "translated": "Personalized Health Advice"
+    },
+    {
+      "key": "pdfCenter.mobileDescriptions.learning",
+      "original": "[TRANSLATE: 了解原理，科学管理]",
+      "translated": "Understand principles, manage scientifically"
+    },
+    {
+      "key": "pdfCenter.mobileDescriptions.longterm",
+      "original": "[TRANSLATE: 建立习惯，持续改善]",
+      "translated": "Build habits, continuously improve"
+    },
+    {
+      "key": "pdfCenter.labels.topPick",
+      "original": "[TRANSLATE: 最推荐]",
+      "translated": "Most Recommended"
+    },
+    {
+      "key": "pdfCenter.labels.recommended",
+      "original": "[TRANSLATE: 推荐]",
+      "translated": "Recommended"
+    },
+    {
+      "key": "pdfCenter.labels.important",
+      "original": "[TRANSLATE: 重要]",
+      "translated": "Important"
+    },
+    {
+      "key": "pdfCenter.labels.optional",
+      "original": "[TRANSLATE: 选读]",
+      "translated": "Optional Reading"
+    },
+    {
+      "key": "pdfCenter.actions.readArticle",
+      "original": "[TRANSLATE: 阅读文章]",
+      "translated": "Read Article"
+    },
+    {
+      "key": "pdfCenter.actions.useInteractiveTools",
+      "original": "[TRANSLATE: 使用互动工具]",
+      "translated": "Use Interactive Tools"
+    },
+    {
+      "key": "pdfCenter.statsSimple.totalResources",
+      "original": "[TRANSLATE: 总资源]",
+      "translated": "Total Resources"
+    },
+    {
+      "key": "pdfCenter.statsSimple.evidenceBased",
+      "original": "[TRANSLATE: 循证]",
+      "translated": "Evidence-based"
+    },
+    {
+      "key": "pdfCenter.tags.heatTherapy",
+      "original": "[TRANSLATE: 热敷]",
+      "translated": "热敷"
+    },
+    {
+      "key": "pdfCenter.tags.heatTherapyMethod",
+      "original": "[TRANSLATE: 热疗法]",
+      "translated": "Heat Therapy"
+    },
+    {
+      "key": "pdfCenter.tags.heatTherapyTreatment",
+      "original": "[TRANSLATE: 热敷疗法]",
+      "translated": "Heat Therapy Treatment"
+    },
+    {
+      "key": "pdfCenter.tags.heatTherapyTreatment2",
+      "original": "[TRANSLATE: 热敷治疗]",
+      "translated": "Heat Therapy Treatment"
+    },
+    {
+      "key": "pdfCenter.tags.warmWaterBottle",
+      "original": "[TRANSLATE: 敷热水袋]",
+      "translated": "敷热水袋"
+    },
+    {
+      "key": "pdfCenter.tags.warmPatch",
+      "original": "[TRANSLATE: 暖宝宝]",
+      "translated": "暖宝宝"
+    },
+    {
+      "key": "pdfCenter.tags.massage",
+      "original": "[TRANSLATE: 按摩]",
+      "translated": "按摩"
+    },
+    {
+      "key": "pdfCenter.tags.acupressure",
+      "original": "[TRANSLATE: 穴位按压]",
+      "translated": "Acupressure"
+    },
+    {
+      "key": "pdfCenter.tags.muscleRelaxation",
+      "original": "[TRANSLATE: 肌肉放松]",
+      "translated": "Muscle Relaxation"
+    },
+    {
+      "key": "pdfCenter.tags.abdominalMassage",
+      "original": "[TRANSLATE: 腹部按摩]",
+      "translated": "Abdominal Massage"
+    },
+    {
+      "key": "pdfCenter.tags.menstrualMassage",
+      "original": "[TRANSLATE: 经期按摩]",
+      "translated": "Menstrual Massage"
+    },
+    {
+      "key": "pdfCenter.tags.painMassage",
+      "original": "[TRANSLATE: 疼痛按摩]",
+      "translated": "Pain Massage"
+    },
+    {
+      "key": "pdfCenter.tags.bellyRub",
+      "original": "[TRANSLATE: 揉肚子]",
+      "translated": "揉肚子"
+    },
+    {
+      "key": "pdfCenter.tags.painkiller",
+      "original": "[TRANSLATE: 止痛药]",
+      "translated": "止痛药"
+    },
+    {
+      "key": "pdfCenter.tags.antiInflammatoryDrug",
+      "original": "[TRANSLATE: 非甾体抗炎药]",
+      "translated": "Non-steroidal Anti-inflammatory Drugs"
+    },
+    {
+      "key": "pdfCenter.tags.ibuprofen",
+      "original": "[TRANSLATE: 布洛芬]",
+      "translated": "Ibuprofen"
+    },
+    {
+      "key": "pdfCenter.tags.acetaminophen",
+      "original": "[TRANSLATE: 对乙酰氨基酚]",
+      "translated": "Acetaminophen"
+    },
+    {
+      "key": "pdfCenter.tags.painMedication",
+      "original": "[TRANSLATE: 止痛药物]",
+      "translated": "Pain Medication"
+    },
+    {
+      "key": "pdfCenter.tags.medication",
+      "original": "[TRANSLATE: 药物]",
+      "translated": "Medication"
+    },
+    {
+      "key": "pdfCenter.tags.health",
+      "original": "[TRANSLATE: 健康]",
+      "translated": "Health"
+    },
+    {
+      "key": "pdfCenter.tags.habit",
+      "original": "[TRANSLATE: 习惯]",
+      "translated": "Habit"
+    },
+    {
+      "key": "pdfCenter.tags.prevention",
+      "original": "[TRANSLATE: 预防]",
+      "translated": "Prevention"
+    },
+    {
+      "key": "pdfCenter.tags.plan",
+      "original": "[TRANSLATE: 计划]",
+      "translated": "Plan"
+    },
+    {
+      "key": "pdfCenter.tags.advance",
+      "original": "[TRANSLATE: 提前]",
+      "translated": "In Advance"
+    },
+    {
+      "key": "pdfCenter.tags.wellness",
+      "original": "[TRANSLATE: 养生]",
+      "translated": "Wellness"
+    },
+    {
+      "key": "pdfCenter.tags.baduanjin",
+      "original": "[TRANSLATE: 八段锦]",
+      "translated": "Baduanjin"
+    },
+    {
+      "key": "pdfCenter.tags.seeDoctor",
+      "original": "[TRANSLATE: 就医]",
+      "translated": "See Doctor"
+    },
+    {
+      "key": "pdfCenter.tags.understand",
+      "original": "[TRANSLATE: 了解]",
+      "translated": "Understand"
+    },
+    {
+      "key": "pdfCenter.tags.education",
+      "original": "[TRANSLATE: 教育]",
+      "translated": "Education"
+    },
+    {
+      "key": "pdfCenter.tags.knowledge",
+      "original": "[TRANSLATE: 知识]",
+      "translated": "Knowledge"
+    },
+    {
+      "key": "pdfCenter.tags.research",
+      "original": "[TRANSLATE: 研究]",
+      "translated": "Research"
+    },
+    {
+      "key": "pdfCenter.tags.science",
+      "original": "[TRANSLATE: 科学]",
+      "translated": "Science"
+    },
+    {
+      "key": "pdfCenter.tags.evidenceBased",
+      "original": "[TRANSLATE: 循证]",
+      "translated": "Evidence-based"
+    },
+    {
+      "key": "pdfCenter.tags.diagnosis",
+      "original": "[TRANSLATE: 诊断]",
+      "translated": "Diagnosis"
+    },
+    {
+      "key": "pdfCenter.tags.examination",
+      "original": "[TRANSLATE: 检查]",
+      "translated": "Examination"
+    },
+    {
+      "key": "pdfCenter.tags.longTerm",
+      "original": "[TRANSLATE: 长期]",
+      "translated": "Long-term"
+    },
+    {
+      "key": "pdfCenter.tags.life",
+      "original": "[TRANSLATE: 生活]",
+      "translated": "Life"
+    },
+    {
+      "key": "pdfCenter.tags.archive",
+      "original": "[TRANSLATE: 档案]",
+      "translated": "Archive"
+    },
+    {
+      "key": "pdfCenter.tags.continuous",
+      "original": "[TRANSLATE: 持续]",
+      "translated": "Continuous"
+    },
+    {
+      "key": "pdfCenter.tags.tracking",
+      "original": "[TRANSLATE: 跟踪]",
+      "translated": "Tracking"
+    },
+    {
+      "key": "pdfCenter.tags.monitoring",
+      "original": "[TRANSLATE: 监测]",
+      "translated": "Monitoring"
+    },
+    {
+      "key": "pdfCenter.tags.template",
+      "original": "[TRANSLATE: 模板]",
+      "translated": "Template"
+    },
+    {
+      "key": "pdfCenter.tags.quick",
+      "original": "[TRANSLATE: 快速]",
+      "translated": "Quick"
+    },
+    {
+      "key": "pdfCenter.tags.urgent",
+      "original": "[TRANSLATE: 急]",
+      "translated": "Urgent"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.title",
+      "original": "[TRANSLATE: 4-7-8 深呼吸练习]",
+      "translated": "4-7-8 Deep Breathing Exercise"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.subtitle",
+      "original": "[TRANSLATE: 通过调节神经系统自然缓解疼痛]",
+      "translated": "Naturally relieve pain by regulating the nervous system"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.phases.inhale",
+      "original": "[TRANSLATE: 吸气]",
+      "translated": "Inhale"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.phases.hold",
+      "original": "[TRANSLATE: 屏息]",
+      "translated": "Hold"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.phases.exhale",
+      "original": "[TRANSLATE: 呼气]",
+      "translated": "Exhale"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.instructions.title",
+      "original": "[TRANSLATE: 练习方法：]",
+      "translated": "Practice Method:"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.instructions.inhale",
+      "original": "[TRANSLATE: 吸气 4秒]",
+      "translated": "Inhale for 4 seconds"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.instructions.hold",
+      "original": "[TRANSLATE: 屏息 7秒]",
+      "translated": "Hold for 7 seconds"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.instructions.exhale",
+      "original": "[TRANSLATE: 呼气 8秒]",
+      "translated": "Exhale for 8 seconds"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.currentPhase",
+      "original": "[TRANSLATE: 正在进行：]",
+      "translated": "In Progress:"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.buttons.startPractice",
+      "original": "[TRANSLATE: 🫁 开始引导练习]",
+      "translated": "🫁 Start Guided Practice"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.buttons.stopPractice",
+      "original": "[TRANSLATE: 停止练习]",
+      "translated": "Stop Practice"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.buttons.practiceAgain",
+      "original": "[TRANSLATE: 再次练习]",
+      "translated": "Practice Again"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.buttons.oneCycleCompleted",
+      "original": "[TRANSLATE: ✅ 一轮练习完成！]",
+      "translated": "✅ One cycle completed!"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.benefits.title",
+      "original": "[TRANSLATE: 科学效果：]",
+      "translated": "Scientific Effects:"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.benefits.painPerception",
+      "original": "[TRANSLATE: 疼痛感知]",
+      "translated": "Pain Perception"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.benefits.muscleTension",
+      "original": "[TRANSLATE: 肌肉紧张]",
+      "translated": "Muscle Tension"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.benefits.relaxation",
+      "original": "[TRANSLATE: 放松感受]",
+      "translated": "Relaxation"
+    },
+    {
+      "key": "pdfCenter.breathingExercise.tip",
+      "original": "[TRANSLATE: 💡 建议：找一个舒适的坐位或躺位，放松全身肌肉。初学者建议进行3-4个循环。]",
+      "translated": "💡 Tip: Find a comfortable sitting or lying position, relax all muscles. Beginners are recommended to do 3-4 cycles."
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.urgentKeywords",
+      "original": "[TRANSLATE: 疼|痛|现在|马上|缓解]",
+      "translated": "Pain|Hurt|Now|Immediately|Relief"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.heatTherapy.keyword",
+      "original": "[TRANSLATE: 热敷]",
+      "translated": "热敷"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.heatTherapy.targetContent",
+      "original": "[TRANSLATE: 热疗法相关资源]",
+      "translated": "Heat Therapy Related Resources"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.warmWaterBottle.keyword",
+      "original": "[TRANSLATE: 敷热水袋]",
+      "translated": "敷热水袋"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.warmPatch.keyword",
+      "original": "[TRANSLATE: 暖宝宝]",
+      "translated": "暖宝宝"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.warmPatch.targetContent",
+      "original": "[TRANSLATE: 便携式热疗工具]",
+      "translated": "Portable Heat Therapy Tools"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.massage.keyword",
+      "original": "[TRANSLATE: 按摩]",
+      "translated": "按摩"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.massage.targetContent",
+      "original": "[TRANSLATE: 穴位按压/肌肉放松]",
+      "translated": "Acupressure/Muscle Relaxation"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.bellyMassage.keyword",
+      "original": "[TRANSLATE: 揉肚子]",
+      "translated": "揉肚子"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.userSearchKeywords.painkiller.keyword",
+      "original": "[TRANSLATE: 止痛药]",
+      "translated": "止痛药"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.englishToChineseKeywords.hotCompress",
+      "original": "[TRANSLATE: 热敷]",
+      "translated": "热敷"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.englishToChineseKeywords.warmBag",
+      "original": "[TRANSLATE: 敷热水袋]",
+      "translated": "敷热水袋"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.englishToChineseKeywords.warmBaby",
+      "original": "[TRANSLATE: 暖宝宝]",
+      "translated": "暖宝宝"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.englishToChineseKeywords.massage",
+      "original": "[TRANSLATE: 按摩]",
+      "translated": "按摩"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.englishToChineseKeywords.bellyMassage",
+      "original": "[TRANSLATE: 揉肚子]",
+      "translated": "揉肚子"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.englishToChineseKeywords.painkillers",
+      "original": "[TRANSLATE: 止痛药]",
+      "translated": "止痛药"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.consoleMessages.emergencyModeActivated",
+      "original": "[TRANSLATE: 🚨 紧急模式激活！]",
+      "translated": "🚨 Emergency Mode Activated!"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.consoleMessages.pdfDownloadError",
+      "original": "[TRANSLATE: PDF下载错误:]",
+      "translated": "PDF Download Error:"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.ariaLabels.readArticle",
+      "original": "[TRANSLATE: 阅读文章]",
+      "translated": "Read Article"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.ariaLabels.previewPdf",
+      "original": "[TRANSLATE: 预览PDF]",
+      "translated": "Preview PDF"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.ariaLabels.downloadPdf",
+      "original": "[TRANSLATE: 下载PDF文件]",
+      "translated": "Download PDF File"
+    },
+    {
+      "key": "pdfCenter.simplePdfCenter.emergencyMode.message",
+      "original": "[TRANSLATE: 紧急模式已激活 - 优先显示立即缓解资源]",
+      "translated": "Emergency mode activated - prioritizing immediate relief resources"
+    },
+    {
+      "key": "pdfCenter.breadcrumb.home",
+      "original": "[TRANSLATE: 首页]",
+      "translated": "Home"
+    },
+    {
+      "key": "pdfCenter.breadcrumb.immediateRelief",
+      "original": "[TRANSLATE: 即时缓解]",
+      "translated": "Immediate Relief"
+    },
+    {
+      "key": "pdfCenter.pdfCard.featured",
+      "original": "[TRANSLATE: 推荐]",
+      "translated": "Recommended"
+    }
+  ],
+  "needsTranslation": [
+    {
+      "key": "pdfCenter.constitutionTest.questions.energy.question",
+      "value": "您平时的精力状态如何？"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.energy.options.high",
+      "value": "精力充沛，很少感到疲劳"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.energy.options.medium",
+      "value": "精力一般，偶尔感到疲劳"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.energy.options.low",
+      "value": "经常感到疲劳，精力不足"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.coldTolerance.question",
+      "value": "您对寒冷的耐受性如何？"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.coldTolerance.options.good",
+      "value": "不怕冷，手脚温暖"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.coldTolerance.options.normal",
+      "value": "一般，季节变化时会感到冷"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.coldTolerance.options.poor",
+      "value": "很怕冷，手脚经常冰凉"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.digestion.question",
+      "value": "您的消化功能如何？"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.digestion.options.good",
+      "value": "消化良好，很少胃肠不适"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.digestion.options.normal",
+      "value": "消化一般，偶有不适"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.questions.digestion.options.poor",
+      "value": "消化不良，经常胃肠不适"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.results.yang.type",
+      "value": "阳性体质"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.results.yang.description",
+      "value": "体质较好，精力充沛，抗寒能力强"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.results.balanced.type",
+      "value": "平和体质"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.results.balanced.description",
+      "value": "体质平衡，需要适当调理"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.results.yin.type",
+      "value": "阴性体质"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.results.yin.description",
+      "value": "体质偏弱，需要温补调理"
+    },
+    {
+      "key": "pdfCenter.constitutionTest.progress",
+      "value": "问题 {current} / {total}"
+    },
+    {
+      "key": "pdfCenter.pdfCard.downloadPdf",
+      "value": "下载PDF"
+    },
+    {
+      "key": "pdfCenter.pdfCard.htmlPreview",
+      "value": "HTML预览"
+    },
+    {
+      "key": "pdfCenter.pdfCard.copyLink",
+      "value": "复制链接"
+    },
+    {
+      "key": "pdfCenter.pdfCard.openInNewTab",
+      "value": "新窗口打开"
+    },
+    {
+      "key": "pdfCenter.pdfCenterOptimized.searchPlaceholder",
+      "value": "搜索PDF资源..."
+    },
+    {
+      "key": "pdfCenter.pdfCenterOptimized.all",
+      "value": "全部"
+    },
+    {
+      "key": "pdfCenter.pdfCenterOptimized.noMatchingResources",
+      "value": "未找到匹配的资源"
+    },
+    {
+      "key": "pdfCenter.pdfCenterOptimized.downloadNow",
+      "value": "立即下载"
+    },
+    {
+      "key": "pdfCenter.pdfCenterOptimized.loadMore",
+      "value": "加载更多"
+    },
+    {
+      "key": "pdfCenter.articlesPdfSection.categories",
+      "value": "个分类"
+    },
+    {
+      "key": "pdfCenter.articlesPdfSection.featured",
+      "value": "个特色"
+    },
+    {
+      "key": "pdfCenter.articlesPdfSection.featuredResources",
+      "value": "特色资源"
+    },
+    {
+      "key": "pdfCenter.articlesPdfSection.allResources",
+      "value": "全部资源"
+    },
+    {
+      "key": "pdfCenter.articlesPdfSection.viewAllResources",
+      "value": "查看全部资源"
+    },
+    {
+      "key": "articleList.publishedOn",
+      "value": "发布于 {date, date, long}"
+    },
+    {
+      "key": "articleList.noArticles",
+      "value": "暂无文章。请稍后再回来查看！"
+    },
+    {
+      "key": "articleDetail.backToList",
+      "value": "返回文章列表"
+    },
+    {
+      "key": "articleDetail.publishedOn",
+      "value": "发布于 {date, date, long}"
+    },
+    {
+      "key": "articleDetail.notFoundTitle",
+      "value": "文章未找到"
+    },
+    {
+      "key": "articleDetail.notFoundDescription",
+      "value": "抱歉，我们找不到您要查找的文章。"
+    },
+    {
+      "key": "therapiesPage.title",
+      "value": "缓解疗法"
+    },
+    {
+      "key": "therapiesPage.description",
+      "value": "探索各种疗法和方法，以管理和减轻经期疼痛。"
+    },
+    {
+      "key": "therapyList.noTherapies",
+      "value": "暂无疗法。请稍后再回来查看！"
+    },
+    {
+      "key": "therapyDetail.backToList",
+      "value": "返回疗法列表"
+    },
+    {
+      "key": "therapyDetail.notFoundTitle",
+      "value": "疗法未找到"
+    },
+    {
+      "key": "therapyDetail.notFoundDescription",
+      "value": "抱歉，我们找不到您要查找的疗法。"
+    },
+    {
+      "key": "culturalCharmsPage.title",
+      "value": "探索文化中的慰藉：符咒与传统疗愈符号"
+    },
+    {
+      "key": "culturalCharmsPage.introTitle",
+      "value": "文化传统的旅程"
+    },
+    {
+      "key": "culturalCharmsPage.understandingTitle",
+      "value": "理解文化疗愈传统"
+    },
+    {
+      "key": "culturalCharmsPage.understandingText",
+      "value": "许多文化都有涉及使用特定物品或执行某些仪式的传统，这些仪式被认为可以影响健康、带来好运或驱除负能量。对一些人来说，这延伸到在经期不适等身体挑战期间寻求舒适或缓解。"
+    },
+    {
+      "key": "culturalCharmsPage.multimediaTitle",
+      "value": "文化符号与意象"
+    },
+    {
+      "key": "culturalCharmsPage.mediaAreaTitle",
+      "value": "文化符号与意象"
+    },
+    {
+      "key": "culturalCharmsPage.imagePlaceholder",
+      "value": "图片/媒体占位符"
+    },
+    {
+      "key": "culturalCharmsPage.promptSuggestionPrefix",
+      "value": "AI 提示:"
+    },
+    {
+      "key": "culturalCharmsPage.backHome",
+      "value": "返回首页"
+    },
+    {
+      "key": "toolsCollectionButton.buttonText",
+      "value": "访问完整工具集页面"
+    },
+    {
+      "key": "scientificParameters.heatTherapy.title",
+      "value": "热疗科学参数"
+    },
+    {
+      "key": "scientificParameters.heatTherapy.temperature",
+      "value": "40-45°C (104-113°F)"
+    },
+    {
+      "key": "scientificParameters.heatTherapy.duration",
+      "value": "15-20分钟"
+    },
+    {
+      "key": "scientificParameters.heatTherapy.frequency",
+      "value": "按需使用，每天最多3-4次"
+    },
+    {
+      "key": "scientificParameters.heatTherapy.timing",
+      "value": "疼痛开始时使用，持续2-3天"
+    },
+    {
+      "key": "scientificParameters.heatTherapy.mechanism",
+      "value": "增加血流，放松子宫肌肉"
+    },
+    {
+      "key": "scientificParameters.breathingExercise.title",
+      "value": "4-7-8呼吸法参数"
+    },
+    {
+      "key": "scientificParameters.breathingExercise.technique",
+      "value": "4-7-8呼吸法"
+    },
+    {
+      "key": "scientificParameters.breathingExercise.cycles",
+      "value": "初学者3-4个循环，逐渐增加到8个循环"
+    },
+    {
+      "key": "scientificParameters.breathingExercise.frequency",
+      "value": "急性疼痛期间每2-3小时一次"
+    },
+    {
+      "key": "scientificParameters.breathingExercise.timing",
+      "value": "疼痛强度达到0-10分制的5分以上时使用"
+    },
+    {
+      "key": "scientificParameters.breathingExercise.mechanism",
+      "value": "激活副交感神经系统，降低前列腺素敏感度"
+    },
+    {
+      "key": "scientificParameters.nsaid.title",
+      "value": "NSAID使用参数"
+    },
+    {
+      "key": "scientificParameters.nsaid.dosage",
+      "value": "布洛芬200-400mg，每6-8小时一次（每日最多1200mg）"
+    },
+    {
+      "key": "scientificParameters.nsaid.timing",
+      "value": "痉挛首次出现时开始使用，持续1-2天"
+    },
+    {
+      "key": "scientificParameters.nsaid.mechanism",
+      "value": "阻断前列腺素合成（COX-1/COX-2抑制）"
+    },
+    {
+      "key": "scientificParameters.nsaid.contraindications",
+      "value": "哮喘、胃溃疡、肾病患者避免使用"
+    },
+    {
+      "key": "searchBox.placeholder",
+      "value": "搜索文章..."
+    },
+    {
+      "key": "searchBox.noResults",
+      "value": "未找到相关文章"
+    },
+    {
+      "key": "searchBox.matchTypes.summary",
+      "value": "摘要"
+    },
+    {
+      "key": "searchBox.matchTypes.content",
+      "value": "内容"
+    },
+    {
+      "key": "bottomRecommendations.title",
+      "value": "相关工具"
+    },
+    {
+      "key": "bottomRecommendations.scenarioSolutions.title",
+      "value": "场景解决方案"
+    },
+    {
+      "key": "bottomRecommendations.scenarioSolutions.description",
+      "value": "从居家到外出，全方位经期不适解决方案"
+    },
+    {
+      "key": "bottomRecommendations.scenarioSolutions.actionText",
+      "value": "生活场景全覆盖"
+    },
+    {
+      "key": "bottomRecommendations.symptomAssessment.title",
+      "value": "症状评估工具"
+    },
+    {
+      "key": "bottomRecommendations.symptomAssessment.description",
+      "value": "科学评估经期症状，获取个性化建议"
+    },
+    {
+      "key": "downloads.common.pages",
+      "value": "页"
+    },
+    {
+      "key": "homePageContent.searchPlaceholder",
+      "value": "🔍 快速搜索痛经解决方案..."
+    },
+    {
+      "key": "homePageContent.searchTips",
+      "value": "💡 试试搜索\"5分钟缓解\"、\"热敷\"、\"前列腺素\""
+    },
+    {
+      "key": "homePageContent.seo.title",
+      "value": "PeriodHub - 专业痛经缓解方法和月经健康管理平台 | 科学指导，贴心陪伴"
+    },
+    {
+      "key": "homePageContent.seo.keywords",
+      "value": "痛经怎么缓解最快方法,痛经吃什么药最有效,月经推迟几天算正常,月经量少是什么原因,痛经缓解,月经疼痛,经期健康,女性健康,月经健康管理,经期疼痛怎么办,中医调理,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药,月经周期,经期护理,生理期,大姨妈,例假,月经不调,经期症状"
+    },
+    {
+      "key": "homePageContent.seo.ogTitle",
+      "value": "PeriodHub - 专业痛经缓解方法和月经健康管理平台"
+    },
+    {
+      "key": "homePageContent.seo.ogDescription",
+      "value": "专业的女性月经健康管理平台，提供科学的痛经缓解方法和个性化健康建议。"
+    },
+    {
+      "key": "homePageContent.statistics.improvement",
+      "value": "用户症状改善"
+    },
+    {
+      "key": "homePageContent.statistics.users",
+      "value": "10万+"
+    },
+    {
+      "key": "homePageContent.statistics.totalUsers",
+      "value": "累计用户"
+    },
+    {
+      "key": "homePageContent.statistics.articles",
+      "value": "专业文章"
+    },
+    {
+      "key": "homePageContent.smartTools.title",
+      "value": "智能健康工具"
+    },
+    {
+      "key": "homePageContent.medicalDisclaimer",
+      "value": "医疗免责声明"
+    },
+    {
+      "key": "embeddedPainAssessment.title",
+      "value": "疼痛评估工具"
+    },
+    {
+      "key": "embeddedPainAssessment.description",
+      "value": "快速评估您的疼痛程度"
+    },
+    {
+      "key": "embeddedPainAssessment.error",
+      "value": "加载失败，请刷新页面重试"
+    },
+    {
+      "key": "nsaidContent.scenes.scene1.title",
+      "value": "场景1：开场 - 表现痛经的不适感"
+    },
+    {
+      "key": "nsaidContent.scenes.scene1.narration",
+      "value": "很多女性每个月都会经历痛经，那种痉挛、疼痛的感觉让人非常不适。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene2.title",
+      "value": "场景2：解释痛经原因 - 前列腺素"
+    },
+    {
+      "key": "nsaidContent.scenes.scene2.text",
+      "value": "月经期间，子宫内膜会释放一种叫做\"前列腺素\"的物质。前列腺素会引起子宫肌肉剧烈收缩，导致疼痛。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene3.title",
+      "value": "场景3：引出NSAIDs"
+    },
+    {
+      "key": "nsaidContent.scenes.scene3.text",
+      "value": "而非甾体抗炎药，简称NSAID，是缓解痛经的常用药物。它们能从源头减少前列腺素的产生。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene4.title",
+      "value": "场景4：药物服用"
+    },
+    {
+      "key": "nsaidContent.scenes.scene4.text",
+      "value": "当您服下NSAID药片后，它会进入消化系统。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene5.title",
+      "value": "场景5：吸收进入血液"
+    },
+    {
+      "key": "nsaidContent.scenes.scene5.text",
+      "value": "然后通过消化道被吸收到血液里，随着血液流向全身。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene6.title",
+      "value": "场景6：分布到作用部位"
+    },
+    {
+      "key": "nsaidContent.scenes.scene6.text",
+      "value": "药物分子随着血液循环，最终抵达引起疼痛的部位——比如您的子宫周围。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene7.title",
+      "value": "场景7：作用机制 - 抑制COX酶"
+    },
+    {
+      "key": "nsaidContent.scenes.scene7.text",
+      "value": "在这里，NSAID药物找到了产生前列腺素的关键\"工厂\"——环氧合酶，并抑制了它的活性。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene8.title",
+      "value": "场景8：减少前列腺素"
+    },
+    {
+      "key": "nsaidContent.scenes.scene8.text",
+      "value": "环氧合酶的工作被打断，前列腺素的合成量就大大降低了。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene9.title",
+      "value": "场景9：疼痛缓解"
+    },
+    {
+      "key": "nsaidContent.scenes.scene9.text",
+      "value": "随着前列腺素减少，子宫收缩变得温和，疼痛感明显减轻。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene10.title",
+      "value": "场景10：药物代谢"
+    },
+    {
+      "key": "nsaidContent.scenes.scene10.text",
+      "value": "完成任务后，NSAID药物会被肝脏代谢，最终通过肾脏排出体外。"
+    },
+    {
+      "key": "nsaidContent.scenes.scene11.title",
+      "value": "场景11：总结"
+    },
+    {
+      "key": "nsaidContent.scenes.scene11.text",
+      "value": "这就是NSAID缓解痛经的完整过程：从服用到吸收，从作用到代谢，科学而有效。"
+    },
+    {
+      "key": "nsaidContent.ui.sceneIndicator",
+      "value": "场景 {current} / {total}"
+    },
+    {
+      "key": "nsaidContent.ui.noScenes",
+      "value": "没有可播放的场景"
+    },
+    {
+      "key": "nsaidContent.ui.videoError",
+      "value": "视频加载错误"
+    },
+    {
+      "key": "nsaidContent.ui.videoErrorDescription",
+      "value": "抱歉，视频加载失败。请检查您的网络连接或稍后再试。"
+    },
+    {
+      "key": "disclaimer.title",
+      "value": "医疗免责声明"
+    },
+    {
+      "key": "errors.title",
+      "value": "出现错误"
+    },
+    {
+      "key": "errors.description",
+      "value": "评估工具暂时无法使用，请稍后再试。"
+    },
+    {
+      "key": "errors.reload",
+      "value": "重新加载"
+    },
+    {
+      "key": "0-2",
+      "value": "0-2"
+    },
+    {
+      "key": "3-4",
+      "value": "3-4"
+    },
+    {
+      "key": "5-7",
+      "value": "5-7"
+    },
+    {
+      "key": "8-10",
+      "value": "8-10"
+    }
+  ]
+}

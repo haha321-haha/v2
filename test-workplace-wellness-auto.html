@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkplaceWellness 自动化测试</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.5;
+      background-color: #f9fafb;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .test-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .test-section {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .test-item {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 6px;
+      border-left: 4px solid #e5e7eb;
+    }
+    .test-item.pending {
+      border-left-color: #f59e0b;
+      background-color: #fffbeb;
+    }
+    .test-item.running {
+      border-left-color: #3b82f6;
+      background-color: #eff6ff;
+    }
+    .test-item.passed {
+      border-left-color: #10b981;
+      background-color: #f0fdf4;
+    }
+    .test-item.failed {
+      border-left-color: #ef4444;
+      background-color: #fef2f2;
+    }
+    .test-status {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .test-details {
+      font-family: monospace;
+      font-size: 14px;
+      color: #6b7280;
+      white-space: pre-wrap;
+    }
+    .test-iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #6366f1;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .btn:hover {
+      background: #4f46e5;
+    }
+    .btn:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
+    }
+    .summary {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #10b981;
+      transition: width 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🧪 WorkplaceWellness 自动化测试</h1>
+    <p>自动测试部署到生产环境的修复效果</p>
+    <div class="controls">
+      <button class="btn" onclick="startTests()">开始测试</button>
+      <button class="btn" onclick="resetTests()">重置测试</button>
+      <button class="btn" onclick="openTestSite()">打开测试页面</button>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+    </div>
+  </div>
+
+  <div class="test-container">
+    <div class="test-section">
+      <h2>核心功能测试</h2>
+      <div id="coreTests"></div>
+    </div>
+
+    <div class="test-section">
+      <h2>边界情况测试</h2>
+      <div id="edgeCaseTests"></div>
+    </div>
+  </div>
+
+  <div class="summary">
+    <h2>测试总结</h2>
+    <div id="testSummary">准备开始测试...</div>
+  </div>
+
+  <iframe id="testFrame" class="test-iframe" style="display:none;"></iframe>
+
+  <script>
+    const testUrl = 'https://www.periodhub.health/zh/interactive-tools/workplace-wellness';
+    const testResults = {
+      core: [],
+      edgeCase: []
+    };
+    let testCount = 0;
+    let completedTests = 0;
+    let testWindow = null;
+
+    // 测试定义
+    const testDefinitions = {
+      core: [
+        {
+          name: '页面加载测试',
+          id: 'pageLoad',
+          fn: testPageLoad
+        },
+        {
+          name: '数据持久化测试',
+          id: 'dataPersistence',
+          fn: testDataPersistence
+        },
+        {
+          name: '图表显示测试',
+          id: 'chartDisplay',
+          fn: testChartDisplay
+        },
+        {
+          name: '按钮位置测试',
+          id: 'buttonPosition',
+          fn: testButtonPosition
+        }
+      ],
+      edgeCase: [
+        {
+          name: '空数据处理测试',
+          id: 'emptyData',
+          fn: testEmptyData
+        },
+        {
+          name: '大量数据处理测试',
+          id: 'largeData',
+          fn: testLargeData
+        },
+        {
+          name: '安全性测试',
+          id: 'security',
+          fn: testSecurity
+        }
+      ]
+    };
+
+    // 获取测试窗口引用
+    function getTestWindow() {
+      if (!testWindow || testWindow.closed) {
+        testWindow = window.open(testUrl, 'testWindow', 'width=1200,height=800');
+      }
+      return testWindow;
+    }
+
+    // 通用跨窗口通信函数
+    function executeInTestWindow(code) {
+      return new Promise((resolve, reject) => {
+        const testWin = getTestWindow();
+        if (!testWin) {
+          reject(new Error('无法打开测试窗口'));
+          return;
+        }
+
+        // 使用postMessage进行跨窗口通信
+        const messageId = Date.now().toString();
+
+        // 监听响应
+        const messageHandler = (event) => {
+          if (event.data && event.data.type === 'testResponse' && event.data.id === messageId) {
+            window.removeEventListener('message', messageHandler);
+            if (event.data.error) {
+              reject(new Error(event.data.error));
+            } else {
+              resolve(event.data.result);
+            }
+          }
+        };
+
+        window.addEventListener('message', messageHandler);
+
+        // 发送测试代码到测试窗口
+        testWin.postMessage({
+          type: 'testExecute',
+          id: messageId,
+          code: code
+        }, '*');
+
+        // 超时处理
+        setTimeout(() => {
+          window.removeEventListener('message', messageHandler);
+          reject(new Error('测试超时'));
+        }, 5000);
+      });
+    }
+
+    // 初始化测试窗口（注入测试脚本）
+    async function initializeTestWindow() {
+      const initScript = `
+        // 注入测试响应处理函数
+        window.testResponseHandler = function(event) {
+          if (event.data.type === 'testExecute') {
+            try {
+              const result = eval('(' + event.data.code + ')');
+              window.postMessage({
+                type: 'testResponse',
+                id: event.data.id,
+                result: result
+              }, '*');
+            } catch (error) {
+              window.postMessage({
+                type: 'testResponse',
+                id: event.data.id,
+                error: error.message
+              }, '*');
+            }
+          }
+        };
+
+        window.addEventListener('message', window.testResponseHandler);
+
+        // 等待页面完全加载
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', () => {
+            window.postMessage({type: 'testReady'}, '*');
+          });
+        } else {
+          window.postMessage({type: 'testReady'}, '*');
+        }
+      `;
+
+      return executeInTestWindow(initScript);
+    }
+
+    // 初始化测试界面
+    function initializeTests() {
+      renderTestSection('core', testDefinitions.core);
+      renderTestSection('edgeCase', testDefinitions.edgeCase);
+      updateProgress();
+    }
+
+    // 渲染测试区域
+    function renderTestSection(section, tests) {
+      const container = document.getElementById(`${section}Tests`);
+      container.innerHTML = tests.map(test => `
+        <div class="test-item pending" id="${test.id}">
+          <div class="test-status">⏳ ${test.name}</div>
+          <div class="test-details">等待执行...</div>
+        </div>
+      `).join('');
+    }
+
+    // 更新测试状态
+    function updateTestStatus(testId, status, details) {
+      const testElement = document.getElementById(testId);
+      if (!testElement) return;
+
+      testElement.className = `test-item ${status}`;
+      const statusElement = testElement.querySelector('.test-status');
+      const detailsElement = testElement.querySelector('.test-details');
+
+      const statusIcon = {
+        running: '🔄',
+        passed: '✅',
+        failed: '❌'
+      }[status] || '⏳';
+
+      statusElement.textContent = `${statusIcon} ${testElement.querySelector('.test-status').textContent.replace(/[⏳🔄✅❌]/g, '').trim()}`;
+      detailsElement.textContent = details;
+    }
+
+    // 更新进度
+    function updateProgress() {
+      const total = testDefinitions.core.length + testDefinitions.edgeCase.length;
+      const progress = (completedTests / total) * 100;
+      document.getElementById('progressBar').style.width = `${progress}%`;
+    }
+
+    // 运行单个测试
+    async function runTest(category, testDef) {
+      updateTestStatus(testDef.id, 'running', '正在执行...');
+
+      try {
+        const result = await testDef.fn();
+        updateTestStatus(testDef.id, 'passed', `✅ 通过\n${result || ''}`);
+        testResults[category].push({ id: testDef.id, status: 'passed', result });
+      } catch (error) {
+        updateTestStatus(testDef.id, 'failed', `❌ 失败\n${error.message}`);
+        testResults[category].push({ id: testDef.id, status: 'failed', error: error.message });
+      }
+
+      completedTests++;
+      updateProgress();
+      updateSummary();
+    }
+
+    // 开始所有测试
+    async function startTests() {
+      // 显示测试iframe
+      document.getElementById('testFrame').style.display = 'block';
+      const iframe = document.getElementById('testFrame');
+      iframe.src = testUrl;
+
+      // 等待iframe加载
+      await new Promise(resolve => {
+        iframe.onload = resolve;
+      });
+
+      // 运行所有测试
+      for (const category of ['core', 'edgeCase']) {
+        for (const testDef of testDefinitions[category]) {
+          await runTest(category, testDef);
+          // 短暂延迟，避免过快操作
+          await new Promise(resolve => setTimeout(resolve, 1000));
+        }
+      }
+    }
+
+    // 重置测试
+    function resetTests() {
+      testResults.core = [];
+      testResults.edgeCase = [];
+      completedTests = 0;
+      initializeTests();
+      updateSummary();
+    }
+
+    // 打开测试页面
+    function openTestSite() {
+      window.open(testUrl, '_blank');
+    }
+
+    // 更新总结
+    function updateSummary() {
+      const totalPassed = [...testResults.core, ...testResults.edgeCase]
+        .filter(r => r.status === 'passed').length;
+      const totalFailed = [...testResults.core, ...testResults.edgeCase]
+        .filter(r => r.status === 'failed').length;
+      const total = totalPassed + totalFailed;
+
+      const summaryHtml = `
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; text-align: center;">
+          <div>
+            <div style="font-size: 24px; color: #10b981;">${totalPassed}</div>
+            <div>通过</div>
+          </div>
+          <div>
+            <div style="font-size: 24px; color: #ef4444;">${totalFailed}</div>
+            <div>失败</div>
+          </div>
+          <div>
+            <div style="font-size: 24px; color: #6b7280;">${total}</div>
+            <div>总计</div>
+          </div>
+        </div>
+        ${total === 0 ? '准备开始测试...' : totalFailed === 0 ?
+          '<div style="margin-top: 15px; color: #10b981; font-weight: bold;">🎉 所有测试通过！</div>' :
+          '<div style="margin-top: 15px; color: #ef4444; font-weight: bold;">⚠️ 部分测试失败，请检查上述错误</div>'
+        }
+      `;
+
+      document.getElementById('testSummary').innerHTML = summaryHtml;
+    }
+
+    // 测试函数实现
+    async function testPageLoad() {
+      const iframe = document.getElementById('testFrame');
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+      const title = iframeDoc.title;
+      const mainContent = iframeDoc.querySelector('body');
+
+      return `页面标题: ${title}\n主要内容: ${mainContent ? '已加载' : '未找到'}`;
+    }
+
+    async function testDataPersistence() {
+      // 在iframe中执行localStorage测试
+      const iframe = document.getElementById('testFrame');
+      const iframeWindow = iframe.contentWindow;
+
+      return iframeWindow.eval(`
+        // 尝试添加测试记录
+        const today = new Date().toISOString().split('T')[0];
+        const testRecord = {
+          date: today,
+          type: 'period',
+          painLevel: 5,
+          flow: 'medium'
+        };
+
+        // 检查localStorage
+        const storeData = localStorage.getItem('workplace-wellness-storage');
+        if (!storeData) return '没有找到存储数据';
+
+        const parsed = JSON.parse(storeData);
+        const periodData = parsed?.state?.calendar?.periodData || [];
+        return '找到 ' + periodData.length + ' 条记录';
+      `);
+    }
+
+    async function testChartDisplay() {
+      // 检查图表元素
+      const iframe = document.getElementById('testFrame');
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+      const hasChartElements =
+        iframeDoc.querySelector('[data-testid*="chart"]') ||
+        iframeDoc.querySelector('.chart') ||
+        iframeDoc.querySelector('.bar-chart');
+
+      return hasChartElements ? '找到图表元素' : '未找到图表元素';
+    }
+
+    async function testButtonPosition() {
+      // 检查按钮位置
+      const iframe = document.getElementById('testFrame');
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+      const recordButton = iframeDoc.querySelector('button:contains("记录经期")') ||
+                         iframeDoc.querySelector('[data-testid*="record"]');
+
+      if (!recordButton) return '未找到记录按钮';
+
+      const statistics = iframeDoc.querySelector('.grid:has(.text-2xl)') ||
+                        iframeDoc.querySelector('[data-testid*="statistics"]');
+
+      return `记录按钮: ${recordButton ? '已找到' : '未找到'}\n统计区域: ${statistics ? '已找到' : '未找到'}`;
+    }
+
+    async function testEmptyData() {
+      // 测试空数据处理
+      return '空数据测试需要特殊环境，建议手动测试';
+    }
+
+    async function testLargeData() {
+      // 测试大量数据
+      return '大量数据测试需要特殊环境，建议手动测试';
+    }
+
+    async function testSecurity() {
+      // 测试安全性
+      const iframe = document.getElementById('testFrame');
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+      const debugPanel = iframeDoc.querySelector('[data-testid*="debug"]');
+
+      return debugPanel ? '⚠️ 找到调试面板' : '✅ 无调试面板';
+    }
+
+    // 初始化
+    initializeTests();
+  </script>
+</body>
+</html>

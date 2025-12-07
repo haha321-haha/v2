@@ -1,0 +1,213 @@
+/**
+ * 伴侣沟通手册组件样式
+ * 基于现有Tailwind配置，适配项目设计系统
+ */
+
+/* 主容器样式 */
+.partner-handbook-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* 英雄区域渐变背景 */
+.hero-gradient {
+  @apply bg-gradient-to-br from-primary-700 to-secondary-700;
+}
+
+/* 测试容器 */
+.quiz-container {
+  @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.quiz-card {
+  @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow;
+}
+
+/* 测试选项样式 */
+.quiz-option {
+  @apply p-4 rounded-lg border-2 border-neutral-200 hover:border-primary-300 transition-colors cursor-pointer;
+}
+
+.quiz-option.selected {
+  @apply border-primary-500 bg-primary-50;
+}
+
+.quiz-option.correct {
+  @apply border-green-500 bg-green-50;
+}
+
+.quiz-option.incorrect {
+  @apply border-red-500 bg-red-50;
+}
+
+/* 测试进度条 */
+.quiz-progress {
+  @apply w-full bg-neutral-200 rounded-full h-2;
+}
+
+.quiz-progress-bar {
+  @apply bg-primary-600 h-2 rounded-full transition-all duration-300;
+}
+
+/* 训练计划卡片 */
+.training-day-card {
+  @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow;
+}
+
+.training-week-card {
+  @apply bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow;
+}
+
+/* 训练任务 */
+.training-task {
+  @apply bg-white rounded-lg p-4 border border-neutral-200 hover:border-primary-300 transition-colors;
+}
+
+.training-task.completed {
+  @apply bg-green-50 border-green-300;
+}
+
+/* 按钮样式 */
+.btn-primary {
+  @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-neutral-200 text-neutral-800 px-6 py-3 rounded-lg font-medium hover:bg-neutral-300 transition-colors;
+}
+
+.btn-outline {
+  @apply border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-primary-600 hover:text-white transition-colors;
+}
+
+/* 移动端触控优化 */
+.mobile-touch-target {
+  @apply min-h-[44px] min-w-[44px];
+}
+
+/* 语言切换器 */
+.language-switcher {
+  @apply flex items-center space-x-2 bg-white rounded-lg p-2 shadow-md;
+}
+
+.language-option {
+  @apply px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer;
+}
+
+.language-option.active {
+  @apply bg-primary-600 text-white;
+}
+
+.language-option.inactive {
+  @apply text-neutral-600 hover:bg-neutral-100;
+}
+
+/* 结果展示 */
+.results-container {
+  @apply bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-8 shadow-lg;
+}
+
+.score-display {
+  @apply text-4xl font-bold text-primary-600 mb-4;
+}
+
+.level-badge {
+  @apply inline-block px-4 py-2 rounded-full text-sm font-medium;
+}
+
+.level-beginner {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.level-intermediate {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.level-advanced {
+  @apply bg-purple-100 text-purple-800;
+}
+
+.level-expert {
+  @apply bg-green-100 text-green-800;
+}
+
+/* 相关链接 */
+.related-links-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.related-link-card {
+  @apply bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer;
+}
+
+.related-link-card.high-relevance {
+  @apply border-l-4 border-primary-500;
+}
+
+.related-link-card.medium-relevance {
+  @apply border-l-4 border-blue-500;
+}
+
+.related-link-card.low-relevance {
+  @apply border-l-4 border-neutral-400;
+}
+
+.related-link-card.required {
+  @apply border-l-4 border-red-500;
+}
+
+/* 查看更多文章按钮 */
+.view-more-articles {
+  @apply text-center mt-12;
+}
+
+.view-more-button {
+  @apply inline-flex items-center justify-center bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors;
+}
+
+/* 医疗免责声明 */
+.medical-disclaimer {
+  @apply bg-red-50 border border-red-200 rounded-lg p-4 sm:p-6;
+}
+
+.medical-disclaimer-icon {
+  @apply w-5 h-5 sm:w-6 sm:h-6 text-red-600 mt-0.5;
+}
+
+.medical-disclaimer-title {
+  @apply font-bold text-red-800 mb-2 text-sm sm:text-base;
+}
+
+.medical-disclaimer-content {
+  @apply text-xs sm:text-sm text-red-700 leading-relaxed;
+}
+
+/* 响应式网格 */
+.responsive-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.responsive-grid-2 {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+/* 动画效果 */
+.fade-in {
+  @apply animate-fade-in;
+}
+
+.slide-up {
+  @apply animate-slide-up;
+}
+
+.scale-in {
+  @apply animate-scale-in;
+}
+
+/* 加载状态 */
+.loading-skeleton {
+  @apply bg-neutral-200 animate-pulse rounded;
+}
+
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600;
+}

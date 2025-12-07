@@ -1,0 +1,35 @@
+
+> periodhub-health@0.1.0 lint
+> eslint app/[locale]/interactive-tools/ components/ui/ --ext .ts,.tsx
+
+
+/Users/duting/Downloads/money旺财/--main/components/ui/EnhancedImage.tsx
+  17:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  78:27  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  79:5   warning  Unexpected console statement              no-console
+
+/Users/duting/Downloads/money旺财/--main/components/ui/OptimizedImage.tsx
+  17:17  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  43:27  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:5   warning  Unexpected console statement              no-console
+
+/Users/duting/Downloads/money旺财/--main/components/ui/OptimizedSVG.tsx
+   13:17  error    Unexpected any. Specify a different type                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+   62:27  error    Unexpected any. Specify a different type                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+   63:5   warning  Unexpected console statement                                                                                                                                                                                                                                    no-console
+  127:9   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/duting/Downloads/money旺财/--main/components/ui/SafeSmartImage.tsx
+   20:17  error    Unexpected any. Specify a different type                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+   63:9   error    'isProduction' is assigned a value but never used                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+   64:9   error    'isDevelopment' is assigned a value but never used                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+   67:27  error    Unexpected any. Specify a different type                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+   69:7   warning  Unexpected console statement                                                                                                                                                                                                                                    no-console
+   84:7   warning  Unexpected console statement                                                                                                                                                                                                                                    no-console
+   90:9   error    'resetError' is assigned a value but never used                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  101:5   warning  Unexpected console statement                                                                                                                                                                                                                                    no-console
+  114:7   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  186:7   warning  Unexpected console statement                                                                                                                                                                                                                                    no-console
+  223:5   warning  Unexpected console statement                                                                                                                                                                                                                                    no-console
+
+✖ 21 problems (11 errors, 10 warnings)

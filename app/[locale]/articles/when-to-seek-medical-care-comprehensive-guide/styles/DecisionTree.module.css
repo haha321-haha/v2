@@ -1,0 +1,308 @@
+/* 决策树样式 - 基于souW1e2设计 */
+
+.container {
+  @apply bg-white rounded-2xl shadow-lg p-6 md:p-8 my-10 border border-gray-100;
+  transition: all 0.3s ease;
+}
+
+.header {
+  @apply mb-6;
+}
+
+.title {
+  @apply text-2xl font-bold text-gray-800 mb-4 flex items-center;
+}
+
+.icon {
+  @apply mr-3 text-purple-500;
+}
+
+.description {
+  @apply text-gray-600 text-base leading-relaxed;
+}
+
+/* 路径指示器 */
+.pathIndicator {
+  @apply mb-8 p-4 bg-gray-50 rounded-xl border border-gray-200;
+}
+
+.pathTitle {
+  @apply text-sm font-semibold text-gray-700 mb-3;
+}
+
+.pathSteps {
+  @apply flex flex-wrap items-center gap-2;
+}
+
+.pathStep {
+  @apply flex items-center bg-white rounded-lg px-3 py-2 border border-gray-200 text-sm;
+}
+
+.stepNumber {
+  @apply w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2;
+}
+
+.stepText {
+  @apply text-gray-700 mr-2;
+}
+
+.stepChoice {
+  @apply text-lg;
+}
+
+.stepArrow {
+  @apply text-gray-400 mx-2;
+}
+
+/* 内容区域 */
+.content {
+  @apply mb-8;
+  transition: all 0.3s ease;
+}
+
+.content.animating {
+  @apply opacity-50;
+}
+
+/* 问题卡片 */
+.questionCard {
+  @apply bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-200;
+}
+
+.questionHeader {
+  @apply mb-4;
+}
+
+.questionTitle {
+  @apply text-lg font-semibold text-gray-800;
+}
+
+.questionContent {
+  @apply space-y-6;
+}
+
+.questionText {
+  @apply text-xl text-gray-800 leading-relaxed font-medium;
+}
+
+.questionOptions {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+.optionButton {
+  @apply flex items-center justify-center px-6 py-4 rounded-xl font-semibold text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.yesButton {
+  @apply bg-green-500 text-white hover:bg-green-600 focus:ring-green-500;
+}
+
+.noButton {
+  @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-500;
+}
+
+.optionIcon {
+  @apply mr-2;
+}
+
+/* 结果卡片 */
+.resultCard {
+  @apply rounded-xl p-6 border-2;
+  animation: resultAppear 0.6s ease-out;
+}
+
+@keyframes resultAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.resultHeader {
+  @apply flex items-start mb-4;
+}
+
+.resultIcon {
+  @apply text-4xl mr-4 flex-shrink-0;
+}
+
+.resultInfo {
+  @apply flex-1;
+}
+
+.resultTitle {
+  @apply text-2xl font-bold mb-2;
+}
+
+.resultUrgency {
+  @apply text-lg font-medium opacity-80;
+}
+
+.resultContent {
+  @apply space-y-6;
+}
+
+.resultText {
+  @apply text-lg leading-relaxed;
+}
+
+/* 推荐行动 */
+.resultActions {
+  @apply mt-6;
+}
+
+.actionsTitle {
+  @apply text-xl font-semibold mb-4;
+}
+
+.actionsList {
+  @apply space-y-3;
+}
+
+.actionItem {
+  @apply flex items-start p-3 bg-white bg-opacity-50 rounded-lg;
+}
+
+.actionNumber {
+  @apply w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0;
+}
+
+.actionText {
+  @apply text-gray-800 leading-relaxed;
+}
+
+/* 紧急情况警告 */
+.emergencyAlert {
+  @apply bg-red-100 border border-red-300 rounded-lg p-4 mt-6 flex items-start;
+}
+
+.emergencyIcon {
+  @apply text-2xl mr-3 flex-shrink-0;
+}
+
+.emergencyContent {
+  @apply flex-1;
+}
+
+.emergencyContent strong {
+  @apply text-red-800 font-semibold block mb-1;
+}
+
+.emergencyContent p {
+  @apply text-red-700 text-sm;
+}
+
+/* 控制按钮 */
+.controls {
+  @apply flex justify-center mb-6;
+}
+
+.restartButton,
+.resetButton {
+  @apply flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-semibold hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-all duration-200;
+}
+
+.controlIcon {
+  @apply mr-2;
+}
+
+/* 进度指示器 */
+.progress {
+  @apply text-center;
+}
+
+.progressBar {
+  @apply w-full bg-gray-200 rounded-full h-2 mb-3;
+}
+
+.progressFill {
+  @apply bg-blue-500 h-2 rounded-full transition-all duration-500;
+}
+
+.progressText {
+  @apply text-sm text-gray-600;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .container {
+    @apply p-4 mx-2;
+  }
+
+  .title {
+    @apply text-xl;
+  }
+
+  .questionCard {
+    @apply p-4;
+  }
+
+  .questionText {
+    @apply text-lg;
+  }
+
+  .questionOptions {
+    @apply flex-col;
+  }
+
+  .optionButton {
+    @apply text-base py-3;
+    min-height: 48px; /* 增加移动端触摸区域 */
+  }
+
+  .resultCard {
+    @apply p-4;
+  }
+
+  .resultTitle {
+    @apply text-xl;
+  }
+
+  .pathSteps {
+    @apply flex-col items-start gap-2;
+  }
+
+  .stepArrow {
+    @apply rotate-90 my-1 mx-0;
+  }
+}
+
+/* 可访问性增强 */
+.optionButton:focus {
+  @apply ring-2 ring-offset-2;
+}
+
+.restartButton:focus,
+.resetButton:focus {
+  @apply ring-2 ring-gray-500 ring-offset-2;
+}
+
+/* 高对比度模式 */
+@media (prefers-contrast: high) {
+  .container {
+    @apply border-2 border-gray-800;
+  }
+
+  .questionCard {
+    @apply border-2 border-blue-600;
+  }
+
+  .resultCard {
+    @apply border-4;
+  }
+}
+
+/* 减少动画模式 */
+@media (prefers-reduced-motion: reduce) {
+  .content,
+  .resultCard,
+  .optionButton,
+  .progressFill {
+    animation: none;
+    transition: none;
+  }
+}

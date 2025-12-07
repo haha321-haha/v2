@@ -1,0 +1,390 @@
+
+服务器组件渲染错误
+
+
+根据你提供的诊断报告和日志分析，我来给出专业评估和优化方案。
+
+## 📊 方案评估
+
+你的诊断报告**方向正确**，但我认为有几个关键点需要调整优先级：
+
+### ✅ 正确的分析
+1. 错误发生在渲染阶段（不是数据获取阶段）
+2. 已排除数据序列化问题（第1-8轮修复）
+3. 已排除 ReactMarkdown 问题（第9轮修复）
+
+### ⚠️ 需要调整的优先级
+
+根据错误特征 `digest: '1225030432'` 和时间点分析，我建议调整优先级：
+
+## 🎯 优化后的修复方案
+
+### **优先级 0（最高优先级）：检查 Server/Client 组件边界**
+
+这是 Next.js 15 App Router 中最常见的 `1225030432` 错误原因：
+
+**问题点**：
+```typescript
+// ❌ 在 Server Component 中传递不可序列化的值给 Client Component
+<ClientComponent onAction={() => {}} />  // 函数
+<ClientComponent data={new Date()} />    // Date 对象
+<ClientComponent config={someComplexObject} />  // 包含函数的对象
+```
+
+**修复方法**：
+```typescript
+// ✅ 只传递可序列化的原始数据
+<ClientComponent
+  onActionName="delete"  // 字符串
+  timestamp={date.toISOString()}  // ISO 字符串
+  configData={JSON.parse(JSON.stringify(config))}  // 纯数据
+/>
+```
+
+**立即检查这些位置**：
+1. `app/[locale]/articles/[slug]/page.tsx` 中所有动态导入的组件
+2. 特别检查 `ArticleInteractions`、`ReadingProgress`、`TableOfContents` 的 props
+
+---
+
+### **优先级 1（高）：检查 `medicalEntities` 数据结构**
+
+**修复步骤**：让我基于专业经验给出完整的优化方案：
+
+### 🔧 完整优化方案
+
+#### **阶段 1：立即排查（5分钟）**
+
+创建诊断工具来快速定位问题：
+
+```typescript
+// lib/utils/serialization-check.ts
+export function findNonSerializableValues(obj: any, path = 'root'): string[] {
+  const issues: string[] = [];
+
+  if (obj === null || obj === undefined) return issues;
+
+  const type = typeof obj;
+
+  // 检查不可序列化的类型
+  if (type === 'function') {
+    issues.push(`${path}: Function detected`);
+    return issues;
+  }
+
+  if (type === 'symbol') {
+    issues.push(`${path}: Symbol detected`);
+    return issues;
+  }
+
+  if (obj instanceof Date) {
+    issues.push(`${path}: Date object detected (use .toISOString())`);
+    return issues;
+  }
+
+  if (obj instanceof RegExp) {
+    issues.push(`${path}: RegExp detected`);
+    return issues;
+  }
+
+  // 检查循环引用
+  const seen = new WeakSet();
+  if (type === 'object' && !Array.isArray(obj)) {
+    if (seen.has(obj)) {
+      issues.push(`${path}: Circular reference detected`);
+      return issues;
+    }
+    seen.add(obj);
+  }
+
+  // 递归检查对象和数组
+  if (type === 'object') {
+    if (Array.isArray(obj)) {
+      obj.forEach((item, index) => {
+        issues.push(...findNonSerializableValues(item, `${path}[${index}]`));
+      });
+    } else {
+      Object.entries(obj).forEach(([key, value]) => {
+        issues.push(...findNonSerializableValues(value, `${path}.${key}`));
+      });
+    }
+  }
+
+  return issues;
+}
+```
+
+**在 `page.tsx` 中临时添加诊断**：
+
+```typescript
+// app/[locale]/articles/[slug]/page.tsx
+import { findNonSerializableValues } from '@/lib/utils/serialization-check';
+
+export default async function ArticlePage({ params }: ArticlePageProps) {
+  // ... 现有代码 ...
+
+  // 🔍 诊断代码（临时）
+  if (process.env.NODE_ENV === 'development') {
+    console.log('=== Serialization Check ===');
+    console.log('Article:', findNonSerializableValues(article));
+    console.log('Related:', findNonSerializableValues(relatedArticles));
+    console.log('Structured Data:', findNonSerializableValues(articleStructuredData));
+  }
+
+  // ... 渲染代码 ...
+}
+```
+
+---
+
+#### **阶段 2：修复 Server/Client 边界（最可能的问题）**
+
+**检查并修复所有动态导入组件的 props**：
+
+```typescript
+// ❌ 可能导致错误的写法
+<ArticleInteractions
+  article={article}  // 整个对象可能包含不可序列化的值
+  onLike={handleLike}  // 函数
+/>
+
+<ReadingProgress
+  content={article.content}  // 可能很大
+  config={{ /* ... */ }}  // 可能包含函数
+/>
+
+// ✅ 正确的写法
+<ArticleInteractions
+  articleId={article.id}
+  title={article.title}
+  slug={article.slug}
+  // 只传递必要的原始数据
+/>
+
+<ReadingProgress
+  contentLength={article.content?.length || 0}
+  estimatedReadingTime={article.readingTime}
+/>
+```
+
+---
+
+#### **阶段 3：修复 `medicalEntities` 和结构化数据**
+
+**修改 `generateArticleStructuredData`**：
+
+```typescript
+// lib/seo/article-structured-data.tsx
+import { cleanDataForJSON } from '@/lib/utils/json';
+
+export function generateArticleStructuredData(props: ArticleStructuredDataProps) {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.periodhub.health";
+
+  // 🔧 安全获取 condition，确保默认值
+  const condition = props.primaryConditionKey && medicalEntities[props.primaryConditionKey]
+    ? medicalEntities[props.primaryConditionKey]
+    : medicalEntities.dysmenorrhea;
+
+  // 🔧 构建纯数据对象
+  const rawData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": `${baseUrl}/${props.locale}/articles/${props.slug}#webpage`,
+    url: `${baseUrl}/${props.locale}/articles/${props.slug}`,
+    name: props.title,
+    description: props.description,
+    datePublished: props.publishedDate,
+    dateModified: props.lastModified,
+
+    // 🔧 确保 condition 数据是纯对象
+    about: {
+      "@type": "MedicalCondition",
+      name: String(condition.name || "Dysmenorrhea"),
+      ...(condition.icd10 && {
+        code: {
+          "@type": "MedicalCode",
+          code: String(condition.icd10),
+          codingSystem: "ICD-10",
+        },
+      }),
+      ...(condition.snomed && {
+        sameAs: `http://snomed.info/id/${condition.snomed}`,
+      }),
+    },
+
+    // ... 其他字段 ...
+  };
+
+  // 🔧 最后一道防线：清理整个对象
+  return cleanDataForJSON(rawData);
+}
+```
+
+---
+
+#### **阶段 4：改进 `cleanDataForJSON` 函数**
+
+```typescript
+// lib/utils/json.ts
+export function cleanDataForJSON<T>(obj: T): T {
+  if (obj === null || obj === undefined) {
+    return obj;
+  }
+
+  // 处理 Date
+  if (obj instanceof Date) {
+    return obj.toISOString() as any;
+  }
+
+  // 处理函数 - 移除
+  if (typeof obj === 'function') {
+    return undefined as any;
+  }
+
+  // 处理 Symbol - 移除
+  if (typeof obj === 'symbol') {
+    return undefined as any;
+  }
+
+  // 处理 BigInt - 转换为字符串
+  if (typeof obj === 'bigint') {
+    return obj.toString() as any;
+  }
+
+  // 处理数组
+  if (Array.isArray(obj)) {
+    return obj
+      .map(item => cleanDataForJSON(item))
+      .filter(item => item !== undefined) as any;
+  }
+
+  // 处理对象
+  if (typeof obj === 'object') {
+    const cleaned: any = {};
+
+    for (const [key, value] of Object.entries(obj)) {
+      // 跳过原型链上的属性
+      if (!Object.prototype.hasOwnProperty.call(obj, key)) {
+        continue;
+      }
+
+      const cleanedValue = cleanDataForJSON(value);
+
+      // 只保留有效值
+      if (cleanedValue !== undefined) {
+        cleaned[key] = cleanedValue;
+      }
+    }
+
+    return cleaned as T;
+  }
+
+  // 原始类型直接返回
+  return obj;
+}
+
+// 🔧 增强的 safeStringify
+export function safeStringify(obj: any, space?: number): string {
+  try {
+    // 先清理，再序列化
+    const cleaned = cleanDataForJSON(obj);
+    return JSON.stringify(cleaned, null, space);
+  } catch (error) {
+    console.error('[safeStringify] Error:', error);
+
+    // 极端情况：返回空对象
+    return JSON.stringify({
+      error: 'Serialization failed',
+      type: typeof obj,
+    }, null, space);
+  }
+}
+```
+
+---
+
+#### **阶段 5：添加运行时保护**
+
+在 `page.tsx` 中添加保护层：
+
+```typescript
+// app/[locale]/articles/[slug]/page.tsx
+
+export default async function ArticlePage({ params }: ArticlePageProps) {
+  // ... 获取数据 ...
+
+  // 🛡️ 保护层：确保所有传递的数据都是可序列化的
+  const safeArticle = useMemo(() => ({
+    id: article.id,
+    title: article.title,
+    slug: article.slug,
+    description: article.description,
+    content: article.content,
+    publishedDate: article.publishedDate,
+    lastModified: article.lastModified,
+    readingTime: article.readingTime,
+    // 只包含必要的、可序列化的字段
+  }), [article]);
+
+  const safeRelatedArticles = relatedArticles.map(a => ({
+    id: a.id,
+    title: a.title,
+    slug: a.slug,
+    description: a.description,
+    image: a.image,
+  }));
+
+  // 🛡️ 确保结构化数据是干净的
+  const safeStructuredData = cleanDataForJSON(articleStructuredData);
+  const safeBreadcrumbData = cleanDataForJSON(breadcrumbStructuredData);
+
+  return (
+    <>
+      <ArticleStructuredDataScript data={safeStructuredData} />
+      <BreadcrumbStructuredDataScript data={safeBreadcrumbData} />
+
+      {/* 使用安全的数据 */}
+      <ArticleInteractions
+        articleId={safeArticle.id}
+        slug={safeArticle.slug}
+      />
+
+      <ReadingProgress
+        contentLength={safeArticle.content?.length || 0}
+      />
+
+      {/* ... */}
+    </>
+  );
+}
+```
+
+---
+
+## 🎯 推荐执行顺序
+
+1. **立即执行**：添加 `findNonSerializableValues` 诊断工具
+2. **5分钟内**：检查所有 Client Component 的 props
+3. **10分钟内**：修复 `generateArticleStructuredData`
+4. **15分钟内**：改进 `cleanDataForJSON` 和 `safeStringify`
+5. **20分钟内**：添加运行时保护层
+6. **测试验证**：部署并监控
+
+---
+
+## 🚨 最可能的根本原因
+
+根据我的经验，`digest: '1225030432'` 错误**80%的情况**是由于：
+
+1. **在 Server Component 中向 Client Component 传递了函数**
+2. **传递了包含 Date 对象的复杂对象**
+3. **传递了翻译函数 `t` 到 Client Component**
+
+**建议立即检查**：
+- 所有 `dynamic(() => import(...))` 的组件
+- 所有带 `"use client"` 指令的组件的 props
+- 是否有地方意外传递了 `t` 函数
+
+---
+
+你的诊断报告思路清晰，但建议先从 **Server/Client 边界** 开始排查，这是最有可能的问题源头。需要我帮你生成具体的修复代码吗?

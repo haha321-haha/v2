@@ -1,0 +1,111 @@
+{
+  "anchorTexts": {
+    "articles": {
+      "relief": "疼痛缓解",
+      "heat": "热疗法",
+      "physical": "物理疗法",
+      "medical": "医疗指南",
+      "knowledge": "健康知识",
+      "comprehensive": "完整指南",
+      "related": "相关文章",
+      "tcm_guide": "学习整体健康调理",
+      "acupoint_massage": "掌握按摩",
+      "tcm_nutrition": "学习营养",
+      "workplace_health": "职场健康",
+      "pain_management": "疼痛管理",
+      "quick_relief": "快速缓解",
+      "medical_guide": "医疗指南",
+      "heat_therapy": "热疗法",
+      "herbal_tea": "草药茶",
+      "natural": "自然疗法",
+      "faq": "常见问题",
+      "nutrition_guide": "营养指南",
+      "ginger": "生姜疗法",
+      "cycle_knowledge": "周期知识",
+      "cycle_nutrition": "周期营养",
+      "cycle_management": "周期管理",
+      "anti_inflammatory": "抗炎",
+      "ginger_tea": "生姜茶",
+      "workplace": "职场健康",
+      "nutrition": "营养指南",
+      "medication": "药物指南"
+    },
+    "tools": {
+      "main": "健康工具",
+      "tracker": "症状追踪",
+      "assessment": "症状评估",
+      "nutrition": "营养建议",
+      "calculator": "影响计算器",
+      "all": "所有工具",
+      "pain_tracker": "疼痛追踪器",
+      "nutrition_generator": "营养生成器",
+      "constitution": "体质测试",
+      "symptom_assessment": "症状评估",
+      "workplace": "职场健康"
+    },
+    "scenarios": {
+      "exercise": "运动护理",
+      "office": "职场解决方案",
+      "social": "社交建议",
+      "sleep": "睡眠建议",
+      "diet": "饮食解决方案",
+      "emergency": "紧急护理",
+      "medication": "药物指南",
+      "tcm_lifestyle": "整体健康生活方式",
+      "workplace_wellness": "职场健康",
+      "exercise_balance": "运动平衡"
+    },
+    "solutions": {
+      "office": "办公室解决方案",
+      "relief": "缓解解决方案",
+      "exercise_balance_new": "运动平衡",
+      "emergency": "紧急解决方案",
+      "exercise": "运动解决方案",
+      "sleep": "睡眠解决方案",
+      "natural_therapies": "自然疗法",
+      "scenarios": "场景解决方案",
+      "teen_main": "青少年健康",
+      "social": "社交解决方案",
+      "commute": "通勤解决方案",
+      "partner_communication": "伴侣沟通",
+      "teen_health": "青少年健康",
+      "life_stages": "人生阶段",
+      "campus_emergency": "校园急救",
+      "workplace_cycle": "职场周期管理",
+      "student_cycle": "学生周期健康",
+      "fitness_cycle": "健身周期平衡",
+      "workplace_wellness": "职场健康",
+      "exercise_balance": "运动平衡"
+    },
+    "navigation": {
+      "main": "疼痛管理",
+      "health": "健康中心",
+      "guide": "健康指南",
+      "teen": "青少年健康",
+      "therapy": "自然疗法"
+    },
+    "cta": {
+      "viewMore": "查看更多",
+      "startNow": "立即开始",
+      "learnMore": "了解更多",
+      "tryNow": "立即尝试",
+      "download": "下载资源"
+    },
+    "pdf": {
+      "guide": "下载指南",
+      "checklist": "下载清单",
+      "resources": "下载资源"
+    },
+    "teen": {
+      "main": "青少年指南",
+      "development": "发育健康",
+      "education": "健康教育"
+    },
+    "therapy": {
+      "main": "自然缓解",
+      "herbal": "草药疗法",
+      "yoga": "瑜伽技巧",
+      "diet": "饮食建议"
+    }
+  }
+}

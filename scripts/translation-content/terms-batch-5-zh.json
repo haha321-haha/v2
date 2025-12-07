@@ -1,0 +1,19 @@
+{
+  "termsOfService": {
+    "contact": {
+      "title": "联系我们",
+      "description": "如果您对本服务条款有任何疑问、意见或需要澄清，请通过以下方式联系我们：",
+      "email": "邮箱：tiyibaofu@outlook.com",
+      "responseTime": "响应时间：72小时内确认，30天内处理完成"
+    },
+    "finalNotice": {
+      "title": "最终提醒",
+      "content": "本服务条款最后更新于2024年4月1日。我们建议您定期查看本页面以了解任何更新。继续使用我们的服务即表示您接受条款的任何修订。感谢您选择periodhub.health，我们致力于为您提供有价值的健康教育资源。"
+    },
+    "questionsTerms": "有疑问？",
+    "questionsDescriptionTerms": "如果您对我们的服务条款有任何疑问，请随时联系我们。",
+    "contactUsTerms": "联系我们",
+    "importantReminder": "重要提醒",
+    "importantReminderText": "这些服务条款可能会不时更新。继续使用我们的服务即表示您接受任何修改。"
+  }
+}

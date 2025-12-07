@@ -1,0 +1,1775 @@
+{
+  "anchorTexts": {
+    "navigation": {
+      "main": "主导航"
+    },
+    "cta": {
+      "startNow": "立即开始"
+    },
+    "tools": {
+      "nutrition_generator": "营养推荐生成器",
+      "pain_tracker": "疼痛记录器",
+      "symptom_assessment": "症状评估",
+      "constitution_test": "体质测试",
+      "cycle_tracker": "周期跟踪器"
+    }
+  },
+  "articlePage": {
+    "breadcrumb": {
+      "home": "首页",
+      "articles": "文章中心"
+    },
+    "content": {
+      "articleSummary": "文章摘要",
+      "healthExpert": "健康专家",
+      "quickActions": "快速操作",
+      "moreArticles": "更多文章",
+      "medicalDisclaimer": {
+        "title": "⚠️ 医疗免责声明",
+        "content": "本文内容仅供教育和信息目的，不能替代专业医疗建议、诊断或治疗。如有任何健康问题或疑虑，请咨询合格的医疗专业人员。在做出任何健康相关决定之前，请务必寻求医生的建议。"
+      },
+      "relatedArticles": {
+        "title": "📚 相关文章推荐",
+        "subtitle": "继续探索更多专业健康内容",
+        "readMore": "阅读全文",
+        "moreComing": "更多文章即将发布",
+        "description": "我们正在准备更多高质量的健康内容，敬请期待。",
+        "browseAll": "浏览所有文章"
+      }
+    }
+  },
+  "articlesPage": {
+    "categories": {
+      "immediateRelief": {
+        "title": "Immediate Relief",
+        "articles": {
+          "fiveMinuteRelief": "5-Minute Period Pain Relief",
+          "heatTherapy": "Complete Heat Therapy Guide"
+        }
+      },
+      "understandingEducation": {
+        "title": "Understanding & Education",
+        "articles": {
+          "painDifferential": "Menstrual Pain vs Other Abdominal Pain Guide"
+        }
+      },
+      "nutritionHealth": {
+        "title": "Nutrition & Health",
+        "articles": {
+          "sleepQuality": "Comprehensive Menstrual Sleep Quality Guide"
+        }
+      },
+      "naturalTherapies": {
+        "title": "Natural Therapies",
+        "articles": {
+          "physicalTherapy": "Menstrual Back Pain Comprehensive Care Guide",
+          "traditionalMethods": "Ginger Menstrual Pain Relief Guide"
+        }
+      }
+    }
+  },
+  "common": {
+    "breadcrumb": {
+      "home": "首页",
+      "separator": "/"
+    }
+  },
+  "dataDashboard": {
+    "meta": {
+      "title": "数据仪表板 - PeriodHub | 平台数据分析中心",
+      "description": "PeriodHub数据仪表板：查看平台使用数据、用户活跃度、参与度等关键指标。为开发团队提供数据洞察和决策支持。"
+    },
+    "keywords": "数据仪表板,平台分析,用户数据,活跃度,参与度,数据洞察,决策支持"
+  },
+  "downloadsPage": {
+    "title": "PDF资源下载中心 - Period Hub",
+    "description": "Period Hub文章PDF下载中心，42个精选经期健康资源，包括42篇专业文章和0个PDF资源，支持中英双语，移动端优化体验。",
+    "keywords": "经期健康,PDF下载,健康资源,月经管理,女性健康,中英双语,移动优化",
+    "openGraph": {
+      "title": "PDF资源下载中心 - Period Hub",
+      "description": "Period Hub文章PDF下载中心，42个精选经期健康资源，包括42篇专业文章和0个PDF资源，支持中英双语，移动端优化体验。"
+    },
+    "banner": {
+      "text": "🎉 全新PDF下载中心 - 42个精选资源，移动端优化体验，基于紧急程度智能分类"
+    },
+    "structuredData": {
+      "name": "PDF资源下载中心",
+      "description": "Period Hub文章PDF下载中心，42个精选经期健康资源"
+    },
+    "breadcrumb": {
+      "home": "首页",
+      "downloadCenter": "PDF下载中心"
+    },
+    "content": {
+      "title": "📚 文章PDF下载中心",
+      "description": "42个精选资源，基于紧急程度智能分类，让您在需要时快速找到合适的解决方案",
+      "statistics": {
+        "expertArticles": "专业文章",
+        "pdfResources": "PDF资源",
+        "languages": "语言版本"
+      },
+      "banner": {
+        "title": "💡 体验新版下载中心",
+        "description": "移动端优化 • 智能搜索 • 紧急模式 • 42个精选资源",
+        "feedbackButton": "反馈体验效果"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "解答您关于痛经管理的疑问",
+    "q1": {
+      "question": "PeriodHub如何帮助我管理痛经？",
+      "answer": "PeriodHub提供智能追踪、专业评估和循证医学指南，帮助您科学管理痛经症状。"
+    },
+    "q2": {
+      "question": "我的数据安全吗？",
+      "answer": "我们采用最高级别的数据加密和隐私保护措施，确保您的个人信息安全。"
+    },
+    "q3": {
+      "question": "平台上的医学指南是否可信？",
+      "answer": "所有医学指南都基于循证医学，由专业医疗团队审核，确保内容的科学性和准确性。"
+    },
+    "q4": {
+      "question": "如何获得个性化建议？",
+      "answer": "通过症状评估和疼痛追踪，我们的AI系统会为您提供个性化的健康建议。"
+    },
+    "q5": {
+      "question": "平台是否收费？",
+      "answer": "基础功能完全免费，高级功能提供付费选项，确保服务的可持续性。"
+    },
+    "q6": {
+      "question": "什么时候需要就医？",
+      "answer": "如果痛经严重影响生活或出现异常症状，建议及时咨询专业医生。"
+    },
+    "q7": {
+      "question": "如何开始使用平台？",
+      "answer": "注册账号后，完成基础评估即可开始使用各项功能。"
+    }
+  },
+  "footer": {
+    "companyName": "PeriodHub",
+    "description": "专业经期健康信息平台",
+    "linksTitle": "链接",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "medicalDisclaimer": "医疗免责声明",
+    "articles": "文章下载",
+    "naturalTherapies": "自然疗法",
+    "contactTitle": "联系我们",
+    "contactEmail": "tiyibaofu@outlook.com",
+    "socialTwitter": "Twitter",
+    "socialInstagram": "Instagram",
+    "copyright": "© 2,025 www.periodhub.health。保留所有权利。",
+    "medicalDisclaimerFull": "医疗免责声明：本网站内容仅供信息和教育目的，不能替代专业医疗建议、诊断或治疗。我们不是医疗专业人员。如有任何医疗问题，请咨询您的医生或其他合格的医疗服务提供者。紧急情况下，请立即寻求医疗救助。使用本网站不构成医患关系。"
+  },
+  "frameworkDemo": {
+    "title": "框架演示 - PeriodHub | 技术功能展示",
+    "description": "PeriodHub框架演示：展示网站的技术功能、性能优化和用户体验特性。为开发者和技术团队提供功能演示。"
+  },
+  "header": {
+    "logo": "PeriodHub",
+    "home": "首页",
+    "interactiveSolutions": "互动工具",
+    "articlesDownloads": "文章下载",
+    "scenarioSolutions": "场景解决方案",
+    "naturalCare": "自然疗法",
+    "healthGuide": "健康指南",
+    "frameworkDemo": "框架演示",
+    "language": "语言"
+  },
+  "healthGuidePage": {
+    "title": "痛经健康指南 - PeriodHub",
+    "description": "专业的痛经健康管理指南，提供症状评估、疼痛追踪、自然疗法等科学解决方案，帮助您有效管理经期健康。",
+    "breadcrumb": {
+      "home": "首页",
+      "current": "痛经健康指南"
+    },
+    "recommendations": {
+      "relatedTools": {
+        "symptomAssessment": {
+          "title": "症状评估工具",
+          "description": "专业症状评估系统，科学分析痛经类型和严重程度，获得个性化健康建议"
+        },
+        "painTracker": {
+          "title": "痛经追踪器",
+          "description": "智能疼痛追踪系统，记录症状模式，生成健康报告，辅助医生诊断"
+        },
+        "painImpactCalculator": {
+          "title": "痛经影响计算器",
+          "description": "评估痛经对生活质量的影响，量化健康损失，制定科学管理方案"
+        }
+      },
+      "relatedArticles": {
+        "medicalGuide": {
+          "title": "痛经医疗综合指南",
+          "description": "全面的痛经医疗知识，从病因到治疗的完整医学指南",
+          "readTime": "18分钟阅读",
+          "category": "医疗指南"
+        },
+        "medicalCare": {
+          "title": "何时就医完整指南",
+          "description": "识别需要就医的警示信号，掌握就医时机和健康管理策略",
+          "readTime": "15分钟阅读",
+          "category": "医疗指导"
+        },
+        "faq": {
+          "title": "痛经常见问题解答",
+          "description": "专家解答痛经常见疑问，科学破解健康误区和疑虑",
+          "readTime": "12分钟阅读",
+          "category": "专家问答"
+        }
+      },
+      "healthTopics": {
+        "naturalTherapies": {
+          "title": "自然疗法大全",
+          "description": "探索8种科学验证的自然疗法，无副作用的健康缓解方案"
+        },
+        "scenarioSolutions": {
+          "title": "场景解决方案",
+          "description": "针对通勤、办公、运动等不同场景的个性化健康管理策略"
+        },
+        "teenHealth": {
+          "title": "青少年健康专区",
+          "description": "专为12-18岁青少年设计的经期健康教育和管理指南"
+        }
+      }
+    }
+  },
+  "healthStatistics": {
+    "title": "健康统计数据",
+    "subtitle": "基于全球女性健康调查的专业数据",
+    "dataSource": "数据来源：全球女性健康调查"
+  },
+  "hero": {
+    "welcomeBadge": "欢迎使用专业痛经管理平台",
+    "title": "科学管理",
+    "titleHighlight": "痛经困扰",
+    "subtitle": "基于医学证据的专业平台，为60万+女性提供个性化痛经解决方案",
+    "features": {
+      "personalizedRecord": "个性化记录",
+      "personalizedRecordDesc": "智能追踪个人症状",
+      "evidenceBasedGuide": "循证指南",
+      "evidenceBasedGuideDesc": "42篇医学指南",
+      "privacyFirst": "隐私优先",
+      "privacyFirstDesc": "数据安全保护",
+      "precisionPrediction": "精准预测",
+      "precisionPredictionDesc": "AI智能分析"
+    },
+    "immediateRelief": "立即缓解",
+    "cta": {
+      "primary": "互动工具",
+      "secondary": "健康指南"
+    },
+    "toolsCount": "8+",
+    "articlesCount": "42",
+    "stats": {
+      "tools": "专业工具",
+      "content": "医学指南",
+      "support": "在线支持"
+    },
+    "toolCards": {
+      "painTracker": "疼痛追踪器",
+      "painTrackerDesc": "智能记录疼痛模式",
+      "cycleTracker": "周期追踪器",
+      "cycleTrackerDesc": "全面管理月经周期",
+      "constitutionTest": "体质测试",
+      "constitutionTestDesc": "个性化健康评估"
+    }
+  },
+  "home": {
+    "features": {
+      "title": "专业功能",
+      "subtitle": "全面的痛经管理解决方案",
+      "tracking": {
+        "title": "智能追踪",
+        "description": "个性化症状记录与分析"
+      },
+      "assessment": {
+        "title": "专业评估",
+        "description": "多维度健康评估工具"
+      },
+      "resources": {
+        "title": "医学资源",
+        "description": "42篇专业医学指南"
+      },
+      "immediateRelief": {
+        "title": "即时缓解",
+        "description": "快速疼痛缓解方案"
+      }
+    },
+    "trusted": {
+      "title": "值得信赖",
+      "subtitle": "已帮助60万+女性科学管理痛经",
+      "metrics": {
+        "activeUsers": "活跃用户",
+        "articles": "医学指南",
+        "resources": "专业资源",
+        "satisfaction": "满意度"
+      }
+    },
+    "treatmentGuide": {
+      "title": "治疗方案指南",
+      "subtitle": "基于循证医学的专业建议",
+      "medicationGuide": {
+        "title": "用药指导",
+        "description": "安全有效的药物选择",
+        "cta": "查看指南"
+      },
+      "heatTherapy": {
+        "title": "热敷疗法",
+        "description": "自然缓解疼痛方法",
+        "cta": "了解详情"
+      },
+      "diagnosis": {
+        "title": "诊断指南",
+        "description": "何时需要就医",
+        "cta": "查看指南"
+      }
+    },
+    "quickLinks": {
+      "title": "快速导航",
+      "healthGuide": "健康指南",
+      "healthGuideDesc": "全面的健康管理指南",
+      "viewNow": "立即查看",
+      "assessment": {
+        "title": "症状评估",
+        "description": "专业健康评估工具",
+        "cta": "开始评估"
+      },
+      "resources": "医学资源",
+      "resourcesDesc": "专业医学指南下载",
+      "downloads": {
+        "cta": "下载资源"
+      },
+      "solutions": "场景解决方案",
+      "solutionsDesc": "针对不同场景的解决方案",
+      "scenarios": {
+        "cta": "查看方案"
+      }
+    }
+  },
+  "homePage": {
+    "metadata": {
+      "title": "PeriodHub - 专业痛经缓解和疼痛管理平台 | 42篇医学指南+PDF下载",
+      "description": "PeriodHub专业痛经缓解和疼痛管理平台：提供痛经怎么缓解最快方法、用药指导等42篇医学指南，8个症状自测工具，专业文章PDF下载。已帮助60万+女性科学应对月经疼痛，获取个性化解决方案。立即开始！",
+      "keywords": "痛经缓解,痛经怎么缓解最快方法,痛经管理,月经疼痛,痛经用药,女性健康,经期健康,疼痛管理,症状评估,健康工具,医学指南,PDF下载",
+      "ogTitle": "PeriodHub - 专业痛经缓解和疼痛管理平台 | 42篇医学指南+PDF下载",
+      "ogDescription": "专业的痛经缓解和疼痛管理平台，提供科学的缓解方法和个性化健康建议，42篇医学指南和PDF下载。",
+      "twitterTitle": "PeriodHub - 专业痛经缓解和疼痛管理平台 | 42篇医学指南+PDF下载",
+      "twitterDescription": "专业的痛经缓解和疼痛管理平台，提供科学的缓解方法，42篇医学指南和PDF下载。"
+    }
+  },
+  "immediateReliefPage": {
+    "title": "Immediate Period Pain Relief",
+    "description": "Quick and effective methods to relieve menstrual pain right now. Science-backed techniques you can use immediately.",
+    "contentSectionTitle": "Relief Methods",
+    "introTitle": "When You Need Relief Right Now",
+    "introText": "Menstrual pain can strike suddenly and severely. Whether you're at home, work, or on the go, these evidence-based methods can provide quick relief.",
+    "introText2": "Each method below includes scientific parameters and practical guidance to help you find what works best for your body.",
+    "typesTitle": "Immediate Relief Methods",
+    "heatTherapy": {
+      "title": "Heat Therapy",
+      "subtitle": "Fast-acting muscle relaxation"
+    },
+    "heatTherapyDescription": "Heat therapy is one of the most effective immediate relief methods. It works by increasing blood flow, relaxing uterine muscles, and blocking pain signals.",
+    "heatTherapyGuideTitle": "Complete Heat Therapy Guide",
+    "heatTherapyGuideDescription": "Learn the science and best practices",
+    "gentleMovement": {
+      "title": "Gentle Movement & Yoga",
+      "subtitle": "Natural pain relief through movement"
+    },
+    "gentleMovementDescription": "Gentle stretching and yoga poses can help relieve menstrual cramps by improving circulation, releasing muscle tension, and promoting relaxation.",
+    "gentleMovementDetails": {
+      "yogaPoses": {
+        "title": "Recommended Yoga Poses:",
+        "poses": [
+          {
+            "name": "Child's Pose (Balasana)",
+            "description": "Kneel and fold forward, arms extended or by your sides",
+            "benefits": "Relieves back pain, calms the mind, gentle compression on abdomen"
+          },
+          {
+            "name": "Cat-Cow Pose (Marjaryasana-Bitilasana)",
+            "description": "On hands and knees, alternate between arching and rounding your spine",
+            "benefits": "Increases spinal flexibility, massages abdominal organs, improves circulation"
+          },
+          {
+            "name": "Supine Twist",
+            "description": "Lie on back, bring knees to chest, gently drop to one side",
+            "benefits": "Releases lower back tension, aids digestion, promotes relaxation"
+          }
+        ]
+      },
+      "breathingExercises": {
+        "title": "Breathing Exercises:",
+        "exercises": [
+          {
+            "name": "Deep Belly Breathing",
+            "steps": "Place hand on belly, breathe deeply so belly expands, exhale slowly",
+            "benefits": "Reduces stress hormones, promotes muscle relaxation"
+          },
+          {
+            "name": "4-7-8 Breathing",
+            "steps": "Inhale through nose for 4 counts, hold for 7, exhale through mouth for 8",
+            "benefits": "Calms nervous system, reduces pain perception, induces relaxation"
+          }
+        ]
+      },
+      "timing": {
+        "title": "When to Practice:",
+        "preventive": "Preventive: Practice daily during the week before your period starts",
+        "during": "During pain: Use gentle movements only, listen to your body's signals",
+        "continuous": "Continuous: Regular practice improves long-term pain management"
+      }
+    },
+    "breathingExerciseTitle": "Breathing Exercises",
+    "breathingExercise": {
+      "subtitle": "Calm your nervous system"
+    },
+    "breathingExerciseDescription": "Controlled breathing activates your body's relaxation response, reducing stress hormones and pain perception. It's free, portable, and can be done anywhere, anytime.",
+    "acupressure": {
+      "title": "Acupressure",
+      "subtitle": "Traditional pressure point therapy"
+    },
+    "acupressureDescription": "Acupressure uses finger pressure on specific points to relieve pain. It's based on traditional Chinese medicine and supported by modern research showing effectiveness for menstrual pain.",
+    "acupressureDetails": {
+      "title": "Key Acupressure Points:",
+      "acupoints": [
+        {
+          "name": "Sanyinjiao (SP6)",
+          "location": "3 finger-widths (about 4 fingers) above the inner ankle bone",
+          "method": "Press firmly with thumb in circular motion for 1-2 minutes",
+          "benefits": "Regulates menstruation, relieves cramps, reduces pain intensity"
+        },
+        {
+          "name": "Hegu (LI4)",
+          "location": "In the webbing between thumb and index finger",
+          "method": "Pinch and massage firmly for 1-2 minutes on each hand",
+          "benefits": "General pain relief, reduces tension, promotes energy flow"
+        },
+        {
+          "name": "Taichong (LV3)",
+          "location": "On top of foot, in the depression between big toe and second toe",
+          "method": "Press and hold firmly for 30-60 seconds, breathe deeply",
+          "benefits": "Relieves stress, regulates liver qi, reduces irritability"
+        }
+      ],
+      "technique": {
+        "title": "Massage Technique Guide:",
+        "pressure": "Apply firm but comfortable pressure - you should feel sensation but not sharp pain",
+        "time": "Hold each point for 1-2 minutes, or until you feel relief",
+        "frequency": "Repeat 2-3 times daily during menstruation, or as needed",
+        "precautions": "⚠️ Avoid SP6 during pregnancy. Stop if pain increases or you feel dizzy."
+      }
+    },
+    "otcOptions": {
+      "title": "Over-the-Counter Pain Relief",
+      "subtitle": "When you need medication"
+    },
+    "otcOptionsDescription": "NSAIDs (Non-Steroidal Anti-Inflammatory Drugs) like ibuprofen are highly effective for menstrual pain. They work by blocking prostaglandin production, which causes cramps.",
+    "nsaidGuideTitle": "NSAID Professional Guide",
+    "nsaidGuideDescription": "Complete medication information",
+    "combinationTherapy": {
+      "title": "Combination Therapy",
+      "subtitle": "Maximize relief by combining methods",
+      "combinations": [
+        {
+          "level": "Heat + Breathing",
+          "methods": {
+            "method1": "Apply heat therapy while practicing deep breathing exercises",
+            "method2": "Enhanced muscle relaxation and stress reduction"
+          }
+        },
+        {
+          "level": "Acupressure + Meditation",
+          "methods": {
+            "method1": "Combine acupressure with mindfulness meditation",
+            "method2": "Dual approach to pain relief and mental calm"
+          }
+        },
+        {
+          "level": "Movement + Heat",
+          "methods": {
+            "method1": "Gentle yoga followed by heat therapy",
+            "method2": "Improved circulation and sustained warmth"
+          }
+        }
+      ]
+    },
+    "meditationTitle": "Meditation & Mindfulness",
+    "meditationDescription": "Reduce pain perception through mental techniques",
+    "dietaryPlanTitle": "Anti-Inflammatory Diet",
+    "dietaryPlanDescription": "Foods that help reduce menstrual pain",
+    "workTipsTitle": "Managing Pain at Work",
+    "workTipsDescription": "Discreet relief methods for the workplace",
+    "scenarioSolutionsTitle": "Scenario-Based Solutions",
+    "scenarioSolutionsDescription": "Relief strategies for different situations",
+    "emergencyResponse": {
+      "title": "Emergency Response",
+      "subtitle": "When pain is severe",
+      "immediateActionsTitle": "Immediate Actions:",
+      "immediateActions": {
+        "action1": "Apply heat or cold therapy immediately",
+        "action2": "Take prescribed pain medication",
+        "action3": "Rest in a comfortable position",
+        "action4": "Practice deep breathing exercises",
+        "action5": "Contact your healthcare provider if pain persists"
+      },
+      "medicalIndicators": {
+        "title": "Seek Medical Care If:",
+        "indicators": {
+          "indicator1": "Severe pain that doesn't respond to treatment",
+          "indicator2": "Fever accompanying the pain",
+          "indicator3": "Unusual bleeding or discharge",
+          "indicator4": "Pain that worsens rapidly",
+          "indicator5": "Symptoms of infection"
+        }
+      },
+      "emergencyKit": {
+        "title": "Emergency Relief Kit:",
+        "items": {
+          "item1": "Heat pack or hot water bottle",
+          "item2": "Cold pack or ice pack",
+          "item3": "Pain medication",
+          "item4": "Comfortable clothing",
+          "item5": "Emergency contact numbers"
+        }
+      }
+    },
+    "findingWhatWorksTitle": "Finding What Works for You",
+    "findingWhatWorksText": "Everyone's body responds differently to pain relief methods. Keep track of what works best for you.",
+    "findingWhatWorksText2": "Consider keeping a pain diary to identify patterns and effective strategies.",
+    "disclaimerTitle": "Medical Disclaimer",
+    "disclaimerText": "This information is for educational purposes only and does not replace professional medical advice. If you experience severe or unusual pain, please consult a healthcare provider.",
+    "parameters": {
+      "scientificParameters": "Scientific Parameters:",
+      "heatTherapy": {
+        "temperature": "40-45°C (104-113°F)",
+        "duration": "15-20 minutes per session",
+        "frequency": "Every 2-3 hours as needed",
+        "timing": "Start at first sign of pain for best results",
+        "mechanism": "Increases blood flow, relaxes smooth muscle tissue, activates heat receptors to block pain signals"
+      },
+      "breathing": {
+        "title": "Breathing Exercise Parameters:",
+        "technique": "4-7-8 breathing (inhale 4 seconds, hold 7 seconds, exhale 8 seconds)",
+        "cycles": "5-10 cycles per session",
+        "frequency": "Every 1-2 hours or as needed",
+        "timing": "Anytime, especially during pain spikes or stress",
+        "mechanism": "Activates parasympathetic nervous system, reduces stress hormones (cortisol), promotes muscle relaxation"
+      },
+      "nsaid": {
+        "title": "NSAID Parameters:",
+        "dosage": "Follow package instructions (typically 200-400mg ibuprofen every 4-6 hours)",
+        "timing": "Take at first sign of pain, with food to protect stomach",
+        "mechanism": "Blocks prostaglandin production by inhibiting COX enzymes, reducing inflammation and pain",
+        "contraindications": "⚠️ Avoid if you have stomach ulcers, kidney issues, bleeding disorders, or are allergic to NSAIDs. Consult doctor if taking blood thinners."
+      }
+    },
+    "labels": {
+      "temperature": "Temperature: ",
+      "duration": "Duration: ",
+      "frequency": "Frequency: ",
+      "timing": "Timing: ",
+      "mechanism": "Mechanism: ",
+      "technique": "Technique: ",
+      "cycles": "Cycles: ",
+      "dosage": "Dosage: ",
+      "contraindications": "Contraindications: ",
+      "location": "Location: ",
+      "method": "Method: "
+    },
+    "actions": {
+      "learnMore": "Learn More →",
+      "startPractice": "Start Practice →"
+    },
+    "structuredData": {
+      "howTo": {
+        "name": "How to Relieve Period Pain Immediately",
+        "description": "Step-by-step guide to immediate menstrual pain relief using evidence-based methods"
+      },
+      "steps": {
+        "heatTherapy": {
+          "name": "Apply Heat Therapy",
+          "text": "Apply a heating pad or hot water bottle to your lower abdomen at 40-45°C for 15-20 minutes"
+        },
+        "breathing": {
+          "name": "Practice Breathing Exercises",
+          "text": "Use 4-7-8 breathing technique: inhale for 4 seconds, hold for 7, exhale for 8. Repeat 5-10 times"
+        },
+        "acupressure": {
+          "name": "Try Acupressure Points",
+          "text": "Press Sanyinjiao (SP6) point, located 3 finger-widths above inner ankle, for 1-2 minutes"
+        },
+        "medication": {
+          "name": "Consider OTC Medication",
+          "text": "Take ibuprofen (200-400mg) at first sign of pain, with food"
+        },
+        "medicalCare": {
+          "name": "Seek Medical Care if Needed",
+          "text": "Consult a healthcare provider if pain is severe, sudden, or accompanied by fever or unusual symptoms"
+        }
+      }
+    }
+  },
+  "interactiveTools": {
+    "breadcrumb": {
+      "scenarioSolutions": "Scenario Solutions",
+      "teenHealth": "Teen Health",
+      "immediateRelief": "Immediate Relief"
+    }
+  },
+  "interactiveToolsPage": {
+    "title": "互动健康工具 - PeriodHub",
+    "description": "专业的经期健康管理工具，提供症状评估、疼痛追踪、周期管理等个性化健康解决方案",
+    "keywords": "经期健康管理,症状评估,疼痛追踪,痛经管理,健康工具,个性化建议,数据分析",
+    "workplaceWellness": {
+      "title": "职场健康管理专栏",
+      "description": "为职场女性量身定制的经期健康管理解决方案，帮助您在工作环境中更好地管理经期健康",
+      "tools": {
+        "calendar": {
+          "title": "职场健康日历",
+          "description": "专业的职场健康管理工具，帮助您追踪经期对工作的影响，提供个性化的工作调整建议和健康管理方案。",
+          "cta": "开始健康管理"
+        },
+        "calculator": {
+          "title": "工作影响计算器",
+          "description": "专业的痛经影响评估工具，分析症状对工作和生活的影响程度，提供个性化的管理建议和职场适应策略。",
+          "cta": "开始评估"
+        }
+      }
+    },
+    "prerequisites": {
+      "label": "需要前置条件",
+      "completeFirst": "使用前请先完成：",
+      "cycleTracker": "周期追踪",
+      "constitutionTest": "体质测试"
+    },
+    "nutritionGenerator": {
+      "title": "营养推荐生成器",
+      "description": "基于您的月经周期、健康目标和中医体质，提供科学的个性化营养建议。使用前请先完成周期追踪和体质测试。",
+      "cta": "开始营养分析"
+    },
+    "otherTools": {
+      "title": "其他实用工具",
+      "description": "更多专业的经期健康管理工具，帮助您全面了解和管理经期健康"
+    },
+    "toolsIntroduction": "我们的互动工具基于循证医学，帮助您更好地了解和管理经期健康。",
+    "periodPainAssessment": {
+      "title": "痛经评估工具",
+      "description": "专业的痛经症状评估，帮助您了解疼痛类型和严重程度",
+      "cta": "开始评估"
+    },
+    "symptomAssessment": {
+      "title": "症状自测工具",
+      "description": "全面的经期症状评估，提供个性化健康建议",
+      "startButton": "开始自测"
+    },
+    "painTracker": {
+      "title": "疼痛追踪器",
+      "description": "智能记录疼痛模式，分析症状规律",
+      "startButton": "开始追踪"
+    },
+    "cycleTracker": {
+      "title": "周期追踪器",
+      "description": "全面的月经周期管理，预测和记录",
+      "cta": "开始追踪"
+    },
+    "constitutionTest": {
+      "title": "体质测试",
+      "description": "中医体质辨识，个性化调理建议",
+      "cta": "开始测试"
+    },
+    "breathingExercise": {
+      "title": "4-7-8呼吸练习",
+      "description": "基于科学验证的4-7-8呼吸法，通过调节神经系统快速缓解疼痛。无需下载，立即开始练习。",
+      "subtitle": "通过神经系统调节实现自然疼痛缓解",
+      "phases": {
+        "inhale": "吸气",
+        "hold": "屏气",
+        "exhale": "呼气"
+      },
+      "instructions": {
+        "title": "练习指导",
+        "inhale": "吸气",
+        "hold": "屏气",
+        "exhale": "呼气"
+      },
+      "buttons": {
+        "startPractice": "开始练习",
+        "stopPractice": "停止练习",
+        "practiceAgain": "再次练习",
+        "oneCycleCompleted": "✅ 完成一轮练习！"
+      },
+      "currentPhase": "当前阶段：",
+      "benefits": {
+        "title": "科学益处：",
+        "painPerception": "疼痛感知",
+        "muscleTension": "肌肉紧张",
+        "relaxation": "放松程度"
+      },
+      "tip": "💡 提示：找舒适的坐位或躺位，放松所有肌肉。初学者做3-4个循环即可。",
+      "timeUnit": "秒",
+      "usageTips": {
+        "title": "使用建议：",
+        "bestTiming": {
+          "title": "最佳时机：",
+          "items": [
+            "疼痛刚开始时",
+            "感到焦虑紧张时",
+            "睡前放松时"
+          ]
+        },
+        "precautions": {
+          "title": "注意事项：",
+          "items": [
+            "找舒适的坐位或躺位",
+            "初学者3-4个循环即可",
+            "如感到头晕请停止练习"
+          ]
+        }
+      }
+    },
+    "developmentNote": "更多工具正在开发中，敬请期待！"
+  },
+  "languageSwitcher": {
+    "chinese": "中文",
+    "english": "English",
+    "languages": {
+      "en": "English",
+      "zh": "中文"
+    }
+  },
+  "metadata": {
+    "home": {
+      "structuredData": {
+        "description": "专业的痛经缓解和疼痛管理平台，提供科学的缓解方法和个性化健康建议",
+        "featureList": {
+          "painTracking": "智能疼痛追踪",
+          "cyclePrediction": "周期预测分析",
+          "constitutionAssessment": "体质评估测试",
+          "healthGuides": "健康指南文档",
+          "scenarioSolutions": "场景解决方案"
+        }
+      }
+    }
+  },
+  "naturalTherapiesPage": {
+    "title": "自然疗法 - PeriodHub",
+    "description": "探索自然疗法缓解痛经的科学方法，包括热敷、草药茶、按摩穴位、运动调理等传统与现代结合的自然健康解决方案。",
+    "keywords": "自然疗法,痛经缓解,热敷疗法,草药茶,按摩穴位,运动调理,中医体质,营养调理",
+    "recommendations": {
+      "relatedTools": {
+        "nutritionGenerator": {
+          "title": "营养建议生成器",
+          "description": "基于体质生成个性化的自然饮食调理方案，通过营养改善痛经"
+        },
+        "constitutionTest": {
+          "title": "中医体质测试",
+          "description": "了解自己的中医体质，选择最适合的自然疗法和草药调理"
+        },
+        "painTracker": {
+          "title": "痛经追踪器",
+          "description": "记录自然疗法的效果，跟踪哪些方法最有效缓解你的痛经"
+        }
+      },
+      "relatedArticles": {
+        "medicalGuide": {
+          "title": "痛经医疗综合指南",
+          "description": "深入了解痛经成因，掌握自然疗法的科学原理和应用时机",
+          "readTime": "18分钟阅读",
+          "category": "医疗指南"
+        },
+        "heatTherapy": {
+          "title": "热敷疗法完整指南",
+          "description": "深度解析热敷缓解痛经的科学原理，温度控制和最佳实践方法",
+          "readTime": "15分钟阅读",
+          "category": "自然疗法"
+        },
+        "herbalTea": {
+          "title": "草药茶缓解痛经",
+          "description": "草药茶配方和饮用指南，姜茶、当归茶等传统草药疗法",
+          "readTime": "12分钟阅读",
+          "category": "草药疗法"
+        }
+      },
+      "scenarioSolutions": {
+        "exercise": {
+          "title": "运动场景管理",
+          "description": "在运动中应用自然疗法，通过瑜伽和拉伸缓解经期不适"
+        },
+        "office": {
+          "title": "办公环境健康管理",
+          "description": "职场中的自然缓解技巧，隐蔽式按摩穴位和热敷应用"
+        },
+        "emergencyKit": {
+          "title": "痛经应急包指南",
+          "description": "准备便携式自然疗法应急包，随时随地缓解突发疼痛"
+        }
+      }
+    },
+    "sections": {
+      "relatedTools": "相关工具",
+      "relatedArticles": "相关文章",
+      "scenarioSolutions": "场景解决方案"
+    }
+  },
+  "navigationTabs": {
+    "articles": "文章中心",
+    "tools": "互动工具",
+    "downloads": "资源下载",
+    "guide": "健康指南"
+  },
+  "organization": {
+    "description": "专业的经期健康信息平台，为女性提供科学的痛经管理和健康指导"
+  },
+  "privacyPolicy": {
+    "title": "隐私政策",
+    "description": "了解periodhub.health如何保护您的隐私信息。我们严格遵守GDPR等数据保护法规，承诺保护用户的经期健康数据隐私安全。",
+    "openGraph": {
+      "description": "了解periodhub.health如何保护您的隐私信息。我们严格遵守GDPR等数据保护法规，承诺保护用户的经期健康数据隐私安全。"
+    },
+    "dataTable": {
+      "type": "类型",
+      "purpose": "用途",
+      "duration": "保存时间",
+      "required": "必要性"
+    }
+  },
+  "resourcesPage": {
+    "meta": {
+      "title": "PDF Resource Download Center - PeriodHub | Professional Menstrual Health Guides",
+      "description": "PeriodHub PDF Resource Center: Download professionally crafted menstrual health guides, pain tracking forms, nutrition plans and other PDF resources to help you manage your menstrual health scientifically.",
+      "keywords": [
+        "PDF download",
+        "menstrual health guides",
+        "period pain management",
+        "health resources",
+        "download center",
+        "menstrual care"
+      ],
+      "ogTitle": "PDF Resource Download Center - PeriodHub",
+      "ogDescription": "Professional menstrual health PDF resource download center"
+    }
+  },
+  "scenarioSolutionsPage": {
+    "title": "场景化痛经解决方案 - PeriodHub",
+    "description": "针对不同生活场景的痛经管理方案，包括职场、运动、社交等场景的专业应对策略和应急包准备指南。",
+    "keywords": "经期可以运动吗,场景化痛经解决方案,职场痛经管理,运动痛经应对,社交痛经礼仪,痛经应急包,痛经缓解技巧,热敷,敷热水袋,暖宝宝,按摩,揉肚子,止痛药",
+    "scenarios": {
+      "office": {
+        "title": "职场办公",
+        "description": "职场环境下的痛经管理策略",
+        "features": [
+          "办公桌人体工学",
+          "压力管理",
+          "隐蔽式疼痛缓解"
+        ]
+      },
+      "commute": {
+        "title": "通勤出行",
+        "description": "日常通勤和出行期间的痛经管理",
+        "features": [
+          "便携式缓解用品",
+          "舒适体位",
+          "应急预案"
+        ]
+      },
+      "exercise": {
+        "title": "运动锻炼",
+        "description": "经期安全的运动调整方案",
+        "features": [
+          "低强度替代运动",
+          "疼痛缓解拉伸",
+          "补水策略"
+        ]
+      },
+      "sleep": {
+        "title": "睡眠休息",
+        "description": "经期疼痛期间的睡眠质量优化",
+        "features": [
+          "睡眠体位",
+          "卧室环境",
+          "放松技巧"
+        ]
+      },
+      "social": {
+        "title": "社交场合",
+        "description": "社交和公共场合的痛经管理",
+        "features": [
+          "隐蔽式管理",
+          "沟通策略",
+          "备用方案"
+        ]
+      },
+      "life_stages": {
+        "title": "人生阶段",
+        "description": "不同人生阶段的痛经管理",
+        "features": [
+          "青少年护理",
+          "成年期管理",
+          "更年期过渡"
+        ]
+      }
+    },
+    "introTitle": "全面场景化解决方案",
+    "introText": "每个女性的生活方式都是独特的，痛经管理需求也各不相同。我们的场景化方法为不同的生活情况提供针对性的解决方案。",
+    "teenHealth": {
+      "title": "🌸 青少年经期健康专区 🌸",
+      "subtitle": "专为12-18岁女孩设计的贴心空间",
+      "description": "青春期有太多烦恼，而每个月的\"那几天\"更是让人担心。疼痛、情绪波动、身体变化……别担心，你不是一个人在战斗。我们为你准备了校园应急指南、发育期疼痛管理、情绪支持和沟通技巧，陪你自信地度过每一个经期。",
+      "enterZone": "进入专区",
+      "campusGuide": "校园应急指南",
+      "helpTitle": "我们能帮你什么？",
+      "services": {
+        "campusGuide": "校园应急指南",
+        "painManagement": "发育期疼痛管理",
+        "emotionalSupport": "情绪支持与心理健康",
+        "communication": "与家长老师沟通",
+        "peerSharing": "同龄人经验分享"
+      }
+    },
+    "emergencyKit": {
+      "specialRecommendation": "特别推荐",
+      "title": "多场景应急包清单",
+      "description": "从办公室到通勤路上，从运动场到社交聚会，详细的应急包准备清单帮助你在任何场景下都能从容应对经期不适。",
+      "scenarios": {
+        "office": {
+          "title": "办公场景",
+          "description": "隐蔽热敷、止痛药、姜茶包..."
+        },
+        "commute": {
+          "title": "通勤场景",
+          "description": "便携暖宝宝、耳机、温水..."
+        },
+        "social": {
+          "title": "社交场景",
+          "description": "迷你暖贴、舒适衣物、围巾..."
+        }
+      },
+      "viewCompleteList": "查看完整应急包清单"
+    },
+    "cta": {
+      "title": "开始您的个性化痛经管理之旅",
+      "description": "结合我们的症状评估工具和疼痛追踪系统，为您量身定制最适合的场景化解决方案。",
+      "startAssessment": "开始症状评估",
+      "startTracking": "开始疼痛追踪"
+    }
+  },
+  "simplePdfCenter": {
+    "categories": {
+      "immediate": "Immediate Relief",
+      "preparation": "Preparation & Planning",
+      "learning": "Learning & Education",
+      "management": "Management & Tracking"
+    },
+    "subtitles": {
+      "immediate": "Quick relief when you need it most",
+      "preparation": "Be ready for next time",
+      "learning": "Understand your body better",
+      "management": "Track and improve over time"
+    },
+    "labels": {
+      "topPick": "Top Pick",
+      "recommended": "Recommended",
+      "optional": "Optional",
+      "important": "Important"
+    },
+    "actions": {
+      "readArticle": "Read Article",
+      "downloadHtmlPdf": "Download PDF",
+      "share": "Share"
+    },
+    "tags": {
+      "pain": "Pain Relief",
+      "relief": "Relief",
+      "exercise": "Exercise",
+      "baduanjin": "Baduanjin",
+      "preparation": "Preparation",
+      "important": "Important"
+    }
+  },
+  "stressManagement": {
+    "title": "压力管理",
+    "description": "科学管理经期压力，提升生活质量",
+    "pageTitle": "压力管理 - PeriodHub",
+    "keywords": "压力管理,经期压力,月经健康,压力缓解,放松技巧,职场压力,女性健康",
+    "subtitle": "帮助您有效管理经期相关的压力和焦虑",
+    "startAssessment": "开始评估",
+    "learnMore": "了解更多",
+    "backToTools": "返回工具",
+    "next": "下一步",
+    "previous": "上一步",
+    "complete": "完成",
+    "restart": "重新开始",
+    "save": "保存",
+    "cancel": "取消",
+    "continue": "继续",
+    "skip": "跳过",
+    "stressLevels": {
+      "low": "轻度",
+      "moderate": "中度",
+      "high": "高度",
+      "severe": "严重",
+      "lowDesc": "压力水平较低，保持良好的状态",
+      "moderateDesc": "适度的压力，需要关注和调节",
+      "highDesc": "压力较高，建议采取缓解措施",
+      "severeDesc": "压力严重，需要专业帮助"
+    },
+    "resources": {
+      "title": "资源推荐",
+      "subtitle": "更多帮助您管理压力的资源",
+      "articles": {
+        "title": "相关文章",
+        "stressAndMenstruation": "压力与月经的关系",
+        "relaxationTechniques": "放松技巧详解",
+        "mindfulnessBenefits": "正念练习的好处"
+      },
+      "tools": {
+        "title": "相关工具",
+        "painTracker": "疼痛追踪器",
+        "cycleTracker": "周期追踪器",
+        "breathingExercise": "呼吸练习"
+      },
+      "support": {
+        "title": "支持资源",
+        "community": "社区支持",
+        "professionalHelp": "专业帮助",
+        "emergencyContacts": "紧急联系方式"
+      }
+    },
+    "tips": {
+      "title": "实用建议",
+      "subtitle": "日常生活中的压力管理技巧",
+      "daily": {
+        "title": "日常习惯",
+        "regularSleep": "保持规律作息",
+        "healthyDiet": "均衡饮食",
+        "moderateExercise": "适量运动",
+        "socialConnection": "保持社交联系"
+      },
+      "emergency": {
+        "title": "紧急缓解",
+        "deepBreathing": "深呼吸",
+        "progressiveRelaxation": "渐进式放松",
+        "positiveThinking": "积极思考",
+        "seekHelp": "寻求帮助"
+      },
+      "prevention": {
+        "title": "预防措施",
+        "identifyTriggers": "识别压力源",
+        "timeManagement": "时间管理",
+        "boundarySetting": "设定界限",
+        "selfCare": "自我关爱"
+      }
+    },
+    "common": {
+      "loading": "加载中...",
+      "error": "出现错误",
+      "retry": "重试",
+      "success": "成功",
+      "failed": "失败",
+      "saved": "已保存",
+      "deleted": "已删除",
+      "updated": "已更新",
+      "created": "已创建",
+      "noData": "暂无数据",
+      "tryAgain": "请重试",
+      "contactSupport": "联系支持",
+      "importantNote": "重要提示",
+      "medicalDisclaimer": "本网站内容仅供信息和教育目的，不能替代专业医疗建议、诊断或治疗。如有任何健康问题，请咨询专业医生。",
+      "showDetails": "查看详情",
+      "hideDetails": "隐藏详情",
+      "learnMore": "了解更多",
+      "breadcrumb": {
+        "home": "首页"
+      }
+    },
+    "neuroendocrine": {
+      "title": "神经内分泌级联反应",
+      "subtitle": "了解压力如何通过复杂的生理机制影响月经",
+      "detailedExplanation": "详细解释",
+      "steps": {
+        "step1": {
+          "title": "压力感知",
+          "description": "大脑识别压力源，激活下丘脑"
+        },
+        "step2": {
+          "title": "HPA轴激活",
+          "description": "下丘脑释放CRH，刺激垂体释放ACTH"
+        },
+        "step3": {
+          "title": "皮质醇释放",
+          "description": "肾上腺释放皮质醇，影响全身"
+        },
+        "step4": {
+          "title": "月经影响",
+          "description": "皮质醇干扰性激素，影响月经周期"
+        }
+      },
+      "stepLabel": "步骤",
+      "scientificBackground": {
+        "title": "科学背景",
+        "description": "基于循证医学的研究发现",
+        "fact1": {
+          "number": "67%",
+          "description": "女性报告压力影响月经"
+        },
+        "fact2": {
+          "number": "2-7倍",
+          "description": "皮质醇浓度增加"
+        },
+        "fact3": {
+          "number": "24-72小时",
+          "description": "急性压力影响持续时间"
+        }
+      },
+      "acute": {
+        "title": "急性压力反应",
+        "description": "短期压力激活HPA轴，释放皮质醇，通常可快速恢复",
+        "duration": "持续时间",
+        "durationValue": "几分钟到几小时",
+        "recovery": "恢复时间",
+        "recoveryValue": "数小时到数天"
+      },
+      "chronic": {
+        "title": "慢性压力影响",
+        "description": "长期压力导致持续皮质醇升高，可能严重影响月经周期",
+        "duration": "持续时间",
+        "durationValue": "数周到数月",
+        "recovery": "恢复时间",
+        "recoveryValue": "数周到数月"
+      },
+      "keyInsight": "关键洞察",
+      "keyInsightDescription": "理解这些机制有助于更好地管理压力对月经的影响",
+      "actionItems": {
+        "immediate": {
+          "title": "立即行动",
+          "item1": "识别压力触发因素",
+          "item2": "使用深呼吸技巧",
+          "item3": "寻求社会支持"
+        },
+        "longterm": {
+          "title": "长期策略",
+          "item1": "建立压力管理习惯",
+          "item2": "考虑专业咨询",
+          "item3": "优化生活方式"
+        }
+      }
+    },
+    "evolutionary": {
+      "title": "进化生物学视角",
+      "subtitle": "为什么压力会影响月经？身体的古老智慧",
+      "mainTitle": "身体的生存智慧",
+      "mainDescription": "压力对月经的影响实际上是身体的保护机制",
+      "storyTitle": "远古时代的保护机制",
+      "storyContent": "在我们的祖先面临生命威胁时，身体会自动判断现在不是生育的好时机，暂停排卵和月经。",
+      "modernTitle": "现代社会的误触发",
+      "modernContent": "工作压力、人际关系等心理压力被身体误认为生存威胁，持续激活古老系统。",
+      "realizationTitle": "关键启示",
+      "realization1": "你的身体反应不是出了问题",
+      "realization2": "而是在执行古老的保护程序",
+      "realization3": "理解这一点可以减少自我责备和焦虑",
+      "practicalTitle": "实用建议",
+      "practicalDescription": "当你感到压力影响月经时，试着对自己说：",
+      "selfTalk": "我的身体在保护我，这是正常的生理反应。现在我需要告诉它：危机已经过去，可以放松了。",
+      "action1": {
+        "title": "认知重构",
+        "description": "将压力反应视为保护而非问题"
+      },
+      "action2": {
+        "title": "放松训练",
+        "description": "通过放松技巧告诉身体危机已过"
+      },
+      "detailsTitle": "深入理解",
+      "detail1": {
+        "title": "生存优势",
+        "content": "这种机制帮助我们的祖先在危机中生存"
+      },
+      "detail2": {
+        "title": "现代适应",
+        "content": "需要学会区分真实威胁和心理压力"
+      },
+      "detail3": {
+        "title": "自我同情",
+        "content": "对身体的反应保持理解和同情"
+      }
+    },
+    "stressTypes": {
+      "comparison": {
+        "title": "急性 vs 慢性压力",
+        "subtitle": "了解不同类型压力的特征和影响",
+        "keyTakeaway": "关键要点",
+        "keyTakeawayContent": "急性压力通常可管理，慢性压力需要系统性干预。",
+        "action1": {
+          "title": "急性压力管理",
+          "description": "使用即时缓解技巧，如深呼吸和短暂休息"
+        },
+        "action2": {
+          "title": "慢性压力干预",
+          "description": "需要长期策略和可能的专业帮助"
+        }
+      }
+    },
+    "assessment": {
+      "title": "压力评估",
+      "subtitle": "通过科学的评估了解您的压力状况",
+      "instructions": "评估说明",
+      "instructionsDetail": "请根据您的实际情况，诚实回答以下问题。这将帮助我们为您提供个性化的压力管理建议。",
+      "questionsPreview": {
+        "title": "评估问题预览"
+      },
+      "questions": {
+        "q1": {
+          "question": "您最近是否经常感到焦虑或紧张？",
+          "options": [
+            "从不",
+            "偶尔",
+            "经常",
+            "总是"
+          ]
+        },
+        "q2": {
+          "question": "您的睡眠质量如何？",
+          "options": [
+            "很好",
+            "一般",
+            "较差",
+            "很差"
+          ]
+        },
+        "q3": {
+          "question": "您是否经常感到疲劳或精力不足？",
+          "options": [
+            "从不",
+            "偶尔",
+            "经常",
+            "总是"
+          ]
+        },
+        "q4": {
+          "question": "您是否容易感到烦躁或易怒？",
+          "options": [
+            "从不",
+            "偶尔",
+            "经常",
+            "总是"
+          ]
+        },
+        "q5": {
+          "question": "您是否经常担心经期相关的问题？",
+          "options": [
+            "从不",
+            "偶尔",
+            "经常",
+            "总是"
+          ]
+        }
+      },
+      "benefits": {
+        "title": "评估的好处",
+        "personalized": {
+          "title": "个性化建议",
+          "description": "基于您的回答提供定制化的压力管理策略"
+        },
+        "tracking": {
+          "title": "进度追踪",
+          "description": "记录您的压力管理进展和改善情况"
+        },
+        "insights": {
+          "title": "深度洞察",
+          "description": "了解压力对您月经和整体健康的影响"
+        }
+      }
+    },
+    "techniques": {
+      "title": "放松技巧",
+      "subtitle": "科学的放松方法帮助您缓解压力",
+      "benefits": {
+        "title": "好处"
+      },
+      "breathing": {
+        "title": "呼吸练习",
+        "description": "通过调节呼吸来放松身心",
+        "start": "开始练习",
+        "instructions": "练习指导",
+        "instructionsDetail": "跟随音频指导进行深呼吸练习，每次练习5-10分钟。",
+        "benefits": {
+          "benefit1": "立即缓解紧张情绪",
+          "benefit2": "降低心率血压",
+          "benefit3": "改善睡眠质量"
+        }
+      },
+      "meditation": {
+        "title": "冥想练习",
+        "description": "通过冥想达到内心的平静",
+        "start": "开始冥想",
+        "instructions": "冥想指导",
+        "instructionsDetail": "跟随引导音频进行冥想练习，从5分钟开始逐渐延长。",
+        "benefits": {
+          "benefit1": "减少焦虑和抑郁",
+          "benefit2": "提高专注力",
+          "benefit3": "增强情绪调节能力"
+        }
+      },
+      "exercise": {
+        "title": "轻度运动",
+        "description": "适合经期的温和运动",
+        "start": "开始运动",
+        "instructions": "运动指导",
+        "instructionsDetail": "选择适合经期的温和运动，如瑜伽、散步或伸展运动。",
+        "benefits": {
+          "benefit1": "释放内啡肽",
+          "benefit2": "改善血液循环",
+          "benefit3": "缓解肌肉紧张"
+        }
+      },
+      "music": {
+        "title": "音乐疗法",
+        "description": "通过音乐放松心情",
+        "start": "开始聆听",
+        "instructions": "音乐指导",
+        "instructionsDetail": "选择舒缓的音乐，闭上眼睛聆听10-15分钟。",
+        "benefits": {
+          "benefit1": "激活副交感神经",
+          "benefit2": "减少皮质醇分泌",
+          "benefit3": "提升整体幸福感"
+        }
+      },
+      "quickTips": {
+        "title": "快速提示",
+        "timing": {
+          "title": "最佳时机",
+          "tip1": "晨起后或睡前练习",
+          "tip2": "压力高峰期前预防性练习",
+          "tip3": "经期前一周增加练习频率",
+          "tip4": "工作间隙进行短暂练习"
+        },
+        "precautions": {
+          "title": "注意事项",
+          "tip1": "选择安静舒适的环境",
+          "tip2": "穿着宽松舒适的衣物",
+          "tip3": "避免在饱餐后立即练习",
+          "tip4": "如有不适请立即停止"
+        }
+      }
+    },
+    "progress": {
+      "title": "进度追踪",
+      "subtitle": "记录您的压力管理进展",
+      "today": "今日",
+      "week": "本周",
+      "month": "本月",
+      "addEntry": {
+        "title": "添加记录",
+        "subtitle": "记录您今天的压力状况和使用的技巧"
+      },
+      "features": {
+        "stressLevel": {
+          "title": "压力水平",
+          "description": "1-10分评估"
+        },
+        "techniquesUsed": {
+          "title": "使用技巧",
+          "description": "记录练习的方法"
+        },
+        "moodRating": {
+          "title": "心情评分",
+          "description": "整体情绪状态"
+        },
+        "notes": {
+          "title": "备注",
+          "description": "记录特殊感受"
+        }
+      },
+      "viewHistory": {
+        "title": "查看历史",
+        "today": {
+          "description": "查看今日记录"
+        },
+        "week": {
+          "description": "查看本周趋势"
+        },
+        "month": {
+          "description": "查看月度统计"
+        }
+      },
+      "sampleData": {
+        "title": "数据预览",
+        "averageStress": "平均压力水平",
+        "techniquesUsed": "技巧使用率",
+        "averageMood": "平均心情评分"
+      },
+      "benefits": {
+        "title": "追踪的好处",
+        "insights": {
+          "title": "深度洞察",
+          "description": "了解您的压力模式和触发因素"
+        },
+        "trends": {
+          "title": "趋势分析",
+          "description": "发现改善和需要关注的区域"
+        },
+        "motivation": {
+          "title": "持续激励",
+          "description": "看到进步增强坚持的动力"
+        }
+      }
+    },
+    "quantifiedImpact": {
+      "title": "量化影响数据",
+      "subtitle": "基于科学研究的压力影响数据",
+      "metrics": {
+        "anxiety": {
+          "title": "焦虑和紧张"
+        },
+        "depression": {
+          "title": "抑郁情绪"
+        },
+        "irritability": {
+          "title": "易怒无常"
+        }
+      },
+      "emotionalImpact": {
+        "title": "情绪影响",
+        "subtitle": "高压力下的症状加重程度",
+        "lowStress": "低压力状态",
+        "highStress": "高压力状态",
+        "details": {
+          "title": "详细说明",
+          "anxiety": "焦虑症状在高压力下显著加重，影响日常生活和工作表现。",
+          "depression": "抑郁情绪在高压力环境下更容易出现，需要及时关注。",
+          "irritability": "易怒和情绪波动在高压力下最为明显，影响人际关系。"
+        }
+      },
+      "menstrualImpact": {
+        "title": "月经影响",
+        "cycleLength": {
+          "title": "周期长度变化",
+          "lowStress": "规律周期（28±3天）",
+          "highStress": "周期不规律或延长"
+        },
+        "painIntensity": {
+          "title": "疼痛强度",
+          "lowStress": "轻微不适",
+          "highStress": "疼痛加重"
+        },
+        "flowChanges": {
+          "title": "流量变化",
+          "lowStress": "正常流量",
+          "highStress": "流量异常"
+        },
+        "lowStress": "低压力",
+        "highStress": "高压力"
+      },
+      "keyInsights": {
+        "title": "关键洞察",
+        "insight1": {
+          "title": "压力累积效应",
+          "description": "长期压力比短期压力对月经的影响更大"
+        },
+        "insight2": {
+          "title": "个体差异",
+          "description": "每个人对压力的敏感度不同"
+        },
+        "insight3": {
+          "title": "可逆性",
+          "description": "大部分压力影响在压力缓解后可恢复"
+        },
+        "insight4": {
+          "title": "预防重要性",
+          "description": "早期压力管理比后期治疗更有效"
+        }
+      },
+      "actionItems": {
+        "immediate": {
+          "title": "立即行动",
+          "description": "识别压力源并采取缓解措施"
+        },
+        "longterm": {
+          "title": "长期策略",
+          "description": "建立持续的压力管理体系"
+        }
+      }
+    }
+  },
+  "teenHealth": {
+    "meta": {
+      "title": "青少年经期健康专区 - PeriodHub",
+      "description": "专为12-18岁青少年设计的经期健康教育和管理指南，提供校园应急、发育期疼痛管理、情绪支持等专业服务。"
+    },
+    "keywords": "青少年经期健康,青春期教育,经期管理,校园健康,心理健康,成长支持,科学教育"
+  },
+  "termsOfService": {
+    "title": "服务条款",
+    "description": "了解使用periodhub.health的条款和条件，包括用户责任和服务限制。",
+    "openGraph": {
+      "description": "了解使用periodhub.health的条款和条件，包括用户责任和服务限制。"
+    }
+  },
+  "understandingPain": {
+    "painPatterns": {
+      "title": "识别你的疼痛模式",
+      "subtitle": "每个女性的疼痛模式都是独特的，但通常遵循一定的规律。通过详细观察和记录，你可以识别出属于自己的疼痛pattern，从而制定更有效的预防和管理策略。",
+      "types": {
+        "title": "常见疼痛模式类型",
+        "menstrualFocused": {
+          "title": "经期集中型（70%）",
+          "characteristics": [
+            "疼痛集中在月经前1-2天及月经第1-2天",
+            "第3天后疼痛明显减轻或消失",
+            "疼痛强度在第1天达到峰值",
+            "常见于原发性痛经"
+          ]
+        },
+        "wholePeriodPersistent": {
+          "title": "整期持续型（20%）",
+          "characteristics": [
+            "疼痛从月经前1周开始",
+            "持续整个月经期",
+            "疼痛强度相对稳定",
+            "可能提示继发性痛经"
+          ]
+        },
+        "premenstrualProminent": {
+          "title": "经前突出型（8%）",
+          "characteristics": [
+            "经前1-3天疼痛最严重",
+            "月经来潮后疼痛反而减轻",
+            "常伴随经前综合症",
+            "与激素波动密切相关"
+          ]
+        },
+        "irregularFluctuation": {
+          "title": "不规律波动型（2%）",
+          "characteristics": [
+            "疼痛时间无明确规律",
+            "强度变化大",
+            "可能与压力、生活方式等因素相关",
+            "需要进一步医学评估"
+          ]
+        }
+      },
+      "recordingImportance": {
+        "title": "疼痛记录的重要性",
+        "description": "建立详细的疼痛日记是了解个人模式的最有效方法。通过连续3-6个月的记录，你将能够清楚地看到自己的疼痛规律。",
+        "recordingElements": {
+          "title": "记录要素",
+          "items": [
+            "疼痛强度（0-10分）",
+            "疼痛性质（绞痛、钝痛等）",
+            "持续时间",
+            "伴随症状",
+            "诱发或缓解因素",
+            "治疗方法及效果"
+          ]
+        },
+        "analysisDimensions": {
+          "title": "分析维度",
+          "items": [
+            "月经周期第几天疼痛最重",
+            "疼痛持续时间趋势",
+            "治疗效果比较",
+            "生活因素影响",
+            "季节性变化",
+            "压力事件关联性"
+          ]
+        }
+      },
+      "influencingFactors": {
+        "title": "影响个人周期模式的因素",
+        "description": "每个女性的月经周期和疼痛模式都受到多种因素影响。理解这些因素有助于更好地预测和管理疼痛。",
+        "physiologicalFactors": {
+          "title": "生理性因素",
+          "ageAndDevelopment": {
+            "title": "年龄与发育阶段",
+            "items": [
+              "青春期（13-19岁）：周期常不规律，疼痛可能较重",
+              "成年期（20-35岁）：周期一般稳定，疼痛模式固定",
+              "生育后：约60%女性疼痛会减轻",
+              "围绝经期：周期变化大，疼痛模式可能改变"
+            ]
+          },
+          "bodyCharacteristics": {
+            "title": "体质特征",
+            "items": [
+              "BMI指数影响激素水平",
+              "体脂率与雌激素代谢相关",
+              "体质敏感度个体差异大",
+              "遗传因素占重要比例"
+            ]
+          },
+          "healthStatus": {
+            "title": "健康状况",
+            "items": [
+              "甲状腺功能影响月经规律",
+              "多囊卵巢综合症导致周期异常",
+              "子宫内膜异位症加重疼痛",
+              "盆腔炎症影响疼痛pattern"
+            ]
+          },
+          "medicationUse": {
+            "title": "药物使用",
+            "items": [
+              "避孕药调节激素水平",
+              "NSAIDs影响前列腺素合成",
+              "抗抑郁药可能影响周期",
+              "激素补充治疗的效果"
+            ]
+          }
+        },
+        "lifestyleFactors": {
+          "title": "生活方式因素",
+          "dietaryHabits": {
+            "title": "饮食习惯",
+            "items": [
+              "咖啡因摄入量",
+              "糖分摄入",
+              "抗炎食物比例",
+              "维生素D水平",
+              "镁、钙矿物质摄入"
+            ]
+          },
+          "exercisePatterns": {
+            "title": "运动模式",
+            "items": [
+              "规律有氧运动",
+              "高强度训练影响",
+              "瑜伽、普拉提益处",
+              "久坐生活方式影响",
+              "运动时机优化"
+            ]
+          },
+          "sleepAndStress": {
+            "title": "睡眠与压力",
+            "items": [
+              "睡眠质量和持续时间",
+              "工作压力水平",
+              "情感压力管理",
+              "昼夜节律稳定性",
+              "放松练习"
+            ]
+          }
+        },
+        "environmentalFactors": {
+          "title": "环境和社会因素",
+          "environmentalImpact": {
+            "title": "环境影响",
+            "items": [
+              "光照变化：季节性情感障碍影响荷尔蒙",
+              "气候条件：气压变化可能影响疼痛感受",
+              "环境毒素：化学物质干扰激素平衡"
+            ]
+          },
+          "socialPsychological": {
+            "title": "社会心理因素",
+            "items": [
+              "文化适应：对月经的认知态度",
+              "社会支持：家人和朋友的理解程度",
+              "工作环境：职业压力和工作安排"
+            ]
+          }
+        }
+      },
+      "optimizationStrategies": {
+        "title": "应用知识优化疼痛管理",
+        "description": "了解了月经周期和疼痛模式的科学知识后，我们可以将这些信息转化为实用的策略来优化疼痛管理效果。",
+        "preventiveIntervention": {
+          "title": "预防性干预时机",
+          "earlyLutealPhase": {
+            "title": "月经前1-2周（黄体期早期）",
+            "items": [
+              "开始增加抗炎食物摄入（omega-3、姜黄）",
+              "规律适度运动，避免过度训练",
+              "优化睡眠质量，保证7-8小时休息",
+              "进行压力管理活动（冥想、瑜伽）"
+            ]
+          },
+          "premenstrualDays": {
+            "title": "月经前3-5天",
+            "items": [
+              "开始预防性NSAIDs（如果医生推荐）",
+              "增加镁补充剂（300-400mg/天）",
+              "适当减少咖啡因和酒精摄入",
+              "准备热敷设备和舒适衣物"
+            ]
+          },
+          "peakPainDays": {
+            "title": "月经第1-2天（疼痛高峰期）",
+            "items": [
+              "及时应用所有可用的缓解方法",
+              "维持水分平衡，但避免过量液体",
+              "采用最佳体位缓解疼痛",
+              "进行轻柔活动（如果可能），需要时休息"
+            ]
+          }
+        },
+        "treatmentOptimization": {
+          "title": "治疗效果优化",
+          "medicationTiming": {
+            "title": "药物时机",
+            "items": [
+              "NSAIDs：在疼痛开始前1-2小时服用效果最佳",
+              "激素补充：遵循医生指导以获得最佳吸收",
+              "中医调理：调理类草药要提前1-2周开始"
+            ]
+          },
+          "recoveryOptimization": {
+            "title": "恢复优化",
+            "items": [
+              "渐进活动：随疼痛缓解逐渐增加活动水平",
+              "营养恢复：经期后重点补充营养",
+              "反思评估：评估本次治疗策略的效果"
+            ]
+          }
+        },
+        "keyTakeaways": {
+          "title": "要点总结",
+          "items": [
+            "月经周期是精密调控的生物节律，理解其机制有助于科学管理疼痛",
+            "前列腺素是经期疼痛的主要原因，但可以通过各种方法有效管理",
+            "每个人的疼痛模式都是独特的，通过详细记录可以发现个人规律",
+            "预防性干预优于被动治疗，时机是成功的关键",
+            "综合考虑生理、心理和环境因素可以实现最佳治疗效果"
+          ]
+        },
+        "medicalDisclaimer": {
+          "title": "医学免责声明",
+          "content": "本文内容仅供教育和信息目的，不能替代专业医疗建议、诊断或治疗。如有严重或持续疼痛，请及时咨询合格的医疗专业人员。每个人的身体状况都是独特的，请根据个人具体情况和专业指导调整治疗方案。"
+        }
+      },
+      "cta": {
+        "title": "开始记录你的疼痛模式",
+        "description": "使用我们的智能疼痛追踪工具，开始记录和分析你的疼痛模式",
+        "buttonText": "开始追踪",
+        "buttonLink": "/zh/interactive-tools/pain-tracker"
+      }
+    }
+  },
+  "userSuccessStories": {
+    "title": "用户成功故事",
+    "stories": {
+      "story1": {
+        "initial": "小",
+        "name": "小张",
+        "role": "25岁，上班族",
+        "testimonial": "使用PeriodHub后，我学会了科学管理痛经，生活质量大大提升。"
+      },
+      "story2": {
+        "initial": "李",
+        "name": "李女士",
+        "role": "28岁，教师",
+        "testimonial": "专业的医学指南让我对痛经有了更科学的认识，不再盲目用药。"
+      },
+      "story3": {
+        "initial": "王",
+        "name": "王同学",
+        "role": "22岁，学生",
+        "testimonial": "疼痛追踪功能帮我找到了规律，现在能提前预防痛经发作。"
+      }
+    },
+    "statistic": "98%的用户表示症状得到明显改善",
+    "ctaButton": "开始你的健康之旅"
+  }
+}

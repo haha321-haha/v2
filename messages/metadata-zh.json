@@ -1,0 +1,159 @@
+{
+  "metadata": {
+    "common": {
+      "siteName": "PeriodHub",
+      "author": "PeriodHub Team",
+      "creator": "PeriodHub",
+      "publisher": "PeriodHub",
+      "title": "专业痛经缓解和疼痛管理平台",
+      "description": "专业的女性月经健康管理平台"
+    },
+    "pages": {
+      "health-guide": {
+        "relief-methods": {
+          "description": "通过按压特定穴位来缓解疼痛"
+        }
+      },
+      "medical-disclaimer": {
+        "title": "医疗免责声明"
+      },
+      "natural-therapies": {
+        "title": "物理疗法",
+        "description": "热敷疗法"
+      },
+      "pdf-center-test": {
+        "title": "资源中心测试",
+        "description": "测试新的"
+      },
+      "scenario-solutions": {
+        "commute": {
+          "title": "痛经追踪器"
+        },
+        "emergency-kit": {
+          "title": "症状评估工具"
+        },
+        "exercise": {
+          "title": "痛经追踪器"
+        },
+        "lifeStages": {
+          "title": "症状评估工具"
+        },
+        "office": {
+          "title": "痛经追踪器",
+          "description": "缓解骶髂关节压力"
+        },
+        "partnerCommunication": {
+          "components": {
+            "title": "症状评估工具"
+          },
+          "config": {
+            "title": "快速了解测试",
+            "description": "分钟了解你的基础理解水平"
+          },
+          "title": "伴侣沟通场景"
+        },
+        "social": {
+          "title": "症状评估工具"
+        }
+      },
+      "teen-health": {
+        "campus-guide": {
+          "title": "快速评估"
+        },
+        "communication-guide": {
+          "title": "与家长沟通"
+        },
+        "development-pain": {
+          "title": "常见时间"
+        },
+        "emotional-support": {
+          "title": "烦躁易怒"
+        }
+      }
+    },
+    "tools": {
+      "interactive-tools": {
+        "[tool]": {
+          "title": "痛经追踪器"
+        },
+        "components": {
+          "description": "气虚质"
+        },
+        "nutrition-recommendation-generator": {
+          "utils": {
+            "title": "推荐食物"
+          }
+        },
+        "p2-advanced-features": {
+          "title": "社交功能集成"
+        },
+        "p3-system-optimization": {
+          "title": "性能优化"
+        },
+        "pain-tracker": {
+          "components": {
+            "title": "疼痛模式识别"
+          }
+        },
+        "period-pain-impact-calculator": {
+          "title": "专业评估痛经对工作和生活的影响程度"
+        },
+        "shared": {
+          "components": {
+            "title": "疼痛模式识别",
+            "description": "您的疼痛通常在月经开始前",
+            "author": "开发团队"
+          },
+          "constants": {
+            "description": "下腹部区域"
+          },
+          "data": {
+            "title": "您平时的精力状态如何",
+            "description": "选择最符合您日常状态的选项"
+          },
+          "hooks": {
+            "title": "紧急医疗咨询建议"
+          }
+        },
+        "symptom-assessment": {
+          "title": "痛经追踪器"
+        },
+        "workplace-impact-assessment": {
+          "components": {
+            "title": "职场影响评估"
+          }
+        },
+        "workplace-wellness": {
+          "data": {
+            "title": "轻度不适请假模板"
+          },
+          "title": "痛经追踪器",
+          "types": {
+            "description": "包含基本经期数据的"
+          },
+          "utils": {
+            "title": "隐私保护报告"
+          }
+        }
+      }
+    },
+    "articles": {},
+    "downloads": {
+      "downloads": {
+        "preview": {
+          "[id]": {
+            "title": "紧急疼痛缓解卡片"
+          }
+        }
+      }
+    },
+    "admin": {
+      "admin": {
+        "seo-validation": {
+          "title": "验证和监控中心",
+          "description": "深度优化验证和监控管理页面"
+        }
+      }
+    }
+  }
+}

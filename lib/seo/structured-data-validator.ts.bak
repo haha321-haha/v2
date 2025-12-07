@@ -1,0 +1,233 @@
+import { generateToolStructuredData } from "@/lib/seo/tool-structured-data";
+import { generateArticleStructuredData } from "@/lib/seo/article-structured-data";
+import { generateBreadcrumbStructuredData } from "@/lib/seo/breadcrumb-structured-data";
+import { generateHreflangConfig } from "@/lib/seo/multilingual-seo";
+
+// 结构化数据验证工具
+export class StructuredDataValidator {
+  private baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://www.periodhub.health";
+
+  // 验证工具页面结构化数据
+  async validateToolPage(locale: string, toolSlug: string) {
+    console.log(`🔍 验证工具页面: ${locale}/interactive-tools/${toolSlug}`);
+
+    try {
+      const toolData = await generateToolStructuredData({
+        locale,
+        toolSlug,
+        toolName: locale === "zh" ? "症状评估工具" : "Symptom Assessment Tool",
+        description:
+          locale === "zh"
+            ? "专业的月经症状评估工具"
+            : "Professional menstrual symptom assessment tool",
+        features: [
+          locale === "zh" ? "症状评估" : "Symptom Assessment",
+          locale === "zh" ? "个性化建议" : "Personalized Recommendations",
+          locale === "zh" ? "健康报告" : "Health Reports",
+        ],
+        category: "HealthApplication",
+        rating: { value: 4.8, count: 1250 },
+        breadcrumbs: [
+          {
+            name: locale === "zh" ? "互动工具" : "Interactive Tools",
+            url: `${this.baseUrl}/${locale}/interactive-tools`,
+          },
+          {
+            name: locale === "zh" ? "症状评估工具" : "Symptom Assessment Tool",
+            url: `${this.baseUrl}/${locale}/interactive-tools/${toolSlug}`,
+          },
+        ],
+      });
+
+      // 验证必需字段
+      const requiredFields = ["@context", "@graph"];
+      const missingFields = requiredFields.filter((field) => !toolData[field]);
+
+      if (missingFields.length === 0) {
+        console.log("✅ 工具页面结构化数据验证通过");
+        console.log(
+          "📊 包含的Schema类型:",
+          toolData["@graph"]?.map((item: any) => item["@type"]),
+        );
+        return { success: true, data: toolData };
+      } else {
+        console.log("❌ 缺少必需字段:", missingFields);
+        return {
+          success: false,
+          error: `Missing fields: ${missingFields.join(", ")}`,
+        };
+      }
+    } catch (error) {
+      console.log("❌ 工具页面验证失败:", error);
+      return { success: false, error };
+    }
+  }
+
+  // 验证文章页面结构化数据
+  async validateArticlePage(locale: string, slug: string) {
+    console.log(`🔍 验证文章页面: ${locale}/articles/${slug}`);
+
+    try {
+      const articleData = await generateArticleStructuredData({
+        locale: locale as "en" | "zh",
+        slug,
+        title: locale === "zh" ? "痛经缓解方法" : "Period Pain Relief Methods",
+        description:
+          locale === "zh"
+            ? "专业的痛经缓解指导"
+            : "Professional period pain relief guidance",
+        author: "PeriodHub Health Team",
+        datePublished: "2025-01-01",
+        dateModified: "2025-01-01",
+        image: `${this.baseUrl}/images/article-image.jpg`,
+        breadcrumbs: [
+          {
+            name: locale === "zh" ? "文章中心" : "Articles",
+            url: `${this.baseUrl}/${locale}/downloads`,
+          },
+          {
+            name:
+              locale === "zh" ? "痛经缓解方法" : "Period Pain Relief Methods",
+            url: `${this.baseUrl}/${locale}/articles/${slug}`,
+          },
+        ],
+      });
+
+      // 验证必需字段
+      const requiredFields = ["@context", "@graph"];
+      const missingFields = requiredFields.filter(
+        (field) => !articleData[field],
+      );
+
+      if (missingFields.length === 0) {
+        console.log("✅ 文章页面结构化数据验证通过");
+        console.log(
+          "📊 包含的Schema类型:",
+          articleData["@graph"]?.map((item: any) => item["@type"]),
+        );
+        return { success: true, data: articleData };
+      } else {
+        console.log("❌ 缺少必需字段:", missingFields);
+        return {
+          success: false,
+          error: `Missing fields: ${missingFields.join(", ")}`,
+        };
+      }
+    } catch (error) {
+      console.log("❌ 文章页面验证失败:", error);
+      return { success: false, error };
+    }
+  }
+
+  // 验证hreflang配置
+  async validateHreflangConfig(locale: string, path: string) {
+    console.log(`🔍 验证hreflang配置: ${locale}${path}`);
+
+    try {
+      const hreflangUrls = await generateHreflangConfig({
+        locale,
+        path,
+        includeXDefault: true,
+      });
+
+      // 验证必需的语言标签
+      const requiredLanguages = ["zh-CN", "en-US", "x-default"];
+      const missingLanguages = requiredLanguages.filter(
+        (lang) => !hreflangUrls[lang],
+      );
+
+      if (missingLanguages.length === 0) {
+        console.log("✅ hreflang配置验证通过");
+        console.log("🌍 支持的语言:", Object.keys(hreflangUrls));
+        return { success: true, data: hreflangUrls };
+      } else {
+        console.log("❌ 缺少语言标签:", missingLanguages);
+        return {
+          success: false,
+          error: `Missing languages: ${missingLanguages.join(", ")}`,
+        };
+      }
+    } catch (error) {
+      console.log("❌ hreflang验证失败:", error);
+      return { success: false, error };
+    }
+  }
+
+  // 生成Google Rich Results Test URL
+  generateRichResultsTestUrl(pageUrl: string) {
+    const encodedUrl = encodeURIComponent(pageUrl);
+    return `https://search.google.com/test/rich-results?url=${encodedUrl}`;
+  }
+
+  // 生成完整的验证报告
+  async generateValidationReport() {
+    console.log("🚀 开始生成SEO验证报告...");
+
+    const report = {
+      timestamp: new Date().toISOString(),
+      baseUrl: this.baseUrl,
+      validations: [],
+    };
+
+    // 验证工具页面
+    const toolValidation = await this.validateToolPage(
+      "zh",
+      "symptom-assessment",
+    );
+    report.validations.push({
+      type: "tool-page",
+      locale: "zh",
+      slug: "symptom-assessment",
+      ...toolValidation,
+    });
+
+    // 验证文章页面
+    const articleValidation = await this.validateArticlePage(
+      "zh",
+      "pain-relief-methods",
+    );
+    report.validations.push({
+      type: "article-page",
+      locale: "zh",
+      slug: "pain-relief-methods",
+      ...articleValidation,
+    });
+
+    // 验证hreflang配置
+    const hreflangValidation = await this.validateHreflangConfig(
+      "zh",
+      "/health-guide",
+    );
+    report.validations.push({
+      type: "hreflang-config",
+      locale: "zh",
+      path: "/health-guide",
+      ...hreflangValidation,
+    });
+
+    // 生成测试URL
+    const testUrls = {
+      toolPage: this.generateRichResultsTestUrl(
+        `${this.baseUrl}/zh/interactive-tools/symptom-assessment`,
+      ),
+      articlePage: this.generateRichResultsTestUrl(
+        `${this.baseUrl}/zh/articles/pain-relief-methods`,
+      ),
+      healthGuide: this.generateRichResultsTestUrl(
+        `${this.baseUrl}/zh/health-guide`,
+      ),
+    };
+
+    console.log("📋 验证报告生成完成");
+    console.log("🔗 Google Rich Results Test URLs:");
+    console.log("  工具页面:", testUrls.toolPage);
+    console.log("  文章页面:", testUrls.articlePage);
+    console.log("  健康指南:", testUrls.healthGuide);
+
+    return { report, testUrls };
+  }
+}
+
+// 导出验证器实例
+export const structuredDataValidator = new StructuredDataValidator();

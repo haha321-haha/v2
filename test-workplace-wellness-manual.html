@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkplaceWellness 修复验证测试</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f8fafc;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .test-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .test-section {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .test-item {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 6px;
+      border-left: 4px solid #e5e7eb;
+      transition: all 0.3s ease;
+    }
+    .test-item.pending {
+      border-left-color: #f59e0b;
+      background-color: #fffbeb;
+    }
+    .test-item.passed {
+      border-left-color: #10b981;
+      background-color: #f0fdf4;
+    }
+    .test-item.failed {
+      border-left-color: #ef4444;
+      background-color: #fef2f2;
+    }
+    .test-status {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .test-details {
+      margin: 10px 0;
+      color: #374151;
+    }
+    .test-instructions {
+      background-color: #f3f4f6;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 10px 0;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .btn-success {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    }
+    .btn-danger {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    }
+    .summary {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .note {
+      background-color: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+      transition: width 0.3s ease;
+    }
+    .test-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #f1f5f9;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #475569;
+      font-weight: 500;
+    }
+    .test-link:hover {
+      background: #e2e8f0;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .checkbox-container input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🧪 WorkplaceWellness 修复验证测试</h1>
+    <p>手动验证部署到生产环境的修复效果</p>
+  </div>
+
+  <div class="note">
+    <strong>使用说明：</strong>此测试页面需要您手动验证每个功能。请按照每个测试项目的说明进行操作，然后点击"通过"或"失败"按钮记录测试结果。
+  </div>
+
+  <div class="controls">
+    <button class="btn" onclick="openTestSite()">打开测试页面</button>
+    <button class="btn" onclick="resetTests()">重置测试</button>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+  </div>
+
+  <div class="test-container">
+    <div class="test-section">
+      <h2>核心功能测试</h2>
+      <div id="coreTests"></div>
+    </div>
+
+    <div class="test-section">
+      <h2>边界情况测试</h2>
+      <div id="edgeCaseTests"></div>
+    </div>
+  </div>
+
+  <div class="summary">
+    <h2>测试总结</h2>
+    <div id="testSummary">准备开始测试...</div>
+  </div>
+
+  <script>
+    const testUrl = 'https://www.periodhub.health/zh/interactive-tools/workplace-wellness';
+    const testResults = {
+      core: [],
+      edgeCase: []
+    };
+    let testCount = 0;
+    let completedTests = 0;
+
+    // 测试定义
+    const testDefinitions = {
+      core: [
+        {
+          name: '页面加载测试',
+          id: 'pageLoad',
+          description: '检查页面是否正常加载，显示正确的内容',
+          instructions: '1. 点击上方"打开测试页面"按钮\n2. 等待页面完全加载\n3. 检查页面是否显示"经期健康助手"或相关标题\n4. 检查页面是否有主要内容区域（如日历、图表等）',
+          expected: '页面正常加载，显示标题和主要内容区域'
+        },
+        {
+          name: '数据持久化测试',
+          id: 'dataPersistence',
+          description: '检查经期数据是否正确保存和显示',
+          instructions: '1. 在页面上添加一条经期记录（选择日期和症状）\n2. 点击保存按钮\n3. 刷新页面\n4. 检查之前添加的记录是否仍然存在',
+          expected: '记录正确保存并在刷新后仍然显示'
+        },
+        {
+          name: '图表显示测试',
+          id: 'chartDisplay',
+          description: '检查周期图表是否正确渲染数据',
+          instructions: '1. 确保页面有至少一条经期记录\n2. 查找页面上的图表区域（可能在"统计"或"分析"标签页）\n3. 检查图表是否正确显示数据点或曲线\n4. 确认图表不是空白或错误状态',
+          expected: '图表正确渲染并显示数据'
+        },
+        {
+          name: '按钮位置测试',
+          id: 'buttonPosition',
+          description: '检查按钮位置是否合适且易于访问',
+          instructions: '1. 查找页面上的主要操作按钮（如"添加记录"、"保存"等）\n2. 检查按钮是否在容易看到和点击的位置\n3. 确认按钮没有被其他元素遮挡\n4. 测试按钮点击响应是否正常',
+          expected: '按钮位置合理，易于点击和操作'
+        }
+      ],
+      edgeCase: [
+        {
+          name: '空数据处理测试',
+          id: 'emptyData',
+          description: '检查空数据时页面的处理方式',
+          instructions: '1. 清除所有经期记录（如果有"清除数据"选项）\n2. 或使用浏览器开发者工具清除localStorage\n3. 刷新页面\n4. 检查页面是否有友好的空状态提示\n5. 确认没有出现错误或崩溃',
+          expected: '页面显示友好的空状态提示，没有错误'
+        },
+        {
+          name: '大量数据处理测试',
+          id: 'largeData',
+          description: '检查大量数据时的性能表现',
+          instructions: '1. 添加多条经期记录（至少10条）\n2. 跨越多个周期\n3. 检查页面加载和响应速度\n4. 测试图表渲染性能\n5. 尝试在不同视图间切换',
+          expected: '页面响应正常，没有明显的性能问题'
+        },
+        {
+          name: '安全性测试',
+          id: 'security',
+          description: '检查页面是否存在明显安全隐患',
+          instructions: '1. 检查页面是否有明显的错误信息暴露\n2. 确认敏感操作（如数据删除）有确认提示\n3. 检查控制台是否有错误信息\n4. 确认页面内容不包含敏感信息',
+          expected: '无明显安全隐患，错误处理合理'
+        }
+      ]
+    };
+
+    // 初始化测试界面
+    function initializeTests() {
+      renderTestSection('core', testDefinitions.core);
+      renderTestSection('edgeCase', testDefinitions.edgeCase);
+      updateProgress();
+    }
+
+    // 渲染测试区域
+    function renderTestSection(section, tests) {
+      const container = document.getElementById(`${section}Tests`);
+      container.innerHTML = tests.map(test => `
+        <div class="test-item pending" id="${test.id}">
+          <div class="test-status">
+            <span>⏳ ${test.name}</span>
+            <div style="margin-left: auto;">
+              <button class="btn btn-success" style="padding: 5px 10px; font-size: 12px;"
+                      onclick="markTestPassed('${test.id}', '${section}')">通过</button>
+              <button class="btn btn-danger" style="padding: 5px 10px; font-size: 12px;"
+                      onclick="markTestFailed('${test.id}', '${section}')">失败</button>
+            </div>
+          </div>
+          <div class="test-details">
+            <strong>描述：</strong>${test.description}<br><br>
+            <strong>预期结果：</strong>${test.expected}<br><br>
+            <strong>测试步骤：</strong>
+            <div class="test-instructions">${test.instructions}</div>
+            <a href="${testUrl}" target="_blank" class="test-link">在新标签页中打开测试页面</a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // 打开测试页面
+    function openTestSite() {
+      window.open(testUrl, '_blank');
+    }
+
+    // 标记测试通过
+    function markTestPassed(testId, section) {
+      updateTestStatus(testId, section, 'passed');
+    }
+
+    // 标记测试失败
+    function markTestFailed(testId, section) {
+      updateTestStatus(testId, section, 'failed');
+    }
+
+    // 更新测试状态
+    function updateTestStatus(testId, section, status) {
+      const element = document.getElementById(testId);
+      const testDef = testDefinitions[section].find(t => t.id === testId);
+
+      element.className = `test-item ${status}`;
+      const statusIcon = status === 'passed' ? '✅' : '❌';
+      element.querySelector('.test-status span').textContent = `${statusIcon} ${testDef.name}`;
+
+      // 保存结果
+      testResults[section].push({
+        id: testId,
+        name: testDef.name,
+        status: status
+      });
+
+      completedTests++;
+      updateProgress();
+
+      if (completedTests === testCount) {
+        completeTests();
+      }
+    }
+
+    // 更新进度条
+    function updateProgress() {
+      const percentage = testCount > 0 ? (completedTests / testCount) * 100 : 0;
+      document.getElementById('progressBar').style.width = `${percentage}%`;
+    }
+
+    // 完成测试
+    function completeTests() {
+      const corePassed = testResults.core.filter(r => r.status === 'passed').length;
+      const coreTotal = testResults.core.length;
+      const edgePassed = testResults.edgeCase.filter(r => r.status === 'passed').length;
+      const edgeTotal = testResults.edgeCase.length;
+
+      const summary = document.getElementById('testSummary');
+      summary.innerHTML = `
+        <div class="test-summary">
+          <h3>测试完成统计</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+            <div>
+              <h4>核心功能测试</h4>
+              <p>通过: ${corePassed}/${coreTotal}</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: ${(corePassed/coreTotal)*100}%"></div>
+              </div>
+            </div>
+            <div>
+              <h4>边界情况测试</h4>
+              <p>通过: ${edgePassed}/${edgeTotal}</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: ${(edgePassed/edgeTotal)*100}%"></div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 20px; text-align: center;">
+            <h3>总体结果</h3>
+            <p style="font-size: 1.2em;">
+              通过: ${corePassed + edgePassed}/${testCount}
+              (${((corePassed + edgePassed)/testCount*100).toFixed(1)}%)
+            </p>
+          </div>
+          <div style="margin-top: 20px; text-align: center;">
+            <button class="btn" onclick="exportResults()">导出测试结果</button>
+            <button class="btn" onclick="resetTests()">重新测试</button>
+          </div>
+        </div>
+      `;
+    }
+
+    // 重置测试
+    function resetTests() {
+      testResults.core = [];
+      testResults.edgeCase = [];
+      testCount = 0;
+      completedTests = 0;
+      document.getElementById('testSummary').textContent = '准备开始测试...';
+
+      // 重新计算测试总数
+      testCount = testDefinitions.core.length + testDefinitions.edgeCase.length;
+
+      initializeTests();
+    }
+
+    // 导出测试结果
+    function exportResults() {
+      const results = {
+        timestamp: new Date().toISOString(),
+        summary: {
+          total: testCount,
+          passed: testResults.core.filter(r => r.status === 'passed').length +
+                  testResults.edgeCase.filter(r => r.status === 'passed').length,
+          failed: testResults.core.filter(r => r.status === 'failed').length +
+                  testResults.edgeCase.filter(r => r.status === 'failed').length
+        },
+        details: {
+          core: testResults.core,
+          edgeCase: testResults.edgeCase
+        }
+      };
+
+      const blob = new Blob([JSON.stringify(results, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `workplace-wellness-test-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    // 计算测试总数
+    testCount = testDefinitions.core.length + testDefinitions.edgeCase.length;
+
+    // 初始化
+    document.addEventListener('DOMContentLoaded', initializeTests);
+  </script>
+</body>
+</html>

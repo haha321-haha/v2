@@ -1,0 +1,191 @@
+{
+  "title": "Privacy Policy",
+  "description": "Learn how Period Hub collects, uses, and protects your personal information and health data.",
+  "openGraph": {
+    "description": "Comprehensive privacy policy explaining how we handle your data with transparency and security."
+  },
+  "dataTable": {
+    "type": "Type",
+    "purpose": "Purpose",
+    "duration": "Duration",
+    "required": "Required"
+  },
+  "lastUpdated": "Last Updated: January 2025",
+  "intro": "At Period Hub, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.",
+  "importantNotice": "Important Notice",
+  "importantNoticeText": "Period Hub is currently in MVP (Minimum Viable Product) stage. We collect minimal data and do not share your information with third parties. All health data is stored locally on your device.",
+  "tableOfContents": "Table of Contents",
+  "mvpNotice": {
+    "title": "MVP Stage Notice",
+    "text": "As an MVP product, we prioritize your privacy by minimizing data collection and keeping all sensitive health information on your device."
+  },
+  "sections": {
+    "informationCollection": {
+      "title": "Information We Collect",
+      "subtitle": "Understanding what data we gather",
+      "importantNote": {
+        "title": "Local Storage Priority",
+        "text": "Most of your health data (pain tracking, cycle information) is stored locally on your device and never sent to our servers."
+      },
+      "userProvided": {
+        "title": "Information You Provide",
+        "description": "Data you voluntarily share when using our services",
+        "items": [
+          "Account registration information",
+          "Profile details and preferences",
+          "Feedback and support requests",
+          "Survey responses",
+          "Communication preferences"
+        ]
+      },
+      "symptomData": {
+        "title": "Symptom & Health Data",
+        "description": "Pain levels, cycle tracking, and symptom information (stored locally)",
+        "items": [
+          "Pain intensity levels",
+          "Menstrual cycle dates",
+          "Symptom patterns",
+          "Medication usage",
+          "Lifestyle factors"
+        ]
+      },
+      "technicalInfo": {
+        "title": "Technical Information",
+        "description": "Browser type, device information, and usage analytics",
+        "items": [
+          "Browser type and version",
+          "Device information",
+          "IP address (anonymized)",
+          "Usage analytics",
+          "Error logs"
+        ]
+      }
+    },
+    "informationUse": {
+      "title": "How We Use Your Information",
+      "mainPurposes": {
+        "title": "Main Purposes",
+        "items": [
+          "Provide and improve our services",
+          "Personalize your experience",
+          "Analyze usage patterns to enhance features",
+          "Communicate important updates",
+          "Ensure platform security"
+        ]
+      },
+      "neverUsedFor": {
+        "title": "We Never Use Your Data For",
+        "items": [
+          "Selling to third parties",
+          "Targeted advertising",
+          "Sharing with insurance companies",
+          "Any purpose without your consent"
+        ]
+      }
+    },
+    "informationSharing": {
+      "title": "Information Sharing",
+      "content": "We do not sell, trade, or rent your personal information to third parties. Your health data remains private and is only accessible to you.",
+      "exceptions": [
+        "Legal requirements",
+        "Emergency situations",
+        "With your explicit consent",
+        "Service providers (under strict agreements)",
+        "Business transfers (with notice)"
+      ]
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "disclaimer": "While we implement industry-standard security measures, no method of transmission over the internet is 100% secure.",
+      "encryption": {
+        "title": "Encryption",
+        "description": "All data transmission uses HTTPS encryption"
+      },
+      "accessControl": {
+        "title": "Access Control",
+        "description": "Strict access controls limit who can view your data"
+      },
+      "regularAudit": {
+        "title": "Regular Security Audits",
+        "description": "We regularly review and update our security practices"
+      }
+    },
+    "cookieUsage": {
+      "title": "Cookie Usage",
+      "cookieTypes": {
+        "title": "Types of Cookies We Use",
+        "necessary": {
+          "type": "Essential Cookies",
+          "description": "Required for basic site functionality",
+          "purpose": "Essential site functionality",
+          "duration": "Session only",
+          "required": "Yes"
+        },
+        "functional": {
+          "type": "Functional Cookies",
+          "purpose": "Enhanced user experience",
+          "duration": "30 days",
+          "required": "No"
+        },
+        "analytical": {
+          "type": "Analytical Cookies",
+          "purpose": "Usage analytics",
+          "duration": "90 days",
+          "required": "No"
+        }
+      },
+      "management": {
+        "title": "Managing Cookies",
+        "text": "You can control cookies through your browser settings. Note that disabling cookies may affect site functionality."
+      },
+      "dataTable": {
+        "type": "Type",
+        "purpose": "Purpose",
+        "duration": "Duration",
+        "required": "Required"
+      }
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "subtitle": "You have control over your data",
+      "rights": [
+        "Access your personal data",
+        "Correct inaccurate information",
+        "Delete your data",
+        "Export your data",
+        "Opt-out of communications"
+      ]
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "description": "If you have questions about this Privacy Policy or your data:",
+      "dpo": {
+        "title": "Data Protection Officer",
+        "email": "privacy@periodhub.health",
+        "responsibility": "Handles all privacy-related inquiries",
+        "languages": "Available in English and Chinese"
+      },
+      "dataProtection": {
+        "title": "Data Protection Inquiries",
+        "email": "privacy@periodhub.health",
+        "subject": "Subject: Privacy Policy Question",
+        "responseTime": "We aim to respond within 48 hours"
+      }
+    }
+  },
+  "policyUpdates": {
+    "title": "Policy Updates",
+    "content": "We may update this Privacy Policy from time to time. We will notify you of any significant changes via email or prominent notice on our website.",
+    "recommendation": "We recommend reviewing this policy periodically to stay informed about how we protect your information.",
+    "procedures": [
+      "Email notification to registered users",
+      "Website banner announcement",
+      "Updated effective date",
+      "Archive of previous versions",
+      "Summary of key changes"
+    ]
+  },
+  "questions": "Questions?",
+  "questionsDescription": "If you have any questions about this Privacy Policy, please contact us at privacy@periodhub.health",
+  "contactUs": "Contact Us"
+}

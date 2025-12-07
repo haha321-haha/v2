@@ -1,0 +1,19 @@
+{
+  "termsOfService": {
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions, comments, or need clarification about these terms of service, please contact us through the following methods:",
+      "email": "Email: tiyibaofu@outlook.com",
+      "responseTime": "Response time: Confirmation within 72 hours, processing completed within 30 days"
+    },
+    "finalNotice": {
+      "title": "Final Reminder",
+      "content": "These terms of service were last updated on April 1, 2024. We recommend that you regularly review this page for any updates. Continued use of our services indicates your acceptance of any revisions to the terms. Thank you for choosing periodhub.health, and we are committed to providing you with valuable health education resources."
+    },
+    "questionsTerms": "Have Questions?",
+    "questionsDescriptionTerms": "If you have any questions about our terms of service, please feel free to contact us.",
+    "contactUsTerms": "Contact Us",
+    "importantReminder": "Important Reminder",
+    "importantReminderText": "These terms of service may be updated from time to time. Continued use of our services indicates your acceptance of any modifications."
+  }
+}

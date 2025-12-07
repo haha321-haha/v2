@@ -1,0 +1,10 @@
+{
+  "languageSwitcher": {
+    "languages": {
+      "en": "English",
+      "zh": "Chinese"
+    },
+    "switchTo": "Switch to",
+    "currentLanguage": "Current Language"
+  }
+}

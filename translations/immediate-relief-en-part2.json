@@ -1,0 +1,59 @@
+{
+  "immediateReliefPage": {
+    "gentleMovement": {
+      "title": "Gentle Movement & Yoga",
+      "subtitle": "Natural pain relief through movement"
+    },
+    "gentleMovementDescription": "Gentle stretching and yoga poses can help relieve menstrual cramps by improving circulation, releasing muscle tension, and promoting relaxation.",
+
+    "gentleMovementDetails": {
+      "yogaPoses": {
+        "title": "Recommended Yoga Poses:",
+        "poses": [
+          {
+            "name": "Child's Pose (Balasana)",
+            "description": "Kneel and fold forward, arms extended",
+            "benefits": "Relieves back pain, calms the mind"
+          },
+          {
+            "name": "Cat-Cow Pose (Marjaryasana-Bitilasana)",
+            "description": "Alternate between arching and rounding your spine",
+            "benefits": "Increases spinal flexibility, massages abdominal organs"
+          },
+          {
+            "name": "Supine Twist",
+            "description": "Lie on back, bring knees to chest, drop to one side",
+            "benefits": "Releases lower back tension, aids digestion"
+          }
+        ]
+      },
+      "breathingExercises": {
+        "title": "Breathing Exercises:",
+        "exercises": [
+          {
+            "name": "Deep Belly Breathing",
+            "steps": "Breathe deeply into your belly, expanding it fully",
+            "benefits": "Reduces stress, promotes relaxation"
+          },
+          {
+            "name": "4-7-8 Breathing",
+            "steps": "Inhale for 4, hold for 7, exhale for 8 seconds",
+            "benefits": "Calms nervous system, reduces pain perception"
+          }
+        ]
+      },
+      "timing": {
+        "title": "When to Practice:",
+        "preventive": "Preventive: Practice daily during the week before your period",
+        "during": "During pain: Gentle movements only, listen to your body",
+        "continuous": "Continuous: Regular practice improves long-term outcomes"
+      }
+    },
+
+    "breathingExerciseTitle": "Breathing Exercises",
+    "breathingExercise": {
+      "subtitle": "Calm your nervous system"
+    },
+    "breathingExerciseDescription": "Controlled breathing activates your body's relaxation response, reducing stress hormones and pain perception. It's free, portable, and can be done anywhere."
+  }
+}

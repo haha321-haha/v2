@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>经期数据保存修复测试</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.5;
+    }
+    .section {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+    }
+    .btn {
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #4f46e5;
+    }
+    .code {
+      background-color: #f3f4f6;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      margin: 10px 0;
+      white-space: pre-wrap;
+    }
+    .result {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .success {
+      background-color: #d1fae5;
+      color: #065f46;
+    }
+    .error {
+      background-color: #fee2e2;
+      color: #991b1b;
+    }
+    .info {
+      background-color: #dbeafe;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <h1>经期数据保存修复测试</h1>
+
+  <div class="section">
+    <h2>测试说明</h2>
+    <p>此页面用于测试职场健康助手中的经期数据保存和图表显示功能。请按照以下步骤操作：</p>
+    <ol>
+      <li>打开职场健康助手页面</li>
+      <li>添加新的经期记录</li>
+      <li>检查数据是否正确保存</li>
+      <li>切换到图表页面查看新记录是否显示</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>快速测试按钮</h2>
+    <button class="btn" onclick="checkLocalStorage()">检查localStorage数据</button>
+    <button class="btn" onclick="clearAllData()">清除所有数据</button>
+    <button class="btn" onclick="addTestData()">添加测试数据</button>
+    <button class="btn" onclick="openWorkplaceWellness()">打开职场健康助手</button>
+    <div id="result" class="result" style="display: none;"></div>
+  </div>
+
+  <div class="section">
+    <h2>测试结果</h2>
+    <div id="testResults" class="code">
+      测试结果将显示在这里...
+    </div>
+  </div>
+
+  <script>
+    function showResult(message, type = 'info') {
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = message;
+      resultDiv.className = `result ${type}`;
+      resultDiv.style.display = 'block';
+
+      // 添加到测试结果
+      const timestamp = new Date().toLocaleTimeString();
+      const testResults = document.getElementById('testResults');
+      testResults.textContent += `[${timestamp}] ${type.toUpperCase()}: ${message}\n`;
+
+      // 滚动到最新结果
+      testResults.scrollTop = testResults.scrollHeight;
+    }
+
+    function checkLocalStorage() {
+      try {
+        const data = localStorage.getItem('workplace-wellness-storage');
+        if (data) {
+          const parsed = JSON.parse(data);
+          const periodData = parsed.state?.calendar?.periodData || [];
+          showResult(`找到 ${periodData.length} 条经期记录`, 'success');
+          console.log('periodData:', periodData);
+        } else {
+          showResult('没有找到存储的数据', 'error');
+        }
+      } catch (error) {
+        showResult(`检查数据时出错: ${error.message}`, 'error');
+      }
+    }
+
+    function clearAllData() {
+      try {
+        localStorage.removeItem('workplace-wellness-storage');
+        showResult('已清除所有数据', 'success');
+      } catch (error) {
+        showResult(`清除数据时出错: ${error.message}`, 'error');
+      }
+    }
+
+    function addTestData() {
+      try {
+        const existingData = localStorage.getItem('workplace-wellness-storage');
+        let storeData;
+
+        if (existingData) {
+          storeData = JSON.parse(existingData);
+        } else {
+          storeData = {
+            state: {
+              calendar: {
+                currentDate: new Date().toISOString(),
+                selectedDate: null,
+                showAddForm: false,
+                periodData: []
+              }
+            }
+          };
+        }
+
+        // 添加一条新的测试记录
+        const today = new Date().toISOString().split('T')[0];
+        const newRecord = {
+          date: today,
+          type: "period",
+          painLevel: 5,
+          flow: "medium"
+        };
+
+        storeData.state.calendar.periodData.push(newRecord);
+        localStorage.setItem('workplace-wellness-storage', JSON.stringify(storeData));
+
+        showResult(`已添加测试记录: ${today}`, 'success');
+      } catch (error) {
+        showResult(`添加测试数据时出错: ${error.message}`, 'error');
+      }
+    }
+
+    function openWorkplaceWellness() {
+      // 根据当前环境打开职场健康助手页面
+      const isDev = window.location.hostname === 'localhost';
+      const url = isDev
+        ? 'http://localhost:3000/zh/interactive-tools/workplace-wellness'
+        : '/zh/interactive-tools/workplace-wellness';
+
+      window.open(url, '_blank');
+      showResult('已打开职场健康助手页面', 'info');
+    }
+
+    // 页面加载时自动检查localStorage
+    window.onload = function() {
+      checkLocalStorage();
+    };
+  </script>
+</body>
+</html>

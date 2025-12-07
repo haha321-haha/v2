@@ -1,0 +1,167 @@
+{
+  "exportDate": "2025-11-10T15:26:43.827Z",
+  "analysis": {
+    "overview": {
+      "totalFeedback": 300,
+      "averageRating": 3.9,
+      "responseRate": 30,
+      "timeRange": {
+        "start": "2025-01-10",
+        "end": "2025-01-23",
+        "duration": 14
+      }
+    },
+    "ratingAnalysis": {
+      "distribution": {
+        "1": 25,
+        "2": 25,
+        "3": 48,
+        "4": 67,
+        "5": 135
+      },
+      "averageByFeature": {
+        "PHQ-9": 4,
+        "压力评估": 4.086206896551724,
+        "付费墙": 3.6607142857142856,
+        "雷达图": 3.671875,
+        "个性化建议": 3.95
+      },
+      "averageByVariant": {
+        "control": 3.4266666666666667,
+        "treatment": 4.32
+      }
+    },
+    "sentimentAnalysis": {
+      "positive": 202,
+      "neutral": 48,
+      "negative": 50,
+      "satisfactionRate": 67.3
+    },
+    "featureAnalysis": {
+      "PHQ-9": {
+        "count": 62,
+        "averageRating": 4,
+        "topComments": [
+          "结果有误，误导用户",
+          "结果很准确，建议也很专业",
+          "结果很准确，建议也很专业",
+          "专业的心理健康评估，很有用",
+          "功能设计有问题"
+        ],
+        "improvementAreas": [
+          "功能还行，但还需要改进",
+          "功能还行，但还需要改进",
+          "功能还行，但还需要改进"
+        ]
+      },
+      "压力评估": {
+        "count": 58,
+        "averageRating": 4.086206896551724,
+        "topComments": [
+          "基本满足需求，但操作略显复杂",
+          "比之前的版本改进很多，问题更全面了",
+          "评估过程很流畅，界面也很友好",
+          "评估过程很流畅，界面也很友好",
+          "比之前的版本改进很多，问题更全面了"
+        ],
+        "improvementAreas": [
+          "比之前的版本改进很多，问题更全面了",
+          "比之前的版本改进很多，问题更全面了",
+          "比之前的版本改进很多，问题更全面了",
+          "比之前的版本改进很多，问题更全面了",
+          "功能还可以，但感觉还有提升空间"
+        ]
+      },
+      "付费墙": {
+        "count": 56,
+        "averageRating": 3.6607142857142856,
+        "topComments": [
+          "功能不错，就是价格有点高",
+          "没有特别强烈的付费意愿",
+          "解锁后功能确实不一样",
+          "付费功能很值，价格也合理",
+          "功能不错，就是价格有点高"
+        ],
+        "improvementAreas": [
+          "付费后体验提升明显",
+          "功能提升有限，不划算",
+          "付费后体验提升明显",
+          "付费后体验提升明显",
+          "付费后体验提升明显"
+        ]
+      },
+      "雷达图": {
+        "count": 64,
+        "averageRating": 3.671875,
+        "topComments": [
+          "图形很美观，数据展示很清晰",
+          "功能基本满足，但还有改进空间",
+          "图形很美观，数据展示很清晰",
+          "设计很差，完全不实用",
+          "雷达图可视化太棒了！一目了然"
+        ],
+        "improvementAreas": [
+          "图形很美观，数据展示很清晰",
+          "功能基本满足，但还有改进空间",
+          "图形很美观，数据展示很清晰",
+          "图表不够清晰，看不懂数据",
+          "图形很美观，数据展示很清晰"
+        ]
+      },
+      "个性化建议": {
+        "count": 60,
+        "averageRating": 3.95,
+        "topComments": [
+          "基本满足需求，但没有惊喜",
+          "建议不错，比较实用",
+          "建议很实用，真的帮到我了",
+          "建议很实用，真的帮到我了",
+          "建议太通用了，没有针对性"
+        ],
+        "improvementAreas": ["建议一般，改进空间很大"]
+      }
+    },
+    "variantComparison": {
+      "treatmentAdvantages": [
+        "PHQ-9功能在增强版中表现更好",
+        "压力评估功能在增强版中表现更好",
+        "付费墙功能在增强版中表现更好",
+        "雷达图功能在增强版中表现更好",
+        "个性化建议功能在增强版中表现更好"
+      ],
+      "controlAdvantages": [],
+      "neutralAreas": []
+    },
+    "actionableInsights": {
+      "immediate": [],
+      "shortTerm": [],
+      "longTerm": []
+    },
+    "userRecommendations": [
+      {
+        "feature": "压力评估",
+        "recommendation": "增加压力评估功能的用户指导和支持",
+        "impact": "medium",
+        "effort": "low"
+      },
+      {
+        "feature": "付费墙",
+        "recommendation": "增加付费墙功能的用户指导和支持",
+        "impact": "medium",
+        "effort": "low"
+      },
+      {
+        "feature": "雷达图",
+        "recommendation": "增加雷达图功能的用户指导和支持",
+        "impact": "medium",
+        "effort": "low"
+      },
+      {
+        "feature": "整体体验",
+        "recommendation": "考虑将增强版功能推广给所有用户",
+        "impact": "high",
+        "effort": "low"
+      }
+    ]
+  }
+}

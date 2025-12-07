@@ -1,0 +1,48 @@
+{
+  "testName": "免费版本价值提升测试",
+  "testPeriod": {
+    "start": "2025-01-10",
+    "end": "2025-01-24",
+    "duration": "14天"
+  },
+  "sampleSize": {
+    "control": 500,
+    "treatment": 500,
+    "total": 1000
+  },
+  "performance": {
+    "completionRates": {
+      "control": "64.4",
+      "treatment": "77.4",
+      "improvement": "13.0"
+    },
+    "conversionRates": {
+      "control": "3.0",
+      "treatment": "2.2",
+      "improvement": "-0.8"
+    },
+    "engagement": {
+      "averageTimeSpent": {
+        "control": 269,
+        "treatment": 264
+      },
+      "bounceRate": {
+        "control": "35.6",
+        "treatment": "22.6"
+      }
+    }
+  },
+  "statisticalSignificance": {
+    "isSignificant": true,
+    "confidence": "95%",
+    "zScore": "4.53"
+  },
+  "recommendations": {
+    "primary": [
+      "✅ 强烈推荐：增强版功能显著提升用户完成率（+13.0%）",
+      "🎯 建议立即全量发布增强版功能"
+    ],
+    "secondary": ["📉 增强版跳出率更低，用户体验更佳"],
+    "riskAssessment": "low"
+  }
+}

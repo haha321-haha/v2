@@ -1,0 +1,88 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["custom-rules"],
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "warn",
+
+    "custom-rules/no-hardcoded-strings": [
+      "error",
+      {
+        "allowedStrings": [
+          " ",
+          ",",
+          ".",
+          ":",
+          ";",
+          "!",
+          "?",
+          "-",
+          "_",
+          "/",
+          "\\",
+          "(",
+          ")",
+          "[",
+          "]",
+          "{",
+          "}",
+          "<",
+          ">",
+          "|",
+          "&",
+          "%",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "",
+          "N/A",
+          "ID",
+          "URL",
+          "API",
+          "HTTP",
+          "HTTPS",
+          "PDF"
+        ],
+        "allowedPatterns": [
+          "^\\d+$",
+          "^[a-zA-Z]$",
+          "^\\s*$",
+          "^[\\W_]+$",
+          "^#[0-9a-fA-F]+$",
+          "^\\d+px$",
+          "^\\d+%$"
+        ]
+      }
+    ],
+
+    "custom-rules/enforce-translation-keys": "error"
+  },
+  "overrides": [
+    {
+      "files": ["app/**/*.tsx", "app/**/*.ts", "components/**/*.tsx"],
+      "rules": {
+        "custom-rules/no-hardcoded-strings": "error",
+        "custom-rules/enforce-translation-keys": "error"
+      }
+    },
+    {
+      "files": ["scripts/**/*.js", "*.config.js", "*.config.ts"],
+      "rules": {
+        "custom-rules/no-hardcoded-strings": "off",
+        "custom-rules/enforce-translation-keys": "off"
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
