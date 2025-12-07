@@ -19,7 +19,8 @@ export interface Article {
   updatedAt: string;
   readingTime: number;
   featured: boolean;
-  content?: string; // 文章内容（可选）
+  content?: string; // 文章内容（英文，可选）
+  contentZh?: string; // 文章内容（中文，可选）
   // 兼容性属性
   title_zh?: string;
   seo_title_zh?: string;
@@ -75,7 +76,8 @@ function loadArticlesFromFileSystem(): Article[] {
                 data.reading_time?.replace(/[^0-9]/g, "") || "10",
               ),
               featured: data.featured || false,
-              content: content,
+              content: undefined, // 将在下面根据 locale 设置
+              contentZh: undefined, // 将在下面根据 locale 设置
               // 兼容性属性
               title_zh: data.title,
               seo_title_zh: data.seo_title,
@@ -91,11 +93,13 @@ function loadArticlesFromFileSystem(): Article[] {
         article.title_zh = data.title || article.title_zh;
         article.summary_zh =
           data.summary || data.description || article.summary_zh;
+        article.contentZh = content; // 保存中文内容
       } else {
         article.title = data.title || article.title;
         article.description =
           data.summary || data.description || article.description;
         article.summary = data.summary || data.description || article.summary;
+        article.content = content; // 保存英文内容
       }
 
       if (existingIndex >= 0) {

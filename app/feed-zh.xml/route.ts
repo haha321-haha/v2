@@ -1,35 +1,43 @@
 import { getAllArticles } from "@/lib/articles";
 
 /**
- * Generate English RSS Feed
- * This feed contains English articles only
+ * Generate Chinese RSS Feed
+ * This feed contains Chinese articles only
  */
 export async function GET() {
   const baseUrl =
     process.env.NEXT_PUBLIC_BASE_URL || "https://www.periodhub.health";
-  const locale = "en";
+  const locale = "zh";
 
   try {
     // 获取所有文章列表
     const allArticlesData = getAllArticles();
 
-    // 按日期排序，只选择有英文标题的文章
+    // 按日期排序，只选择有中文标题的文章
     const allArticles = allArticlesData
-      .filter((article) => article.title && article.title.trim() !== "") // 确保有英文标题
+      .filter(
+        (article) =>
+          (article.titleZh || article.title_zh) &&
+          (article.titleZh || article.title_zh || "").trim() !== "",
+      ) // 确保有中文标题
       .sort(
         (a, b) =>
           new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
       )
       .slice(0, 20); // 限制为最新20篇文章
 
-    // 生成文章条目（英文版本）
+    // 生成文章条目（中文版本）
     const entries = allArticles
       .map((article) => {
-        const title = article.title || "";
-        const summary = article.summary || article.description || "";
+        const title = article.titleZh || article.title_zh || "";
+        const summary =
+          article.summary_zh ||
+          article.descriptionZh ||
+          article.description ||
+          "";
         const articleUrl = `${baseUrl}/${locale}/articles/${article.slug}`;
 
-        // 获取英文标签（如果有的话，否则使用原始标签）
+        // 获取标签（使用原始标签）
         const tags = article.tags || [];
 
         return `
@@ -40,7 +48,7 @@ export async function GET() {
     <updated>${new Date(article.publishedAt).toISOString()}</updated>
     <summary><![CDATA[${summary}]]></summary>
     <author>
-      <name>PeriodHub Health Team</name>
+      <name>PeriodHub 健康团队</name>
     </author>
     ${
       tags.length > 0
@@ -53,18 +61,18 @@ export async function GET() {
 
     const feed = `<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-  <title>PeriodHub - Menstrual Health Guide</title>
-  <subtitle>Professional women's menstrual health information and tools - Latest articles</subtitle>
-  <link href="${baseUrl}/feed.xml" rel="self"/>
+  <title>PeriodHub - 经期健康指南</title>
+  <subtitle>专业的女性经期健康信息和工具 - 最新文章更新</subtitle>
+  <link href="${baseUrl}/feed-zh.xml" rel="self"/>
   <link href="${baseUrl}"/>
-  <id>${baseUrl}/feed.xml</id>
+  <id>${baseUrl}/feed-zh.xml</id>
   <updated>${new Date().toISOString()}</updated>
   <author>
-    <name>PeriodHub Health Team</name>
+    <name>PeriodHub 健康团队</name>
   </author>
   <rights>Copyright © ${new Date().getFullYear()} PeriodHub. All rights reserved.</rights>
   <generator>PeriodHub Feed Generator v1.0</generator>
-  <link href="${baseUrl}/feed-zh.xml" rel="alternate" type="application/atom+xml" hreflang="zh-CN" title="PeriodHub - 经期健康指南"/>
+  <link href="${baseUrl}/feed.xml" rel="alternate" type="application/atom+xml" hreflang="en-US" title="PeriodHub - Menstrual Health Guide"/>
 
   ${entries}
 </feed>`;
@@ -77,27 +85,27 @@ export async function GET() {
     });
   } catch (error) {
     // eslint-disable-next-line no-console
-    console.error("Error generating Atom feed:", error);
+    console.error("Error generating Chinese Atom feed:", error);
 
     // 返回错误状态下的基本 Feed
     const fallbackFeed = `<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>PeriodHub - Menstrual Health Guide</title>
-  <subtitle>Professional women's menstrual health information and tools</subtitle>
-  <link href="${baseUrl}/feed.xml" rel="self"/>
+  <title>PeriodHub - 经期健康指南</title>
+  <subtitle>专业的女性经期健康信息和工具</subtitle>
+  <link href="${baseUrl}/feed-zh.xml" rel="self"/>
   <link href="${baseUrl}"/>
-  <id>${baseUrl}/feed.xml</id>
+  <id>${baseUrl}/feed-zh.xml</id>
   <updated>${new Date().toISOString()}</updated>
   <author>
-    <name>PeriodHub Health Team</name>
+    <name>PeriodHub 健康团队</name>
   </author>
 
   <entry>
-    <title>Welcome to PeriodHub</title>
+    <title>欢迎访问 PeriodHub</title>
     <link href="${baseUrl}"/>
     <id>${baseUrl}/</id>
     <updated>${new Date().toISOString()}</updated>
-    <summary>Professional women's menstrual health information and tools platform</summary>
+    <summary>专业的女性经期健康信息和工具平台</summary>
   </entry>
 </feed>`;
 

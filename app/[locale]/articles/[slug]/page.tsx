@@ -561,11 +561,17 @@ export default async function ArticlePage({
     // Check if this is the NSAID article that needs interactive components
     const isNSAIDArticle = slug === "nsaid-menstrual-pain-professional-guide";
 
+    // 根据 locale 选择正确的内容
+    const articleContent =
+      locale === "zh"
+        ? article.contentZh || article.content || ""
+        : article.content || article.contentZh || "";
+
     // Check if this article contains Mermaid charts
     // 安全地检查内容，避免 undefined 错误
     const hasMermaidCharts =
-      article.content && typeof article.content === "string"
-        ? article.content.includes("```mermaid")
+      articleContent && typeof articleContent === "string"
+        ? articleContent.includes("```mermaid")
         : false;
 
     const baseUrl =
@@ -769,16 +775,16 @@ export default async function ArticlePage({
                     <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none prose-primary prose-headings:text-neutral-800 prose-p:text-neutral-700 prose-li:text-neutral-700">
                       {isNSAIDArticle ? (
                         // For NSAID article, use custom client component
-                        <NSAIDContentSimple content={article.content || ""} />
+                        <NSAIDContentSimple content={articleContent} />
                       ) : hasMermaidCharts ? (
                         // For articles with Mermaid charts, use enhanced Markdown component
                         <MarkdownWithMermaid
-                          content={article.content || ""}
+                          content={articleContent}
                           className="prose prose-sm sm:prose-base lg:prose-lg max-w-none prose-primary prose-headings:text-neutral-800 prose-p:text-neutral-700 prose-li:text-neutral-700"
                         />
                       ) : (
                         <ArticleContent
-                          content={article.content || ""}
+                          content={articleContent}
                           className="prose prose-sm sm:prose-base lg:prose-lg max-w-none prose-primary prose-headings:text-neutral-800 prose-p:text-neutral-700 prose-li:text-neutral-700"
                         />
                       )}
