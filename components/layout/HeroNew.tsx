@@ -176,19 +176,6 @@ export default function HeroNew() {
                 {t("no_credit_card")}
               </p>
             )}
-
-            {/* Trust Indicators */}
-            <div className="flex items-center space-x-6 text-sm text-gray-500 dark:text-gray-400">
-              {["trust1", "trust2", "trust3"].map((key, idx) => (
-                <span key={idx} className="flex items-center">
-                  <CheckCircle
-                    className="w-4 h-4 mr-1 text-green-500"
-                    aria-hidden="true"
-                  />
-                  {t(key)}
-                </span>
-              ))}
-            </div>
           </div>
 
           {/* Hero Visual - Clinical Effectiveness Scores */}
