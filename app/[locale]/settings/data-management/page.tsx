@@ -63,10 +63,6 @@ export default async function DataManagementPage({
       <Breadcrumb
         items={[
           {
-            label: commonT("breadcrumb.home", { default: "Home" }),
-            href: `/${locale}`,
-          },
-          {
             label: t("breadcrumb.settings", { default: "Settings" }),
             href: `/${locale}/settings`,
           },
