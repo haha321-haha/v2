@@ -2,7 +2,7 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Locale, locales } from "@/i18n";
-import StressAssessmentWidget from "@/components/StressAssessmentWidget";
+import dynamic from "next/dynamic";
 import {
   generateToolStructuredData,
   ToolStructuredDataScript,
@@ -13,6 +13,19 @@ import StressTechniquesAccordion from "./components/StressTechniquesAccordion";
 import BreathingExerciseEmbedded from "./components/BreathingExerciseEmbedded";
 import BreadcrumbWrapper from "./components/BreadcrumbWrapper";
 import { Suspense } from "react";
+
+// 动态导入 StressAssessmentWidget，禁用 SSR，避免服务端创建 store
+const StressAssessmentWidget = dynamic(
+  () => import("@/components/StressAssessmentWidget"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex justify-center items-center p-8">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+      </div>
+    ),
+  }
+);
 
 // Generate metadata for the page
 export async function generateMetadata({
