@@ -71,7 +71,7 @@ export default function ComparisonSection() {
             <div className="w-full bg-gray-200 h-4 rounded-full overflow-hidden">
               <div
                 className="bg-gradient-to-r from-purple-600 to-pink-500 h-4 rounded-full transition-all duration-500"
-                style={{ width: "75%" }}
+                style={{ width: "89%" }}
               />
             </div>
             <p className="text-sm text-purple-600 font-bold mt-2">

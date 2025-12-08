@@ -415,21 +415,21 @@
       "trust3": "HIPAA Compliant"
     },
     "comparison": {
-      "title": "Why Take Pills Every 4 Hours?",
-      "subtitle": "Try 24-Hour Natural Relief Instead",
-      "imageAlt": "Pills vs Natural Remedies Comparison",
-      "whyChooseNatural": "Why Choose Natural Remedies?",
+      "title": "Why settle for 6.2/10 relief?",
+      "subtitle": "Meds + Cycle Care = 8.9/10 all-day protection",
+      "imageAlt": "Medication Only vs Holistic Approach Comparison",
+      "whyChooseNatural": "Why You Need a '1+1 > 2' Holistic Approach?",
       "pills": {
-        "title": "OTC Painkillers",
+        "title": "Medication Only",
         "duration": "4-Hour Relief",
-        "cons": "Potential Side Effects",
+        "cons": "Potential side effects, limited effectiveness",
         "score": "Score: 6.2/10"
       },
       "natural": {
-        "title": "Period Hub Relief",
+        "title": "Meds + Cycle Care",
         "duration": "24-Hour Relief",
-        "pros": "100% Natural & Safe",
-        "score": "Score: 7.5/10"
+        "pros": "Synergistic effect, safer & more effective",
+        "score": "Score: 8.9/10"
       },
       "vs": "VS"
     },

@@ -1686,21 +1686,21 @@
     "titleHighlight": "管理平台",
     "welcomeBadge": "女性健康专家",
     "comparison": {
-      "title": "为什么要每4小时吃一次药？",
-      "subtitle": "试试24小时持续缓解的天然方案",
-      "imageAlt": "止痛药 vs 自然疗法对比",
-      "whyChooseNatural": "为什么选择自然疗法？",
+      "title": "为什么只满足于 6.2 分的短暂缓解？",
+      "subtitle": "药物 + 自然周期护理 = 8.9 分 的全天候守护",
+      "imageAlt": "仅依赖药物 vs 综合方案对比",
+      "whyChooseNatural": "为什么你需要"1+1 > 2"的综合方案？",
       "pills": {
-        "title": "普通止痛药",
+        "title": "仅依赖药物 (Medication Only)",
         "duration": "4小时缓解",
-        "cons": "潜在副作用",
+        "cons": "潜在副作用，效果有限",
         "score": "评分：6.2/10"
       },
       "natural": {
-        "title": "Period Hub 方案",
+        "title": "药物 + 自然周期护理 (Meds + Cycle Care)",
         "duration": "24小时缓解",
-        "pros": "100% 天然安全",
-        "score": "评分：7.5/10"
+        "pros": "协同增效，更安全有效",
+        "score": "评分：8.9/10"
       },
       "vs": "VS"
     },
