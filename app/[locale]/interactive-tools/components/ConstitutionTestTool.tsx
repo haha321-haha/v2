@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useInteractiveToolTranslations } from "../shared/hooks/useAppTranslations";
 import {
   Play,
@@ -89,6 +89,24 @@ export default function ConstitutionTestTool({
     addSuccessNotification,
     addErrorNotification,
   } = useNotifications();
+
+  // 当切换到滑块题时，自动设置初始值为 0（如果还没有值）
+  useEffect(() => {
+    if (
+      currentQuestion &&
+      currentQuestion.type === "scale" &&
+      selectedAnswers[currentQuestion.id] === undefined
+    ) {
+      updateSelectedAnswer(currentQuestion.id, "0");
+      const answer: ConstitutionAnswer = {
+        questionId: currentQuestion.id,
+        selectedValues: ["0"],
+        timestamp: generateSafeTimestamp(),
+      };
+      answerQuestion(answer);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentQuestion?.id, currentQuestion?.type]);
 
   const handleStartTest = () => {
     startTest(locale);
@@ -206,7 +224,12 @@ export default function ConstitutionTestTool({
       return true; // 多选题允许不选择任何选项
     }
 
-    // 对于单选题和滑块题，必须有选择
+    // 对于滑块题，0 是有效值，只要不是 undefined 或 null 就可以继续
+    if (currentQuestion.type === "scale") {
+      return answer !== undefined && answer !== null;
+    }
+
+    // 对于单选题，必须有选择（不能是空字符串）
     return answer !== undefined && answer !== null && answer !== "";
   };
 
