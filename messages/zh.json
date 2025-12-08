@@ -10,14 +10,6 @@
       "title": "欢迎使用周期管家！",
       "description": "开始您的基础周期健康管理之旅。我们将在几个步骤中引导您了解关键功能。"
     },
-    "email": {
-      "title": "保持更新",
-      "description": "订阅以获取个性化建议、周期提醒和循证健康洞察，直接发送到您的收件箱。",
-      "placeholder": "输入您的邮箱",
-      "subscribe": "订阅",
-      "subscribed": "已订阅！",
-      "successMessage": "查看您的收件箱获取个性化建议和提醒！"
-    },
     "calendar": {
       "title": "同步您的日历",
       "description": "将周期提醒和重要日期添加到您的日历，以便更好地规划。",
@@ -1689,7 +1681,7 @@
       "title": "为什么只满足于 6.2 分的短暂缓解？",
       "subtitle": "药物 + 自然周期护理 = 8.9 分 的全天候守护",
       "imageAlt": "仅依赖药物 vs 综合方案对比",
-      "whyChooseNatural": "为什么你需要"1+1 > 2"的综合方案？",
+      "whyChooseNatural": "为什么你需要\"1+1 > 2\"的综合方案？",
       "pills": {
         "title": "仅依赖药物 (Medication Only)",
         "duration": "4小时缓解",
@@ -8467,48 +8459,6 @@
       "en": "English",
       "zh": "中文"
     }
-  },
-  "footer": {
-    "tagline": "基于ACOG指南的循证经期护理",
-    "columns": {
-      "tools": "工具",
-      "resources": "资源",
-      "legal": "法律"
-    },
-    "links": {
-      "tools": {
-        "symptom_checker": "AI 症状检查器",
-        "cycle_tracker": "周期追踪器",
-        "pain_diary": "疼痛日记",
-        "doctor_reports": "医生报告"
-      },
-      "resources": {
-        "medical_guides": "医学指南",
-        "natural_remedies": "自然疗法",
-        "emergency_guide": "紧急指南",
-        "research_papers": "研究论文"
-      },
-      "legal": {
-        "privacy_policy": "隐私政策",
-        "hipaa_compliance": "HIPAA 合规",
-        "clear_all_data": "清除所有数据",
-        "terms_of_service": "服务条款",
-        "medical_disclaimer": "医疗免责声明"
-      }
-    },
-    "copyright": "© {currentYear} PeriodHub. 保留所有权利。| 为女性健康而做 ❤️",
-    "medicalDisclaimerFull": "医疗免责声明：本网站内容仅供信息和教育目的，不能替代专业医疗建议、诊断或治疗。我们不是医疗专业人员。如有任何医疗问题，请咨询您的医生或其他合格的医疗服务提供者。紧急情况下，请立即寻求医疗救助。使用本网站不构成医患关系。",
-    "dataPrivacyFull": "数据隐私（HIPAA/CCPA）：您的健康数据属于您。我们采用本地优先架构，这意味着您的敏感周期数据经过加密并直接存储在您的设备上。我们不会向第三方广告商出售、交易或分享您的个人健康信息（PHI）。",
-    "contactTitle": "联系我们",
-    "socialDiscord": "加入Discord社区",
-    "quickLinks": "快速链接",
-    "support": "支持",
-    "contactUs": "联系我们",
-    "helpCenter": "帮助中心",
-    "email": "邮箱",
-    "support24": "为您提供专业健康指导",
-    "allRights": "保留所有权利。",
-    "disclaimer": "本内容仅供参考，不能替代专业医疗建议。"
   },
   "navigationTabs": {
     "articles": "📚 专业文章",
