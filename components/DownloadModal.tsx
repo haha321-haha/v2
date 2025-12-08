@@ -132,7 +132,10 @@ export default function DownloadModal({
         aria-label="Close modal"
       />
 
-      <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative z-10 transform transition-all">
+      <div
+        className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative z-10 transform transition-all"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Close Button */}
         <button
           onClick={handleClose}
