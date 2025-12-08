@@ -2490,7 +2490,8 @@
         },
         "relatedResources": "Related Resources",
         "stressGuide": "Complete Stress Management Guide",
-        "breathingExercise": "Breathing Exercise"
+        "breathingExercise": "Breathing Exercise",
+        "musicPlayer": "Music Player"
       },
       "musicPlayer": {
         "title": "Music Player",
@@ -2503,7 +2504,14 @@
         "volume": "Volume",
         "mute": "Mute",
         "unmute": "Unmute",
-        "tip": "Select soothing music to help you relax."
+        "tip": "Select soothing music to help you relax.",
+        "pageTitle": "Music Player - Stress Management Tool",
+        "description": "Use soothing music to help you relax, relieve stress, and improve your mood.",
+        "backToStressManagement": "Back to Stress Management",
+        "relatedResources": "Related Resources",
+        "stressGuide": "Complete Stress Management Guide",
+        "breathingExercise": "Breathing Exercise",
+        "meditationTimer": "Meditation Timer"
       },
       "startAssessment": "Start Assessment",
       "learnMore": "Learn More",

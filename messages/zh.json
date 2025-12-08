@@ -7000,7 +7000,8 @@
         },
         "relatedResources": "相关资源",
         "stressGuide": "压力管理完整指南",
-        "breathingExercise": "呼吸练习"
+        "breathingExercise": "呼吸练习",
+        "musicPlayer": "音乐播放器"
       },
       "musicPlayer": {
         "title": "音乐播放器",
@@ -7013,7 +7014,14 @@
         "volume": "音量",
         "mute": "静音",
         "unmute": "取消静音",
-        "tip": "选择您喜欢的舒缓音乐，帮助放松身心。"
+        "tip": "选择您喜欢的舒缓音乐，帮助放松身心。",
+        "pageTitle": "音乐播放器 - 压力管理工具",
+        "description": "使用舒缓的音乐帮助您放松身心，缓解压力，改善情绪。",
+        "backToStressManagement": "返回压力管理",
+        "relatedResources": "相关资源",
+        "stressGuide": "压力管理完整指南",
+        "breathingExercise": "呼吸练习",
+        "meditationTimer": "冥想计时器"
       },
       "startAssessment": "开始评估",
       "learnMore": "了解更多",

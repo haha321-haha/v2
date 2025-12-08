@@ -109,6 +109,12 @@ export default async function MeditationTimerPage({
             >
               💨 {t("breathingExercise")}
             </Link>
+            <Link
+              href={`/${locale}/interactive-tools/stress-management/music-player`}
+              className="text-purple-600 dark:text-purple-400 hover:underline"
+            >
+              🎵 {t("musicPlayer")}
+            </Link>
           </div>
         </div>
       </div>
