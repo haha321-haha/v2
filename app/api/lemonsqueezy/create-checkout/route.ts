@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { trackEvent } from "@/lib/analytics/posthog";
 
-const API_KEY = process.env.LEMONSQUEEZY_API_KEY;
-const STORE_ID = process.env.LEMONSQUEEZY_STORE_ID;
-
 export async function POST(req: NextRequest) {
   try {
+    // ✅ 在函数内部读取环境变量，确保在运行时读取
+    const API_KEY = process.env.LEMONSQUEEZY_API_KEY;
+    const STORE_ID = process.env.LEMONSQUEEZY_STORE_ID;
+
     const { variantId, plan, painPoint, assessmentScore, email } =
       await req.json();
 
@@ -16,12 +17,21 @@ export async function POST(req: NextRequest) {
       process.env.NEXT_PUBLIC_BASE_URL ||
       "http://localhost:3001";
 
-    // ✅ 验证环境变量
+    // ✅ 验证环境变量（添加详细的调试信息）
     if (!API_KEY || !STORE_ID) {
+      // 获取所有包含 LEMON 的环境变量键（用于调试）
+      const lemonEnvKeys = Object.keys(process.env).filter((k) =>
+        k.includes("LEMON"),
+      );
+
       console.error("❌ 缺少 Lemon Squeezy 配置:", {
         hasApiKey: !!API_KEY,
         hasStoreId: !!STORE_ID,
+        apiKeyLength: API_KEY?.length,
+        storeIdLength: STORE_ID?.length,
         apiKeyPrefix: API_KEY?.substring(0, 10) + "...",
+        allLemonEnvKeys: lemonEnvKeys,
+        nodeEnv: process.env.NODE_ENV,
       });
       throw new Error(
         "Missing Lemon Squeezy configuration. Please check your environment variables.",

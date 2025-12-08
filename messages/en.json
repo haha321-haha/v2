@@ -14223,6 +14223,10 @@
       "learnMore": "Learn more about Pro"
     }
   },
+  "pricing": {
+    "title": "PeriodHub Pro - Pricing",
+    "description": "Choose the right plan for your period health management needs. Unlock professional health management features and personalize your health journey."
+  },
   "Paywall": {
     "variants": {
       "painDominant": {

@@ -6,6 +6,7 @@ import PaywallModal from "@/components/monetization/PaywallModal";
 import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { logError } from "@/lib/debug-logger";
+import { generateMailtoLink } from "@/lib/email-protection";
 import "@/lib/pro-upgrade-handler"; // 确保全局函数可用
 
 export default function PricingPageClient() {
@@ -160,10 +161,10 @@ export default function PricingPageClient() {
 
               <Button
                 onClick={() => handleUpgrade(plan.id)}
-                className={`w-full py-3 ${
+                className={`w-full py-3 text-white font-semibold ${
                   plan.recommended
-                    ? "bg-gradient-to-r from-purple-600 to-pink-500 hover:shadow-lg"
-                    : "bg-gray-900 hover:bg-gray-800"
+                    ? "bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 hover:shadow-xl shadow-lg"
+                    : "bg-gradient-to-r from-purple-500 to-pink-400 hover:from-purple-600 hover:to-pink-500 hover:shadow-lg"
                 }`}
               >
                 {plan.id === "oneTime" ? t("cta.buyNow") : t("cta.subscribe")}
@@ -191,13 +192,22 @@ export default function PricingPageClient() {
       </div>
 
       {/* Support Section */}
-      <div className="bg-gray-900 text-white py-12">
+      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-4">{t("support.title")}</h3>
-          <p className="text-gray-300 mb-6">{t("support.description")}</p>
+          <p className="text-purple-100 mb-6">{t("support.description")}</p>
           <Button
             variant="outline"
-            className="border-white text-white hover:bg-white hover:text-gray-900"
+            className="border-white text-white hover:bg-white hover:text-purple-600 transition-colors"
+            onClick={() => {
+              const emailSubject =
+                locale === "zh" ? "网站咨询" : "Website Inquiry";
+              const emailBody =
+                locale === "zh"
+                  ? "您好，我想咨询关于 PeriodHub Pro 订阅和功能的问题。"
+                  : "Hello, I would like to inquire about PeriodHub Pro subscription and features.";
+              window.location.href = generateMailtoLink(emailSubject, emailBody);
+            }}
           >
             {t("support.cta")}
           </Button>

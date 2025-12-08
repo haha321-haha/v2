@@ -4,10 +4,21 @@ import { whatwgWebhooksHandler } from "lemonsqueezy-webhooks";
 
 export async function POST(req: Request) {
   try {
-    const secret = process.env.LEMONSQUEEZY_WEBHOOK_SECRET!;
+    // ✅ 在函数内部读取环境变量，确保在运行时读取
+    const secret = process.env.LEMONSQUEEZY_WEBHOOK_SECRET;
 
     if (!secret) {
-      console.error("❌ Missing LEMONSQUEEZY_WEBHOOK_SECRET");
+      // 获取所有包含 LEMON 的环境变量键（用于调试）
+      const lemonEnvKeys = Object.keys(process.env).filter((k) =>
+        k.includes("LEMON"),
+      );
+
+      console.error("❌ Missing LEMONSQUEEZY_WEBHOOK_SECRET:", {
+        hasSecret: !!secret,
+        secretLength: secret?.length,
+        allLemonEnvKeys: lemonEnvKeys,
+        nodeEnv: process.env.NODE_ENV,
+      });
       return NextResponse.json(
         { error: "Webhook secret not configured" },
         { status: 500 },

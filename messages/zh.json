@@ -14265,6 +14265,10 @@
       "learnMore": "了解更多Pro功能"
     }
   },
+  "pricing": {
+    "title": "PeriodHub Pro - 定价",
+    "description": "选择适合您经期健康管理需求的方案。解锁专业健康管理功能，个性化您的健康旅程。"
+  },
   "Paywall": {
     "variants": {
       "painDominant": {
