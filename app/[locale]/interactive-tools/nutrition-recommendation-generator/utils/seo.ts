@@ -143,8 +143,9 @@ export function generateSEOMetadata(locale: "en" | "zh"): Metadata {
     alternates: {
       canonical: seoConfig.base.url,
       languages: {
-        en: "https://www.periodhub.health/en/nutrition-recommendation-generator",
-        zh: "https://www.periodhub.health/zh/nutrition-recommendation-generator",
+        "en-US": "https://www.periodhub.health/en/nutrition-recommendation-generator",
+        "zh-CN": "https://www.periodhub.health/zh/nutrition-recommendation-generator",
+        "x-default": "https://www.periodhub.health/en/nutrition-recommendation-generator",
       },
     },
   };

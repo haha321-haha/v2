@@ -33,7 +33,7 @@ export async function generateMetadata({
         }/en/interactive-tools/stress-management/assessment`,
         "x-default": `${
           process.env.NEXT_PUBLIC_BASE_URL || "https://www.periodhub.health"
-        }/zh/interactive-tools/stress-management/assessment`,
+        }/en/interactive-tools/stress-management/assessment`,
       },
     },
     openGraph: {

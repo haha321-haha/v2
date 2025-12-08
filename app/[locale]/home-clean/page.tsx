@@ -20,8 +20,8 @@ export async function generateMetadata({
     alternates: {
       canonical: `${baseUrl}/${locale}/home-clean`,
       languages: {
-        zh: `${baseUrl}/zh/home-clean`,
-        en: `${baseUrl}/en/home-clean`,
+        "zh-CN": `${baseUrl}/zh/home-clean`,
+        "en-US": `${baseUrl}/en/home-clean`,
         "x-default": `${baseUrl}/en/home-clean`, // ✅ 修复：默认英文版本（北美市场优先）
       },
     },

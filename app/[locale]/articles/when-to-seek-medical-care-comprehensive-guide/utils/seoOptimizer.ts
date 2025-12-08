@@ -200,8 +200,9 @@ export function generateEnhancedMetadata(
     alternates: {
       canonical: currentUrl,
       languages: {
-        zh: `${baseUrl}/zh/articles/when-to-seek-medical-care-comprehensive-guide`,
-        en: `${baseUrl}/en/articles/when-to-seek-medical-care-comprehensive-guide`,
+        "zh-CN": `${baseUrl}/zh/articles/when-to-seek-medical-care-comprehensive-guide`,
+        "en-US": `${baseUrl}/en/articles/when-to-seek-medical-care-comprehensive-guide`,
+        "x-default": `${baseUrl}/en/articles/when-to-seek-medical-care-comprehensive-guide`,
       },
     },
 

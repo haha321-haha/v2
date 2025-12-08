@@ -16,6 +16,9 @@ export async function generateMetadata({
 }: PartnerHandbookPageProps): Promise<Metadata> {
   const { locale } = await params;
 
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://www.periodhub.health";
+
   const metadata = {
     zh: {
       title: "伴侣沟通场景 - 痛经理解度测试与30天训练营 | Period Hub",
@@ -57,10 +60,11 @@ export async function generateMetadata({
       description: currentMetadata.description,
     },
     alternates: {
-      canonical: `/${locale}/scenario-solutions/partnerCommunication`,
+      canonical: `${baseUrl}/${locale}/scenario-solutions/partnerCommunication`,
       languages: {
-        zh: "/zh/scenario-solutions/partnerCommunication",
-        en: "/en/scenario-solutions/partnerCommunication",
+        "zh-CN": `${baseUrl}/zh/scenario-solutions/partnerCommunication`,
+        "en-US": `${baseUrl}/en/scenario-solutions/partnerCommunication`,
+        "x-default": `${baseUrl}/en/scenario-solutions/partnerCommunication`,
       },
     },
   };

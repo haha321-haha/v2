@@ -31,6 +31,11 @@ export function generatePageSEO(props: PageSEOProps) {
     canonicalUrl = `${baseUrl}/${locale}/${props.path.replace(/^\//, "")}`;
   }
 
+  // 处理 hreflang URL - 使用实际页面路径而不是首页路径
+  const cleanPath = props.path ? props.path.replace(/^\//, "") : "";
+  const zhPath = cleanPath ? `/${cleanPath}` : "";
+  const enPath = cleanPath ? `/${cleanPath}` : "";
+
   const metadata = {
     title: props.title,
     description: props.description,
@@ -56,9 +61,9 @@ export function generatePageSEO(props: PageSEOProps) {
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        "zh-CN": `${baseUrl}/zh`,
-        "en-US": `${baseUrl}/en`,
-        "x-default": `${baseUrl}/en`,
+        "zh-CN": `${baseUrl}/zh${zhPath}`,
+        "en-US": `${baseUrl}/en${enPath}`,
+        "x-default": `${baseUrl}/en${enPath}`,
       },
     },
 

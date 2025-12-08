@@ -22,8 +22,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `${baseUrl}/${locale}/pricing`,
       languages: {
-        zh: `${baseUrl}/zh/pricing`,
-        en: `${baseUrl}/en/pricing`,
+        "zh-CN": `${baseUrl}/zh/pricing`,
+        "en-US": `${baseUrl}/en/pricing`,
+        "x-default": `${baseUrl}/en/pricing`,
       },
     },
     robots: {

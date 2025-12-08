@@ -78,8 +78,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `https://www.periodhub.health/${locale}/interactive-tools/nutrition-recommendation-generator`,
       languages: {
-        zh: "https://www.periodhub.health/zh/interactive-tools/nutrition-recommendation-generator",
-        en: "https://www.periodhub.health/en/interactive-tools/nutrition-recommendation-generator",
+        "zh-CN": "https://www.periodhub.health/zh/interactive-tools/nutrition-recommendation-generator",
+        "en-US": "https://www.periodhub.health/en/interactive-tools/nutrition-recommendation-generator",
+        "x-default": "https://www.periodhub.health/en/interactive-tools/nutrition-recommendation-generator",
       },
     },
   };
