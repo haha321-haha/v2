@@ -224,9 +224,10 @@ export default function ConstitutionTestTool({
       return true; // 多选题允许不选择任何选项
     }
 
-    // 对于滑块题，0 是有效值，只要不是 undefined 或 null 就可以继续
+    // 对于滑块题，0 是有效值，如果没有选择，默认值就是 0，所以允许继续
     if (currentQuestion.type === "scale") {
-      return answer !== undefined && answer !== null;
+      // 滑块题如果没有值，默认值是 0，所以总是允许继续
+      return true;
     }
 
     // 对于单选题，必须有选择（不能是空字符串）
@@ -953,9 +954,22 @@ export default function ConstitutionTestTool({
                       }
                       return 0;
                     })()}
-                    onChange={(e) =>
-                      handleAnswerSelect(currentQuestion.id, e.target.value)
-                    }
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      handleAnswerSelect(currentQuestion.id, value);
+                    }}
+                    onMouseDown={(e) => {
+                      // 如果滑块还没有值，在用户开始交互时立即设置默认值 0
+                      if (selectedAnswers[currentQuestion.id] === undefined) {
+                        handleAnswerSelect(currentQuestion.id, "0");
+                      }
+                    }}
+                    onTouchStart={(e) => {
+                      // 移动端触摸开始时也设置默认值
+                      if (selectedAnswers[currentQuestion.id] === undefined) {
+                        handleAnswerSelect(currentQuestion.id, "0");
+                      }
+                    }}
                     className="w-full pain-scale cursor-pointer outline-none rounded-lg"
                     style={getRangeStyle(
                       Number(selectedAnswers[currentQuestion.id] || 0),
