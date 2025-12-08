@@ -151,7 +151,13 @@ export default async function DysmenorrheaGuidePage({
     process.env.NEXT_PUBLIC_BASE_URL || "https://www.periodhub.health";
   const pageUrl = `${baseUrl}/${locale}/articles/comprehensive-medical-guide-to-dysmenorrhea`;
 
-  const condition = MEDICAL_ENTITIES.dysmenorrhea;
+  const condition = MEDICAL_ENTITIES.DYSMENORRHEA;
+  
+  // 安全检查：确保 condition 存在
+  if (!condition) {
+    throw new Error("Medical entity DYSMENORRHEA not found in MEDICAL_ENTITIES");
+  }
+  
   // 生成 Article 结构化数据
   const articleStructuredData = {
     "@context": "https://schema.org",
@@ -189,7 +195,7 @@ export default async function DysmenorrheaGuidePage({
       },
       code: {
         "@type": "MedicalCode",
-        code: condition.icd10,
+        code: condition.icd10 || "N94.6",
         codingSystem: "ICD-10",
       },
       sameAs: condition.snomed
