@@ -77,7 +77,16 @@ export const getHomeStructuredData = async (
         description: t("organization.description"),
         inLanguage: locale === "zh" ? "zh-CN" : "en-US",
         publisher: {
+            "@type": "Organization",
             "@id": `${baseUrl}/${locale}#organization`,
+            name: "PeriodHub",
+            url: baseUrl,
+            logo: {
+                "@type": "ImageObject",
+                url: `${baseUrl}/logo.png`,
+                width: 512,
+                height: 512,
+            },
         },
         potentialAction: {
             "@type": "SearchAction",

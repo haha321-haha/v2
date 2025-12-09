@@ -34,7 +34,6 @@ export interface MedicalWebPageSchema {
       name: string;
     };
   };
-  about: Record<string, unknown>;
   citation?: Array<Record<string, unknown>>;
   reviewedBy: {
     "@type": "Organization";
@@ -159,7 +158,6 @@ export function generateMedicalWebPageSchema(options: MedicalWebPageOptions) {
         name: locale === "zh" ? "China" : "United States",
       },
     },
-    about: medicalCondition,
     ...(citationSchemas.length > 0 && {
       citation: citationSchemas,
     }),

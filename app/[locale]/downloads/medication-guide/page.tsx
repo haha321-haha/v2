@@ -78,7 +78,7 @@ export default async function MedicationGuidePage({
       name: "Dysmenorrhea",
     },
     mainEntity: {
-      "@type": "Drug",
+      "@type": "MedicalEntity",
       name: "NSAID Medications",
       description:
         "Non-steroidal anti-inflammatory drugs for menstrual pain relief",
