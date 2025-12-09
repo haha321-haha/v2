@@ -215,11 +215,13 @@ export function getRelatedArticles(
 
   const articles = getAllArticlesCached();
   // 简单的相关文章逻辑：同类别的其他文章
+  // 安全检查：确保 currentArticle.category 存在
+  const currentCategory = currentArticle.category || "general";
   return articles
     .filter(
       (article) =>
         article.slug !== currentSlug &&
-        article.category === currentArticle.category,
+        (article.category || "general") === currentCategory,
     )
     .slice(0, count);
 }

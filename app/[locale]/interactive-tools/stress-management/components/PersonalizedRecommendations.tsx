@@ -105,11 +105,11 @@ export default function PersonalizedRecommendations({
         });
 
         recs.push({
-          id: "breathing_guide",
-          type: "article",
+          id: "breathing_exercise_guide",
+          type: "tool",
           title: tRec("breathingGuide.title"),
           description: tRec("breathingGuide.moderate"),
-          href: `/${locale}/articles/breathing-exercises-guide`,
+          href: `/${locale}/interactive-tools/stress-management/breathing-exercise`,
           priority: "medium",
           icon: "💨",
         });

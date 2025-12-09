@@ -314,7 +314,7 @@ export async function generateMetadata({
   return {
     title: seoTitle,
     description: seoDescription,
-    keywords: article.tags,
+    keywords: Array.isArray(article.tags) ? article.tags : [],
     authors: [{ name: "PeriodHub Team" }],
     // 🔧 修复：添加明确的robots配置，确保文章页面被正确索引
     robots: {
@@ -361,9 +361,9 @@ export async function generateMetadata({
     alternates: {
       canonical: articleUrl,
       languages: {
-        "en-US": `${baseUrl}/en/articles/${slug}`,
-        "zh-CN": `${baseUrl}/zh/articles/${slug}`,
-        "x-default": `${baseUrl}/en/articles/${slug}`,
+        "en-US": `${baseUrl}/en/articles/${actualSlug}`,
+        "zh-CN": `${baseUrl}/zh/articles/${actualSlug}`,
+        "x-default": `${baseUrl}/en/articles/${actualSlug}`,
       },
     },
   };
@@ -476,8 +476,11 @@ export default async function ArticlePage({
     }
 
     // 相关文章计算计时
+    // 安全检查：确保 article 存在后再获取相关文章
     const relatedArticlesStart = Date.now();
-    const relatedArticles = await getRelatedArticles(slug, locale, 3);
+    const relatedArticles = article
+      ? await getRelatedArticles(actualSlug, locale, 3)
+      : [];
     const relatedArticlesTime = Date.now() - relatedArticlesStart;
     // Production monitoring: Related articles calculation
     // eslint-disable-next-line no-console
@@ -547,16 +550,20 @@ export default async function ArticlePage({
       };
     });
     // 将category转换为安全的翻译键名
-    const categoryKey = article.category
+    // 安全检查：确保 category 存在且为字符串
+    const safeCategory = article.category || "general";
+    const categoryKey = (typeof safeCategory === "string" ? safeCategory : "general")
       .toLowerCase()
       .replace(/\s+/g, "-")
       .replace(/[^\w\u4e00-\u9fff-]/g, "");
 
     const category =
       locale === "zh"
-        ? t(`tags.${categoryKey}`) || article.category
-        : t(`tags.${categoryKey}`) || article.category;
-    const readingTime = article.readingTime;
+        ? t(`tags.${categoryKey}`) || safeCategory
+        : t(`tags.${categoryKey}`) || safeCategory;
+    // 安全检查：确保 readingTime 是数字
+    const readingTime =
+      typeof article.readingTime === "number" ? article.readingTime : 10;
 
     // Check if this is the NSAID article that needs interactive components
     const isNSAIDArticle = slug === "nsaid-menstrual-pain-professional-guide";
@@ -635,8 +642,10 @@ export default async function ArticlePage({
     });
 
     // 🔧 修复 P0: 将日期格式化移到 JSX 外部，避免在 JSX 中创建 Date 对象
+    // 安全检查：确保 publishedAt 存在
     const formattedPublishedDate = (() => {
-      const date = new Date(article.publishedAt);
+      const publishedAt = article.publishedAt || new Date().toISOString();
+      const date = new Date(publishedAt);
       return isNaN(date.getTime())
         ? new Date().toLocaleDateString(locale === "zh" ? "zh-CN" : "en-US")
         : date.toLocaleDateString(locale === "zh" ? "zh-CN" : "en-US");

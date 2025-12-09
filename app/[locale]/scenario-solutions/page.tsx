@@ -394,7 +394,7 @@ export default async function ScenarioSolutionsPage({ params }: Props) {
                   href={`/${locale}/scenario-solutions/${scenario.id}`}
                   className="flex items-center text-primary-600 font-medium group-hover:text-primary-700 transition-colors text-sm sm:text-base"
                 >
-                  <span className="mr-2">{commonT("learnMore")}</span>
+                  <span className="mr-2">{t(`scenarios.${scenario.id}.cta`)}</span>
                   <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>

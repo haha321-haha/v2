@@ -82,13 +82,13 @@ export default function StressManagementRecommendations({
       anchorTextType: "sleep_guide" as const,
     },
     {
-      id: "breathing-exercises-guide",
-      title: isZh ? "呼吸练习完整指南" : "Complete Breathing Exercises Guide",
+      id: "breathing-exercise-tool",
+      title: isZh ? "4-7-8 呼吸练习" : "4-7-8 Breathing Exercise",
       description: isZh
-        ? "详细的呼吸练习技巧和科学原理，快速缓解压力"
-        : "Detailed breathing exercise techniques and scientific principles for quick stress relief",
-      href: `/${locale}/articles/breathing-exercises-guide`,
-      readTime: isZh ? "15分钟阅读" : "15 min read",
+        ? "基于科学验证的 4-7-8 呼吸方法，通过调节神经系统快速缓解疼痛"
+        : "Based on scientifically validated 4-7-8 breathing method, quickly relieves pain by regulating the nervous system",
+      href: `/${locale}/interactive-tools/stress-management/breathing-exercise`,
+      readTime: isZh ? "互动工具" : "Interactive Tool",
       category: isZh ? "减压技巧" : "Stress Relief",
       priority: "medium",
       icon: "💨",
