@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -93,6 +93,8 @@ export default function StressAssessmentStartPage() {
   // 评估状态
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
+  // 使用 ref 保存最新答案，解决 React 状态更新异步问题
+  const latestAnswersRef = useRef<number[]>([]);
   const [showResults, setShowResults] = useState(false);
   const [showPaywall, setShowPaywall] = useState(false);
   const [showPHQ9, setShowPHQ9] = useState(false);
@@ -110,6 +112,8 @@ export default function StressAssessmentStartPage() {
   const handleAnswer = (optionIndex: number) => {
     const newAnswers = [...answers];
     newAnswers[currentQuestion] = optionIndex;
+    // 同步更新 ref，确保能够立即访问最新答案
+    latestAnswersRef.current = newAnswers;
     setAnswers(newAnswers);
 
     // Day 3增强：第5题后显示付费墙（原第3题）
@@ -145,7 +149,25 @@ export default function StressAssessmentStartPage() {
 
   const handleSkipPaywall = () => {
     // 免费用户：只显示基础结果
-    const score = calculateScore();
+    // 使用 ref 中的最新答案，确保包含第5题的答案
+    const currentAnswers = latestAnswersRef.current.length > 0 
+      ? latestAnswersRef.current 
+      : answers;
+    
+    // 确保至少有5个答案
+    if (!currentAnswers || currentAnswers.length < FREE_QUESTIONS) {
+      console.warn("答案数量不足，无法显示结果");
+      return;
+    }
+
+    // 使用最新的答案计算分数
+    const validAnswers = currentAnswers.filter((a) => a !== undefined);
+    if (validAnswers.length === 0) {
+      console.warn("没有有效答案");
+      return;
+    }
+    const total = validAnswers.reduce((sum, answer) => sum + answer, 0);
+    const score = Math.round((total / (validAnswers.length * 3)) * 100);
     const { level } = getStressLevel(score);
 
     // Day 4: 追踪付费墙交互
@@ -154,7 +176,7 @@ export default function StressAssessmentStartPage() {
     // Save assessment to localStorage
     try {
       const assessmentData = {
-        answers,
+        answers: currentAnswers,
         score,
         stressLevel: level,
         isPremium: false,
@@ -168,6 +190,8 @@ export default function StressAssessmentStartPage() {
       // Failed to save assessment to localStorage
     }
 
+    // 确保状态中的 answers 也是最新的
+    setAnswers(currentAnswers);
     setStressScore(score);
     setShowResults(true);
   };
@@ -255,6 +279,7 @@ export default function StressAssessmentStartPage() {
   const handleRestartAll = () => {
     setCurrentQuestion(0);
     setAnswers([]);
+    latestAnswersRef.current = []; // 重置 ref
     setShowResults(false);
     setShowPaywall(false);
     setShowPHQ9(false);
@@ -284,8 +309,10 @@ export default function StressAssessmentStartPage() {
     }
   }, [showPaywall, userId]);
 
-  const calculateScore = () => {
-    const validAnswers = answers.filter((a) => a !== undefined);
+  const calculateScore = (answersArray?: number[]) => {
+    // 优先使用传入的答案数组，否则使用状态中的答案，最后使用 ref 中的最新答案
+    const answersToUse = answersArray || (answers.length > 0 ? answers : latestAnswersRef.current);
+    const validAnswers = answersToUse.filter((a) => a !== undefined);
     if (validAnswers.length === 0) return 0;
     const total = validAnswers.reduce((sum, answer) => sum + answer, 0);
     return Math.round((total / (validAnswers.length * 3)) * 100);
@@ -478,9 +505,13 @@ export default function StressAssessmentStartPage() {
 
   // Stress assessment results page
   if (showResults) {
-    const score = calculateScore();
+    // 确保使用最新的答案数据
+    const currentAnswers = latestAnswersRef.current.length > 0 
+      ? latestAnswersRef.current 
+      : answers;
+    const score = calculateScore(currentAnswers);
     const { level, color } = getStressLevel(score);
-    const isBasicResult = answers.length <= FREE_QUESTIONS;
+    const isBasicResult = currentAnswers.length <= FREE_QUESTIONS;
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-8">
@@ -554,7 +585,7 @@ export default function StressAssessmentStartPage() {
                 }
               >
                 <StressRadarChart
-                  scores={convertAnswersToRadarData(answers)}
+                  scores={convertAnswersToRadarData(currentAnswers)}
                   className="border-2 border-blue-200"
                   onInteraction={(type, data) => {
                     // Day 4: 追踪雷达图交互

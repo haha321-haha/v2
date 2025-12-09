@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
 import { PrivacyNotice } from "./PrivacyNotice";
@@ -47,6 +47,8 @@ export default function StressAssessmentWidget() {
   // Reserved for future analytics: const [userId] = useState(() => generateAnonymousUserId());
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
+  // 使用 ref 保存最新答案，解决 React 状态更新异步问题
+  const latestAnswersRef = useRef<number[]>([]);
   const [showResults, setShowResults] = useState(false);
   const [showPaywall, setShowPaywall] = useState(false);
   const [stressScore, setStressScore] = useState(0);
@@ -244,6 +246,8 @@ export default function StressAssessmentWidget() {
   const handleAnswer = (optionIndex: number) => {
     const newAnswers = [...answers];
     newAnswers[currentQuestion] = optionIndex;
+    // 同步更新 ref，确保能够立即访问最新答案
+    latestAnswersRef.current = newAnswers;
     setAnswers(newAnswers);
 
     // 第5题（索引4）后显示付费墙
@@ -449,10 +453,14 @@ export default function StressAssessmentWidget() {
   };
 
   const handleSkipPaywall = () => {
-    // 获取当前所有的答案，包括最新的
-    const currentAnswers = [...answers];
-    // 确保answers数组有效，至少有5个答案
+    // 使用 ref 中的最新答案，确保包含第5题的答案
+    const currentAnswers = latestAnswersRef.current.length > 0 
+      ? latestAnswersRef.current 
+      : answers;
+    
+    // 确保至少有5个答案
     if (!currentAnswers || currentAnswers.length < FREE_QUESTIONS) {
+      console.warn("答案数量不足，无法显示结果");
       return;
     }
 
@@ -481,6 +489,8 @@ export default function StressAssessmentWidget() {
       console.error("❌ 免费评估结果保存失败:", error);
     }
 
+    // 确保状态中的 answers 也是最新的
+    setAnswers(currentAnswers);
     // 先隐藏 paywall，然后显示结果
     setShowPaywall(false);
     setStressScore(score);
@@ -509,6 +519,7 @@ export default function StressAssessmentWidget() {
   const handleRestart = () => {
     setCurrentQuestion(0);
     setAnswers([]);
+    latestAnswersRef.current = []; // 重置 ref
     setShowResults(false);
     setShowPaywall(false);
     setStressScore(0);
@@ -523,8 +534,10 @@ export default function StressAssessmentWidget() {
     setShowPaywall(true);
   };
 
-  const calculateScore = (answersArray: number[]) => {
-    const validAnswers = answersArray.filter((a) => a !== undefined);
+  const calculateScore = (answersArray?: number[]) => {
+    // 优先使用传入的答案数组，否则使用状态中的答案，最后使用 ref 中的最新答案
+    const answersToUse = answersArray || (answers.length > 0 ? answers : latestAnswersRef.current);
+    const validAnswers = answersToUse.filter((a) => a !== undefined);
     if (validAnswers.length === 0) return 0;
     const total = validAnswers.reduce((sum, answer) => sum + answer, 0);
     return Math.round((total / (validAnswers.length * 3)) * 100);
@@ -671,7 +684,11 @@ export default function StressAssessmentWidget() {
 
   const progress = ((currentQuestion + 1) / questions.length) * 100;
   // 只有回答了超过免费问题数量（即6个或更多）才被认为是付费用户
-  const isPremiumUser = answers.length > FREE_QUESTIONS;
+  // 使用最新的答案数据来判断
+  const currentAnswersForCheck = latestAnswersRef.current.length > 0 
+    ? latestAnswersRef.current 
+    : answers;
+  const isPremiumUser = currentAnswersForCheck.length > FREE_QUESTIONS;
 
   //  // 渲染主要内容（提取为函数以避免重复代码）
   const renderMainContent = () => {
@@ -726,6 +743,10 @@ export default function StressAssessmentWidget() {
 
     // Results view
     if (showResults) {
+      // 确保使用最新的答案数据
+      const currentAnswers = latestAnswersRef.current.length > 0 
+        ? latestAnswersRef.current 
+        : answers;
       const { color } = getStressLevel(stressScore);
 
       return (
@@ -767,7 +788,7 @@ export default function StressAssessmentWidget() {
               }
             >
               <StressRadarChart
-                scores={convertAnswersToRadarData(answers)}
+                scores={convertAnswersToRadarData(currentAnswers)}
                 className="border-2 border-blue-200"
               />
             </Suspense>
@@ -779,7 +800,7 @@ export default function StressAssessmentWidget() {
               {t("results.basicRecommendations")}
             </h3>
             <div className="space-y-3">
-              {getPersonalizedRecommendations(answers).map(
+              {getPersonalizedRecommendations(currentAnswers).map(
                 (recommendation, index) => (
                   <div
                     key={index}
@@ -857,7 +878,7 @@ export default function StressAssessmentWidget() {
                   {t("results.personalizedActionPlan.title")}
                 </h3>
                 <div className="space-y-3">
-                  {getPersonalizedActionSteps(answers).map((step, i) => (
+                  {getPersonalizedActionSteps(currentAnswers).map((step, i) => (
                     <div
                       key={i}
                       className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg"
