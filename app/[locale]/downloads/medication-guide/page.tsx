@@ -73,10 +73,6 @@ export default async function MedicationGuidePage({
     name: t("title"),
     description: t("description"),
     medicalAudience: "Patient",
-    about: {
-      "@type": "MedicalCondition",
-      name: "Dysmenorrhea",
-    },
     mainEntity: {
       "@type": "MedicalEntity",
       name: "NSAID Medications",
