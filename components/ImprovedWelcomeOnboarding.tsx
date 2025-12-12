@@ -95,7 +95,7 @@ export default function ImprovedWelcomeOnboarding() {
             } else {
                 setEmailError(data.error || t("email.errorServer"));
             }
-        } catch (error) {
+        } catch {
             setEmailError(t("email.errorNetwork"));
         } finally {
             setIsSubmitting(false);

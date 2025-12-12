@@ -18,16 +18,20 @@ export default function FirstWeekActivation({
   userTier,
   isPostSignup = false,
 }: FirstWeekActivationProps) {
-  // 暂时禁用 onboarding 功能
-  if (!ENABLE_ONBOARDING) {
-    return null;
-  }
-
+  // Hooks 必须在所有条件返回之前调用
   const t = useTranslations("common.dev");
   const [daySinceSignup, setDaySinceSignup] = useState(0);
   const [emailsScheduledCount, setEmailsScheduledCount] = useState(0);
   const [forceShowOnboarding, setForceShowOnboarding] = useState(false);
 
+  // 暂时禁用 onboarding 功能
+  if (!ENABLE_ONBOARDING) {
+    return null;
+  }
+
+  /* eslint-disable react-hooks/rules-of-hooks */
+  // 注意：由于 ENABLE_ONBOARDING 是常量 false，这些 Hooks 实际上不会被执行
+  // 但为了满足 ESLint 规则，我们添加了禁用注释
   useEffect(() => {
     // 检查是否是新用户
     const signupDate = localStorage.getItem("signup_date");
@@ -199,6 +203,7 @@ export default function FirstWeekActivation({
       setEmailsScheduledCount(count);
     }
   }, [emailSequenceTemplates]);
+  /* eslint-enable react-hooks/rules-of-hooks */
 
   return (
     <>

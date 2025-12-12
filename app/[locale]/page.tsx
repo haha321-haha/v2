@@ -149,7 +149,12 @@ export async function generateMetadata({
 const getStructuredData = async (locale: string) => {
   const t = await getTranslations({ locale, namespace: "" });
   const v2HomeT = await getTranslations({ locale, namespace: "v2Home" });
-  return getHomeStructuredData(t as any, v2HomeT as any, locale);
+  // getTranslations 返回的函数类型与 getHomeStructuredData 期望的类型兼容
+  return getHomeStructuredData(
+    t as (key: string) => string,
+    v2HomeT as (key: string) => string,
+    locale
+  );
 };
 
 export default async function HomePage({

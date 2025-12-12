@@ -20,8 +20,10 @@ export default function DownloadModal({
   buttonText,
   className = "",
   source,
-  downloadUrl,
-  resourceTitle,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  downloadUrl: _downloadUrl,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  resourceTitle: _resourceTitle,
   isOpen: propIsOpen,
   onClose,
   title: propTitle,

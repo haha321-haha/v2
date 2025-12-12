@@ -958,13 +958,13 @@ export default function ConstitutionTestTool({
                       const value = e.target.value;
                       handleAnswerSelect(currentQuestion.id, value);
                     }}
-                    onMouseDown={(e) => {
+                    onMouseDown={() => {
                       // 如果滑块还没有值，在用户开始交互时立即设置默认值 0
                       if (selectedAnswers[currentQuestion.id] === undefined) {
                         handleAnswerSelect(currentQuestion.id, "0");
                       }
                     }}
-                    onTouchStart={(e) => {
+                    onTouchStart={() => {
                       // 移动端触摸开始时也设置默认值
                       if (selectedAnswers[currentQuestion.id] === undefined) {
                         handleAnswerSelect(currentQuestion.id, "0");

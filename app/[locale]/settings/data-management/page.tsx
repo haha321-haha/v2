@@ -55,7 +55,6 @@ export default async function DataManagementPage({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "dataManagement" });
-  const commonT = await getTranslations({ locale, namespace: "common" });
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">

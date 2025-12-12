@@ -2,8 +2,6 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { generateAlternatesConfig } from "@/lib/seo/canonical-url-utils";
-import { generateArticleStructuredData } from "@/lib/seo/article-structured-data";
-import { safeStringify } from "@/lib/utils/json-serialization";
 import {
   ArrowLeft,
   Clock,

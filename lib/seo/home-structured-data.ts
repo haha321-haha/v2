@@ -1,5 +1,4 @@
 import { generateMedicalWebPageSchema } from "@/lib/seo/medical-schema-generator";
-import { SITE_CONFIG } from "@/config/site.config";
 
 export const getHomeStructuredData = async (
     t: (key: string) => string,

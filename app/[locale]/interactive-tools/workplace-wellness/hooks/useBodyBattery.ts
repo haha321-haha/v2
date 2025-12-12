@@ -1,4 +1,3 @@
-import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
 
 export type CyclePhase = "menstrual" | "follicular" | "ovulation" | "luteal";
@@ -30,7 +29,7 @@ export function useBodyBattery() {
     // 睡眠权重: 10 (1-10 -> 10-100)
     // 压力权重: 10 (1-10 -> 10-100)
     // 能量权重: 1
-    let rawBattery = energyLevel + sleepQuality * 5 - stressLevel * 5;
+    const rawBattery = energyLevel + sleepQuality * 5 - stressLevel * 5;
 
     // 2. 周期适应性调整 (Cycle Adaptability)
     let maxBattery = 100;

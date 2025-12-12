@@ -62,7 +62,6 @@ export default async function ScenarioSolutionsPage({ params }: Props) {
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations("scenarioSolutionsPage");
-  const commonT = await getTranslations("common");
 
   // 场景图片映射
   const scenarioImages: Record<string, { filename: string; alt: string }> = {

@@ -3,13 +3,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-interface StatsSectionProps {
-  stats?: Array<{ value: string; label: string }>;
-}
-
-export default function StatsSection({
-  stats: propsStats,
-}: StatsSectionProps = {}) {
+export default function StatsSection() {
   const t = useTranslations("v2Home");
 
   // 简化：只显示焦虑相关的消息

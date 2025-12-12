@@ -1,10 +1,6 @@
 import { Metadata } from "next";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Debug - Stress Management | PeriodHub",
     description: "Debug page for stress management progress tracking",

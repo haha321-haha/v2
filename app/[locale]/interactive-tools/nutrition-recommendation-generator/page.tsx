@@ -11,7 +11,6 @@ import {
   generateToolStructuredData,
   ToolStructuredDataScript,
 } from "@/lib/seo/tool-structured-data";
-import { safeStringify } from "@/lib/utils/json-serialization";
 
 // 动态导入营养推荐生成器 - 代码分割优化
 const NutritionGenerator = dynamic(

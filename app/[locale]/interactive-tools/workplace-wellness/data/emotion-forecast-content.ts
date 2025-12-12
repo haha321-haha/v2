@@ -1,11 +1,11 @@
-import { CloudRain, Sun, Zap, Wind } from "lucide-react";
+import { CloudRain, Sun, Zap, Wind, LucideIcon } from "lucide-react";
 
 export interface EmotionForecast {
   phase: "menstrual" | "follicular" | "ovulation" | "luteal";
   title: string;
   description: string;
   tip: string;
-  icon: any;
+  icon: LucideIcon;
 }
 
 export const getEmotionForecasts = (
