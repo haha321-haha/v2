@@ -173,7 +173,7 @@
     "lemonsqueezy-webhooks": "^0.1.2",
     "lodash": "^4.17.21",
     "mermaid": "^11.9.0",
-    "next": "^15.5.7",
+    "next": "^15.5.8",
     "next-intl": "^3.0.0",
     "node-fetch": "^3.3.2",
     "pdf-parse": "^1.1.1",
