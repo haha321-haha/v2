@@ -35,12 +35,6 @@ export const LazyCycleTrackerTool = createLazyTool(
   "CycleTrackerTool",
 );
 
-// 懒加载的症状追踪工具
-export const LazySymptomTrackerTool = createLazyTool(
-  () => import("../../components/SymptomTrackerTool"),
-  "SymptomTrackerTool",
-);
-
 // 懒加载的痛经影响评估工具
 export const LazyPeriodPainAssessmentTool = createLazyTool(
   () => import("../../components/PeriodPainAssessmentTool"),
@@ -190,7 +184,6 @@ const lazyToolCollection = {
   LazyPainTrackerTool,
   LazyConstitutionTestTool,
   LazyCycleTrackerTool,
-  LazySymptomTrackerTool,
   LazyPeriodPainAssessmentTool,
 
   // P2阶段组件

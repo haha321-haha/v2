@@ -1,3 +1,22 @@
+/**
+ * ⚠️ DEPRECATED - 此组件已废弃
+ * 
+ * 该工具已被移除，URL /interactive-tools/symptom-tracker 已重定向到 /interactive-tools/pain-tracker
+ * 
+ * 原因：
+ * - 功能与 pain-tracker 重复
+ * - 翻译键存在问题（returnObjects 不支持）
+ * - 不在 sitemap 和工具列表页面中
+ * 
+ * 如需恢复，需要：
+ * 1. 修复翻译键问题（使用 useSafeTranslations 或直接定义数据）
+ * 2. 添加到 sitemap.ts
+ * 3. 添加到工具列表页面
+ * 4. 从 middleware.ts 移除重定向规则
+ * 
+ * @deprecated 此组件已废弃，不应再使用
+ */
+
 "use client";
 
 import { useState, useEffect } from "react";
