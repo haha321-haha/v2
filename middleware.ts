@@ -29,6 +29,19 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // 🔄 301 重定向：symptom-tracker → pain-tracker
+  // 该工具已废弃，重定向到功能相似的 pain-tracker
+  if (pathname === "/zh/interactive-tools/symptom-tracker") {
+    const url = request.nextUrl.clone();
+    url.pathname = "/zh/interactive-tools/pain-tracker";
+    return NextResponse.redirect(url, 301);
+  }
+  if (pathname === "/en/interactive-tools/symptom-tracker") {
+    const url = request.nextUrl.clone();
+    url.pathname = "/en/interactive-tools/pain-tracker";
+    return NextResponse.redirect(url, 301);
+  }
+
   // 处理根路径重定向
   if (pathname === "/") {
     // 检测用户语言偏好

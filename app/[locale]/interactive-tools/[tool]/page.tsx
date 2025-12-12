@@ -78,14 +78,6 @@ const CycleTrackerTool = dynamic(
   },
 );
 
-const SymptomTrackerTool = dynamic(
-  () => import("../components/SymptomTrackerTool"),
-  {
-    loading: () => (
-      <div className="animate-pulse bg-gray-200 h-64 rounded-lg" />
-    ),
-  },
-);
 
 // 动态导入共享组件
 const EmergencyReliefGuide = dynamic(
@@ -882,18 +874,6 @@ const getToolBySlug = async (
       content: "", // Content will be handled by the CycleTrackerTool component
       locale,
     },
-    {
-      slug: "symptom-tracker",
-      frontmatter: {
-        title: tTool("tools.symptomTracker.title"),
-        description: tTool("tools.symptomTracker.description"),
-        category: tTool("categories.recordingTool"),
-        difficulty: tTool("difficulty.easy"),
-        estimatedTime: tTool("estimatedTime.3to5minDaily"),
-      },
-      content: "", // Content will be handled by the SymptomTrackerTool component
-      locale,
-    },
   ];
 
   const tool = sampleTools.find((t) => t.slug === slug && t.locale === locale);
@@ -909,7 +889,6 @@ export async function generateStaticParams() {
     "constitution-test",
     "period-pain-assessment",
     "cycle-tracker",
-    "symptom-tracker",
   ];
 
   const params = [];
@@ -983,7 +962,6 @@ export async function generateMetadata({
       "constitution-test",
       "period-pain-assessment",
       "cycle-tracker",
-      "symptom-tracker",
     ];
 
     if (!validTools.includes(tool)) {
@@ -1087,7 +1065,6 @@ export default async function ToolPage({
       "constitution-test",
       "period-pain-assessment",
       "cycle-tracker",
-      "symptom-tracker",
     ];
 
     if (!validTools.includes(tool)) {
@@ -1227,8 +1204,6 @@ export default async function ToolPage({
                 <PeriodPainAssessmentTool locale={locale} />
               ) : tool === "cycle-tracker" ? (
                 <CycleTrackerTool locale={locale} />
-              ) : tool === "symptom-tracker" ? (
-                <SymptomTrackerTool locale={locale} />
               ) : (
                 <div
                   className="prose prose-lg max-w-none prose-primary prose-headings:text-neutral-800 prose-p:text-neutral-700"

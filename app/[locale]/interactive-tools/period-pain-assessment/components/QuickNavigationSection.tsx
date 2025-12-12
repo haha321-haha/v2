@@ -68,7 +68,7 @@ export default async function QuickNavigationSection({
             <ul className="space-y-2 text-sm text-neutral-700">
               <li>
                 <Link
-                  href={`/${locale}/interactive-tools/symptom-tracker`}
+                  href={`/${locale}/interactive-tools/pain-tracker`}
                   className="hover:text-purple-700 transition-colors"
                 >
                   {t(`${baseKey}.toolsList.tracker`)}

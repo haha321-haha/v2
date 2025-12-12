@@ -41,7 +41,6 @@ export function getPageCanonicalUrl(locale: string, path: string): string {
   // 特殊页面的规范URL映射
   const canonicalMappings: Record<string, string> = {
     // 交互工具页面
-    "/interactive-tools/symptom-tracker": "/interactive-tools/symptom-tracker",
     "/interactive-tools": "/interactive-tools",
     "/interactive-tools/pain-tracker": "/interactive-tools/pain-tracker",
     "/interactive-tools/symptom-assessment":
