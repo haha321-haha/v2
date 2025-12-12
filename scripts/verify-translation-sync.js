@@ -1,0 +1,1 @@
+check-translation-sync.js
